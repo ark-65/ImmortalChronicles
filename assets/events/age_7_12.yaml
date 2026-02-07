@@ -104,6 +104,9 @@
       label: "学习家族功法，踏上修行之路"
       effects:
         canCultivate: true
+        learnFamilyTechnique: true
+        setExp: 0
+        setExpRequired: 200
         log: "你拜入族中功法堂，正式踏上修行道路，日后可继续修炼与突破。"
       followup: null
     -

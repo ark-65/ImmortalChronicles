@@ -1,0 +1,33 @@
+id: "炼气"
+lifespan: 120
+layers:
+  -
+    level: 1
+    expRequired: 200
+  -
+    level: 2
+    expRequired: 230
+  -
+    level: 3
+    expRequired: 264
+  -
+    level: 4
+    expRequired: 304
+  -
+    level: 5
+    expRequired: 350
+  -
+    level: 6
+    expRequired: 402
+  -
+    level: 7
+    expRequired: 463
+  -
+    level: 8
+    expRequired: 532
+  -
+    level: 9
+    expRequired: 612
+  -
+    level: 10
+    expRequired: 704

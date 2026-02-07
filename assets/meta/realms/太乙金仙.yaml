@@ -1,0 +1,33 @@
+id: "太乙金仙"
+lifespan: 1000000
+layers:
+  -
+    level: 1
+    expRequired: 1400
+  -
+    level: 2
+    expRequired: 1610
+  -
+    level: 3
+    expRequired: 1851
+  -
+    level: 4
+    expRequired: 2129
+  -
+    level: 5
+    expRequired: 2449
+  -
+    level: 6
+    expRequired: 2816
+  -
+    level: 7
+    expRequired: 3238
+  -
+    level: 8
+    expRequired: 3724
+  -
+    level: 9
+    expRequired: 4283
+  -
+    level: 10
+    expRequired: 4925

@@ -59,6 +59,8 @@ Future<void> main(List<String> args) async {
     writeJson: writeJson,
   );
 
+  await _exportRealmShards();
+
   await _exportData(
     base: 'assets/meta/stages',
     data: {
@@ -177,4 +179,13 @@ List<int> _generateLayers(
     current *= growth;
   }
   return list;
+}
+
+Future<void> _exportRealmShards() async {
+  final meta = _buildRealmMeta();
+  final realms = meta['realms'] as List<dynamic>;
+  for (final r in realms) {
+    final id = (r['id'] as String).replaceAll('·', '_');
+    await _writeYaml('assets/meta/realms/$id.yaml', r);
+  }
 }

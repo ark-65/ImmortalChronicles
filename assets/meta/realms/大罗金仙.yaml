@@ -1,0 +1,33 @@
+id: "大罗金仙"
+lifespan: 5000000
+layers:
+  -
+    level: 1
+    expRequired: 1500
+  -
+    level: 2
+    expRequired: 1725
+  -
+    level: 3
+    expRequired: 1984
+  -
+    level: 4
+    expRequired: 2281
+  -
+    level: 5
+    expRequired: 2624
+  -
+    level: 6
+    expRequired: 3017
+  -
+    level: 7
+    expRequired: 3470
+  -
+    level: 8
+    expRequired: 3990
+  -
+    level: 9
+    expRequired: 4589
+  -
+    level: 10
+    expRequired: 5277

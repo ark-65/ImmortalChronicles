@@ -4,6 +4,7 @@ import '../models/models.dart';
 import '../data/stages.dart';
 import '../data/event_repository.dart';
 import '../data/reference_repository.dart';
+import '../data/realms.dart' as realm_table;
 
 class EventEngine {
   final Random rng;
@@ -250,6 +251,64 @@ class EventEngine {
         orElse: () => refRepo.families.first);
   }
 
+  void _grantFamilyTechnique(PlayerState state) {
+    final tpl = _currentFamilyTemplate(state);
+    if (tpl == null) return;
+    final techName = tpl.coreTechniques.isNotEmpty
+        ? tpl.coreTechniques.first
+        : '${tpl.name}心法';
+    final exists = state.techniques.any((t) => t.name == techName);
+    if (exists) return;
+    final grade = _gradeForTier(tpl.tier);
+    final baseExp = _baseExpForGrade(grade);
+    state.techniques.add(Technique(
+      name: techName,
+      grade: grade,
+      stage: ProficiencyStage.chuKui,
+      exp: 0,
+      expRequired: baseExp,
+    ));
+  }
+
+  TechniqueGrade _gradeForTier(String? tier) {
+    if (tier == null) return TechniqueGrade.fan;
+    if (tier.contains('道')) return TechniqueGrade.dao;
+    if (tier.contains('霸主') || tier.contains('圣')) return TechniqueGrade.sheng;
+    if (tier.contains('天')) return TechniqueGrade.xian;
+    if (tier.contains('地')) return TechniqueGrade.ling;
+    if (tier.contains('品')) return TechniqueGrade.ling;
+    return TechniqueGrade.fan;
+  }
+
+  int _baseExpForGrade(TechniqueGrade grade) {
+    switch (grade) {
+      case TechniqueGrade.fan:
+        return 120;
+      case TechniqueGrade.ling:
+        return 200;
+      case TechniqueGrade.xian:
+        return 300;
+      case TechniqueGrade.sheng:
+        return 450;
+      case TechniqueGrade.dao:
+        return 650;
+    }
+  }
+
+  void _syncRealmStage(PlayerState state, {bool resetExp = false}) {
+    final layers = refRepo.realmLayers[state.realm] ??
+        realm_table.realmLayers[state.realm] ??
+        const [200]; // fallback
+    // 如果 resetExp 或当前经验需求不在层表内，则重置到第一层
+    if (resetExp || !layers.contains(state.expRequired)) {
+      state.exp = 0;
+      state.expRequired = layers.first;
+      return;
+    }
+    // 若当前 expRequired 恰好在表内且 exp>=expRequired，多余的经验保留，继续使用当前层
+    // （突破逻辑会提升 expRequired）
+  }
+
   double _tierBonus(String? tier) {
     switch (tier) {
       case '霸主':
@@ -443,6 +502,20 @@ class EventEngine {
     }
     if (mergedEffects['realm'] != null) {
       state.realm = mergedEffects['realm'];
+      _syncRealmStage(state, resetExp: mergedEffects['resetRealmExp'] == true);
+    }
+    if (mergedEffects['setExp'] != null) {
+      state.exp = (mergedEffects['setExp'] as num).round().clamp(0, 1 << 30);
+    }
+    if (mergedEffects['setExpRequired'] != null) {
+      state.expRequired =
+          (mergedEffects['setExpRequired'] as num).round().clamp(1, 1 << 30);
+    }
+    if (mergedEffects['learnFamilyTechnique'] == true) {
+      _grantFamilyTechnique(state);
+      // 修习功法后默认进入练气·一层并按表设置经验需求
+      state.realm = '炼气';
+      _syncRealmStage(state, resetExp: true);
     }
     if (mergedEffects['canCultivate'] != null) {
       state.canCultivate = mergedEffects['canCultivate'] == true;

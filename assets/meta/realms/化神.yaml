@@ -1,0 +1,33 @@
+id: "化神"
+lifespan: 2000
+layers:
+  -
+    level: 1
+    expRequired: 600
+  -
+    level: 2
+    expRequired: 690
+  -
+    level: 3
+    expRequired: 793
+  -
+    level: 4
+    expRequired: 913
+  -
+    level: 5
+    expRequired: 1049
+  -
+    level: 6
+    expRequired: 1207
+  -
+    level: 7
+    expRequired: 1388
+  -
+    level: 8
+    expRequired: 1596
+  -
+    level: 9
+    expRequired: 1835
+  -
+    level: 10
+    expRequired: 2111

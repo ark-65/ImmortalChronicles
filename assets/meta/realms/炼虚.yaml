@@ -1,0 +1,33 @@
+id: "炼虚"
+lifespan: 5000
+layers:
+  -
+    level: 1
+    expRequired: 700
+  -
+    level: 2
+    expRequired: 805
+  -
+    level: 3
+    expRequired: 926
+  -
+    level: 4
+    expRequired: 1065
+  -
+    level: 5
+    expRequired: 1224
+  -
+    level: 6
+    expRequired: 1408
+  -
+    level: 7
+    expRequired: 1619
+  -
+    level: 8
+    expRequired: 1862
+  -
+    level: 9
+    expRequired: 2141
+  -
+    level: 10
+    expRequired: 2463
