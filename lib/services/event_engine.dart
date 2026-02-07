@@ -15,16 +15,78 @@ class EventEngine {
   LifeEventConfig pickEvent(PlayerState state) {
     // pending first
     if (state.pendingEvents.isNotEmpty) {
-      final pid = state.pendingEvents.removeAt(0);
-      final fromPending =
-          sampleEvents.firstWhere((e) => e.id == pid, orElse: () => fallback(state));
-      return fromPending;
+      final pendingCount = state.pendingEvents.length;
+      for (int i = 0; i < pendingCount; i++) {
+        final pid = state.pendingEvents.removeAt(0);
+        final fromPending =
+            sampleEvents.firstWhere((e) => e.id == pid, orElse: () => fallback(state));
+        final ready = (fromPending.minAge == null || state.age >= fromPending.minAge!) &&
+            (fromPending.maxAge == null || state.age <= fromPending.maxAge!) &&
+            fromPending.worlds.contains(state.world) &&
+            (fromPending.regions == null || fromPending.regions!.contains(state.region));
+        // 不满足前置(root/cultivation/sect/family)时也不能触发
+        final stage = currentStage(state.age);
+        final prereqOk = !fromPending.prerequisites.contains('root_awakened') ||
+            (state.talentLevelName != '未知' && state.talentLevelName != '凡体');
+        final cultOk = !fromPending.prerequisites.contains('cultivation_started') || state.realm != '无';
+        final sectOk = !fromPending.prerequisites.contains('sect_accepted') || state.sectId != null;
+        final topOk = !fromPending.prerequisites.contains('top_family_only') || state.familyScore >= 95;
+        final nonTopOk = !fromPending.prerequisites.contains('non_top_family_only') || state.familyScore < 95;
+        final litOk = fromPending.conditions['needsLiteracy'] != true || state.hasLiteracy;
+        final cultCondOk = fromPending.conditions['needsCultivation'] != true || (stage.allowCultivation && state.realm != '无');
+
+        final allReady = ready && prereqOk && cultOk && sectOk && topOk && nonTopOk && litOk && cultCondOk;
+
+        if (allReady) {
+          // guard: 仙界修行/游历必须觉醒灵根
+          if (fromPending.id == 'immortal_retreat' || fromPending.id == 'immortal_explore_random') {
+            if (state.talentLevelName == '未知' || state.talentLevelName == '凡体') {
+              state.pendingEvents.add(pid);
+              continue;
+            }
+          }
+          return fromPending;
+        } else {
+          state.pendingEvents.add(pid); // defer to later age/condition
+        }
+      }
+    }
+
+    // 强制 6+ 岁未觉醒时优先触发灵根检测（防止被其他事件抢占）
+    if ((state.talentLevelName == '未知' || state.talentLevelName == '凡体') &&
+        state.age >= 6 &&
+        state.age <= 12 &&
+        !state.lifeEvents.any((e) => e.id == 'age_6_root_test' || e.id == 'age_6_root_test_result')) {
+      final rootEvent = sampleEvents.firstWhere((e) => e.id == 'age_6_root_test');
+      return rootEvent;
     }
 
     final stage = currentStage(state.age);
     final isTopFamily = state.familyScore >= 95;
 
-    final candidates = sampleEvents.where((e) {
+    List<LifeEventConfig> agePool;
+    if (state.age <= 3) {
+      agePool = tableAge0to3();
+    } else if (state.age <= 6) {
+      agePool = tableAge4to6();
+    } else if (state.age <= 12) {
+      agePool = tableAge7to12();
+    } else if (state.age <= 18) {
+      agePool = tableAge13to18();
+    } else {
+      agePool = sampleEvents;
+    }
+    // 合并家族/宗门机缘表
+    final mergedPool = [
+      ...agePool,
+      ...tableClanChance(),
+      ...tableSectChance(),
+      ...tableWorldDaily(state.world),
+    ];
+    final seen = <String>{};
+    final uniquePool = mergedPool.where((e) => seen.add(e.id)).toList();
+
+    final candidates = uniquePool.where((e) {
       if (!e.worlds.contains(state.world)) return false;
       if (e.regions != null && !e.regions!.contains(state.region)) return false;
       if (e.minAge != null && state.age < e.minAge!) return false;
@@ -59,13 +121,26 @@ class EventEngine {
         return false;
       }
       if (e.conditions.containsKey('chance')) {
-        final p = (e.conditions['chance'] as num).toDouble();
+        double p = (e.conditions['chance'] as num).toDouble();
+        if (e.conditions.containsKey('chanceLuckBoost')) {
+          final boost = (e.conditions['chanceLuckBoost'] as num).toDouble();
+          p += (state.luck / 100) * boost;
+          if (p > 1) p = 1;
+          if (p < 0) p = 0;
+        }
         if (rng.nextDouble() > p) return false;
       }
       return true;
     }).toList();
 
-    if (candidates.isEmpty) return fallback(state);
+    if (candidates.isEmpty) {
+      // 若已觉醒且在修炼，强制提供当前世界日常修炼/苟活事件作为兜底
+      if (state.talentLevelName != '未知' && state.realm != '无') {
+        final daily = tableWorldDaily(state.world);
+        if (daily.isNotEmpty) return daily[rng.nextInt(daily.length)];
+      }
+      return fallback(state);
+    }
     // weighted random
     final total = candidates.fold<int>(0, (s, e) => s + e.weight);
     int roll = rng.nextInt(total);
@@ -78,6 +153,23 @@ class EventEngine {
 
   LifeEventConfig fallback(PlayerState state) => sampleEvents
       .firstWhere((e) => e.id == '${state.world.name}_fallback', orElse: () => sampleEvents.first);
+
+  SectTemplate _randomSectFor(World world) {
+    List<SectTemplate> pool;
+    switch (world) {
+      case World.immortal:
+        pool = sectTemplates.where((s) => s.tier == '圣地' || s.tier == '霸主').toList();
+        break;
+      case World.mortal:
+        pool = sectTemplates.where((s) => s.tier == '天' || s.tier == '地' || s.tier == '人').toList();
+        break;
+      case World.nether:
+        pool = sectTemplates; // 简化：魔界也允许全表
+        break;
+    }
+    if (pool.isEmpty) pool = sectTemplates;
+    return pool[rng.nextInt(pool.length)];
+  }
 
   FamilyTemplate? _currentFamilyTemplate(PlayerState state) {
     if (state.familyTemplateId == null) return null;
@@ -152,26 +244,89 @@ class EventEngine {
   void _rollRoot(PlayerState state, LifeEventConfig event) {
     final baseRoots = ['金', '木', '水', '火', '土', '风'];
     final variantRoots = ['雷', '阴', '阳'];
-    String root = baseRoots[rng.nextInt(baseRoots.length)];
-    if (rng.nextDouble() < 0.1) {
-      root = variantRoots[rng.nextInt(variantRoots.length)];
+    final variantChance = (0.1 + state.luck / 400).clamp(0.0, 0.35);
+    String pickRoot() {
+      bool isVar = rng.nextDouble() < variantChance;
+      final pool = isVar ? variantRoots : baseRoots;
+      return (isVar ? '变异·' : '') + pool[rng.nextInt(pool.length)];
     }
+
+    // 是否双灵根：基础 5% + luck/500，上限 20%
+    final dualChance = (0.05 + state.luck / 500).clamp(0.0, 0.2);
+    final isDual = rng.nextDouble() < dualChance;
+
+    String root1 = pickRoot();
+    String? root2;
+    if (isDual) {
+      do {
+        root2 = pickRoot();
+      } while (root2 == root1);
+    }
+
+    // 品阶概率随气运（创角幸运上限约 20 点，做 0-20 线性映射）
     double roll = rng.nextDouble();
+    final luckFactor = (state.luck.clamp(0, 20)) / 20.0;
+    final pDao = 0.05 + 0.15 * luckFactor;   // 5% -> 20%
+    final pSheng = 0.15 + 0.20 * luckFactor; // 15% -> 35%  (累积到 55%)
+    final pLing = 0.40 + 0.20 * luckFactor;  // 40% -> 60%  (累积到 ~1.15, 取上限)
+
+    double thresholdDao = pDao;
+    double thresholdSheng = (thresholdDao + pSheng).clamp(0.0, 0.95);
+    double thresholdLing = (thresholdSheng + pLing).clamp(0.0, 0.99);
+
     String grade = '凡';
-    if (roll < 0.1 + state.luck / 200) {
+    if (roll < thresholdDao) {
       grade = '道';
-    } else if (roll < 0.2 + state.luck / 150) {
+    } else if (roll < thresholdSheng) {
       grade = '圣';
-    } else if (roll < 0.4 + state.luck / 120) {
+    } else if (roll < thresholdLing) {
       grade = '灵';
     }
-    state.talentLevelName = '$grade·$root';
+
+    // 顶级及以上家境保底：familyScore>=90 至少灵阶
+    if (state.familyScore >= 90 && (grade == '凡')) grade = '灵';
+
+    String visualOf(String r) {
+      final key = r.replaceAll('变异·', '');
+      return switch (key) {
+        '金' => '金光如剑锋直刺天际',
+        '木' => '翠绿藤纹在光柱中缠绕',
+        '水' => '清光如波，水雾弥漫台阶',
+        '火' => '赤焰升腾，热浪扑面',
+        '土' => '厚重黄光稳如山岳',
+        '风' => '青光流转，如风刃环绕',
+        '雷' => '紫电游走，轰鸣震耳',
+        '阴' => '幽光森冷，似有鬼魅低语',
+        '阳' => '炽白光耀，温暖充盈四方',
+        _ => '灵光旋绕',
+      };
+    }
+
+    String comment = switch (grade) {
+      '道' => '长老们面露震惊，纷纷上前争抢收徒。',
+      '圣' => '族中子弟屏息，私语称你为天骄之姿。',
+      '灵' => '旁人投来艳羡目光，称你有望入内门。',
+      _ => '族人摇头叹息，觉得资质平平只能勤补拙。',
+    };
+
+    final rootsLabel = isDual ? '$root1 / $root2' : root1;
+    state.talentLevelName = '$grade·$rootsLabel';
+
+    final visuals = isDual
+        ? '灵光交织：${visualOf(root1)}；${visualOf(root2!)}。'
+        : '灵光冲天：${visualOf(root1)}。';
+    final variantNote = (root1.startsWith('变异') || (root2?.startsWith('变异') ?? false))
+        ? '出现稀有变异灵根。'
+        : '';
+    final dualNote = isDual ? '双灵根共振，潜力倍增。' : '';
+
     state.lifeEvents.add(
       LifeEventEntry(
         id: '${event.id}_result',
         age: state.age,
-        title: '灵根结果',
-        description: '检测结果：$root 系灵根，品级 $grade。',
+        title: '灵根结果·$grade·$rootsLabel',
+        description:
+            '$visuals 检测结果：$rootsLabel，品级 $grade。$variantNote$dualNote$comment',
       ),
     );
   }
@@ -183,6 +338,21 @@ class EventEngine {
     bool consumeAp = true,
   }) {
     final mergedEffects = {...event.effects, ...extraEffects};
+    // merge delta maps加和
+    final mergedDelta = <String, num>{};
+    if (event.effects['delta'] is Map) {
+      (event.effects['delta'] as Map).forEach((k, v) {
+        mergedDelta[k] = (v as num);
+      });
+    }
+    if (extraEffects['delta'] is Map) {
+      (extraEffects['delta'] as Map).forEach((k, v) {
+        mergedDelta[k] = (mergedDelta[k] ?? 0) + (v as num);
+      });
+    }
+    if (mergedDelta.isNotEmpty) {
+      mergedEffects['delta'] = mergedDelta;
+    }
     final ageDelta =
         mergedEffects['age'] is num ? (mergedEffects['age'] as num).round() : 0;
     state.age += ageDelta;
@@ -202,11 +372,33 @@ class EventEngine {
         (mergedEffects['pendingEvents'] as List).cast<String>(),
       );
     }
+    if (mergedEffects['sectId'] == 'random') {
+      state.sectId = _randomSectFor(state.world).id;
+    }
     if (consumeAp) {
       state.ap = max(0, state.ap - 1);
     }
 
     final delta = Map<String, num>.from(mergedEffects['delta'] ?? {});
+    // 经验随灵根品阶调整：灵=1.0，道=1.4，圣=1.2，凡=0.8
+    num expDelta = delta['exp'] ?? 0;
+    if (expDelta != 0) {
+      double mult = 1.0;
+      final grade = state.talentLevelName;
+      if (grade.startsWith('道')) {
+        mult = 1.4;
+      } else if (grade.startsWith('圣')) {
+        mult = 1.2;
+      } else if (grade.startsWith('灵')) {
+        mult = 1.0;
+      } else if (grade.startsWith('凡')) {
+        mult = 0.8;
+      } else {
+        mult = 0.6;
+      }
+      expDelta = (expDelta * mult).round();
+      delta['exp'] = expDelta;
+    }
     state.strength += delta['strength']?.toInt() ?? 0;
     state.intelligence += delta['intelligence']?.toInt() ?? 0;
     state.charm += delta['charm']?.toInt() ?? 0;

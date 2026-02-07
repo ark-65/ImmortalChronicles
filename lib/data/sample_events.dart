@@ -176,7 +176,7 @@ const sampleEvents = <LifeEventConfig>[
     description: '家族长老决定开始教你修炼。',
     worlds: [World.mortal, World.immortal],
     minAge: 5,
-    maxAge: 5,
+    maxAge: 8,
     conditions: {'chance': 0.8},
     prerequisites: ['root_awakened', 'cultivation_started'],
     effects: {
@@ -202,7 +202,6 @@ const sampleEvents = <LifeEventConfig>[
         label: '继续玩耍',
         effects: {
           'delta': {'charm': 1},
-          'age': 1,
         },
       ),
     ],
@@ -219,6 +218,7 @@ const sampleEvents = <LifeEventConfig>[
       'age': 0,
       'unlockLiteracy': true,
       'talentLevelName': '已觉醒',
+      'realm': '炼气',
       'log': '体内灵根被激活，修炼之路由此开启。'
     },
     choices: [
@@ -465,6 +465,115 @@ const sampleEvents = <LifeEventConfig>[
       ),
     ],
     weight: 2,
+  ),
+  LifeEventConfig(
+    id: 'clan_secret_realm',
+    title: '族中秘境邀约',
+    description: '长老发现隐匿洞府，挑选年轻一辈前去探索。',
+    worlds: [World.mortal, World.immortal],
+    minAge: 16,
+    maxAge: 40,
+    prerequisites: ['root_awakened'],
+    conditions: {'chance': 0.05, 'chanceLuckBoost': 0.1},
+    effects: {'age': 0},
+    choices: [
+      LifeEventChoice(
+        id: 'stay_safe',
+        label: '谨慎为妙',
+        effects: {
+          'delta': {'intelligence': 1, 'exp': 10},
+          'log': '你选择留守后方，帮忙记录阵纹，收获些许感悟。'
+        },
+      ),
+      LifeEventChoice(
+        id: 'explore',
+        label: '前去探索',
+        effects: {
+          'delta': {'strength': 1, 'luck': 1, 'exp': 30},
+          'log': '你随队深入洞府，避开陷阱并取得一块灵矿。'
+        },
+      ),
+    ],
+    weight: 2,
+  ),
+  LifeEventConfig(
+    id: 'sect_trial_invite',
+    title: '宗门外门试炼',
+    description: '师门发出试炼令，要求弟子前往秘地历练。',
+    worlds: [World.mortal, World.immortal],
+    minAge: 15,
+    maxAge: 60,
+    prerequisites: ['sect_accepted', 'cultivation_started'],
+    conditions: {'chance': 0.08, 'chanceLuckBoost': 0.08},
+    effects: {'age': 0},
+    choices: [
+      LifeEventChoice(
+        id: 'decline',
+        label: '申请暂缓',
+        effects: {
+          'delta': {'charm': -1},
+          'log': '你以闭关为由推迟试炼，师兄眼神复杂。'
+        },
+      ),
+      LifeEventChoice(
+        id: 'join',
+        label: '报名参加',
+        effects: {
+          'delta': {'exp': 35, 'luck': 1},
+          'log': '你与同门协作完成任务，获得了一枚灵符奖励。'
+        },
+      ),
+      LifeEventChoice(
+        id: 'solo',
+        label: '独自闯荡',
+        effects: {
+          'delta': {'strength': 1, 'intelligence': 1, 'exp': 45},
+          'log': '你独自完成试炼，虽受点伤，但收获巨大。'
+        },
+      ),
+    ],
+    weight: 2,
+  ),
+
+  // 成年日常（按世界拆分）
+  LifeEventConfig(
+    id: 'mortal_daily_cultivate',
+    title: '日常修炼',
+    description: '你在凡界静心打坐，巩固根基。',
+    worlds: [World.mortal],
+    minAge: 13,
+    prerequisites: ['cultivation_started', 'root_awakened'],
+    conditions: {'chance': 0.6, 'chanceLuckBoost': 0.05},
+    effects: {
+      'age': 0,
+      'delta': {'exp': 15, 'intelligence': 1}
+    },
+  ),
+  LifeEventConfig(
+    id: 'immortal_daily_cultivate',
+    title: '仙界吐纳',
+    description: '仙气汇聚，你调息运转，法力更稳。',
+    worlds: [World.immortal],
+    minAge: 13,
+    prerequisites: ['cultivation_started', 'root_awakened'],
+    conditions: {'chance': 0.7, 'chanceLuckBoost': 0.05},
+    effects: {
+      'age': 0,
+      'delta': {'exp': 15, 'intelligence': 1}
+    },
+  ),
+  LifeEventConfig(
+    id: 'nether_daily_survive',
+    title: '魔界苟活',
+    description: '魔气侵蚀，你谨慎行事以求生。',
+    worlds: [World.nether],
+    minAge: 13,
+    conditions: {'chance': 0.7, 'chanceLuckBoost': 0.05},
+    effects: {
+      'age': 0,
+      'delta': {'strength': 1, 'exp': 10},
+      'log': '你压低气息在阴沟穿行，躲过了一头魔兽。'
+    },
   ),
   // 普通/世俗家族宗门接引 12 岁（顶级家族不触发）
   LifeEventConfig(
@@ -843,20 +952,23 @@ const sampleEvents = <LifeEventConfig>[
   ),
   LifeEventConfig(
     id: 'immortal_retreat',
-    title: '闭关修炼',
-    description: '灵气充裕，你潜心修行。',
+    title: '仙界修行',
+    description: '仙气萦绕，你可以闭关、游赏或出门历练。',
     worlds: [World.immortal],
     minAge: 6,
     maxAge: 1200,
-    prerequisites: ['cultivation_started'],
+    prerequisites: ['cultivation_started', 'root_awakened'],
     effects: {
       'delta': {'intelligence': 2, 'strength': 1}
     },
     choices: [
       LifeEventChoice(
           id: 'focus_qi',
-          label: '专注吐纳',
-          effects: {'delta': {'intelligence': 2, 'exp': 20}}),
+          label: '闭关修炼',
+          effects: {
+            'delta': {'intelligence': 2, 'exp': 40},
+            'log': '你闭关数日，仙气灌体，功法运转更顺畅。'
+          }),
       LifeEventChoice(
           id: 'body_train',
           label: '锤炼体魄',
@@ -865,9 +977,48 @@ const sampleEvents = <LifeEventConfig>[
             'log': '你负重奔跑、挥舞重剑，汗水浸透衣衫，筋骨更坚韧。',
           }),
       LifeEventChoice(
-          id: 'observe_cloud',
-          label: '观云悟道',
-          effects: {'delta': {'luck': 1, 'intelligence': 1, 'exp': 10}}),
+          id: 'wander',
+          label: '出门探索',
+          effects: {
+            'pendingEvents': ['immortal_explore_random'],
+            'log': '你决定走出洞府，看看山川与坊市的风云。'
+          }),
+    ],
+    weight: 2,
+  ),
+
+  LifeEventConfig(
+    id: 'immortal_explore_random',
+    title: '仙界游历',
+    description: '你踏出洞府，决定在仙界各处行走。',
+    worlds: [World.immortal],
+    prerequisites: ['cultivation_started', 'root_awakened'],
+    effects: {'age': 0},
+    choices: [
+      LifeEventChoice(
+        id: 'mountain_hunt',
+        label: '入山猎妖',
+        effects: {
+          'delta': {'strength': 1, 'exp': 25},
+          'log': '你深入仙山斩杀低阶妖兽，收获灵材与历练。'
+        },
+      ),
+      LifeEventChoice(
+        id: 'market',
+        label: '逛仙坊市',
+        effects: {
+          'delta': {'charm': 1, 'exp': 12},
+          'log': '你在坊市与仙人讨价还价，见识了稀罕法宝。'
+        },
+      ),
+      LifeEventChoice(
+        id: 'secret_forest',
+        label: '探幽灵林',
+        effects: {
+          'delta': {'luck': 1, 'intelligence': 1, 'exp': 18},
+          'log': '灵林雾气缭绕，你避过机关，顺手采得灵药。'
+        },
+      ),
     ],
     weight: 2,
   ),
@@ -943,11 +1094,11 @@ const sampleEvents = <LifeEventConfig>[
   ),
   LifeEventConfig(
     id: 'immortal_fallback',
-    title: '仙界修行',
-    description: '仙气萦绕，岁月如梭。',
+    title: '仙界闲居',
+    description: '你随族中长辈在仙山间日常起居，未涉修行。',
     worlds: [World.immortal],
     minAge: 3,
-    effects: {'age': 1},
+    effects: {'age': 0},
     choices: [
       LifeEventChoice(
         id: 'meditate',
@@ -968,3 +1119,37 @@ const sampleEvents = <LifeEventConfig>[
     ],
   ),
 ];
+
+/// 简易分表过滤（仍使用同一常量表）。后续可替换为独立 JSON/YAML 装载。
+List<LifeEventConfig> tableAge0to3() => sampleEvents
+    .where((e) => (e.minAge ?? 0) <= 3 && (e.maxAge ?? 2000) >= 0)
+    .toList();
+
+List<LifeEventConfig> tableAge4to6() => sampleEvents
+    .where((e) => (e.minAge ?? 0) <= 6 && (e.maxAge ?? 2000) >= 4)
+    .toList();
+
+List<LifeEventConfig> tableAge7to12() => sampleEvents
+    .where((e) => (e.minAge ?? 0) <= 12 && (e.maxAge ?? 2000) >= 7)
+    .toList();
+
+List<LifeEventConfig> tableAge13to18() => sampleEvents
+    .where((e) => (e.minAge ?? 0) <= 18 && (e.maxAge ?? 2000) >= 13)
+    .toList();
+
+List<LifeEventConfig> tableClanChance() =>
+    sampleEvents.where((e) => e.id.startsWith('clan_')).toList();
+
+List<LifeEventConfig> tableSectChance() =>
+    sampleEvents.where((e) => e.id.startsWith('sect_')).toList();
+
+List<LifeEventConfig> tableWorldDaily(World world) => sampleEvents.where((e) {
+      switch (world) {
+        case World.mortal:
+          return e.id.startsWith('mortal_daily_');
+        case World.immortal:
+          return e.id.startsWith('immortal_daily_');
+        case World.nether:
+          return e.id.startsWith('nether_daily_');
+      }
+    }).toList();

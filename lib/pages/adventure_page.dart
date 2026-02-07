@@ -336,8 +336,22 @@ class _AdventurePageState extends State<AdventurePage> {
       ],
     );
 
+    String worldLabel = switch (state.world) {
+      World.immortal => '仙界',
+      World.nether => '魔界',
+      World.mortal => '人界',
+    };
+    String regionLabel = switch (state.region) {
+      Region.xian => '仙域',
+      Region.sheng => '圣域',
+      Region.shen => '神域',
+      Region.ling => '灵域',
+      Region.mo => '魔域',
+      Region.ren => '人域',
+    };
+
     final status = Text(
-      '${state.name}｜${state.world.name}/${state.region.name}｜${state.age}岁｜AP ${state.ap}',
+      '${state.name}｜$worldLabel/$regionLabel｜${state.age}岁｜AP ${state.ap}',
       style: Theme.of(context).textTheme.titleMedium,
     );
 

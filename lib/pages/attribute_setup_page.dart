@@ -14,6 +14,10 @@ FamilyTemplate _pickFamilyTemplate(int familyScore) {
   List<FamilyTemplate> byTier(String tier) =>
       familyTemplates.where((f) => f.tier == tier).toList();
 
+  if (score == 100) {
+    final pool = rng.nextDouble() < 0.3 ? byTier('霸主') : byTier('圣地');
+    if (pool.isNotEmpty) return pool[rng.nextInt(pool.length)];
+  }
   if (score >= 95) {
     final pool = rng.nextDouble() < 0.2 ? byTier('霸主') : byTier('圣地');
     if (pool.isNotEmpty) return pool[rng.nextInt(pool.length)];
@@ -111,8 +115,17 @@ class _AttributeSetupPageState extends State<AttributeSetupPage> {
     final talentHint =
         '当前五维：力${state.strength}/智${state.intelligence}/魅${state.charm}/运${state.luck}/家${state.family}';
 
-    final clanInfo = state.familyTemplateId != null
-        ? '家族偏好：${state.familyTemplateId}'
+    String? familyName;
+    if (state.familyTemplateId != null) {
+      final tpl = familyTemplates.firstWhere(
+        (f) => f.id == state.familyTemplateId,
+        orElse: () => familyTemplates.first,
+      );
+      familyName = tpl.name;
+    }
+
+    final clanInfo = familyName != null
+        ? '家族传承：$familyName'
         : '家族底蕴尚未显露';
 
     final desc =
@@ -151,6 +164,8 @@ class _AttributeSetupPageState extends State<AttributeSetupPage> {
       region: region,
     );
     state.familyTemplateId = template.id;
+    // 强制排程 6 岁灵根检测，确保不会错过觉醒窗口
+    state.pendingEvents.add('age_6_root_test');
     state.ap = state.apPerYear;
     state.lifeEvents.add(_buildBirthIntro(state));
     Navigator.of(context).pushReplacement(
