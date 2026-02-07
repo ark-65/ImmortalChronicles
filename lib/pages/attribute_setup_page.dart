@@ -95,7 +95,7 @@ class _AttributeSetupPageState extends State<AttributeSetupPage> {
         : '家族底蕴尚未显露';
 
     final desc =
-        '你降生在$regionName 的 $familyTier。家族疆域${clanSize}，父母为$parentRealm，庇护你度过最初岁月。'
+        '你降生在$regionName 的 $familyTier。家族疆域$clanSize，父母为$parentRealm，庇护你度过最初岁月。'
         '父亲是${parentRoles.father}，母亲是${parentRoles.mother}。'
         '出身决定了你的起跑线，但未来仍要靠自己积累。$luckDesc。$talentHint。$clanInfo。';
 

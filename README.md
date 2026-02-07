@@ -31,3 +31,7 @@ flutter test             # 运行现有组件测试
 ## 开发者须知
 - Dart SDK: `^3.10.8`（参见 `pubspec.yaml`）
 - 遵循 Flutter 官方最佳实践，更多参考：[Flutter 文档](https://docs.flutter.dev/)
+
+## 版权与授权
+- 本项目基于 Apache License 2.0 发布，详情见 `LICENSE`。
+- 使用、修改或再分发时需注明原作者 “ark-65” 并附上仓库地址：https://github.com/ark-65/ImmortalChronicles（详见 `NOTICE`）。

@@ -213,7 +213,7 @@ const sampleEvents = <LifeEventConfig>[
     minAge: 6,
     maxAge: 6,
     conditions: {'unique': true},
-    effects: {'age': 0},
+    effects: {'age': 0, 'unlockLiteracy': true},
     choices: [
       LifeEventChoice(
         id: 'high_profile',
@@ -246,7 +246,7 @@ const sampleEvents = <LifeEventConfig>[
     worlds: [World.mortal, World.immortal],
     minAge: 7,
     maxAge: 7,
-    effects: {'age': 0},
+    effects: {'age': 0, 'unlockLiteracy': true},
     choices: [
       LifeEventChoice(
         id: 'history',
@@ -463,7 +463,7 @@ const sampleEvents = <LifeEventConfig>[
     worlds: [World.mortal, World.immortal],
     minAge: 13,
     maxAge: 25,
-    conditions: {'needsLiteracy': true},
+    conditions: {'needsLiteracy': true, 'needsCultivation': true},
     effects: {'age': 0},
     choices: [
       LifeEventChoice(
