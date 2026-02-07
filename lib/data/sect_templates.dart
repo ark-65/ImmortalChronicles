@@ -1,22 +1,7 @@
-class SectTemplate {
-  final String id;
-  final String name;
-  final List<String> elements;
-  final List<String> specialties;
-  final List<String> weapons;
-  final String tier;
+import '../models/sect_template.dart';
 
-  const SectTemplate({
-    required this.id,
-    required this.name,
-    required this.elements,
-    required this.specialties,
-    this.weapons = const [],
-    required this.tier,
-  });
-}
-
-const sectTemplates = <SectTemplate>[
+/// 回退用宗门模板（无资产时）
+const sectTemplatesFallback = <SectTemplate>[
   SectTemplate(
     id: 'overlord_sect_0',
     name: '天道殿',
@@ -698,4 +683,3 @@ const sectTemplates = <SectTemplate>[
     tier: '人',
   ),
 ];
-

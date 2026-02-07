@@ -212,7 +212,7 @@ class _AdventurePageState extends State<AdventurePage> {
       skipAgeInEvent = true;
     }
 
-    final event = engine.pickEvent(state);
+    final event = await engine.pickEvent(state);
     if (event.choices.isNotEmpty) {
       pendingChoiceEvent = event;
       lastEvent = event;

@@ -4,15 +4,18 @@ import 'dart:math';
 import '../models/models.dart';
 import '../services/storage_service.dart';
 import 'adventure_page.dart';
-import '../data/family_templates.dart';
 import '../data/parent_roles.dart';
+import '../data/reference_repository.dart';
+
+final _refRepo = ReferenceRepository();
 
 FamilyTemplate _pickFamilyTemplate(int familyScore) {
+  final families = _refRepo.families;
   final score = (familyScore * 5).clamp(0, 100);
   final rng = Random();
 
   List<FamilyTemplate> byTier(String tier) =>
-      familyTemplates.where((f) => f.tier == tier).toList();
+      families.where((f) => f.tier == tier).toList();
 
   if (score == 100) {
     final pool = rng.nextDouble() < 0.3 ? byTier('霸主') : byTier('圣地');
@@ -38,13 +41,13 @@ FamilyTemplate _pickFamilyTemplate(int familyScore) {
     final pool = byTier('人');
     if (pool.isNotEmpty) return pool[rng.nextInt(pool.length)];
   }
-  final mundanePool = familyTemplates
+  final mundanePool = families
       .where((f) =>
           ['一品', '二品', '三品', '四品', '五品', '六品', '七品', '八品', '九品']
               .contains(f.tier))
       .toList();
   if (mundanePool.isNotEmpty) return mundanePool[rng.nextInt(mundanePool.length)];
-  return familyTemplates.first;
+  return families.first;
 }
 
 class AttributeSetupPage extends StatefulWidget {
@@ -65,6 +68,12 @@ class _AttributeSetupPageState extends State<AttributeSetupPage> {
 
   int get used => strength + intelligence + charm + luck + family;
   int get remain => totalPoints - used;
+
+  @override
+  void initState() {
+    super.initState();
+    _refRepo.ensureLoaded(); // 异步预加载资产，失败则回落内置数据
+  }
 
   LifeEventEntry _buildBirthIntro(PlayerState state) {
     String regionName = switch (state.region) {
@@ -117,9 +126,9 @@ class _AttributeSetupPageState extends State<AttributeSetupPage> {
 
     String? familyName;
     if (state.familyTemplateId != null) {
-      final tpl = familyTemplates.firstWhere(
+      final tpl = _refRepo.families.firstWhere(
         (f) => f.id == state.familyTemplateId,
-        orElse: () => familyTemplates.first,
+        orElse: () => _refRepo.families.first,
       );
       familyName = tpl.name;
     }
@@ -164,6 +173,7 @@ class _AttributeSetupPageState extends State<AttributeSetupPage> {
       region: region,
     );
     state.familyTemplateId = template.id;
+    state.currentMapId = _refRepo.defaultMapFor(state.world).id;
     // 强制排程 6 岁灵根检测，确保不会错过觉醒窗口
     state.pendingEvents.add('age_6_root_test');
     state.ap = state.apPerYear;

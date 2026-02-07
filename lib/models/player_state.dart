@@ -33,6 +33,7 @@ class PlayerState {
   int seed;
   String? familyTemplateId;
   String? sectId;
+  String? currentMapId;
 
   int get familyScore => (family * 5).clamp(0, 100);
 
@@ -73,6 +74,7 @@ class PlayerState {
     this.ending,
     this.familyTemplateId,
     this.sectId,
+    this.currentMapId,
   });
 
   factory PlayerState.newGame({
@@ -112,6 +114,7 @@ class PlayerState {
       seed: seed,
       familyTemplateId: null,
       sectId: null,
+      currentMapId: null,
     )..ap = 1;
   }
 
@@ -142,6 +145,7 @@ class PlayerState {
         'seed': seed,
         'familyTemplateId': familyTemplateId,
         'sectId': sectId,
+        'currentMapId': currentMapId,
       };
 
   factory PlayerState.fromJson(Map<String, dynamic> json) => PlayerState(
@@ -187,5 +191,6 @@ class PlayerState {
         seed: json['seed'] ?? Random().nextInt(1 << 31),
         familyTemplateId: json['familyTemplateId'],
         sectId: json['sectId'],
+        currentMapId: json['currentMapId'],
       );
 }

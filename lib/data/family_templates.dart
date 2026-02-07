@@ -1,7 +1,7 @@
 import '../models/family_template.dart';
 
-
-const familyTemplates = <FamilyTemplate>[
+/// 回退用家族模板（无资产时）
+const familyTemplatesFallback = <FamilyTemplate>[
   FamilyTemplate(
     id: 'guzu',
     name: '古族',

@@ -14,4 +14,22 @@ class FamilyTemplate {
     required this.coreTechniques,
     required this.tier,
   });
+
+  factory FamilyTemplate.fromJson(Map<String, dynamic> json) => FamilyTemplate(
+        id: json['id'] ?? '',
+        name: json['name'] ?? '',
+        elements: List<String>.from(json['elements'] ?? const []),
+        weapons: List<String>.from(json['weapons'] ?? const []),
+        coreTechniques: List<String>.from(json['coreTechniques'] ?? const []),
+        tier: json['tier'] ?? '',
+      );
+
+  Map<String, dynamic> toJson() => {
+        'id': id,
+        'name': name,
+        'elements': elements,
+        'weapons': weapons,
+        'coreTechniques': coreTechniques,
+        'tier': tier,
+      };
 }

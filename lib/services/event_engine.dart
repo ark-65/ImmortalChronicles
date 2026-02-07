@@ -1,25 +1,29 @@
 import 'dart:math';
 
 import '../models/models.dart';
-import '../data/sample_events.dart';
-import '../data/technique_pool.dart';
 import '../data/stages.dart';
-import '../data/family_templates.dart';
-import '../data/sect_templates.dart';
+import '../data/event_repository.dart';
+import '../data/reference_repository.dart';
 
 class EventEngine {
   final Random rng;
+  final EventRepository repo;
+  final ReferenceRepository refRepo;
 
-  EventEngine(int seed) : rng = Random(seed);
+  EventEngine(int seed)
+      : rng = Random(seed),
+        repo = EventRepository(),
+        refRepo = ReferenceRepository();
 
-  LifeEventConfig pickEvent(PlayerState state) {
+  Future<LifeEventConfig> pickEvent(PlayerState state) async {
+    await repo.ensureLoaded();
+    await refRepo.ensureLoaded();
     // pending first
     if (state.pendingEvents.isNotEmpty) {
       final pendingCount = state.pendingEvents.length;
       for (int i = 0; i < pendingCount; i++) {
         final pid = state.pendingEvents.removeAt(0);
-        final fromPending =
-            sampleEvents.firstWhere((e) => e.id == pid, orElse: () => fallback(state));
+        final fromPending = repo.byId(pid) ?? fallback(state);
         final ready = (fromPending.minAge == null || state.age >= fromPending.minAge!) &&
             (fromPending.maxAge == null || state.age <= fromPending.maxAge!) &&
             fromPending.worlds.contains(state.world) &&
@@ -57,8 +61,8 @@ class EventEngine {
         state.age >= 6 &&
         state.age <= 12 &&
         !state.lifeEvents.any((e) => e.id == 'age_6_root_test' || e.id == 'age_6_root_test_result')) {
-      final rootEvent = sampleEvents.firstWhere((e) => e.id == 'age_6_root_test');
-      return rootEvent;
+      final rootEvent = repo.byId('age_6_root_test');
+      if (rootEvent != null) return rootEvent;
     }
 
     final stage = currentStage(state.age);
@@ -66,22 +70,25 @@ class EventEngine {
 
     List<LifeEventConfig> agePool;
     if (state.age <= 3) {
-      agePool = tableAge0to3();
+      agePool = repo.tableAge0to3();
     } else if (state.age <= 6) {
-      agePool = tableAge4to6();
+      agePool = repo.tableAge4to6();
     } else if (state.age <= 12) {
-      agePool = tableAge7to12();
+      agePool = repo.tableAge7to12();
     } else if (state.age <= 18) {
-      agePool = tableAge13to18();
+      agePool = repo.tableAge13to18();
     } else {
-      agePool = sampleEvents;
+      // TODO: 日常/高阶表后续拆分
+      agePool = repo.table('mortal_daily') +
+          repo.table('immortal_daily') +
+          repo.table('nether_daily');
     }
     // 合并家族/宗门机缘表
     final mergedPool = [
       ...agePool,
-      ...tableClanChance(),
-      ...tableSectChance(),
-      ...tableWorldDaily(state.world),
+      ...repo.tableClanChance(),
+      ...repo.tableSectChance(),
+      ...repo.tableWorldDaily(state.world),
     ];
     final seen = <String>{};
     final uniquePool = mergedPool.where((e) => seen.add(e.id)).toList();
@@ -136,7 +143,7 @@ class EventEngine {
     if (candidates.isEmpty) {
       // 若已觉醒且在修炼，强制提供当前世界日常修炼/苟活事件作为兜底
       if (state.talentLevelName != '未知' && state.realm != '无') {
-        final daily = tableWorldDaily(state.world);
+        final daily = repo.tableWorldDaily(state.world);
         if (daily.isNotEmpty) return daily[rng.nextInt(daily.length)];
       }
       return fallback(state);
@@ -151,30 +158,45 @@ class EventEngine {
     return candidates.first;
   }
 
-  LifeEventConfig fallback(PlayerState state) => sampleEvents
-      .firstWhere((e) => e.id == '${state.world.name}_fallback', orElse: () => sampleEvents.first);
+  LifeEventConfig fallback(PlayerState state) {
+    final byKey = repo.byId('${state.world.name}_fallback');
+    if (byKey != null) return byKey;
+    final daily = repo.tableWorldDaily(state.world);
+    if (daily.isNotEmpty) return daily[rng.nextInt(daily.length)];
+    // 最后的兜底：任意已有事件或一个默认占位
+    if (repo.byId('mortal_fallback') != null) {
+      return repo.byId('mortal_fallback')!;
+    }
+    return LifeEventConfig(
+      id: 'empty_fallback',
+      title: '平平无奇的一年',
+      description: '什么都没发生。',
+      worlds: [state.world],
+      effects: const {'age': 1},
+    );
+  }
 
   SectTemplate _randomSectFor(World world) {
     List<SectTemplate> pool;
     switch (world) {
       case World.immortal:
-        pool = sectTemplates.where((s) => s.tier == '圣地' || s.tier == '霸主').toList();
+        pool = refRepo.sects.where((s) => s.tier == '圣地' || s.tier == '霸主').toList();
         break;
       case World.mortal:
-        pool = sectTemplates.where((s) => s.tier == '天' || s.tier == '地' || s.tier == '人').toList();
+        pool = refRepo.sects.where((s) => s.tier == '天' || s.tier == '地' || s.tier == '人').toList();
         break;
       case World.nether:
-        pool = sectTemplates; // 简化：魔界也允许全表
+        pool = refRepo.sects; // 简化：魔界也允许全表
         break;
     }
-    if (pool.isEmpty) pool = sectTemplates;
+    if (pool.isEmpty) pool = refRepo.sects;
     return pool[rng.nextInt(pool.length)];
   }
 
   FamilyTemplate? _currentFamilyTemplate(PlayerState state) {
     if (state.familyTemplateId == null) return null;
-    return familyTemplates
-        .firstWhere((f) => f.id == state.familyTemplateId, orElse: () => familyTemplates.first);
+    return refRepo.families
+        .firstWhere((f) => f.id == state.familyTemplateId, orElse: () => refRepo.families.first);
   }
 
   double _tierBonus(String? tier) {
@@ -214,8 +236,8 @@ class EventEngine {
 
   SectTemplate? _currentSect(PlayerState state) {
     if (state.sectId == null) return null;
-    return sectTemplates
-        .firstWhere((s) => s.id == state.sectId, orElse: () => sectTemplates.first);
+    return refRepo.sects
+        .firstWhere((s) => s.id == state.sectId, orElse: () => refRepo.sects.first);
   }
 
   Technique _pickTechniqueWithTier(double tierBonus) {
@@ -231,7 +253,7 @@ class EventEngine {
     weights[TechniqueGrade.sheng] = weights[TechniqueGrade.sheng]! * (1 + tierBonus * 5);
     weights[TechniqueGrade.dao] = weights[TechniqueGrade.dao]! * (1 + tierBonus * 8);
     weights[TechniqueGrade.xian] = weights[TechniqueGrade.xian]! * (1 + tierBonus * 3);
-    final pool = allTechPool();
+    final pool = refRepo.techniques;
     final total = pool.fold<double>(0, (s, t) => s + (weights[t.grade] ?? 1));
     double roll = rng.nextDouble() * total;
     for (final t in pool) {
@@ -415,7 +437,10 @@ class EventEngine {
         state.region = Region.mo;
       } else {
         state.world = World.mortal;
+        state.region = Region.ren;
       }
+      // 世界跃迁后重置默认地图
+      state.currentMapId = refRepo.defaultMapFor(state.world).id;
     }
 
     if (mergedEffects['ending'] != null) {

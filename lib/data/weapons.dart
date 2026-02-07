@@ -8,10 +8,22 @@ class WeaponType {
     required this.description,
     this.examples = const [],
   });
+
+  factory WeaponType.fromJson(Map<String, dynamic> json) => WeaponType(
+        name: json['name'] ?? '',
+        description: json['description'] ?? '',
+        examples: List<String>.from(json['examples'] ?? const []),
+      );
+
+  Map<String, dynamic> toJson() => {
+        'name': name,
+        'description': description,
+        'examples': examples,
+      };
 }
 
 /// 常见武器大类（中式修真向）
-const weaponTypes = <WeaponType>[
+const weaponTypesFallback = <WeaponType>[
   WeaponType(
     name: '刀',
     description: '单刃劈砍武器，爆发力强，适合贴身与破甲。',
@@ -113,4 +125,3 @@ const weaponTypes = <WeaponType>[
     examples: ['强弓', '连发弩'],
   ),
 ];
-
