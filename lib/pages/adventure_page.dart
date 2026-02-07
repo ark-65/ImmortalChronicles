@@ -212,7 +212,7 @@ class _AdventurePageState extends State<AdventurePage> {
       skipAgeInEvent = true;
     }
 
-    final event = engine.pickEvent(state);
+    final event = await engine.pickEvent(state);
     if (event.choices.isNotEmpty) {
       pendingChoiceEvent = event;
       lastEvent = event;
@@ -241,11 +241,7 @@ class _AdventurePageState extends State<AdventurePage> {
       // 每突破小境界增加寿元：用 maxLifespan 由 realmLifespan 直接体现；此处不额外加龄
     }
 
-    // auto ending when age>=120 safeguard
-    if (state.age >= 120 && state.ending == null) {
-      state.ending = '寿终正寝';
-      state.alive = false;
-    }
+    // 移除被动跳年的副作用：只有 forceNextYear 时才增龄
 
     await _persist();
     if (!mounted) return;
@@ -340,8 +336,22 @@ class _AdventurePageState extends State<AdventurePage> {
       ],
     );
 
+    String worldLabel = switch (state.world) {
+      World.immortal => '仙界',
+      World.nether => '魔界',
+      World.mortal => '人界',
+    };
+    String regionLabel = switch (state.region) {
+      Region.xian => '仙域',
+      Region.sheng => '圣域',
+      Region.shen => '神域',
+      Region.ling => '灵域',
+      Region.mo => '魔域',
+      Region.ren => '人域',
+    };
+
     final status = Text(
-      '${state.name}｜${state.world.name}/${state.region.name}｜${state.age}岁｜AP ${state.ap}',
+      '${state.name}｜$worldLabel/$regionLabel｜${state.age}岁｜AP ${state.ap}',
       style: Theme.of(context).textTheme.titleMedium,
     );
 

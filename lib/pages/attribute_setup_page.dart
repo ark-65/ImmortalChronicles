@@ -1,25 +1,53 @@
 import 'package:flutter/material.dart';
+import 'dart:math';
 
 import '../models/models.dart';
 import '../services/storage_service.dart';
 import 'adventure_page.dart';
-import '../data/family_templates.dart';
 import '../data/parent_roles.dart';
+import '../data/reference_repository.dart';
 
-class _FamilyPick {
-  final FamilyTemplate template;
-  _FamilyPick(this.template);
+final _refRepo = ReferenceRepository();
 
-  String? get id => null;
+FamilyTemplate _pickFamilyTemplate(int familyScore) {
+  final families = _refRepo.families;
+  final score = (familyScore * 5).clamp(0, 100);
+  final rng = Random();
 
-  static _FamilyPick fromScore(int familyScore) {
-    if (familyScore >= 90) return _FamilyPick(familyTemplates[0]); // fire
-    if (familyScore >= 70) return _FamilyPick(familyTemplates[2]); // ice sword
-    if (familyScore >= 50) return _FamilyPick(familyTemplates[1]); // wood pill
-    if (familyScore >= 30) return _FamilyPick(familyTemplates[3]); // wind blade
-    if (familyScore >= 10) return _FamilyPick(familyTemplates[4]); // thunder war
-    return _FamilyPick(familyTemplates[5]); // shadow
+  List<FamilyTemplate> byTier(String tier) =>
+      families.where((f) => f.tier == tier).toList();
+
+  if (score == 100) {
+    final pool = rng.nextDouble() < 0.3 ? byTier('霸主') : byTier('圣地');
+    if (pool.isNotEmpty) return pool[rng.nextInt(pool.length)];
   }
+  if (score >= 95) {
+    final pool = rng.nextDouble() < 0.2 ? byTier('霸主') : byTier('圣地');
+    if (pool.isNotEmpty) return pool[rng.nextInt(pool.length)];
+  }
+  if (score >= 90) {
+    final pool = byTier('圣地');
+    if (pool.isNotEmpty) return pool[rng.nextInt(pool.length)];
+  }
+  if (score >= 70) {
+    final pool = byTier('天');
+    if (pool.isNotEmpty) return pool[rng.nextInt(pool.length)];
+  }
+  if (score >= 50) {
+    final pool = byTier('地');
+    if (pool.isNotEmpty) return pool[rng.nextInt(pool.length)];
+  }
+  if (score >= 30) {
+    final pool = byTier('人');
+    if (pool.isNotEmpty) return pool[rng.nextInt(pool.length)];
+  }
+  final mundanePool = families
+      .where((f) =>
+          ['一品', '二品', '三品', '四品', '五品', '六品', '七品', '八品', '九品']
+              .contains(f.tier))
+      .toList();
+  if (mundanePool.isNotEmpty) return mundanePool[rng.nextInt(mundanePool.length)];
+  return families.first;
 }
 
 class AttributeSetupPage extends StatefulWidget {
@@ -40,6 +68,12 @@ class _AttributeSetupPageState extends State<AttributeSetupPage> {
 
   int get used => strength + intelligence + charm + luck + family;
   int get remain => totalPoints - used;
+
+  @override
+  void initState() {
+    super.initState();
+    _refRepo.ensureLoaded(); // 异步预加载资产，失败则回落内置数据
+  }
 
   LifeEventEntry _buildBirthIntro(PlayerState state) {
     String regionName = switch (state.region) {
@@ -90,12 +124,21 @@ class _AttributeSetupPageState extends State<AttributeSetupPage> {
     final talentHint =
         '当前五维：力${state.strength}/智${state.intelligence}/魅${state.charm}/运${state.luck}/家${state.family}';
 
-    final clanInfo = state.familyTemplateId != null
-        ? '家族偏好：${state.familyTemplateId}'
+    String? familyName;
+    if (state.familyTemplateId != null) {
+      final tpl = _refRepo.families.firstWhere(
+        (f) => f.id == state.familyTemplateId,
+        orElse: () => _refRepo.families.first,
+      );
+      familyName = tpl.name;
+    }
+
+    final clanInfo = familyName != null
+        ? '家族传承：$familyName'
         : '家族底蕴尚未显露';
 
     final desc =
-        '你降生在$regionName 的 $familyTier。家族疆域${clanSize}，父母为$parentRealm，庇护你度过最初岁月。'
+        '你降生在$regionName 的 $familyTier。家族疆域$clanSize，父母为$parentRealm，庇护你度过最初岁月。'
         '父亲是${parentRoles.father}，母亲是${parentRoles.mother}。'
         '出身决定了你的起跑线，但未来仍要靠自己积累。$luckDesc。$talentHint。$clanInfo。';
 
@@ -117,7 +160,7 @@ class _AttributeSetupPageState extends State<AttributeSetupPage> {
             ? Region.ling
             : Region.ren;
     // pick family template
-    final template = _pickFamilyTemplate(family);
+    final template = _pickFamilyTemplateForUi(family);
     final state = PlayerState.newGame(
       name: _nameController.text.isEmpty ? '无名氏' : _nameController.text,
       strength: strength,
@@ -130,6 +173,9 @@ class _AttributeSetupPageState extends State<AttributeSetupPage> {
       region: region,
     );
     state.familyTemplateId = template.id;
+    state.currentMapId = _refRepo.defaultMapFor(state.world).id;
+    // 强制排程 6 岁灵根检测，确保不会错过觉醒窗口
+    state.pendingEvents.add('age_6_root_test');
     state.ap = state.apPerYear;
     state.lifeEvents.add(_buildBirthIntro(state));
     Navigator.of(context).pushReplacement(
@@ -140,10 +186,8 @@ class _AttributeSetupPageState extends State<AttributeSetupPage> {
   }
 
   // simple deterministic pick based on family to ensure reproducible
-  _FamilyPick _pickFamilyTemplate(int familyScore) {
-    final score = (familyScore * 5).clamp(0, 100);
-    return _FamilyPick.fromScore(score);
-  }
+  FamilyTemplate _pickFamilyTemplateForUi(int familyScore) =>
+      _pickFamilyTemplate(familyScore);
 
   void _loadLast() async {
     final stored = await StorageService().load();

@@ -1,26 +1,26 @@
-class FamilyTemplate {
+class SectTemplate {
   final String id;
   final String name;
   final List<String> elements;
+  final List<String> specialties;
   final List<String> weapons;
-  final List<String> coreTechniques;
-  final String tier; // 霸主/圣地/天/地/人 或 下界一至九品
+  final String tier;
 
-  const FamilyTemplate({
+  const SectTemplate({
     required this.id,
     required this.name,
     required this.elements,
-    required this.weapons,
-    required this.coreTechniques,
+    required this.specialties,
+    this.weapons = const [],
     required this.tier,
   });
 
-  factory FamilyTemplate.fromJson(Map<String, dynamic> json) => FamilyTemplate(
+  factory SectTemplate.fromJson(Map<String, dynamic> json) => SectTemplate(
         id: json['id'] ?? '',
         name: json['name'] ?? '',
         elements: List<String>.from(json['elements'] ?? const []),
+        specialties: List<String>.from(json['specialties'] ?? const []),
         weapons: List<String>.from(json['weapons'] ?? const []),
-        coreTechniques: List<String>.from(json['coreTechniques'] ?? const []),
         tier: json['tier'] ?? '',
       );
 
@@ -28,8 +28,8 @@ class FamilyTemplate {
         'id': id,
         'name': name,
         'elements': elements,
+        'specialties': specialties,
         'weapons': weapons,
-        'coreTechniques': coreTechniques,
         'tier': tier,
       };
 }

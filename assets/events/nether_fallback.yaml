@@ -1,0 +1,32 @@
+-
+  id: "nether_fallback"
+  title: "魔界岁月"
+  description: "魔风呼啸，你苟活下来。"
+  worlds:
+    - "nether"
+  regions: null
+  minAge: 3
+  maxAge: null
+  conditions:
+
+  prerequisites:
+
+  effects:
+    age: 1
+  choices:
+    -
+      id: "hide"
+      label: "龟缩藏匿"
+      effects:
+        log: "你屏住呼吸躲过一劫，毫发无损。"
+      followup: null
+    -
+      id: "hunt"
+      label: "猎取魔兽"
+      effects:
+        delta:
+          strength: 1
+          exp: 5
+        log: "你搏杀弱小魔兽，换取了一些资源。"
+      followup: null
+  weight: 1

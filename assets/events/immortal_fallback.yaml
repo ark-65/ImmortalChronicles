@@ -1,0 +1,34 @@
+-
+  id: "immortal_fallback"
+  title: "仙界闲居"
+  description: "你随族中长辈在仙山间日常起居，未涉修行。"
+  worlds:
+    - "immortal"
+  regions: null
+  minAge: 3
+  maxAge: null
+  conditions:
+
+  prerequisites:
+
+  effects:
+    age: 0
+  choices:
+    -
+      id: "meditate"
+      label: "静心参悟"
+      effects:
+        delta:
+          intelligence: 1
+          exp: 8
+        log: "在仙山云雾中，你悟出一丝法理。"
+      followup: null
+    -
+      id: "stroll"
+      label: "游赏仙山"
+      effects:
+        delta:
+          charm: 1
+        log: "你在瑶池仙山漫步，心境澄明。"
+      followup: null
+  weight: 1
