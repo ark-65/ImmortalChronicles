@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:yaml/yaml.dart';
 
@@ -67,8 +68,11 @@ class ReferenceRepository {
         parser: (e) => Technique.fromJson(e),
         setter: (list) => techniques = list,
       );
+      debugPrint('[ReferenceRepository] assets loaded successfully');
     } catch (_) {
       // 忽略，保持回退数据
+      debugPrint(
+          '[ReferenceRepository] asset load failed，using fallback constants');
     } finally {
       _loaded = true;
     }
@@ -76,10 +80,15 @@ class ReferenceRepository {
 
   FamilyTemplate? familyById(String? id) =>
       families.firstWhere((f) => f.id == id, orElse: () => families.first);
-  SectTemplate? sectById(String? id) =>
-      sects.firstWhere((s) => s.id == id, orElse: () => null);
-  MapZone? mapById(String? id) =>
-      maps.firstWhere((m) => m.id == id, orElse: () => null);
+  SectTemplate? sectById(String? id) => sects.firstWhere(
+        (s) => s.id == id,
+        orElse: () =>
+            sects.isNotEmpty ? sects.first : sectTemplatesFallback.first,
+      );
+  MapZone? mapById(String? id) => maps.firstWhere(
+        (m) => m.id == id,
+        orElse: () => maps.isNotEmpty ? maps.first : mapZonesFallback.first,
+      );
 
   MapZone defaultMapFor(World world) {
     final list = maps.where((m) => m.world == world).toList();
@@ -87,24 +96,37 @@ class ReferenceRepository {
     return mapZonesFallback.first;
   }
 
-  Future<void> _loadCategory<T>(
+  Future<int> _loadCategory<T>(
     Iterable<String> assets, {
     required String prefix,
     required T Function(Map<String, dynamic>) parser,
     required void Function(List<T>) setter,
   }) async {
     final files = assets.where((p) => p.startsWith(prefix));
-    if (files.isEmpty) return;
+    if (files.isEmpty) {
+      debugPrint(
+          '[ReferenceRepository] no assets under $prefix, keep fallback');
+      return 0;
+    }
     final buffer = <T>[];
     for (final path in files) {
       final raw = await rootBundle.loadString(path);
-      final List<dynamic> list = path.endsWith('.yaml')
+      final bool isYaml = path.endsWith('.yaml') || path.endsWith('.yml');
+      final List<dynamic> list = isYaml
           ? (loadYaml(raw) as YamlList).toList()
           : (json.decode(raw) as List<dynamic>);
       buffer.addAll(list
           .map((e) => parser(Map<String, dynamic>.from(e)))
           .where((e) => e != null));
     }
-    if (buffer.isNotEmpty) setter(buffer);
+    if (buffer.isNotEmpty) {
+      setter(buffer);
+      debugPrint(
+          '[ReferenceRepository] loaded ${buffer.length} entries from $prefix');
+    } else {
+      debugPrint(
+          '[ReferenceRepository] parsed zero entries from $prefix, keep fallback');
+    }
+    return buffer.length;
   }
 }

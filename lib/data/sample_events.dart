@@ -14,18 +14,15 @@ const sampleEvents = <LifeEventConfig>[
       'unlockLiteracy': true,
     },
     choices: [
-      LifeEventChoice(
-          id: 'recite',
-          label: '背诵经文',
-          effects: {'delta': {'intelligence': 2}}),
-      LifeEventChoice(
-          id: 'question',
-          label: '向师长发问',
-          effects: {'delta': {'intelligence': 1, 'charm': 1}}),
-      LifeEventChoice(
-          id: 'skip',
-          label: '偷懒摸鱼',
-          effects: {'delta': {'luck': 1, 'intelligence': -1}}),
+      LifeEventChoice(id: 'recite', label: '背诵经文', effects: {
+        'delta': {'intelligence': 2}
+      }),
+      LifeEventChoice(id: 'question', label: '向师长发问', effects: {
+        'delta': {'intelligence': 1, 'charm': 1}
+      }),
+      LifeEventChoice(id: 'skip', label: '偷懒摸鱼', effects: {
+        'delta': {'luck': 1, 'intelligence': -1}
+      }),
     ],
     weight: 3,
   ),
@@ -38,27 +35,18 @@ const sampleEvents = <LifeEventConfig>[
     maxAge: 1,
     effects: {'age': 0},
     choices: [
-      LifeEventChoice(
-          id: 'ying',
-          label: '嘤嘤嘤',
-          effects: {
-            'delta': {'charm': 1},
-            'log': '你的软萌哭声让屋里的人心都化了。'
-          }),
-      LifeEventChoice(
-          id: 'wow',
-          label: '哇哇哇',
-          effects: {
-            'delta': {'family': 1},
-            'log': '娘听到哭声赶来喂食，顺手把你裹得暖暖的。'
-          }),
-      LifeEventChoice(
-          id: 'haha',
-          label: '哈哈哈',
-          effects: {
-            'delta': {'luck': 1},
-            'log': '开朗的笑声回荡，窗外一缕阳光正好洒在你身上。'
-          }),
+      LifeEventChoice(id: 'ying', label: '嘤嘤嘤', effects: {
+        'delta': {'charm': 1},
+        'log': '你的软萌哭声让屋里的人心都化了。'
+      }),
+      LifeEventChoice(id: 'wow', label: '哇哇哇', effects: {
+        'delta': {'family': 1},
+        'log': '娘听到哭声赶来喂食，顺手把你裹得暖暖的。'
+      }),
+      LifeEventChoice(id: 'haha', label: '哈哈哈', effects: {
+        'delta': {'luck': 1},
+        'log': '开朗的笑声回荡，窗外一缕阳光正好洒在你身上。'
+      }),
     ],
     weight: 5,
   ),
@@ -219,6 +207,7 @@ const sampleEvents = <LifeEventConfig>[
       'unlockLiteracy': true,
       'talentLevelName': '已觉醒',
       'realm': '炼气',
+      'pendingEvents': ['age_6_root_choice'],
       'log': '体内灵根被激活，修炼之路由此开启。'
     },
     choices: [
@@ -245,6 +234,37 @@ const sampleEvents = <LifeEventConfig>[
       ),
     ],
     weight: 6,
+  ),
+  LifeEventConfig(
+    id: 'age_6_root_choice',
+    title: '灵根觉醒后的抉择',
+    description: '灵根已显，你可以开始修炼，也可以选择安稳一生。',
+    worlds: [World.mortal, World.immortal],
+    minAge: 6,
+    maxAge: 12,
+    prerequisites: ['root_awakened'],
+    conditions: {'unique': true},
+    effects: {'age': 0},
+    choices: [
+      LifeEventChoice(
+        id: 'cultivate_path',
+        label: '学习家族功法，踏上修行之路',
+        effects: {
+          'canCultivate': true,
+          'log': '你拜入族中功法堂，正式踏上修行道路，日后可继续修炼与突破。',
+        },
+      ),
+      LifeEventChoice(
+        id: 'mortal_path',
+        label: '作为普通人，靠族中资源安稳一生',
+        effects: {
+          'canCultivate': false,
+          'realm': '无',
+          'log': '你选择凡人之路，放下修炼念头，安心享受族中庇护与寿元延长手段。',
+        },
+      ),
+    ],
+    weight: 10,
   ),
   LifeEventConfig(
     id: 'age_7_study_clan',
@@ -440,28 +460,28 @@ const sampleEvents = <LifeEventConfig>[
     effects: {'age': 0},
     choices: [
       LifeEventChoice(
-          id: 'mountain',
-          label: '上山采药',
-          effects: {
-            'delta': {'luck': 1, 'intelligence': 1},
-            'log': '你在山林找到几株灵草，小有收获。'
-          },
+        id: 'mountain',
+        label: '上山采药',
+        effects: {
+          'delta': {'luck': 1, 'intelligence': 1},
+          'log': '你在山林找到几株灵草，小有收获。'
+        },
       ),
       LifeEventChoice(
-          id: 'town',
-          label: '城中历练',
-          effects: {
-            'delta': {'charm': 1},
-            'log': '你在市井与人交涉，嘴皮子变得更利索了。'
-          },
+        id: 'town',
+        label: '城中历练',
+        effects: {
+          'delta': {'charm': 1},
+          'log': '你在市井与人交涉，嘴皮子变得更利索了。'
+        },
       ),
       LifeEventChoice(
-          id: 'meditate',
-          label: '闭关稳固',
-          effects: {
-            'delta': {'intelligence': 1, 'family': 1},
-            'log': '你选择在家静修，家人支持你的决定。'
-          },
+        id: 'meditate',
+        label: '闭关稳固',
+        effects: {
+          'delta': {'intelligence': 1, 'family': 1},
+          'log': '你选择在家静修，家人支持你的决定。'
+        },
       ),
     ],
     weight: 2,
@@ -718,18 +738,15 @@ const sampleEvents = <LifeEventConfig>[
       'delta': {'exp': 25, 'charm': 1}
     },
     choices: [
-      LifeEventChoice(
-          id: 'allout',
-          label: '全力一战',
-          effects: {'delta': {'exp': 30, 'strength': 1}}),
-      LifeEventChoice(
-          id: 'saveface',
-          label: '稳健求胜',
-          effects: {'delta': {'exp': 20, 'charm': 1}}),
-      LifeEventChoice(
-          id: 'observe',
-          label: '旁观学习',
-          effects: {'delta': {'intelligence': 1, 'exp': 15}}),
+      LifeEventChoice(id: 'allout', label: '全力一战', effects: {
+        'delta': {'exp': 30, 'strength': 1}
+      }),
+      LifeEventChoice(id: 'saveface', label: '稳健求胜', effects: {
+        'delta': {'exp': 20, 'charm': 1}
+      }),
+      LifeEventChoice(id: 'observe', label: '旁观学习', effects: {
+        'delta': {'intelligence': 1, 'exp': 15}
+      }),
     ],
     weight: 3,
   ),
@@ -747,18 +764,16 @@ const sampleEvents = <LifeEventConfig>[
       'delta': {'exp': 40, 'intelligence': 1}
     },
     choices: [
-      LifeEventChoice(
-          id: 'success',
-          label: '稳住火候',
-          effects: {'delta': {'exp': 40, 'intelligence': 1}}),
-      LifeEventChoice(
-          id: 'try_new',
-          label: '尝试新方',
-          effects: {'delta': {'exp': 45, 'luck': -1}}),
-      LifeEventChoice(
-          id: 'fail',
-          label: '失败爆炉',
-          effects: {'delta': {'exp': 20, 'charm': -1}, 'log': '爆炉弄得你灰头土脸。'}),
+      LifeEventChoice(id: 'success', label: '稳住火候', effects: {
+        'delta': {'exp': 40, 'intelligence': 1}
+      }),
+      LifeEventChoice(id: 'try_new', label: '尝试新方', effects: {
+        'delta': {'exp': 45, 'luck': -1}
+      }),
+      LifeEventChoice(id: 'fail', label: '失败爆炉', effects: {
+        'delta': {'exp': 20, 'charm': -1},
+        'log': '爆炉弄得你灰头土脸。'
+      }),
     ],
     weight: 2,
   ),
@@ -774,18 +789,16 @@ const sampleEvents = <LifeEventConfig>[
       'delta': {'exp': 50, 'luck': 1}
     },
     choices: [
-      LifeEventChoice(
-          id: 'tour_star',
-          label: '游历星空',
-          effects: {'delta': {'exp': 60, 'luck': 1}}),
-      LifeEventChoice(
-          id: 'visit_home',
-          label: '回归本宗',
-          effects: {'delta': {'exp': 40, 'family': 1}}),
-      LifeEventChoice(
-          id: 'enter_secret',
-          label: '闯入秘境',
-          effects: {'delta': {'exp': 55, 'luck': -1}, 'log': '你在秘境险些迷失，心神受创又觉悟良多。'}),
+      LifeEventChoice(id: 'tour_star', label: '游历星空', effects: {
+        'delta': {'exp': 60, 'luck': 1}
+      }),
+      LifeEventChoice(id: 'visit_home', label: '回归本宗', effects: {
+        'delta': {'exp': 40, 'family': 1}
+      }),
+      LifeEventChoice(id: 'enter_secret', label: '闯入秘境', effects: {
+        'delta': {'exp': 55, 'luck': -1},
+        'log': '你在秘境险些迷失，心神受创又觉悟良多。'
+      }),
     ],
     weight: 2,
   ),
@@ -803,18 +816,17 @@ const sampleEvents = <LifeEventConfig>[
       'delta': {'exp': 80, 'luck': 1}
     },
     choices: [
-      LifeEventChoice(
-          id: 'hard_resist',
-          label: '硬抗雷劫',
-          effects: {'delta': {'exp': 90, 'strength': 1}}),
-      LifeEventChoice(
-          id: 'use_treasure',
-          label: '借宝护体',
-          effects: {'delta': {'exp': 70, 'luck': 1}, 'log': '宝物消耗，但你安然度过。'}),
-      LifeEventChoice(
-          id: 'evade',
-          label: '尝试躲避',
-          effects: {'delta': {'exp': 60, 'luck': -1}, 'log': '雷劫稍退，但你错失淬炼。'}),
+      LifeEventChoice(id: 'hard_resist', label: '硬抗雷劫', effects: {
+        'delta': {'exp': 90, 'strength': 1}
+      }),
+      LifeEventChoice(id: 'use_treasure', label: '借宝护体', effects: {
+        'delta': {'exp': 70, 'luck': 1},
+        'log': '宝物消耗，但你安然度过。'
+      }),
+      LifeEventChoice(id: 'evade', label: '尝试躲避', effects: {
+        'delta': {'exp': 60, 'luck': -1},
+        'log': '雷劫稍退，但你错失淬炼。'
+      }),
     ],
     weight: 2,
   ),
@@ -831,18 +843,16 @@ const sampleEvents = <LifeEventConfig>[
       'delta': {'exp': 100, 'intelligence': 2}
     },
     choices: [
-      LifeEventChoice(
-          id: 'close_insight',
-          label: '闭关参悟',
-          effects: {'delta': {'exp': 120, 'intelligence': 2}}),
-      LifeEventChoice(
-          id: 'seek_master',
-          label: '拜访古遗迹灵影',
-          effects: {'delta': {'exp': 90, 'luck': 1}}),
-      LifeEventChoice(
-          id: 'record',
-          label: '记录线索',
-          effects: {'delta': {'exp': 80, 'intelligence': 1}, 'log': '你留下飞升阵纹的碎片研究。'}),
+      LifeEventChoice(id: 'close_insight', label: '闭关参悟', effects: {
+        'delta': {'exp': 120, 'intelligence': 2}
+      }),
+      LifeEventChoice(id: 'seek_master', label: '拜访古遗迹灵影', effects: {
+        'delta': {'exp': 90, 'luck': 1}
+      }),
+      LifeEventChoice(id: 'record', label: '记录线索', effects: {
+        'delta': {'exp': 80, 'intelligence': 1},
+        'log': '你留下飞升阵纹的碎片研究。'
+      }),
     ],
     weight: 1,
   ),
@@ -885,18 +895,15 @@ const sampleEvents = <LifeEventConfig>[
       'delta': {'strength': 2, 'charm': -1}
     },
     choices: [
-      LifeEventChoice(
-          id: 'swing',
-          label: '全力挥拳',
-          effects: {'delta': {'strength': 2, 'charm': -1}}),
-      LifeEventChoice(
-          id: 'dodge',
-          label: '闪避为主',
-          effects: {'delta': {'luck': 1, 'strength': 1}}),
-      LifeEventChoice(
-          id: 'avoid',
-          label: '躲开冲突',
-          effects: {'delta': {'charm': 1, 'strength': -1}}),
+      LifeEventChoice(id: 'swing', label: '全力挥拳', effects: {
+        'delta': {'strength': 2, 'charm': -1}
+      }),
+      LifeEventChoice(id: 'dodge', label: '闪避为主', effects: {
+        'delta': {'luck': 1, 'strength': 1}
+      }),
+      LifeEventChoice(id: 'avoid', label: '躲开冲突', effects: {
+        'delta': {'charm': 1, 'strength': -1}
+      }),
     ],
     weight: 2,
   ),
@@ -911,18 +918,15 @@ const sampleEvents = <LifeEventConfig>[
       'delta': {'family': 1, 'charm': 1}
     },
     choices: [
-      LifeEventChoice(
-          id: 'befriend',
-          label: '结交贵人',
-          effects: {'delta': {'charm': 1, 'family': 1}}),
-      LifeEventChoice(
-          id: 'ask_advice',
-          label: '虚心求教',
-          effects: {'delta': {'intelligence': 1, 'family': 1}}),
-      LifeEventChoice(
-          id: 'miss',
-          label: '错过机会',
-          effects: {'delta': {'luck': -1}}),
+      LifeEventChoice(id: 'befriend', label: '结交贵人', effects: {
+        'delta': {'charm': 1, 'family': 1}
+      }),
+      LifeEventChoice(id: 'ask_advice', label: '虚心求教', effects: {
+        'delta': {'intelligence': 1, 'family': 1}
+      }),
+      LifeEventChoice(id: 'miss', label: '错过机会', effects: {
+        'delta': {'luck': -1}
+      }),
     ],
     weight: 1,
   ),
@@ -936,18 +940,15 @@ const sampleEvents = <LifeEventConfig>[
       'delta': {'strength': 2, 'charm': -1}
     },
     choices: [
-      LifeEventChoice(
-          id: 'fight_back',
-          label: '硬扛魔气',
-          effects: {'delta': {'strength': 2, 'charm': -1}}),
-      LifeEventChoice(
-          id: 'seek_shelter',
-          label: '寻找遮蔽',
-          effects: {'delta': {'luck': 1}}),
-      LifeEventChoice(
-          id: 'meditate',
-          label: '静心抵抗',
-          effects: {'delta': {'intelligence': 1}}),
+      LifeEventChoice(id: 'fight_back', label: '硬扛魔气', effects: {
+        'delta': {'strength': 2, 'charm': -1}
+      }),
+      LifeEventChoice(id: 'seek_shelter', label: '寻找遮蔽', effects: {
+        'delta': {'luck': 1}
+      }),
+      LifeEventChoice(id: 'meditate', label: '静心抵抗', effects: {
+        'delta': {'intelligence': 1}
+      }),
     ],
   ),
   LifeEventConfig(
@@ -962,27 +963,18 @@ const sampleEvents = <LifeEventConfig>[
       'delta': {'intelligence': 2, 'strength': 1}
     },
     choices: [
-      LifeEventChoice(
-          id: 'focus_qi',
-          label: '闭关修炼',
-          effects: {
-            'delta': {'intelligence': 2, 'exp': 40},
-            'log': '你闭关数日，仙气灌体，功法运转更顺畅。'
-          }),
-      LifeEventChoice(
-          id: 'body_train',
-          label: '锤炼体魄',
-          effects: {
-            'delta': {'strength': 2, 'exp': 15},
-            'log': '你负重奔跑、挥舞重剑，汗水浸透衣衫，筋骨更坚韧。',
-          }),
-      LifeEventChoice(
-          id: 'wander',
-          label: '出门探索',
-          effects: {
-            'pendingEvents': ['immortal_explore_random'],
-            'log': '你决定走出洞府，看看山川与坊市的风云。'
-          }),
+      LifeEventChoice(id: 'focus_qi', label: '闭关修炼', effects: {
+        'delta': {'intelligence': 2, 'exp': 40},
+        'log': '你闭关数日，仙气灌体，功法运转更顺畅。'
+      }),
+      LifeEventChoice(id: 'body_train', label: '锤炼体魄', effects: {
+        'delta': {'strength': 2, 'exp': 15},
+        'log': '你负重奔跑、挥舞重剑，汗水浸透衣衫，筋骨更坚韧。',
+      }),
+      LifeEventChoice(id: 'wander', label: '出门探索', effects: {
+        'pendingEvents': ['immortal_explore_random'],
+        'log': '你决定走出洞府，看看山川与坊市的风云。'
+      }),
     ],
     weight: 2,
   ),
@@ -1031,13 +1023,9 @@ const sampleEvents = <LifeEventConfig>[
     effects: {'ending': '寿终正寝', 'alive': false, 'age': 1},
     choices: [
       LifeEventChoice(
-          id: 'reflect',
-          label: '回首往昔',
-          effects: {'log': '你带着平静的心态离开。'}),
+          id: 'reflect', label: '回首往昔', effects: {'log': '你带着平静的心态离开。'}),
       LifeEventChoice(
-          id: 'regret',
-          label: '心有遗憾',
-          effects: {'log': '你仍有未竟之事，或许来生再续。'}),
+          id: 'regret', label: '心有遗憾', effects: {'log': '你仍有未竟之事，或许来生再续。'}),
       LifeEventChoice(
           id: 'share_seed',
           label: '留下种子',
@@ -1098,6 +1086,8 @@ const sampleEvents = <LifeEventConfig>[
     description: '你随族中长辈在仙山间日常起居，未涉修行。',
     worlds: [World.immortal],
     minAge: 3,
+    prerequisites: ['non_cultivation'],
+    conditions: {'needsNonCultivation': true},
     effects: {'age': 0},
     choices: [
       LifeEventChoice(

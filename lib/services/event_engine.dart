@@ -24,27 +24,56 @@ class EventEngine {
       for (int i = 0; i < pendingCount; i++) {
         final pid = state.pendingEvents.removeAt(0);
         final fromPending = repo.byId(pid) ?? fallback(state);
-        final ready = (fromPending.minAge == null || state.age >= fromPending.minAge!) &&
+        final ready = (fromPending.minAge == null ||
+                state.age >= fromPending.minAge!) &&
             (fromPending.maxAge == null || state.age <= fromPending.maxAge!) &&
             fromPending.worlds.contains(state.world) &&
-            (fromPending.regions == null || fromPending.regions!.contains(state.region));
+            (fromPending.regions == null ||
+                fromPending.regions!.contains(state.region));
         // 不满足前置(root/cultivation/sect/family)时也不能触发
         final stage = currentStage(state.age);
         final prereqOk = !fromPending.prerequisites.contains('root_awakened') ||
             (state.talentLevelName != '未知' && state.talentLevelName != '凡体');
-        final cultOk = !fromPending.prerequisites.contains('cultivation_started') || state.realm != '无';
-        final sectOk = !fromPending.prerequisites.contains('sect_accepted') || state.sectId != null;
-        final topOk = !fromPending.prerequisites.contains('top_family_only') || state.familyScore >= 95;
-        final nonTopOk = !fromPending.prerequisites.contains('non_top_family_only') || state.familyScore < 95;
-        final litOk = fromPending.conditions['needsLiteracy'] != true || state.hasLiteracy;
-        final cultCondOk = fromPending.conditions['needsCultivation'] != true || (stage.allowCultivation && state.realm != '无');
+        final cultOk =
+            !fromPending.prerequisites.contains('cultivation_started') ||
+                (state.realm != '无' && state.canCultivate);
+        final nonCultOk =
+            !fromPending.prerequisites.contains('non_cultivation') ||
+                !state.canCultivate;
+        final sectOk = !fromPending.prerequisites.contains('sect_accepted') ||
+            state.sectId != null;
+        final topOk = !fromPending.prerequisites.contains('top_family_only') ||
+            state.familyScore >= 95;
+        final nonTopOk =
+            !fromPending.prerequisites.contains('non_top_family_only') ||
+                state.familyScore < 95;
+        final litOk = fromPending.conditions['needsLiteracy'] != true ||
+            state.hasLiteracy;
+        final cultCondOk = fromPending.conditions['needsCultivation'] != true ||
+            (stage.allowCultivation &&
+                state.realm != '无' &&
+                state.canCultivate);
+        final nonCultCondOk =
+            fromPending.conditions['needsNonCultivation'] != true ||
+                !state.canCultivate;
 
-        final allReady = ready && prereqOk && cultOk && sectOk && topOk && nonTopOk && litOk && cultCondOk;
+        final allReady = ready &&
+            prereqOk &&
+            cultOk &&
+            nonCultOk &&
+            sectOk &&
+            topOk &&
+            nonTopOk &&
+            litOk &&
+            cultCondOk &&
+            nonCultCondOk;
 
         if (allReady) {
           // guard: 仙界修行/游历必须觉醒灵根
-          if (fromPending.id == 'immortal_retreat' || fromPending.id == 'immortal_explore_random') {
-            if (state.talentLevelName == '未知' || state.talentLevelName == '凡体') {
+          if (fromPending.id == 'immortal_retreat' ||
+              fromPending.id == 'immortal_explore_random') {
+            if (state.talentLevelName == '未知' ||
+                state.talentLevelName == '凡体') {
               state.pendingEvents.add(pid);
               continue;
             }
@@ -60,7 +89,8 @@ class EventEngine {
     if ((state.talentLevelName == '未知' || state.talentLevelName == '凡体') &&
         state.age >= 6 &&
         state.age <= 12 &&
-        !state.lifeEvents.any((e) => e.id == 'age_6_root_test' || e.id == 'age_6_root_test_result')) {
+        !state.lifeEvents.any((e) =>
+            e.id == 'age_6_root_test' || e.id == 'age_6_root_test_result')) {
       final rootEvent = repo.byId('age_6_root_test');
       if (rootEvent != null) return rootEvent;
     }
@@ -103,7 +133,11 @@ class EventEngine {
           (state.talentLevelName == '未知' || state.talentLevelName == '凡体')) {
         return false;
       }
-      if (e.prerequisites.contains('cultivation_started') && state.realm == '无') {
+      if (e.prerequisites.contains('cultivation_started') &&
+          (state.realm == '无' || !state.canCultivate)) {
+        return false;
+      }
+      if (e.prerequisites.contains('non_cultivation') && state.canCultivate) {
         return false;
       }
       if (e.prerequisites.contains('sect_accepted') && state.sectId == null) {
@@ -120,7 +154,12 @@ class EventEngine {
         return false;
       }
       if (e.conditions['needsCultivation'] == true &&
-          (!stage.allowCultivation || state.realm == '无')) {
+          (!stage.allowCultivation ||
+              state.realm == '无' ||
+              !state.canCultivate)) {
+        return false;
+      }
+      if (e.conditions['needsNonCultivation'] == true && state.canCultivate) {
         return false;
       }
       if (e.conditions['unique'] == true &&
@@ -160,7 +199,15 @@ class EventEngine {
 
   LifeEventConfig fallback(PlayerState state) {
     final byKey = repo.byId('${state.world.name}_fallback');
-    if (byKey != null) return byKey;
+    if (byKey != null) {
+      final requiresNonCult = byKey.prerequisites.contains('non_cultivation') ||
+          byKey.conditions['needsNonCultivation'] == true;
+      if (requiresNonCult && state.canCultivate) {
+        // skip non-cultivation fallback when已走修行路
+      } else {
+        return byKey;
+      }
+    }
     final daily = repo.tableWorldDaily(state.world);
     if (daily.isNotEmpty) return daily[rng.nextInt(daily.length)];
     // 最后的兜底：任意已有事件或一个默认占位
@@ -180,10 +227,14 @@ class EventEngine {
     List<SectTemplate> pool;
     switch (world) {
       case World.immortal:
-        pool = refRepo.sects.where((s) => s.tier == '圣地' || s.tier == '霸主').toList();
+        pool = refRepo.sects
+            .where((s) => s.tier == '圣地' || s.tier == '霸主')
+            .toList();
         break;
       case World.mortal:
-        pool = refRepo.sects.where((s) => s.tier == '天' || s.tier == '地' || s.tier == '人').toList();
+        pool = refRepo.sects
+            .where((s) => s.tier == '天' || s.tier == '地' || s.tier == '人')
+            .toList();
         break;
       case World.nether:
         pool = refRepo.sects; // 简化：魔界也允许全表
@@ -195,8 +246,8 @@ class EventEngine {
 
   FamilyTemplate? _currentFamilyTemplate(PlayerState state) {
     if (state.familyTemplateId == null) return null;
-    return refRepo.families
-        .firstWhere((f) => f.id == state.familyTemplateId, orElse: () => refRepo.families.first);
+    return refRepo.families.firstWhere((f) => f.id == state.familyTemplateId,
+        orElse: () => refRepo.families.first);
   }
 
   double _tierBonus(String? tier) {
@@ -236,8 +287,8 @@ class EventEngine {
 
   SectTemplate? _currentSect(PlayerState state) {
     if (state.sectId == null) return null;
-    return refRepo.sects
-        .firstWhere((s) => s.id == state.sectId, orElse: () => refRepo.sects.first);
+    return refRepo.sects.firstWhere((s) => s.id == state.sectId,
+        orElse: () => refRepo.sects.first);
   }
 
   Technique _pickTechniqueWithTier(double tierBonus) {
@@ -250,9 +301,12 @@ class EventEngine {
       TechniqueGrade.dao: 1.0,
     };
     // tier 提升高阶权重
-    weights[TechniqueGrade.sheng] = weights[TechniqueGrade.sheng]! * (1 + tierBonus * 5);
-    weights[TechniqueGrade.dao] = weights[TechniqueGrade.dao]! * (1 + tierBonus * 8);
-    weights[TechniqueGrade.xian] = weights[TechniqueGrade.xian]! * (1 + tierBonus * 3);
+    weights[TechniqueGrade.sheng] =
+        weights[TechniqueGrade.sheng]! * (1 + tierBonus * 5);
+    weights[TechniqueGrade.dao] =
+        weights[TechniqueGrade.dao]! * (1 + tierBonus * 8);
+    weights[TechniqueGrade.xian] =
+        weights[TechniqueGrade.xian]! * (1 + tierBonus * 3);
     final pool = refRepo.techniques;
     final total = pool.fold<double>(0, (s, t) => s + (weights[t.grade] ?? 1));
     double roll = rng.nextDouble() * total;
@@ -288,9 +342,9 @@ class EventEngine {
     // 品阶概率随气运（创角幸运上限约 20 点，做 0-20 线性映射）
     double roll = rng.nextDouble();
     final luckFactor = (state.luck.clamp(0, 20)) / 20.0;
-    final pDao = 0.05 + 0.15 * luckFactor;   // 5% -> 20%
+    final pDao = 0.05 + 0.15 * luckFactor; // 5% -> 20%
     final pSheng = 0.15 + 0.20 * luckFactor; // 15% -> 35%  (累积到 55%)
-    final pLing = 0.40 + 0.20 * luckFactor;  // 40% -> 60%  (累积到 ~1.15, 取上限)
+    final pLing = 0.40 + 0.20 * luckFactor; // 40% -> 60%  (累积到 ~1.15, 取上限)
 
     double thresholdDao = pDao;
     double thresholdSheng = (thresholdDao + pSheng).clamp(0.0, 0.95);
@@ -337,9 +391,10 @@ class EventEngine {
     final visuals = isDual
         ? '灵光交织：${visualOf(root1)}；${visualOf(root2!)}。'
         : '灵光冲天：${visualOf(root1)}。';
-    final variantNote = (root1.startsWith('变异') || (root2?.startsWith('变异') ?? false))
-        ? '出现稀有变异灵根。'
-        : '';
+    final variantNote =
+        (root1.startsWith('变异') || (root2?.startsWith('变异') ?? false))
+            ? '出现稀有变异灵根。'
+            : '';
     final dualNote = isDual ? '双灵根共振，潜力倍增。' : '';
 
     state.lifeEvents.add(
@@ -388,6 +443,9 @@ class EventEngine {
     }
     if (mergedEffects['realm'] != null) {
       state.realm = mergedEffects['realm'];
+    }
+    if (mergedEffects['canCultivate'] != null) {
+      state.canCultivate = mergedEffects['canCultivate'] == true;
     }
     if (mergedEffects['pendingEvents'] is List) {
       state.pendingEvents.addAll(
@@ -483,7 +541,8 @@ class EventEngine {
             id: 'gain_tech_${tech.name}',
             age: state.age,
             title: '获得功法',
-            description: '你获得了 ${tech.name}（${tech.gradeLabel}·${tech.stageLabel}）。',
+            description:
+                '你获得了 ${tech.name}（${tech.gradeLabel}·${tech.stageLabel}）。',
           ),
         );
       }

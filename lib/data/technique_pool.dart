@@ -7,7 +7,7 @@ List<Technique> fanTechPool = List.generate(
     grade: TechniqueGrade.fan,
     stage: ProficiencyStage.chuKui,
     exp: 0,
-    expRequired: 100,
+    expRequired: 120,
   ),
 );
 
@@ -18,7 +18,7 @@ List<Technique> lingTechPool = List.generate(
     grade: TechniqueGrade.ling,
     stage: ProficiencyStage.chuKui,
     exp: 0,
-    expRequired: 120,
+    expRequired: 200,
   ),
 );
 
@@ -29,7 +29,7 @@ List<Technique> xianTechPool = List.generate(
     grade: TechniqueGrade.xian,
     stage: ProficiencyStage.chuKui,
     exp: 0,
-    expRequired: 150,
+    expRequired: 300,
   ),
 );
 
@@ -40,7 +40,7 @@ List<Technique> shengTechPool = List.generate(
     grade: TechniqueGrade.sheng,
     stage: ProficiencyStage.chuKui,
     exp: 0,
-    expRequired: 180,
+    expRequired: 450,
   ),
 );
 
@@ -51,7 +51,7 @@ List<Technique> daoTechPool = List.generate(
     grade: TechniqueGrade.dao,
     stage: ProficiencyStage.chuKui,
     exp: 0,
-    expRequired: 220,
+    expRequired: 650,
   ),
 );
 

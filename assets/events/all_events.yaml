@@ -274,6 +274,8 @@
     unlockLiteracy: true
     talentLevelName: "已觉醒"
     realm: "炼气"
+    pendingEvents:
+      - "age_6_root_choice"
     log: "体内灵根被激活，修炼之路由此开启。"
   choices:
     -
@@ -299,6 +301,39 @@
         log: "你选择在人后悄然测试，未引起注意。"
       followup: null
   weight: 6
+-
+  id: "age_6_root_choice"
+  title: "灵根觉醒后的抉择"
+  description: "灵根已显，你可以开始修炼，也可以选择安稳一生。"
+  worlds:
+    - "mortal"
+    - "immortal"
+  regions: null
+  minAge: 6
+  maxAge: 12
+  conditions:
+    unique: true
+  prerequisites:
+    - "root_awakened"
+  effects:
+    age: 0
+  choices:
+    -
+      id: "cultivate_path"
+      label: "学习家族功法，踏上修行之路"
+      effects:
+        canCultivate: true
+        log: "你拜入族中功法堂，正式踏上修行道路，日后可继续修炼与突破。"
+      followup: null
+    -
+      id: "mortal_path"
+      label: "作为普通人，靠族中资源安稳一生"
+      effects:
+        canCultivate: false
+        realm: "无"
+        log: "你选择凡人之路，放下修炼念头，安心享受族中庇护与寿元延长手段。"
+      followup: null
+  weight: 10
 -
   id: "age_7_study_clan"
   title: "族学读书"
@@ -1478,9 +1513,9 @@
   minAge: 3
   maxAge: null
   conditions:
-
+    needsNonCultivation: true
   prerequisites:
-
+    - "non_cultivation"
   effects:
     age: 0
   choices:

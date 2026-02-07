@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:yaml/yaml.dart';
 
@@ -50,12 +51,16 @@ class EventRepository {
       final eventFiles = assets.where((p) => p.startsWith('assets/events/'));
 
       for (final path in eventFiles) {
-        final name =
-            path.split('/').last.replaceAll('.yaml', '').replaceAll('.json', '');
+        final name = path
+            .split('/')
+            .last
+            .replaceAll('.yaml', '')
+            .replaceAll('.json', '');
         final raw = await rootBundle.loadString(path);
-        final List<dynamic> list = path.endsWith('.yaml')
-            ? (loadYaml(raw) as YamlList).toList()
-            : (json.decode(raw) as List<dynamic>);
+        final List<dynamic> list =
+            (path.endsWith('.yaml') || path.endsWith('.yml'))
+                ? (loadYaml(raw) as YamlList).toList()
+                : (json.decode(raw) as List<dynamic>);
         final configs = list
             .map((e) => LifeEventConfig.fromJson(Map<String, dynamic>.from(e)))
             .toList();
@@ -64,14 +69,20 @@ class EventRepository {
           _byId[c.id] = c;
         }
         loadedCount += configs.length;
+        debugPrint(
+            '[EventRepository] loaded ${configs.length} events from $path');
       }
     } catch (_) {
       // ignore and fall back
+      debugPrint(
+          '[EventRepository] asset load failed, using fallback sampleEvents');
     }
 
     // 若未找到资产文件或加载失败，则回落到现有 Dart 常量表，避免运行期无事件
     if (loadedCount == 0) {
       _loadFromConstSample();
+      debugPrint(
+          '[EventRepository] fallback sampleEvents loaded (${sampleEvents.length})');
     }
   }
 

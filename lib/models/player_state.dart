@@ -23,6 +23,7 @@ class PlayerState {
   String realm; // 当前境界名称
   String talentLevelName; // 灵根描述
   bool hasLiteracy;
+  bool canCultivate;
   bool alive;
   String? ending;
   TalentLevel talentLevel;
@@ -64,6 +65,7 @@ class PlayerState {
     required this.realm,
     required this.talentLevelName,
     required this.hasLiteracy,
+    required this.canCultivate,
     required this.alive,
     required this.talentLevel,
     required this.techniques,
@@ -105,6 +107,7 @@ class PlayerState {
       realm: '无',
       talentLevelName: '未知',
       hasLiteracy: false,
+      canCultivate: true,
       alive: true,
       talentLevel: TalentLevel.zhen,
       techniques: const [],
@@ -135,6 +138,7 @@ class PlayerState {
         'realm': realm,
         'talentLevelName': talentLevelName,
         'hasLiteracy': hasLiteracy,
+        'canCultivate': canCultivate,
         'alive': alive,
         'ending': ending,
         'talentLevel': talentLevel.name,
@@ -171,6 +175,7 @@ class PlayerState {
         realm: json['realm'] ?? '无',
         talentLevelName: json['talentLevelName'] ?? '未知',
         hasLiteracy: json['hasLiteracy'] ?? false,
+        canCultivate: json['canCultivate'] ?? true,
         alive: json['alive'] ?? true,
         ending: json['ending'],
         talentLevel: TalentLevel.values.firstWhere(

@@ -1,0 +1,31 @@
+version: 1
+stages:
+  -
+    id: "infant"
+    minAge: 0
+    maxAge: 5
+    allowCombat: false
+    allowLiteracy: false
+    allowCultivation: false
+  -
+    id: "child"
+    minAge: 6
+    maxAge: 12
+    allowCombat: true
+    allowLiteracy: true
+    allowCultivation: false
+  -
+    id: "teen"
+    minAge: 13
+    maxAge: 20
+    allowCombat: true
+    allowLiteracy: true
+    allowCultivation: true
+  -
+    id: "adult"
+    minAge: 21
+    maxAge: 2000
+    allowCombat: true
+    allowLiteracy: true
+    allowCultivation: true
+generatedAt: "2026-02-07T14:21:33.875519"

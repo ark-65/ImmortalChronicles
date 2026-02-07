@@ -27,6 +27,11 @@ class _AdventurePageState extends State<AdventurePage> {
   final expGainPerChoice = 10;
 
   void _tryBreakthrough() async {
+    if (!state.canCultivate) {
+      ScaffoldMessenger.of(context)
+          .showSnackBar(const SnackBar(content: Text('你选择了凡人之路，无法再进行修炼突破')));
+      return;
+    }
     if (state.exp < state.expRequired) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('经验不足，无法突破')),
@@ -61,13 +66,13 @@ class _AdventurePageState extends State<AdventurePage> {
       if (idx >= 0 && idx < realmSequence.length - 1) {
         state.realm = realmSequence[idx + 1];
       }
-      desc = '突破成功！进入${state.realm}，成功率 ${(successRate * 100).toStringAsFixed(1)}%';
+      desc =
+          '突破成功！进入${state.realm}，成功率 ${(successRate * 100).toStringAsFixed(1)}%';
     } else {
       final penalty = (state.expRequired * 0.1).round();
       state.exp = (state.exp - penalty).clamp(0, state.expRequired);
       state.breakthroughFailStreak += 1;
-      desc =
-          '突破失败，损失$penalty 经验，连续失败 ${state.breakthroughFailStreak} 次。';
+      desc = '突破失败，损失$penalty 经验，连续失败 ${state.breakthroughFailStreak} 次。';
       if (state.breakthroughFailStreak % 3 == 0) {
         // 心魔试炼
         final demonRate = (state.luck / 100).clamp(0.05, 0.8);
@@ -120,17 +125,22 @@ class _AdventurePageState extends State<AdventurePage> {
         tech.exp = tech.expRequired; // 封顶
       }
     }
-    ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('已消耗10经验提升 ${tech.name} 熟练度')));
+    ScaffoldMessenger.of(context)
+        .showSnackBar(SnackBar(content: Text('已消耗10经验提升 ${tech.name} 熟练度')));
     setState(() {});
   }
 
   void _doCultivate() async {
+    if (!state.canCultivate) {
+      ScaffoldMessenger.of(context)
+          .showSnackBar(const SnackBar(content: Text('你已选择凡人道路，无法继续修炼')));
+      return;
+    }
     if (!state.alive || state.ending != null) return;
     if (pendingChoiceEvent != null) return;
     if (state.ap <= 0) {
-      ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('AP 不足，先跳到下一岁')));
+      ScaffoldMessenger.of(context)
+          .showSnackBar(const SnackBar(content: Text('AP 不足，先跳到下一岁')));
       return;
     }
     state.ap -= 1;
@@ -355,12 +365,22 @@ class _AdventurePageState extends State<AdventurePage> {
       style: Theme.of(context).textTheme.titleMedium,
     );
 
+    final canBreakthrough = state.canCultivate &&
+        state.alive &&
+        state.ending == null &&
+        state.exp >= state.expRequired &&
+        state.realm != '无';
+    final canCultivateNow = state.canCultivate &&
+        state.alive &&
+        state.ending == null &&
+        state.realm != '无';
+
     final bodyCard = Card(
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
+          children: [
             Text(lastEvent?.title ?? '等待启程',
                 style: Theme.of(context).textTheme.titleLarge),
             const SizedBox(height: 8),
@@ -379,12 +399,18 @@ class _AdventurePageState extends State<AdventurePage> {
                     )
                     .toList(),
               ),
+              if (canBreakthrough)
+                Padding(
+                  padding: const EdgeInsets.only(top: 4),
+                  child: ElevatedButton(
+                    onPressed: _tryBreakthrough,
+                    child: const Text('尝试突破（扣AP）'),
+                  ),
+                ),
             ],
             if (pendingChoiceEvent == null &&
-                state.ending == null &&
-                state.alive &&
                 state.techniques.isNotEmpty &&
-                state.exp >= state.expRequired)
+                canBreakthrough)
               Padding(
                 padding: const EdgeInsets.only(top: 12),
                 child: ElevatedButton(
@@ -393,10 +419,8 @@ class _AdventurePageState extends State<AdventurePage> {
                 ),
               ),
             if (pendingChoiceEvent == null &&
-                state.ending == null &&
-                state.alive &&
                 state.techniques.isNotEmpty &&
-                state.realm != '无')
+                canCultivateNow)
               Padding(
                 padding: const EdgeInsets.only(top: 8),
                 child: OutlinedButton(
@@ -441,7 +465,7 @@ class _AdventurePageState extends State<AdventurePage> {
             if (!ended &&
                 pendingChoiceEvent == null &&
                 state.techniques.isNotEmpty &&
-                state.exp >= state.expRequired)
+                canBreakthrough)
               Padding(
                 padding: const EdgeInsets.only(top: 12),
                 child: ElevatedButton(
@@ -467,9 +491,8 @@ class _AdventurePageState extends State<AdventurePage> {
               ),
               Expanded(
                 child: OutlinedButton(
-                  onPressed: ended
-                      ? _showLog
-                      : () => _advance(forceNextYear: true),
+                  onPressed:
+                      ended ? _showLog : () => _advance(forceNextYear: true),
                   child: Text(ended ? '查看日志' : '跳到下一岁（放弃剩余AP）'),
                 ),
               ),

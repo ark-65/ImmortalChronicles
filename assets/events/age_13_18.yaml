@@ -578,9 +578,9 @@
   minAge: 3
   maxAge: null
   conditions:
-
+    needsNonCultivation: true
   prerequisites:
-
+    - "non_cultivation"
   effects:
     age: 0
   choices:

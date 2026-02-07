@@ -61,6 +61,13 @@ flutter:
 
   assets:
     - assets/events/
+    - assets/maps/
+    - assets/families/
+    - assets/sects/
+    - assets/weapons/
+    - assets/medicines/
+    - assets/techniques/
+    - assets/meta/
 
   # To add assets to your application, add an assets section, like this:
   # assets:

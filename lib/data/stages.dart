@@ -14,6 +14,24 @@ class StageConfig {
     required this.allowLiteracy,
     required this.allowCultivation,
   });
+
+  Map<String, dynamic> toJson() => {
+        'id': id,
+        'minAge': minAge,
+        'maxAge': maxAge,
+        'allowCombat': allowCombat,
+        'allowLiteracy': allowLiteracy,
+        'allowCultivation': allowCultivation,
+      };
+
+  factory StageConfig.fromJson(Map<String, dynamic> json) => StageConfig(
+        id: json['id'] ?? '',
+        minAge: json['minAge'] ?? 0,
+        maxAge: json['maxAge'] ?? 0,
+        allowCombat: json['allowCombat'] ?? false,
+        allowLiteracy: json['allowLiteracy'] ?? false,
+        allowCultivation: json['allowCultivation'] ?? false,
+      );
 }
 
 const stageConfigs = [
@@ -52,4 +70,5 @@ const stageConfigs = [
 ];
 
 StageConfig currentStage(int age) =>
-    stageConfigs.firstWhere((s) => age >= s.minAge && age <= s.maxAge, orElse: () => stageConfigs.last);
+    stageConfigs.firstWhere((s) => age >= s.minAge && age <= s.maxAge,
+        orElse: () => stageConfigs.last);

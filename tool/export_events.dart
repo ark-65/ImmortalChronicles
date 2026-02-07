@@ -11,12 +11,12 @@ void main() {
     dir.createSync(recursive: true);
   }
 
-  String _toYaml(dynamic value, {int indent = 0}) {
+  String toYaml(dynamic value, {int indent = 0}) {
     final space = ' ' * indent;
     if (value is Map) {
       final buffer = StringBuffer();
       value.forEach((key, v) {
-        final rendered = _toYaml(v, indent: indent + 2);
+        final rendered = toYaml(v, indent: indent + 2);
         final isMultiline = v is Map || v is List || rendered.contains('\n');
         if (isMultiline) {
           buffer.writeln('$space$key:');
@@ -29,7 +29,7 @@ void main() {
     } else if (value is List) {
       final buffer = StringBuffer();
       for (final item in value) {
-        final rendered = _toYaml(item, indent: indent + 2);
+        final rendered = toYaml(item, indent: indent + 2);
         if (rendered.contains('\n')) {
           buffer.writeln('$space-');
           buffer.write('$rendered\n');
@@ -51,7 +51,7 @@ void main() {
   void writeTable(String name, List<LifeEventConfig> list) {
     final path = '${dir.path}/$name.yaml';
     final data = list.map((e) => e.toJson()).toList();
-    final yaml = _toYaml(data);
+    final yaml = toYaml(data);
     File(path).writeAsStringSync('$yaml\n');
     stdout.writeln('写入 $path，${list.length} 条');
   }
