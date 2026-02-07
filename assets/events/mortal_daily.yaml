@@ -1,0 +1,23 @@
+-
+  id: "mortal_daily_cultivate"
+  title: "日常修炼"
+  description: "你在凡界静心打坐，巩固根基。"
+  worlds:
+    - "mortal"
+  regions: null
+  minAge: 13
+  maxAge: null
+  conditions:
+    chance: 0.6
+    chanceLuckBoost: 0.05
+  prerequisites:
+    - "cultivation_started"
+    - "root_awakened"
+  effects:
+    age: 0
+    delta:
+      exp: 15
+      intelligence: 1
+  choices:
+
+  weight: 1

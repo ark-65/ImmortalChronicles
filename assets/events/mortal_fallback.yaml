@@ -1,0 +1,31 @@
+-
+  id: "mortal_fallback"
+  title: "平淡一年"
+  description: "一年平平无奇地过去了。"
+  worlds:
+    - "mortal"
+  regions: null
+  minAge: 3
+  maxAge: null
+  conditions:
+
+  prerequisites:
+
+  effects:
+    age: 1
+  choices:
+    -
+      id: "routine"
+      label: "按部就班"
+      effects:
+        log: "你循规蹈矩地过完这一年。"
+      followup: null
+    -
+      id: "small_try"
+      label: "默默练气"
+      effects:
+        delta:
+          exp: 5
+        log: "你抓紧时间打坐，略有所得。"
+      followup: null
+  weight: 1
