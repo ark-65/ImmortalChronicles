@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:math';
 
 import '../models/models.dart';
 import '../services/storage_service.dart';
@@ -6,20 +7,40 @@ import 'adventure_page.dart';
 import '../data/family_templates.dart';
 import '../data/parent_roles.dart';
 
-class _FamilyPick {
-  final FamilyTemplate template;
-  _FamilyPick(this.template);
+FamilyTemplate _pickFamilyTemplate(int familyScore) {
+  final score = (familyScore * 5).clamp(0, 100);
+  final rng = Random();
 
-  String? get id => null;
+  List<FamilyTemplate> byTier(String tier) =>
+      familyTemplates.where((f) => f.tier == tier).toList();
 
-  static _FamilyPick fromScore(int familyScore) {
-    if (familyScore >= 90) return _FamilyPick(familyTemplates[0]); // fire
-    if (familyScore >= 70) return _FamilyPick(familyTemplates[2]); // ice sword
-    if (familyScore >= 50) return _FamilyPick(familyTemplates[1]); // wood pill
-    if (familyScore >= 30) return _FamilyPick(familyTemplates[3]); // wind blade
-    if (familyScore >= 10) return _FamilyPick(familyTemplates[4]); // thunder war
-    return _FamilyPick(familyTemplates[5]); // shadow
+  if (score >= 95) {
+    final pool = rng.nextDouble() < 0.2 ? byTier('霸主') : byTier('圣地');
+    if (pool.isNotEmpty) return pool[rng.nextInt(pool.length)];
   }
+  if (score >= 90) {
+    final pool = byTier('圣地');
+    if (pool.isNotEmpty) return pool[rng.nextInt(pool.length)];
+  }
+  if (score >= 70) {
+    final pool = byTier('天');
+    if (pool.isNotEmpty) return pool[rng.nextInt(pool.length)];
+  }
+  if (score >= 50) {
+    final pool = byTier('地');
+    if (pool.isNotEmpty) return pool[rng.nextInt(pool.length)];
+  }
+  if (score >= 30) {
+    final pool = byTier('人');
+    if (pool.isNotEmpty) return pool[rng.nextInt(pool.length)];
+  }
+  final mundanePool = familyTemplates
+      .where((f) =>
+          ['一品', '二品', '三品', '四品', '五品', '六品', '七品', '八品', '九品']
+              .contains(f.tier))
+      .toList();
+  if (mundanePool.isNotEmpty) return mundanePool[rng.nextInt(mundanePool.length)];
+  return familyTemplates.first;
 }
 
 class AttributeSetupPage extends StatefulWidget {
@@ -117,7 +138,7 @@ class _AttributeSetupPageState extends State<AttributeSetupPage> {
             ? Region.ling
             : Region.ren;
     // pick family template
-    final template = _pickFamilyTemplate(family);
+    final template = _pickFamilyTemplateForUi(family);
     final state = PlayerState.newGame(
       name: _nameController.text.isEmpty ? '无名氏' : _nameController.text,
       strength: strength,
@@ -140,10 +161,8 @@ class _AttributeSetupPageState extends State<AttributeSetupPage> {
   }
 
   // simple deterministic pick based on family to ensure reproducible
-  _FamilyPick _pickFamilyTemplate(int familyScore) {
-    final score = (familyScore * 5).clamp(0, 100);
-    return _FamilyPick.fromScore(score);
-  }
+  FamilyTemplate _pickFamilyTemplateForUi(int familyScore) =>
+      _pickFamilyTemplate(familyScore);
 
   void _loadLast() async {
     final stored = await StorageService().load();

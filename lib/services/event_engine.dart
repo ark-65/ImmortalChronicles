@@ -22,16 +22,28 @@ class EventEngine {
     }
 
     final stage = currentStage(state.age);
+    final isTopFamily = state.familyScore >= 95;
+
     final candidates = sampleEvents.where((e) {
       if (!e.worlds.contains(state.world)) return false;
       if (e.regions != null && !e.regions!.contains(state.region)) return false;
       if (e.minAge != null && state.age < e.minAge!) return false;
       if (e.maxAge != null && state.age > e.maxAge!) return false;
       // prerequisite flags
-      if (e.prerequisites.contains('root_awakened') && state.talentLevelName == '未知') {
+      if (e.prerequisites.contains('root_awakened') &&
+          (state.talentLevelName == '未知' || state.talentLevelName == '凡体')) {
         return false;
       }
       if (e.prerequisites.contains('cultivation_started') && state.realm == '无') {
+        return false;
+      }
+      if (e.prerequisites.contains('sect_accepted') && state.sectId == null) {
+        return false;
+      }
+      if (e.prerequisites.contains('top_family_only') && !isTopFamily) {
+        return false;
+      }
+      if (e.prerequisites.contains('non_top_family_only') && isTopFamily) {
         return false;
       }
       if (e.conditions['needsLiteracy'] == true &&
@@ -178,6 +190,17 @@ class EventEngine {
     // literacy flag
     if (mergedEffects['unlockLiteracy'] == true) {
       state.hasLiteracy = true;
+    }
+    if (mergedEffects['talentLevelName'] != null) {
+      state.talentLevelName = mergedEffects['talentLevelName'];
+    }
+    if (mergedEffects['realm'] != null) {
+      state.realm = mergedEffects['realm'];
+    }
+    if (mergedEffects['pendingEvents'] is List) {
+      state.pendingEvents.addAll(
+        (mergedEffects['pendingEvents'] as List).cast<String>(),
+      );
     }
     if (consumeAp) {
       state.ap = max(0, state.ap - 1);

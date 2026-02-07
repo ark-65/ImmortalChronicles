@@ -34,6 +34,7 @@ const sampleEvents = <LifeEventConfig>[
     title: '牙牙学语',
     description: '你发出稚嫩的声音。',
     worlds: [World.mortal, World.immortal, World.nether],
+    minAge: 0,
     maxAge: 1,
     effects: {'age': 0},
     choices: [
@@ -177,6 +178,7 @@ const sampleEvents = <LifeEventConfig>[
     minAge: 5,
     maxAge: 5,
     conditions: {'chance': 0.8},
+    prerequisites: ['root_awakened', 'cultivation_started'],
     effects: {
       'delta': {'intelligence': 1}
     },
@@ -213,7 +215,12 @@ const sampleEvents = <LifeEventConfig>[
     minAge: 6,
     maxAge: 6,
     conditions: {'unique': true},
-    effects: {'age': 0, 'unlockLiteracy': true},
+    effects: {
+      'age': 0,
+      'unlockLiteracy': true,
+      'talentLevelName': '已觉醒',
+      'log': '体内灵根被激活，修炼之路由此开启。'
+    },
     choices: [
       LifeEventChoice(
         id: 'high_profile',
@@ -282,6 +289,7 @@ const sampleEvents = <LifeEventConfig>[
     worlds: [World.mortal, World.immortal, World.nether],
     minAge: 8,
     maxAge: 8,
+    prerequisites: ['cultivation_started'],
     effects: {'age': 0},
     choices: [
       LifeEventChoice(
@@ -354,6 +362,7 @@ const sampleEvents = <LifeEventConfig>[
     worlds: [World.mortal, World.immortal, World.nether],
     minAge: 10,
     maxAge: 10,
+    prerequisites: ['cultivation_started'],
     effects: {'age': 0},
     choices: [
       LifeEventChoice(
@@ -390,6 +399,7 @@ const sampleEvents = <LifeEventConfig>[
     worlds: [World.mortal, World.immortal],
     minAge: 11,
     maxAge: 11,
+    prerequisites: ['cultivation_started'],
     effects: {'age': 0},
     choices: [
       LifeEventChoice(
@@ -426,6 +436,7 @@ const sampleEvents = <LifeEventConfig>[
     worlds: [World.mortal, World.immortal],
     minAge: 12,
     maxAge: 12,
+    prerequisites: ['cultivation_started'],
     effects: {'age': 0},
     choices: [
       LifeEventChoice(
@@ -454,6 +465,68 @@ const sampleEvents = <LifeEventConfig>[
       ),
     ],
     weight: 2,
+  ),
+  // 普通/世俗家族宗门接引 12 岁（顶级家族不触发）
+  LifeEventConfig(
+    id: 'mortal_sect_invite_12',
+    title: '宗门接引',
+    description: '宗门接引使者抵达村庄，挑选可造之材。',
+    worlds: [World.mortal],
+    minAge: 12,
+    maxAge: 12,
+    prerequisites: ['non_top_family_only'],
+    effects: {'age': 0},
+    choices: [
+      LifeEventChoice(
+        id: 'attend_test',
+        label: '参加灵根测试',
+        effects: {
+          'log': '你随接引使者前往宗门，准备测试灵根。',
+          'pendingEvents': ['sect_root_test_result'],
+        },
+      ),
+      LifeEventChoice(
+        id: 'decline',
+        label: '婉拒机会',
+        effects: {
+          'log': '你选择留在家乡，错过了宗门选拔。',
+        },
+      ),
+    ],
+    weight: 4,
+  ),
+  LifeEventConfig(
+    id: 'sect_root_test_result',
+    title: '宗门灵根检测',
+    description: '长老主持灵根石，你的天赋显现。',
+    worlds: [World.mortal],
+    minAge: 12,
+    maxAge: 12,
+    prerequisites: ['non_top_family_only'],
+    effects: {'age': 0},
+    choices: [
+      LifeEventChoice(
+        id: 'pass',
+        label: '灵根合格',
+        effects: {
+          'log': '灵光闪耀，你被收为外门弟子。',
+          'talentLevelName': '已觉醒',
+          'realm': '炼气',
+          'sectId': 'generic_sect',
+          'pendingEvents': ['join_sect'],
+        },
+      ),
+      LifeEventChoice(
+        id: 'fail',
+        label: '灵根不足',
+        effects: {
+          'log': '灵光黯淡，你被遣返家乡，此生难再觉醒灵根，只能走炼体之路。',
+          'talentLevelName': '凡体',
+          'pendingEvents': ['mortal_fallback'],
+        },
+      ),
+    ],
+    weight: 4,
   ),
   // 入宗门
   LifeEventConfig(
@@ -502,6 +575,7 @@ const sampleEvents = <LifeEventConfig>[
     worlds: [World.mortal, World.immortal, World.nether],
     minAge: 13,
     maxAge: 20,
+    prerequisites: ['cultivation_started'],
     effects: {
       'age': 0,
       'delta': {'exp': 20, 'strength': 1}
@@ -515,6 +589,7 @@ const sampleEvents = <LifeEventConfig>[
     worlds: [World.mortal, World.immortal],
     minAge: 16,
     maxAge: 30,
+    prerequisites: ['cultivation_started'],
     effects: {
       'age': 0,
       'delta': {'exp': 30}
@@ -528,6 +603,7 @@ const sampleEvents = <LifeEventConfig>[
     worlds: [World.mortal, World.immortal],
     minAge: 18,
     maxAge: 35,
+    prerequisites: ['cultivation_started'],
     effects: {
       'age': 0,
       'delta': {'exp': 25, 'charm': 1}
@@ -556,6 +632,7 @@ const sampleEvents = <LifeEventConfig>[
     worlds: [World.mortal, World.immortal],
     minAge: 40,
     maxAge: 80,
+    prerequisites: ['cultivation_started'],
     effects: {
       'age': 0,
       'delta': {'exp': 40, 'intelligence': 1}
@@ -611,6 +688,7 @@ const sampleEvents = <LifeEventConfig>[
     worlds: [World.mortal, World.immortal, World.nether],
     minAge: 150,
     maxAge: 400,
+    prerequisites: ['cultivation_started'],
     effects: {
       'age': 0,
       'delta': {'exp': 80, 'luck': 1}
@@ -638,6 +716,7 @@ const sampleEvents = <LifeEventConfig>[
     worlds: [World.mortal, World.immortal],
     minAge: 300,
     maxAge: 600,
+    prerequisites: ['cultivation_started'],
     effects: {
       'age': 0,
       'delta': {'exp': 100, 'intelligence': 2}
@@ -666,6 +745,7 @@ const sampleEvents = <LifeEventConfig>[
     worlds: [World.immortal, World.nether],
     minAge: 600,
     maxAge: 1200,
+    prerequisites: ['cultivation_started'],
     effects: {
       'age': 0,
       'delta': {'exp': 150}
@@ -767,6 +847,8 @@ const sampleEvents = <LifeEventConfig>[
     description: '灵气充裕，你潜心修行。',
     worlds: [World.immortal],
     minAge: 6,
+    maxAge: 1200,
+    prerequisites: ['cultivation_started'],
     effects: {
       'delta': {'intelligence': 2, 'strength': 1}
     },

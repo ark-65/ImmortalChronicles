@@ -241,11 +241,7 @@ class _AdventurePageState extends State<AdventurePage> {
       // 每突破小境界增加寿元：用 maxLifespan 由 realmLifespan 直接体现；此处不额外加龄
     }
 
-    // auto ending when age>=120 safeguard
-    if (state.age >= 120 && state.ending == null) {
-      state.ending = '寿终正寝';
-      state.alive = false;
-    }
+    // 移除被动跳年的副作用：只有 forceNextYear 时才增龄
 
     await _persist();
     if (!mounted) return;
