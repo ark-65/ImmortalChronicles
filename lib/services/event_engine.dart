@@ -27,6 +27,13 @@ class EventEngine {
       if (e.regions != null && !e.regions!.contains(state.region)) return false;
       if (e.minAge != null && state.age < e.minAge!) return false;
       if (e.maxAge != null && state.age > e.maxAge!) return false;
+      // prerequisite flags
+      if (e.prerequisites.contains('root_awakened') && state.talentLevelName == '未知') {
+        return false;
+      }
+      if (e.prerequisites.contains('cultivation_started') && state.realm == '无') {
+        return false;
+      }
       if (e.conditions['needsLiteracy'] == true &&
           (!stage.allowLiteracy || !state.hasLiteracy)) {
         return false;
