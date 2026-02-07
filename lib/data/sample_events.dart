@@ -63,7 +63,7 @@ const sampleEvents = <LifeEventConfig>[
   ),
   LifeEventConfig(
     id: 'age_2_report',
-    title: '平平无奇的一年',
+    title: '吃奶睡觉的一年',
     description: '除了吃奶就是睡觉。',
     worlds: [World.mortal, World.immortal, World.nether],
     minAge: 2,
@@ -742,6 +742,7 @@ const sampleEvents = <LifeEventConfig>[
     title: '险境磨砺',
     description: '魔气侵蚀，你艰难前行。',
     worlds: [World.nether],
+    minAge: 3,
     effects: {
       'delta': {'strength': 2, 'charm': -1}
     },
@@ -765,6 +766,7 @@ const sampleEvents = <LifeEventConfig>[
     title: '闭关修炼',
     description: '灵气充裕，你潜心修行。',
     worlds: [World.immortal],
+    minAge: 6,
     effects: {
       'delta': {'intelligence': 2, 'strength': 1}
     },
@@ -776,7 +778,10 @@ const sampleEvents = <LifeEventConfig>[
       LifeEventChoice(
           id: 'body_train',
           label: '锤炼体魄',
-          effects: {'delta': {'strength': 2, 'exp': 15}}),
+          effects: {
+            'delta': {'strength': 2, 'exp': 15},
+            'log': '你负重奔跑、挥舞重剑，汗水浸透衣衫，筋骨更坚韧。',
+          }),
       LifeEventChoice(
           id: 'observe_cloud',
           label: '观云悟道',
@@ -813,6 +818,7 @@ const sampleEvents = <LifeEventConfig>[
     title: '平淡一年',
     description: '一年平平无奇地过去了。',
     worlds: [World.mortal],
+    minAge: 3,
     effects: {'age': 1},
     choices: [
       LifeEventChoice(
@@ -835,6 +841,7 @@ const sampleEvents = <LifeEventConfig>[
     title: '魔界岁月',
     description: '魔风呼啸，你苟活下来。',
     worlds: [World.nether],
+    minAge: 3,
     effects: {'age': 1},
     choices: [
       LifeEventChoice(
@@ -857,6 +864,7 @@ const sampleEvents = <LifeEventConfig>[
     title: '仙界修行',
     description: '仙气萦绕，岁月如梭。',
     worlds: [World.immortal],
+    minAge: 3,
     effects: {'age': 1},
     choices: [
       LifeEventChoice(
