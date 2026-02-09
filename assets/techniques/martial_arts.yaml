@@ -1,0 +1,5062 @@
+-
+  id: "art_sword_sss_1"
+  name: "绝影瞬杀剑"
+  type: "martial_art"
+  grade: "dao"
+  rank: "sss"
+  elements: ["风", "暗"]
+  description: "快到极致，影至人亡，乃杀伐第一之术。"
+  expRequired: 1500
+-
+  id: "art_palm_sss_1"
+  name: "造化遮天手"
+  type: "martial_art"
+  grade: "dao"
+  rank: "sss"
+  elements: ["金", "阳"]
+  description: "一手遮天，万物皆为蝼蚁，掌含造化之威。"
+  expRequired: 1500
+-
+  id: "art_fist_sss_1"
+  name: "神罗破灭拳"
+  type: "martial_art"
+  grade: "dao"
+  rank: "sss"
+  elements: ["力", "火"]
+  description: "集一身血气爆发，破灭万法，刚强无敌。"
+  expRequired: 1500
+-
+  id: "art_sword_sss_2"
+  name: "斩仙剑意"
+  type: "martial_art"
+  grade: "dao"
+  rank: "sss"
+  elements: ["金", "杀"]
+  description: "无上剑意，上斩仙神，下荡群魔。"
+  expRequired: 1500
+-
+  id: "art_fist_sss_2"
+  name: "混沌星辰拳"
+  type: "martial_art"
+  grade: "dao"
+  rank: "sss"
+  elements: ["混沌", "星"]
+  description: "拳落如星陨，蕴含混沌之威，粉碎虚空。"
+  expRequired: 1500
+-
+  id: "art_leg_sss_1"
+  name: "九霄雷动步"
+  type: "martial_art"
+  grade: "dao"
+  rank: "sss"
+  elements: ["雷", "风"]
+  description: "雷霆万钧，步若惊雷，身法与攻伐并重。"
+  expRequired: 1500
+-
+  id: "art_eye_sss_1"
+  name: "破妄神眼"
+  type: "martial_art"
+  grade: "dao"
+  rank: "sss"
+  elements: ["瞳", "神"]
+  description: "看破虚妄，逆乱阴阳，洞察先机。"
+  expRequired: 1500
+-
+  id: "art_blade_a_1"
+  name: "断水流刀法"
+  type: "martial_art"
+  grade: "fan"
+  rank: "a"
+  elements: ["水", "力"]
+  description: "刀势如断水，迅捷猛烈。"
+  expRequired: 250
+-
+  id: "art_staff_b_1"
+  name: "伏魔棍"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["金", "土"]
+  description: "势如山崩，克制邪祟。"
+  expRequired: 400
+-
+  id: "art_mortal_fan_sword_1"
+  name: "基础剑法"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["无"]
+  description: "基础的劈、砍、撩、刺，是剑道之基。"
+  expRequired: 100
+-
+  id: "art_mortal_fan_fist_1"
+  name: "碎石拳"
+  type: "martial_art"
+  grade: "fan"
+  rank: "d"
+  elements: ["土", "力"]
+  description: "势沉力猛，开山裂石。"
+  expRequired: 150
+-
+  id: "art_spirit_ling_spear_1"
+  name: "游龙枪"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["木", "风"]
+  description: "枪出如龙，灵动莫测，让人防不胜防。"
+  expRequired: 350
+-
+  id: "art_spirit_ling_bow_1"
+  name: "落日箭"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["火", "光"]
+  description: "箭如流星坠日，穿透力极强。"
+  expRequired: 350
+-
+  id: "art_immortal_xian_sword_1"
+  name: "青莲剑歌"
+  type: "martial_art"
+  grade: "xian"
+  rank: "a"
+  elements: ["木", "剑"]
+  description: "步步生莲，剑气如诗，诗情画意中蕴含杀机。"
+  expRequired: 700
+-
+  id: "art_immortal_xian_palm_1"
+  name: "须弥掌"
+  type: "martial_art"
+  grade: "xian"
+  rank: "a"
+  elements: ["土", "空"]
+  description: "掌中自有乾坤，一掌之威如须弥山压顶。"
+  expRequired: 750
+-
+  id: "art_saint_sheng_blade_1"
+  name: "屠龙刀法"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "s"
+  elements: ["金", "杀"]
+  description: "专为屠戮妖龙所创，一刀两断，煞气冲天。"
+  expRequired: 1100
+-
+  id: "art_saint_sheng_sound_1"
+  name: "天魔琴音"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["音", "幻"]
+  description: "琴声悠扬却暗藏杀机，乱人心智，碎人神魂。"
+  expRequired: 1250
+-
+  id: "art_spirit_ling_sword_1"
+  name: "疾风剑术"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["风", "剑"]
+  description: "剑出如风，快绝寰宇，让人目不暇接。"
+  expRequired: 400
+-
+  id: "art_spirit_ling_blade_1"
+  name: "重浪刀"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["水", "力"]
+  description: "刀势如潮汐，一浪高过一浪，劲力叠加。"
+  expRequired: 400
+-
+  id: "art_xian_sword_stars_1"
+  name: "七星北斗剑"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["星", "剑"]
+  description: "引动北斗七星之力，剑阵自成，困杀强敌。"
+  expRequired: 900
+-
+  id: "art_xian_fist_beast_1"
+  name: "真龙搏天手"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["神", "力"]
+  description: "模拟真龙之姿，肉身搏天，威震寰宇。"
+  expRequired: 950
+-
+  id: "art_sheng_assassin_1"
+  name: "瞬狱杀"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["暗", "杀"]
+  description: "于虚空中瞬移，一击必杀，堕入无间深狱。"
+  expRequired: 1300
+-
+  elements: ["混沌", "神"]
+  description: "简化繁杂为一掌，一切法皆为虚妄，乃混沌归一之术。"
+  expRequired: 2000
+-
+  id: "art_dao_sword_time_1"
+  name: "岁月无痕剑"
+  type: "martial_art"
+  grade: "dao"
+  rank: "sss"
+  elements: ["时", "剑"]
+  description: "剑出即是永恒，斩断时光之线，让对手在岁月流逝中消亡。"
+  expRequired: 3000
+-
+  id: "art_dao_spear_space_1"
+  name: "虚空破灭陨星刺"
+  type: "martial_art"
+  grade: "dao"
+  rank: "sss"
+  elements: ["空", "力"]
+  description: "枪尖颤动间崩碎空间，如陨星坠落，避无可避。"
+  expRequired: 2800
+-
+  id: "art_dao_blade_killing_1"
+  name: "阿修罗屠神斩"
+  type: "martial_art"
+  grade: "dao"
+  rank: "sss"
+  elements: ["杀", "暗"]
+  description: "凝聚滔天杀气，化身阿修罗，非神魔不可挡。"
+  expRequired: 2700
+-
+  id: "art_dao_palm_reincarnation_1"
+  name: "六道轮回大印"
+  type: "martial_art"
+  grade: "dao"
+  rank: "sss"
+  elements: ["生", "死", "神"]
+  description: "掌心演化六道，一印出而生死定，掌控百世轮回。"
+  expRequired: 2900
+-
+  id: "art_dao_fist_truth_1"
+  name: "天地玄黄至尊拳"
+  type: "martial_art"
+  grade: "dao"
+  rank: "sss"
+  elements: ["土", "金", "神"]
+  description: "承载玄黄母气，一拳镇压山河世界，唯我独尊。"
+  expRequired: 2600
+-
+  id: "art_dao_leg_eternal_1"
+  name: "永恒逍遥步"
+  type: "martial_art"
+  grade: "dao"
+  rank: "sss"
+  elements: ["时", "风"]
+  description: "游走于维度之外，不沾因果，瞬息跨越诸天万界。"
+  expRequired: 3000
+-
+  id: "art_dao_bow_destiny_1"
+  name: "因果断罪箭"
+  type: "martial_art"
+  grade: "dao"
+  rank: "sss"
+  elements: ["运", "光", "神"]
+  description: "锁定因果线，必中之箭。凡所欠者，皆以此箭偿还。"
+  expRequired: 2700
+-
+  id: "art_dao_staff_primordial_1"
+  name: "原始混沌开天棍"
+  type: "martial_art"
+  grade: "dao"
+  rank: "sss"
+  elements: ["混沌", "古", "力"]
+  description: "棍影重重如开天辟地，万物归于混沌起点。"
+  expRequired: 2500
+-
+  id: "art_dao_shield_absolute_1"
+  name: "无敌金身不坏域"
+  type: "martial_art"
+  grade: "dao"
+  rank: "sss"
+  elements: ["金", "土", "肉"]
+  description: "绝对防御领域，万法不侵，诸神退避。"
+  expRequired: 2800
+-
+  id: "art_dao_whip_dragon_1"
+  name: "囚天锁龙龙鞭"
+  type: "martial_art"
+  grade: "dao"
+  rank: "sss"
+  elements: ["水", "木", "控"]
+  description: "如神龙摆尾，封锁一切生机与灵力运行。"
+  expRequired: 2600
+-
+  id: "art_dao_soul_extinction_1"
+  name: "九幽镇魂曲"
+  type: "martial_art"
+  grade: "dao"
+  rank: "sss"
+  elements: ["音", "魂", "暗"]
+  description: "直击神魂深处的绝响，让生灵在幻境中寂灭。"
+  expRequired: 2700
+-
+  id: "art_dao_attribute_unification_1"
+  name: "归墟神掌"
+  type: "martial_art"
+  grade: "dao"
+  rank: "sss"
+  elements: ["虚无", "灭"]
+  description: "万物归墟之意，触碰即化为虚无。 "
+  expRequired: 3000
+-
+  id: "id_art_sheng_sword_1"
+  name: "浩然正气剑"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["气", "阳"]
+  description: "浩然之气化剑，斩妖除魔，心术不正者必死。"
+  expRequired: 1500
+-
+  id: "id_art_sheng_blade_2"
+  name: "狂雷裂空斩"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["雷", "风"]
+  description: "雷霆狂暴之势，斩碎空间，无坚不摧。"
+  expRequired: 1400
+-
+  id: "id_art_sheng_fist_1"
+  name: "大荒囚天指"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["古", "力"]
+  description: "一指囚天地，二指碎山河。极其霸道。"
+  expRequired: 1600
+-
+  id: "id_art_sheng_palm_1"
+  name: "玄冥神掌"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["冰", "暗"]
+  description: "掌带极其阴寒的气息，中者周身冰封，经络尽碎。"
+  expRequired: 1300
+-
+  id: "id_art_sheng_leg_1"
+  name: "风神腿"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["风"]
+  description: "快如烈风，腿影重重，攻守兼备身法卓绝。"
+  expRequired: 1200
+-
+  id: "id_art_sheng_spear_1"
+  name: "凤凰涅槃枪"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["火", "生"]
+  description: "枪尖火凤飞舞，生机不绝则战意不息。"
+  expRequired: 1500
+-
+  id: "id_art_sheng_staff_1"
+  name: "定海神针术"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["水", "金"]
+  description: "重逾千钧，足以镇压整片海域的沉重棍势。"
+  expRequired: 1400
+-
+  id: "id_art_sheng_shield_1"
+  name: "玄武甲防"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["土", "水"]
+  description: "如太古玄武附身，防御力惊人，反震强敌。"
+  expRequired: 1300
+-
+  id: "id_art_sheng_axe_1"
+  name: "刑天舞戚"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["力", "古"]
+  description: "不屈意志化为战斧，招式凶残，不死不休。"
+  expRequired: 1600
+-
+  id: "id_art_sheng_whip_1"
+  name: "雷龙狂舞鞭"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["雷", "木"]
+  description: "长鞭如龙，带走大片生机并伴随狂暴雷击产生的麻痹效果。"
+  expRequired: 1400
+-
+  id: "id_art_sheng_bow_1"
+  name: "追风赶月弓"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["风", "光"]
+  description: "一箭既出，万物避让，速度冠绝同阶。"
+  expRequired: 1300
+-
+  id: "id_art_sheng_sound_2"
+  name: "广陵散残曲"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["音", "气"]
+  description: "肃杀之气直冲云霄，音波所过之处尽皆粉碎。"
+  expRequired: 1500
+-
+  id: "id_art_sheng_soul_1"
+  name: "噬魂之手"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["魂", "暗"]
+  description: "直接抓取对手神魂灵力释放的爆发冲击。 "
+  expRequired: 1400
+-
+  id: "id_art_sheng_poison_1"
+  name: "万毒噬心手"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["毒", "化"]
+  description: "腐蚀一切灵力防护。 "
+  expRequired: 1300
+-
+  id: "id_art_sheng_blood_1"
+  name: "燃血狂暴术"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["力", "血"]
+  description: "燃烧自身血液来换取短暂极致爆发。 "
+  expRequired: 1600
+-
+  id: "id_art_sheng_illusion_1"
+  name: "镜花水月"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["幻", "水"]
+  description: "虚实变幻，让敌人分不清哪一个是真实。 "
+  expRequired: 1400
+-
+  id: "id_art_sheng_space_1"
+  name: "缩地成寸步"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["空"]
+  description: "无视地形，瞬间移动到指定位置。 "
+  expRequired: 1500
+-
+  id: "id_art_sheng_time_1"
+  name: "慢镜头术"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["时"]
+  description: "局部减慢对手动作，制造反应落差产生的破绽优势。"
+  expRequired: 1600
+-
+  id: "id_art_sheng_beast_1"
+  name: "鲲鹏展翼"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["风", "化"]
+  description: "模拟上古大凶产生的威压与极致速度。 "
+  expRequired: 1700
+-
+  id: "id_art_sheng_star_1"
+  name: "周天星斗印"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["星", "神"]
+  description: "引动远古星辰投射而下的镇压之力。 "
+  expRequired: 1500
+-
+  id: "id_art_sheng_nature_1"
+  name: "枯荣掌"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["木", "生", "死"]
+  description: "一掌生，一掌死。参透岁月演替之道创出的掌法。"
+  expRequired: 1600
+-
+  id: "id_art_sheng_sword_2"
+  name: "无我剑气"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["神", "剑"]
+  description: "人在剑在，人剑合一。摒弃一切杂念的极致攻击。"
+  expRequired: 1500
+-
+  id: "id_art_sheng_blade_3"
+  name: "霸龙横世斩"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["力", "金"]
+  description: "势不可挡的重型刀法。 "
+  expRequired: 1400
+-
+  id: "id_art_sheng_fist_2"
+  name: "金刚不坏神拳"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["金", "肉"]
+  description: "拳头坚硬如金刚石。 "
+  expRequired: 1300
+-
+  id: "id_art_sheng_palm_2"
+  name: "般若大灵掌"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["光", "神"]
+  description: "佛门神功，慈悲中带走一切邪祟。 "
+  expRequired: 1500
+-
+  id: "id_art_sheng_leg_2"
+  name: "踏空踢"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["空"]
+  description: "通过压缩空气产生极其强大的冲击力。 "
+  expRequired: 1400
+-
+  id: "id_art_sheng_spear_2"
+  name: "寒龙穿心刺"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["冰", "水"]
+  description: "枪影如寒龙，冻结接触点产生的所有生机。 "
+  expRequired: 1400
+-
+  id: "id_art_sheng_staff_2"
+  name: "如意狂龙棒"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["混沌", "力"]
+  description: "变幻莫测的高阶棍法。 "
+  expRequired: 1600
+-
+  id: "id_art_sheng_shield_2"
+  name: "不动如山印"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["土"]
+  description: "将自身与大地相连。 "
+  expRequired: 1300
+-
+  id: "id_art_sheng_axe_2"
+  name: "裂地大斧"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["土", "力"]
+  description: "一斧下去地裂山崩。 "
+  expRequired: 1400
+-
+  id: "id_art_sheng_whip_2"
+  name: "星尘流转鞭"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["星", "风"]
+  description: "鞭影如星河流动。 "
+  expRequired: 1500
+-
+  id: "id_art_sheng_bow_2"
+  name: "穿云射日弓"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["光"]
+  description: "超越光速的极致一箭。 "
+  expRequired: 1600
+-
+  id: "id_art_sheng_claw_1"
+  name: "九阴神爪"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["阴", "暗"]
+  description: "阴毒无比的近战技巧。 "
+  expRequired: 1400
+-
+  id: "id_art_sheng_kick_1"
+  name: "风卷残云腿"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["风"]
+  description: "大面积清扫战场。 "
+  expRequired: 1300
+-
+  id: "id_art_sheng_sound_3"
+  name: "碧海潮生曲"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["音", "水"]
+  description: "音波如潮汐强劲而连绵。 "
+  expRequired: 1400
+-
+  id: "id_art_sheng_light_1"
+  name: "圣光审判剑"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["光", "术"]
+  description: "从天而降的光之裁决。 "
+  expRequired: 1500
+-
+  id: "id_art_sheng_dark_1"
+  name: "永夜迷踪"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["暗", "空"]
+  description: "制造一片漆黑幽暗的绝对统治领域。 "
+  expRequired: 1600
+-
+  id: "id_art_sheng_thunder_1"
+  name: "紫电青霜剑"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["雷", "冰"]
+  description: "雷电与彻骨极寒叠加产生的双重打击。 "
+  expRequired: 1500
+-
+  id: "id_art_sheng_nature_2"
+  name: "万木逢春手"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["木", "生"]
+  description: "既可活人亦可杀人的高阶手段。 "
+  expRequired: 1400
+-
+  id: "id_art_sheng_gold_1"
+  name: "点金碎玉指"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["金"]
+  description: "将指力凝聚到极致。 "
+  expRequired: 1300
+-
+  id: "id_art_sheng_blood_2"
+  name: "修罗血印"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["血", "杀"]
+  description: "以血为媒的邪恶手印。 "
+  expRequired: 1500
+-
+  id: "id_art_sheng_gravity_1"
+  name: "重力压制场"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["土", "空"]
+  description: "让对手如陷泥沼。 "
+  expRequired: 1400
+-
+  id: "id_art_sheng_soul_2"
+  name: "引魂铃语"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["魂", "音"]
+  description: "招魂夺魄。 "
+  expRequired: 1300
+-
+  id: "id_art_sheng_chaos_1"
+  name: "无序打击"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["混沌"]
+  description: "没有任何规律可循的一招。 "
+  expRequired: 1700
+-
+  id: "id_art_sheng_pure_1"
+  name: "净世白莲"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["光"]
+  description: "洗涤灵魂的攻击。 "
+  expRequired: 1500
+-
+  id: "id_art_sheng_poison_2"
+  name: "七彩蜈蚣指"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["毒", "化"]
+  description: "剧毒。 "
+  expRequired: 1400
+-
+  id: "id_art_xian_sword_2"
+  name: "御剑术·万剑归宗"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["金", "术"]
+  description: "操控万千剑影，遮天蔽日。"
+  expRequired: 1000
+-
+  id: "id_art_xian_blade_1"
+  name: "冷月凝霜斩"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["冰", "阴"]
+  description: "刀如寒月，极致清冷。"
+  expRequired: 900
+-
+  id: "id_art_xian_fist_1"
+  name: "伏魔拳"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["阳", "力"]
+  description: "刚正大气的拳法。"
+  expRequired: 850
+-
+  id: "id_art_xian_palm_2"
+  name: "落樱缤纷掌"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["木", "风"]
+  description: "如落樱般轻灵，却暗藏步步紧逼的杀机。"
+  expRequired: 880
+-
+  id: "id_art_xian_spear_1"
+  name: "贯日长枪"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["光", "火"]
+  description: "以圣洁光影凝聚而成的审判长枪。 "
+  expRequired: 950
+-
+  id: "id_art_xian_bow_1"
+  name: "流星雨"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["星", "术"]
+  description: "瞬间射出数百支光箭。 "
+  expRequired: 1000
+-
+  id: "id_art_xian_staff_1"
+  name: "盘龙棍"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["肉", "力"]
+  description: "势大力沉，如龙翻身。 "
+  expRequired: 850
+-
+  id: "id_art_xian_shield_1"
+  name: "不动金光咒"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["光", "术"]
+  description: "全方位的护体屏障。 "
+  expRequired: 800
+-
+  id: "id_art_xian_claw_1"
+  name: "裂魂爪"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["魂", "暗"]
+  description: "直接抓裂灵魂。 "
+  expRequired: 920
+-
+  id: "id_art_xian_kick_1"
+  name: "凌风踢"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["风"]
+  description: "极速连环打击。 "
+  expRequired: 850
+-
+  id: "id_art_xian_sound_1"
+  name: "流水曲"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["音", "水"]
+  description: "温文尔雅下的致命陷阱。 "
+  expRequired: 880
+-
+  id: "id_art_xian_illusion_1"
+  name: "海市蜃楼"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["幻", "水"]
+  description: "让对手迷失在大规模幻象中。 "
+  expRequired: 950
+-
+  id: "id_art_xian_poison_1"
+  name: "腐骨毒气"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["毒"]
+  description: "大规模剧毒覆盖。 "
+  expRequired: 900
+-
+  id: "id_art_xian_fire_1"
+  name: "赤焰火海"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["火"]
+  description: "地狱深处升腾而起的炼狱火种。 "
+  expRequired: 880
+-
+  id: "id_art_xian_thunder_1"
+  name: "五雷轰顶"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["雷"]
+  description: "召唤九天之上垂落而下的雷霆洗礼。 "
+  expRequired: 1050
+-
+  id: "id_art_xian_ice_1"
+  name: "千丈冰封"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["冰"]
+  description: "瞬间冻结百步范围。 "
+  expRequired: 950
+-
+  id: "id_art_xian_wood_1"
+  name: "万木纠缠"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["木", "控"]
+  description: "利用地下根系束缚强敌。 "
+  expRequired: 850
+-
+  id: "id_art_xian_metal_1"
+  name: "锋锐无匹"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["金"]
+  description: "短时间强化武器锋芒，使其无坚不摧。"
+  expRequired: 800
+-
+  id: "id_art_xian_earth_1"
+  name: "重力加速度"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["土"]
+  description: "重力扭曲，让敌人承受自身百倍的重量负荷。"
+  expRequired: 920
+-
+  id: "id_art_xian_dark_1"
+  name: "暗影潜伏"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["暗"]
+  description: "在阴影次元中自由穿行。 "
+  expRequired: 850
+-
+  id: "id_art_xian_nature_1"
+  name: "生机盎然"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["生"]
+  description: "在激烈战斗中快速运转灵力修复。 "
+  expRequired: 1000
+-
+  id: "id_art_xian_blood_1"
+  name: "沸血"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["血"]
+  description: "由心而发的战斗狂热。 "
+  expRequired: 880
+-
+  id: "id_art_xian_space_1"
+  name: "虚空闪烁"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["空"]
+  description: "小范围瞬移突袭的基础技巧。 "
+  expRequired: 950
+-
+  id: "id_art_xian_luck_1"
+  name: "神来之笔"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["运"]
+  description: "极低频率触发的绝对致命一击。 "
+  expRequired: 1100
+-
+  id: "id_art_xian_sword_3"
+  name: "青锋三尺剑"
+  type: "martial_art"
+  grade: "xian"
+  rank: "a"
+  elements: ["金", "气"]
+  description: "剑气纵横三千里，一剑霜寒十四州。"
+  expRequired: 800
+-
+  id: "id_art_xian_blade_2"
+  name: "大漠孤烟斩"
+  type: "martial_art"
+  grade: "xian"
+  rank: "a"
+  elements: ["土", "干旱"]
+  description: "凄凉而雄浑的刀意，带走水分产生的生机。"
+  expRequired: 850
+-
+  id: "id_art_xian_fist_2"
+  name: "罗汉翻天印"
+  type: "martial_art"
+  grade: "xian"
+  rank: "a"
+  elements: ["力", "神"]
+  description: "势如泰山压顶，不可阻挡。"
+  expRequired: 880
+-
+  id: "id_art_xian_palm_3"
+  name: "千手观音"
+  type: "martial_art"
+  grade: "xian"
+  rank: "a"
+  elements: ["幻", "光"]
+  description: "幻化无边掌影，虚实交织。"
+  expRequired: 850
+-
+  id: "id_art_xian_spear_2"
+  name: "银龙破空"
+  type: "martial_art"
+  grade: "xian"
+  rank: "a"
+  elements: ["金", "空"]
+  description: "撕裂空气的极速一刺。"
+  expRequired: 900
+-
+  id: "id_art_xian_bow_2"
+  name: "追魂夺命箭"
+  type: "martial_art"
+  grade: "xian"
+  rank: "a"
+  elements: ["暗", "杀"]
+  description: "无声无息，黑暗中产生的极致威胁。"
+  expRequired: 920
+-
+  id: "id_art_xian_staff_2"
+  name: "疯魔杖法"
+  type: "martial_art"
+  grade: "xian"
+  rank: "a"
+  elements: ["力", "狂暴"]
+  description: "乱中有序，越战越勇。 "
+  expRequired: 850
+-
+  id: "id_art_xian_shield_2"
+  name: "混元护体功"
+  type: "martial_art"
+  grade: "xian"
+  rank: "a"
+  elements: ["气", "阳"]
+  description: "周身形成圆润如意的灵力球。 "
+  expRequired: 800
+-
+  id: "id_art_xian_claw_2"
+  name: "鹰掠长空"
+  type: "martial_art"
+  grade: "xian"
+  rank: "a"
+  elements: ["肉", "速"]
+  description: "凌厉的指尖产生的打击。 "
+  expRequired: 820
+-
+  id: "id_art_xian_kick_2"
+  name: "旋风连环踢"
+  type: "martial_art"
+  grade: "xian"
+  rank: "a"
+  elements: ["风"]
+  description: "形成旋风气场，束缚对手。 "
+  expRequired: 830
+-
+  id: "id_art_xian_sound_2"
+  name: "梅花三弄"
+  type: "martial_art"
+  grade: "xian"
+  rank: "a"
+  elements: ["音", "木"]
+  description: "三段式的声波产生的连续打击。 "
+  expRequired: 850
+-
+  id: "id_art_xian_illusion_2"
+  name: "蜃气楼台"
+  type: "martial_art"
+  grade: "xian"
+  rank: "a"
+  elements: ["幻", "水"]
+  description: "让对手困在无法逃离的迷雾中。 "
+  expRequired: 900
+-
+  id: "id_art_xian_poison_2"
+  name: "五毒赤焰劲"
+  type: "martial_art"
+  grade: "xian"
+  rank: "a"
+  elements: ["毒", "火"]
+  description: "带毒的火焰，极难驱除。 "
+  expRequired: 920
+-
+  id: "id_art_xian_fire_2"
+  name: "金乌化虹"
+  type: "martial_art"
+  grade: "xian"
+  rank: "a"
+  elements: ["火", "光"]
+  description: "身化火虹，焚烧触碰的一切。 "
+  expRequired: 950
+-
+  id: "id_art_xian_thunder_2"
+  name: "青雷爆裂"
+  type: "martial_art"
+  grade: "xian"
+  rank: "a"
+  elements: ["雷", "木"]
+  description: "带生发之意的雷霆。 "
+  expRequired: 900
+-
+  id: "id_art_xian_ice_2"
+  name: "玄冰破"
+  type: "martial_art"
+  grade: "xian"
+  rank: "a"
+  elements: ["冰", "力"]
+  description: "将冰晶产生的爆发力运用到极致。 "
+  expRequired: 880
+-
+  id: "id_art_xian_wood_2"
+  name: "万柳垂丝"
+  type: "martial_art"
+  grade: "xian"
+  rank: "a"
+  elements: ["木", "控"]
+  description: "无尽的枝条产生的缠绕。 "
+  expRequired: 820
+-
+  id: "id_art_xian_metal_2"
+  name: "庚金神光"
+  type: "martial_art"
+  grade: "xian"
+  rank: "a"
+  elements: ["金", "术"]
+  description: "无坚不摧的杀伐之光。 "
+  expRequired: 950
+-
+  id: "id_art_xian_earth_2"
+  name: "地牢术"
+  type: "martial_art"
+  grade: "xian"
+  rank: "a"
+  elements: ["土", "控"]
+  description: "大地灵力瞬间凝聚成的石柱牢笼。 "
+  expRequired: 850
+-
+  id: "id_art_xian_dark_2"
+  name: "暗蚀"
+  type: "martial_art"
+  grade: "xian"
+  rank: "a"
+  elements: ["暗", "死"]
+  description: "加速对手体内黑暗灵力的侵蚀。 "
+  expRequired: 900
+-
+  id: "id_art_xian_nature_2"
+  name: "春风化雨"
+  type: "martial_art"
+  grade: "xian"
+  rank: "a"
+  elements: ["生", "水"]
+  description: "引动浩瀚生机产生的强力恢复术。 "
+  expRequired: 850
+-
+  id: "id_art_xian_blood_2"
+  name: "血河"
+  type: "martial_art"
+  grade: "xian"
+  rank: "a"
+  elements: ["血", "水"]
+  description: "引动体内狂暴气血产生的冲击浪潮。 "
+  expRequired: 900
+-
+  id: "id_art_xian_space_2"
+  name: "空间塌陷"
+  type: "martial_art"
+  grade: "xian"
+  rank: "a"
+  elements: ["空"]
+  description: "引发虚空不稳产生的小范围崩碎。 "
+  expRequired: 1000
+-
+  id: "id_art_xian_luck_2"
+  name: "绝处逢生"
+  type: "martial_art"
+  grade: "xian"
+  rank: "a"
+  elements: ["运", "生"]
+  description: "在必死局中凭借气运获得一线生机。 "
+  expRequired: 1050
+-
+  id: "id_art_xian_sword_4"
+  name: "天罡北斗剑"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["星", "剑"]
+  description: "星位交互感应，产生浩大剑阵压杀。 "
+  expRequired: 950
+-
+  id: "id_art_xian_blade_3"
+  name: "破败之刃"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["死", "腐蚀"]
+  description: "万物凋零之意中蕴含的极致杀机。 "
+  expRequired: 980
+-
+  id: "id_art_xian_fist_3"
+  name: "雷神怒吼"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["雷", "音"]
+  description: "每一拳皆重若雷鸣，震碎虚空。 "
+  expRequired: 1000
+-
+  id: "id_art_xian_palm_4"
+  name: "翻云覆雨"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["水", "风"]
+  description: "惊涛骇浪，翻云覆雨的大范围控制场。 "
+  expRequired: 950
+-
+  id: "id_art_xian_spear_3"
+  name: "长虹贯日"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["阳", "光"]
+  description: "炙热枪芒直取要害。 "
+  expRequired: 960
+-
+  id: "id_art_xian_bow_3"
+  name: "九连珠"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["速", "术"]
+  description: "凭借极致箭术产生的连环速射。 "
+  expRequired: 980
+-
+  id: "id_art_xian_staff_3"
+  name: "擎天一柱"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["土", "力"]
+  description: "定鼎乾坤，镇压一切的厚重长棍。 "
+  expRequired: 920
+-
+  id: "id_art_xian_shield_3"
+  name: "绝对屏障"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["力", "防"]
+  description: "以极其强横的肉身真气形成的防御层。 "
+  expRequired: 900
+-
+  id: "id_art_xian_claw_3"
+  name: "撕裂灵魂"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["魂", "煞"]
+  description: "以狂暴煞气冲击并撕裂对手神魂。 "
+  expRequired: 1020
+-
+  id: "id_art_xian_kick_3"
+  name: "奔雷步"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["雷", "速"]
+  description: "身法快若闪电，引动雷霆狂鸣。 "
+  expRequired: 980
+-
+  id: "id_art_xian_sound_3"
+  name: "十面埋伏"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["音", "阵"]
+  description: "魔音灌耳，制造无处不在的音波陷阱。 "
+  expRequired: 950
+-
+  id: "id_art_xian_illusion_3"
+  name: "真实幻境"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["幻", "神"]
+  description: "真假难辨的幻境，受创即为真实。 "
+  expRequired: 1100
+-
+  id: "id_art_xian_poison_3"
+  name: "腐蚀之种"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["毒", "木"]
+  description: "将毒种打入体内，令其生根散毒。 "
+  expRequired: 1000
+-
+  id: "id_art_xian_fire_3"
+  name: "红莲业火"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["火", "因果"]
+  description: "赤红业火，焚尽一切罪孽。 "
+  expRequired: 1150
+-
+  id: "id_art_xian_thunder_3"
+  name: "寂灭雷劫"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["雷", "死"]
+  description: "寂灭气息凝结成的毁灭雷霆。 "
+  expRequired: 1200
+-
+  id: "id_art_xian_ice_3"
+  name: "极冻领域"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["冰", "空"]
+  description: "极度深寒，冻结周遭一切空间。 "
+  expRequired: 1050
+-
+  id: "id_art_xian_wood_3"
+  name: "建木之根"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["木", "古"]
+  description: "召唤来自太极之初的庞大生机根系。 "
+  expRequired: 1100
+-
+  id: "id_art_xian_metal_3"
+  name: "破法神光"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["金", "破法"]
+  description: "无孔不入的庚金之气，专破护身真气。 "
+  expRequired: 1100
+-
+  id: "id_art_xian_earth_3"
+  name: "大地脉动"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["土", "震"]
+  description: "引动大地厚重之力产生的剧烈共震。 "
+  expRequired: 950
+-
+  id: "id_art_xian_dark_3"
+  name: "黑洞旋涡"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["暗", "吸"]
+  description: "制造虚空塌陷形成的恐怖吸力黑洞。 "
+  expRequired: 1200
+-
+  id: "id_art_xian_nature_3"
+  name: "枯荣流转"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["生", "死"]
+  description: "参透枯荣真意，演化生死极意。 "
+  expRequired: 1100
+-
+  id: "id_art_xian_blood_3"
+  name: "嗜血渴望"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["血", "狂"]
+  description: "血气入脑，令服用者或是修士进入嗜血亢奋。 "
+  expRequired: 1000
+-
+  id: "id_art_xian_space_3"
+  name: "次元斩"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["空", "锋利"]
+  description: "切开维度位面，产生无法阻挡的打击。 "
+  expRequired: 1300
+-
+  id: "id_art_xian_luck_3"
+  name: "心想事成"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["运", "神"]
+  description: "凭言灵之力强行改变局部规则产生打击。 "
+  expRequired: 1500
+-
+  id: "id_art_xian_soul_1"
+  name: "控魂"
+  type: "martial_art"
+  grade: "xian"
+  rank: "a"
+  elements: ["魂", "神"]
+  description: "以强横神念干扰并控制对手神志。 "
+  expRequired: 880
+-
+  id: "id_art_xian_shadow_1"
+  name: "分身影子"
+  type: "martial_art"
+  grade: "xian"
+  rank: "a"
+  elements: ["暗", "幻"]
+  description: "制造具备自身部分实力的影之分身。 "
+  expRequired: 950
+-
+  id: "art_dao_concept_truth_1"
+  name: "真理之手"
+  type: "martial_art"
+  grade: "dao"
+  rank: "sss"
+  elements: ["神", "空"]
+  description: "触碰到事物的本质，强行修改其存在的逻辑。"
+  expRequired: 3000
+-
+  id: "id_art_sheng_blade_4"
+  name: "荒古巨灵斩"
+  type: "martial_art"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["古", "力"]
+  description: "召唤荒古巨灵虚影，斩碎一切阻碍。"
+  expRequired: 1600
+-
+  id: "id_art_ling_sword_3"
+  name: "流云剑法"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["水", "风"]
+  description: "剑势如流云般变幻莫测，连绵不绝。"
+  expRequired: 420
+-
+  id: "id_art_ling_blade_3"
+  name: "劈风大刀"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["风", "力"]
+  description: "劈砍之势如风卷残云，带起强劲气压。"
+  expRequired: 400
+-
+  id: "id_art_ling_fist_2"
+  name: "混元金刚拳"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["金", "力"]
+  description: "拳势刚猛，极具崩山裂石的破坏力。 "
+  expRequired: 410
+-
+  id: "id_art_ling_palm_2"
+  name: "落英掌"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["木", "幻"]
+  description: "轻灵曼妙，虚虚实实。 "
+  expRequired: 380
+-
+  id: "id_art_ling_spear_3"
+  name: "断魂矛"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["杀", "魂"]
+  description: "枪出如龙，伤敌肉身的同时震慑神魂。 "
+  expRequired: 450
+-
+  id: "id_art_ling_bow_3"
+  name: "三星连珠"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["速", "术"]
+  description: "瞬间连发三箭。 "
+  expRequired: 420
+-
+  id: "id_art_ling_staff_3"
+  name: "横扫千军"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["力", "土"]
+  description: "气贯全身，势不可挡的大面积横扫。 "
+  expRequired: 400
+-
+  id: "id_art_ling_shield_3"
+  name: "磐石防御"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["土", "防"]
+  description: "稳如泰山的基础技巧。 "
+  expRequired: 380
+-
+  id: "id_art_ling_claw_3"
+  name: "碎骨锁喉手"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["肉"]
+  description: "极其阴狠的近身格斗技巧，专门折骨。 "
+  expRequired: 410
+-
+  id: "id_art_ling_kick_3"
+  name: "漫天腿影"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["风", "幻"]
+  description: "让对手分不清哪一个是真实打击。 "
+  expRequired: 420
+-
+  id: "id_art_ling_sound_3"
+  name: "震音爆"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["音"]
+  description: "通过武器的高频共振产生穿透性打击。 "
+  expRequired: 400
+-
+  id: "id_art_ling_poison_3"
+  name: "五毒手"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["毒", "肉"]
+  description: "指尖带毒，造成剧烈的毒性侵蚀。 "
+  expRequired: 430
+-
+  id: "id_art_ling_fire_3"
+  name: "灼烧击"
+  type: "martial_art"
+  grade: "ling"
+  rank: "c"
+  elements: ["火"]
+  description: "拳风或刃芒中附带的一丝火毒之劲。 "
+  expRequired: 300
+-
+  id: "id_art_ling_thunder_3"
+  name: "奔雷劲"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["雷", "速"]
+  description: "快速的一击必杀。 "
+  expRequired: 450
+-
+  id: "id_art_ling_ice_3"
+  name: "凝冰刺"
+  type: "martial_art"
+  grade: "ling"
+  rank: "c"
+  elements: ["冰"]
+  description: "极低温度凝结成的一抹极寒剑气。 "
+  expRequired: 310
+-
+  id: "id_art_ling_wood_3"
+  name: "木藤缠绕"
+  type: "martial_art"
+  grade: "ling"
+  rank: "c"
+  elements: ["木", "控"]
+  description: "以青木灵力制造藤蔓，干扰对手平衡。 "
+  expRequired: 320
+-
+  id: "id_art_ling_metal_3"
+  name: "铁拳无敌"
+  type: "martial_art"
+  grade: "ling"
+  rank: "c"
+  elements: ["金"]
+  description: "庚金之气固化，极大增加拳头硬度。 "
+  expRequired: 330
+-
+  id: "id_art_ling_earth_3"
+  name: "地裂踢"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["土", "震"]
+  description: "力量直透地面。 "
+  expRequired: 420
+-
+  id: "id_art_ling_dark_3"
+  name: "影缝术"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["暗", "控"]
+  description: "让对手短时间无法移动。 "
+  expRequired: 450
+-
+  id: "id_art_ling_light_2"
+  name: "致盲闪光"
+  type: "martial_art"
+  grade: "ling"
+  rank: "c"
+  elements: ["光"]
+  description: "瞬间亮起强烈白光，夺人目眩。 "
+  expRequired: 350
+-
+  id: "id_art_ling_nature_3"
+  name: "润心"
+  type: "martial_art"
+  grade: "ling"
+  rank: "c"
+  elements: ["生"]
+  description: "在战斗中维持的一丝微弱灵气修复。 "
+  expRequired: 280
+-
+  id: "id_art_ling_blood_3"
+  name: "燃血一击"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["血"]
+  description: "极其短期的极致爆发力。 "
+  expRequired: 500
+-
+  id: "id_art_ling_luck_3"
+  name: "神来之手"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["运"]
+  description: "全凭运气产生的关键躲避。 "
+  expRequired: 600
+-
+  id: "id_art_ling_sword_4"
+  name: "寒梅剑"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["木", "冰"]
+  description: "孤傲冷清的剑招。 "
+  expRequired: 430
+-
+  id: "id_art_ling_blade_4"
+  name: "大开大决"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["金", "力"]
+  description: "纯粹的爆发力之刀法。 "
+  expRequired: 410
+-
+  id: "id_art_ling_fist_3"
+  name: "醉生梦死"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["水", "幻"]
+  description: "招式极度离奇，产生不可思议的不稳定感。 "
+  expRequired: 420
+-
+  id: "id_art_ling_palm_3"
+  name: "摧心掌"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["暗", "杀"]
+  description: "招式极其阴毒，伤人肺腑。 "
+  expRequired: 450
+-
+  id: "id_art_ling_spear_4"
+  name: "百花错乱"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["木", "幻"]
+  description: "如繁花飘落般绚烂的变幻招式。 "
+  expRequired: 400
+-
+  id: "id_art_ling_bow_4"
+  name: "幽灵无声箭"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["暗"]
+  description: "在黑暗中悄无声息地射出。 "
+  expRequired: 420
+-
+  id: "id_art_ling_staff_4"
+  name: "风雨棍"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["风", "水"]
+  description: "大开大合，势如风雨之势。 "
+  expRequired: 400
+-
+  id: "id_art_ling_shield_4"
+  name: "金钟不坏"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["金", "气"]
+  description: "极其强劲的护身真气。 "
+  expRequired: 450
+-
+  id: "id_art_ling_claw_4"
+  name: "分筋错骨"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["肉", "控"]
+  description: "精妙技巧，用于控制对手关节。 "
+  expRequired: 420
+-
+  id: "id_art_ling_kick_4"
+  name: "旋风连环踢"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["风"]
+  description: "产生一圈强劲的基础气场。 "
+  expRequired: 400
+-
+  id: "id_art_ling_sound_4"
+  name: "安神曲"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["音", "神"]
+  description: "平复对方狂乱的心境。 "
+  expRequired: 400
+-
+  id: "id_art_ling_poison_4"
+  name: "腐蚀术"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["毒", "术"]
+  description: "侵蚀对手神兵，使其受损。 "
+  expRequired: 430
+-
+  id: "id_art_ling_fire_4"
+  name: "烈焰爆发"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["火", "力"]
+  description: "烈焰在瞬间剧烈产生。 "
+  expRequired: 450
+-
+  id: "id_art_ling_thunder_4"
+  name: "雷光闪烁"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["雷", "光"]
+  description: "雷光瞬间跳跃，产生麻痹爆发。 "
+  expRequired: 460
+-
+  id: "id_art_ling_ice_4"
+  name: "极寒冰封感"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["冰", "控"]
+  description: "极寒之气降低对手反应速度。 "
+  expRequired: 440
+-
+  id: "id_art_ling_wood_4"
+  name: "叶动山河"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["木", "风"]
+  description: "看似轻盈，实则蕴含山河之威。 "
+  expRequired: 420
+-
+  id: "id_art_ling_metal_4"
+  name: "金戈铁马"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["金", "杀"]
+  description: "肃杀之气场，撼动对手心神。 "
+  expRequired: 450
+-
+  id: "id_art_ling_earth_4"
+  name: "地动波爆发"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["土"]
+  description: "通过地面传导强劲震波。 "
+  expRequired: 410
+-
+  id: "id_art_ling_dark_4"
+  name: "夜袭"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["暗", "速"]
+  description: "在暗影掩护下的致命一击。 "
+  expRequired: 420
+-
+  id: "id_art_ling_light_3"
+  name: "正气感人"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["光", "阳"]
+  description: "极其正气凛然。 "
+  expRequired: 430
+-
+  id: "id_art_ling_nature_4"
+  name: "春泥护花"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["生", "土"]
+  description: "纯厚土灵力产生的保护感。 "
+  expRequired: 400
+-
+  id: "id_art_ling_blood_4"
+  name: "血气沸腾"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["血"]
+  description: "沸腾全身血气，提升战斗意志。 "
+  expRequired: 450
+-
+  id: "id_art_ling_luck_4"
+  name: "福祸必杀"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["运", "神"]
+  description: "莫名奇妙的必杀一击。 "
+  expRequired: 650
+-
+  id: "id_art_ling_sword_5"
+  name: "水月剑法"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["水", "幻"]
+  description: "幻化出虚实交替的剑影。 "
+  expRequired: 440
+-
+  id: "id_art_ling_blade_5"
+  name: "破空大刀"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["风", "金"]
+  description: "极强的穿透推力，力透纸背。 "
+  expRequired: 430
+-
+  id: "id_art_ling_fist_4"
+  name: "罗汉长拳"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["阳", "力"]
+  description: "正大光明、刚猛异常的打击。 "
+  expRequired: 410
+-
+  id: "id_art_ling_palm_4"
+  name: "落雷掌"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["雷"]
+  description: "掌心含雷，瞬间击落爆发。 "
+  expRequired: 460
+-
+  id: "id_art_ling_spear_5"
+  name: "缠丝矛术"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["控", "术"]
+  description: "限制对手移动，使其如陷蛛网。 "
+  expRequired: 420
+-
+  id: "id_art_ling_bow_5"
+  name: "幻光散射"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["光"]
+  description: "一箭分裂成三支光矢。 "
+  expRequired: 450
+-
+  id: "id_art_ling_staff_5"
+  name: "地动山摇棍"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["土", "力"]
+  description: "长棍捣地，引发剧烈震动。 "
+  expRequired: 420
+-
+  id: "id_art_ling_shield_5"
+  name: "大气防御罩"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["气", "防"]
+  description: "全方位的保护。 "
+  expRequired: 430
+-
+  id: "id_art_ling_claw_5"
+  name: "鹰击长空爪"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["速", "肉"]
+  description: "快速的连环。 "
+  expRequired: 440
+-
+  id: "id_art_ling_kick_5"
+  name: "极致崩山踢"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["力"]
+  description: "强调瞬间爆发，力拔千钧。 "
+  expRequired: 410
+-
+  id: "id_art_ling_sound_5"
+  name: "洗魂清心曲"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["音", "生"]
+  description: "为友军洗涤神魂之垢。 "
+  expRequired: 400
+-
+  id: "id_art_ling_poison_5"
+  name: "化骨绵掌"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["毒", "阴"]
+  description: "内力入体，阴寒刺骨。 "
+  expRequired: 460
+-
+  id: "id_art_ling_fire_5"
+  name: "烈焰洗礼"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["火", "光"]
+  description: "范围极大的烈焰爆发。 "
+  expRequired: 470
+-
+  id: "id_art_ling_ice_5"
+  name: "寒霜冻结气"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["冰"]
+  description: "寒霜减缓敌人血气流转。 "
+  expRequired: 420
+-
+  id: "id_art_ling_thunder_5"
+  name: "雷蛇"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["雷"]
+  description: "真气化蛇，自动追踪敌踪。 "
+  expRequired: 450
+-
+  id: "id_art_ling_sword_6"
+  name: "秋水剑"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["水", "剑"]
+  description: "剑光如秋水波纹，波澜不惊。 "
+  expRequired: 400
+-
+  id: "id_art_ling_blade_6"
+  name: "厚德重刀"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["土", "力"]
+  description: "重剑无锋，守重于攻。 "
+  expRequired: 380
+-
+  id: "id_art_ling_fist_5"
+  name: "太极拳"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["阴", "阳"]
+  description: "纯正内家真力，四两拨千斤。 "
+  expRequired: 450
+-
+  id: "id_art_ling_palm_5"
+  name: "绵延重掌"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["气", "柔"]
+  description: "掌力如丝，化劲连绵不绝。 "
+  expRequired: 410
+-
+  id: "id_art_ling_spear_6"
+  name: "螺旋贯穿"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["金", "术"]
+  description: "真元伴随螺旋劲气产生高速旋转，增强贯穿力。 "
+  expRequired: 440
+-
+  id: "id_art_ling_bow_6"
+  name: "爆烈陨星箭"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["火"]
+  description: "箭矢触地或击中目标后产生猛烈爆炸。 "
+  expRequired: 430
+-
+  id: "id_art_ling_staff_6"
+  name: "不动如山棍"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["土", "防"]
+  description: "以守带攻，通过反震之力重创对手。 "
+  expRequired: 390
+-
+  id: "id_art_ling_shield_6"
+  name: "真气化盾"
+  type: "martial_art"
+  grade: "ling"
+  rank: "c"
+  elements: ["气"]
+  description: "以深厚真气在身前筑起无形屏障。 "
+  expRequired: 280
+-
+  id: "id_art_ling_claw_6"
+  name: "钩心斗角"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["肉", "杀"]
+  description: "招式阴狠，专门针对人体关节死穴。 "
+  expRequired: 420
+-
+  id: "id_art_ling_kick_6"
+  name: "旋风摆莲"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["风", "肉"]
+  description: "腿如长鞭，带起风暴般的连环扫荡。 "
+  expRequired: 390
+-
+  id: "id_art_ling_sound_6"
+  name: "震天惊雷吼"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["音", "力"]
+  description: "以极其强劲的声音撼动对手神志。 "
+  expRequired: 480
+-
+  id: "id_art_ling_poison_6"
+  name: "腐尸劲"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["毒", "化"]
+  description: "剧毒入体，令伤口极难通过灵药愈合。 "
+  expRequired: 450
+-
+  id: "id_art_ling_fire_6"
+  name: "真红烈焰燎原"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["火", "木"]
+  description: "借助狂暴烈焰火灵之力大范围焚烧。 "
+  expRequired: 460
+-
+  id: "id_art_ling_thunder_6"
+  name: "奔雷步"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["雷", "速"]
+  description: "雷霆爆发产生的瞬间机制机动力。 "
+  expRequired: 440
+-
+  id: "id_art_ling_ice_6"
+  name: "极寒护体气功"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["冰", "防"]
+  description: "周身寒气逼人，冰封邻近威胁。 "
+  expRequired: 410
+-
+  id: "id_art_ling_wood_6"
+  name: "春泥"
+  type: "martial_art"
+  grade: "ling"
+  rank: "c"
+  elements: ["木", "土"]
+  description: "以厚重之气制造地陷，令对手移动受限。 "
+  expRequired: 320
+-
+  id: "id_art_ling_metal_6"
+  name: "锐意"
+  type: "martial_art"
+  grade: "ling"
+  rank: "c"
+  elements: ["金", "术"]
+  description: "以庚金之气强化锋芒，增加杀伤力。 "
+  expRequired: 330
+-
+  id: "id_art_ling_earth_6"
+  name: "土龙破岩盾"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["土", "术"]
+  description: "凝聚大地之力，筑起厚重墙壁。 "
+  expRequired: 400
+-
+  id: "id_art_ling_dark_6"
+  name: "潜影"
+  type: "martial_art"
+  grade: "ling"
+  rank: "c"
+  elements: ["暗"]
+  description: "身法灵动，通过视觉死角遁入暗影。 "
+  expRequired: 350
+-
+  id: "id_art_ling_light_4"
+  name: "圣光净世辉"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["光"]
+  description: "玄黄正气，对邪魔阴物产生极大压制。 "
+  expRequired: 430
+-
+  id: "id_art_ling_nature_6"
+  name: "玄天自愈术"
+  type: "martial_art"
+  grade: "ling"
+  rank: "c"
+  elements: ["生"]
+  description: "以乙木灵性止血生肌的基础灵咒。 "
+  expRequired: 280
+-
+  id: "id_art_ling_blood_6"
+  name: "血契"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["血", "契"]
+  description: "以自身血液为契，换取暴涨的力量。 "
+  expRequired: 550
+-
+  id: "id_art_ling_luck_6"
+  name: "鸿运避死劫"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["运"]
+  description: "福缘深厚，总能诡异地躲过杀招。 "
+  expRequired: 650
+-
+  id: "id_art_ling_sword_7"
+  name: "碧渊剑"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["水", "杀"]
+  description: "凝聚深潭之意产生的彻骨冷意。 "
+  expRequired: 450
+-
+  id: "id_art_ling_blade_7"
+  name: "重峦刀"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["土", "力"]
+  description: "刀势厚重如山，带起万钧压力。 "
+  expRequired: 430
+-
+  id: "id_art_ling_fist_6"
+  name: "伏虎阳刚劲"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["阳", "肉"]
+  description: "阳刚正气加持，产生猛力打击。 "
+  expRequired: 410
+-
+  id: "id_art_ling_palm_6"
+  name: "风雷引"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["雷", "风"]
+  description: "引动天风地雷产生连环震爆。 "
+  expRequired: 480
+-
+  id: "id_art_ling_spear_7"
+  name: "蛟龙抬头矛"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["阳", "力"]
+  description: "势如蛟龙出水，挑击连绵不绝。 "
+  expRequired: 420
+-
+  id: "id_art_ling_bow_7"
+  name: "流影箭"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["暗", "速"]
+  description: "如暗影流光，极难为人察觉。 "
+  expRequired: 440
+-
+  id: "id_art_ling_staff_7"
+  name: "困兽囚虎棍"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["术", "控"]
+  description: "棍影重重，令对手进退维谷。 "
+  expRequired: 430
+-
+  id: "id_art_ling_shield_7"
+  name: "玄冰御水墙"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["冰", "防"]
+  description: "不仅具备防御，更带彻骨灵气寒化劲。 "
+  expRequired: 420
+-
+  id: "id_art_ling_claw_7"
+  name: "撕心裂肺爪"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["肉", "杀"]
+  description: "极其暴力。 "
+  expRequired: 450
+-
+  id: "id_art_ling_kick_7"
+  name: "水面踏浪步"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["水", "风"]
+  description: "身强轻盈，在水面上亦能如履平地。 "
+  expRequired: 400
+-
+  id: "id_art_ling_sound_7"
+  name: "海啸惊涛吼"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["音", "气"]
+  description: "声如惊涛，带起大范围震慑效果。 "
+  expRequired: 410
+-
+  id: "id_art_ling_poison_7"
+  name: "毒牙"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["毒", "刺"]
+  description: "利刃沁毒，触之即刻产生剧毒感。 "
+  expRequired: 450
+-
+  id: "id_art_ling_fire_7"
+  name: "红莲"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["火", "幻"]
+  description: "红莲幻生，造成范围迷惑打击。 "
+  expRequired: 430
+-
+  id: "id_art_ling_thunder_7"
+  name: "疾光"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["雷", "光"]
+  description: "速度及极致，产生狂暴雷霆爆发。 "
+  expRequired: 470
+-
+  id: "id_art_ling_ice_7"
+  name: "极冷霜寒裂"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["冰", "力"]
+  description: "极度低温使对手兵刃脆化直接击碎。 "
+  expRequired: 410
+-
+  id: "id_art_ling_wood_7"
+  name: "森罗荆棘丛"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["木", "伤"]
+  description: "幻化遍地荆棘，令敌人寸步难行。 "
+  expRequired: 400
+-
+  id: "id_art_ling_metal_7"
+  name: "庚金极芒斩"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["金", "锋"]
+  description: "极大增强兵刃之锋锐，无坚不摧。 "
+  expRequired: 420
+-
+  id: "id_art_ling_earth_7"
+  name: "后土重力压制"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["土", "控"]
+  description: "抽取地脉之气产生沉重压杀感。 "
+  expRequired: 440
+-
+  id: "id_art_ling_dark_7"
+  name: "幽冥视野盲区"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["暗"]
+  description: "瞬间剥夺对手视野，封锁神识探测。 "
+  expRequired: 410
+-
+  id: "id_art_ling_light_7"
+  name: "净世白光咒"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["光", "术"]
+  description: "驱散周身一切邪祟与异常。 "
+  expRequired: 430
+-
+  id: "id_art_ling_nature_7"
+  name: "共生生命链接"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["生"]
+  description: "极其微弱。 "
+  expRequired: 500
+-
+  id: "id_art_ling_blood_7"
+  name: "修罗血怒"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["血", "力"]
+  description: "受伤越重斗志越狂，产生惊人抗性。 "
+  expRequired: 550
+-
+  id: "id_art_ling_luck_7"
+  name: "绝地生机"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["运"]
+  description: "在必死边缘爆发出的气运灵极。 "
+  expRequired: 700
+-
+  id: "id_art_ling_sword_8"
+  name: "孤舟泛江剑"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["木", "水"]
+  description: "剑如孤舟，御对手招式重心于无形。 "
+  expRequired: 450
+-
+  id: "id_art_ling_blade_8"
+  name: "斩风断空刀"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["风", "金"]
+  description: "刀芒之锐前所未见，可斩风破气。 "
+  expRequired: 460
+-
+  id: "id_art_ling_fist_7"
+  name: "撼地位压拳"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["土", "力"]
+  description: "拳震大地，以碎石飞土震慑群敌。 "
+  expRequired: 440
+-
+  id: "id_art_ling_palm_7"
+  name: "烈风重掌"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["风", "气"]
+  description: "真气高度压缩后产生狂风般的排山掌劲。 "
+  expRequired: 430
+-
+  id: "id_art_ling_spear_8"
+  name: "蛇信毒刺矛"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["毒", "刺"]
+  description: "矛头如蛇信吞吐，极其快速且精准。 "
+  expRequired: 450
+-
+  id: "id_art_ling_bow_8"
+  name: "流星坠月弓"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["火", "光"]
+  description: "箭出如流星，极度明亮且贯穿力惊人。 "
+  expRequired: 470
+-
+  id: "id_art_ling_staff_8"
+  name: "星罗囚星棍"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["星", "控"]
+  description: "棍势封锁虚空，令对手失去平衡与重心。 "
+  expRequired: 480
+-
+  id: "id_art_ling_shield_8"
+  name: "万钧厚土盾"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["土", "防"]
+  description: "厚德载物，产生极强的真气防御与抗性。 "
+  expRequired: 450
+-
+  id: "id_art_ling_claw_8"
+  name: "金刚裂石手"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["力", "金"]
+  description: "手指如钩，能轻易撕裂最坚硬的顽石。 "
+  expRequired: 440
+-
+  id: "id_art_ling_kick_8"
+  name: "流云凌空踢"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["风", "空"]
+  description: "身法灵动，瞬间在空中产生方位移转产生重踢。 "
+  expRequired: 460
+-
+  id: "id_art_ling_sound_8"
+  name: "洗髓伐脉曲"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["音", "肉"]
+  description: "以音律引导灵气，缓慢洗炼体质瑕疵。 "
+  expRequired: 480
+-
+  id: "id_art_ling_poison_8"
+  name: "玄冥化骨劲"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["毒", "阴"]
+  description: "阴毒入骨，劲力化合万物生机为虚无。 "
+  expRequired: 460
+-
+  id: "id_art_ling_sword_9"
+  name: "青虹剑法"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["木", "风"]
+  description: "剑气如青虹贯日，速度奇快。 "
+  expRequired: 440
+-
+  id: "id_art_ling_blade_9"
+  name: "九环扣山刀"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["金", "力"]
+  description: "势大力沉，连绵不绝。 "
+  expRequired: 450
+-
+  id: "id_art_ling_fist_8"
+  name: "通背猿拳"
+  type: "martial_art"
+  grade: "ling"
+  rank: "c"
+  elements: ["力", "速"]
+  description: "模仿灵猿，招式灵活多变。 "
+  expRequired: 350
+-
+  id: "id_art_ling_palm_8"
+  name: "八卦震天掌"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["气", "震"]
+  description: "掌法圆融法度，带起剧烈的内震劲力。 "
+  expRequired: 420
+-
+  id: "id_art_ling_spear_9"
+  name: "烈火燎原矛"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["火", "杀"]
+  description: "挥舞间如烈火燃烧。 "
+  expRequired: 460
+-
+  id: "id_art_ling_bow_9"
+  name: "流星箭雨"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["金", "速"]
+  description: "瞬间射出如雨般的箭矢。 "
+  expRequired: 450
+-
+  id: "id_art_ling_staff_9"
+  name: "中平齐眉棍"
+  type: "martial_art"
+  grade: "ling"
+  rank: "c"
+  elements: ["土", "防"]
+  description: "基础而扎实的棍法。 "
+  expRequired: 320
+-
+  id: "id_art_ling_shield_9"
+  name: "摩柯钢铁铁壁"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["金", "防"]
+  description: "极其强悍的硬气功。 "
+  expRequired: 470
+-
+  id: "id_art_ling_claw_9"
+  name: "幽冥鬼爪"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["暗", "阴"]
+  description: "如鬼魅般阴森可怖。 "
+  expRequired: 480
+-
+  id: "id_art_ling_kick_9"
+  name: "风神腿"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["风", "速"]
+  description: "腿法快如疾风。 "
+  expRequired: 450
+-
+  id: "id_art_ling_sound_9"
+  name: "迷魂消声引"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["音", "幻"]
+  description: "通过琴音干扰神志。 "
+  expRequired: 460
+-
+  id: "id_art_ling_poison_9"
+  name: "玄水化骨手"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["毒", "水"]
+  description: "内力带起强烈的腐蚀之意，销骨化形。 "
+  expRequired: 470
+-
+  id: "id_art_ling_fire_8"
+  name: "灼浪碎心手"
+  type: "martial_art"
+  grade: "ling"
+  rank: "c"
+  elements: ["火", "气"]
+  description: "带起滚滚灼热掌风。 "
+  expRequired: 380
+-
+  id: "id_art_ling_thunder_8"
+  name: "雷霆万钧一一击"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["雷", "力"]
+  description: "这一击中携带雷电。 "
+  expRequired: 430
+-
+  id: "id_art_ling_ice_8"
+  name: "落霜拳"
+  type: "martial_art"
+  grade: "ling"
+  rank: "c"
+  elements: ["冰", "肉"]
+  description: "拳风萧瑟，寒气侵人。 "
+  expRequired: 360
+-
+  id: "id_art_ling_wood_8"
+  name: "古树缠绕劲"
+  type: "martial_art"
+  grade: "ling"
+  rank: "c"
+  elements: ["木", "柔"]
+  description: "劲力如老根错节，纠缠难脱。 "
+  expRequired: 340
+-
+  id: "id_art_ling_metal_8"
+  name: "锋刃啸金劲"
+  type: "martial_art"
+  grade: "ling"
+  rank: "c"
+  elements: ["金", "杀"]
+  description: "增强武器的杀伐锐气。 "
+  expRequired: 390
+-
+  id: "id_art_ling_earth_8"
+  name: "地龙冲霄"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["土", "震"]
+  description: "地底传来的猛烈震动冲击。 "
+  expRequired: 410
+-
+  id: "id_art_ling_dark_8"
+  name: "暗影毒蜂刺"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["暗", "速"]
+  description: "在黑暗掩护中爆发出突袭。 "
+  expRequired: 445
+-
+  id: "id_art_ling_light_8"
+  name: "浩然正气掌"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["光", "阳"]
+  description: "浩然正气，驱散一切邪佞。 "
+  expRequired: 430
+-
+  id: "id_art_ling_nature_8"
+  name: "玄元生命之触"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["生"]
+  description: "在战斗中通过接触传递生机疗愈。 "
+  expRequired: 500
+-
+  id: "id_art_ling_blood_8"
+  name: "嗜血狂袭"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["血", "速"]
+  description: "受伤越重，攻势越发狂野凶猛。 "
+  expRequired: 580
+-
+  id: "id_art_ling_luck_8"
+  name: "天机逢凶化吉"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["运", "防"]
+  description: "冥冥中的灵光感应，助你转危为安。 "
+  expRequired: 680
+-
+  id: "id_art_ling_sword_10"
+  name: "点苍剑法"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["金", "术"]
+  description: "极其精炼的剑法。 "
+  expRequired: 450
+-
+  id: "id_art_ling_blade_10"
+  name: "斩蛟大刀"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["水", "力"]
+  description: "水下斩击亦能发挥全副威力。 "
+  expRequired: 460
+-
+  id: "id_art_ling_fist_9"
+  name: "达摩罗汉拳"
+  type: "martial_art"
+  grade: "ling"
+  rank: "c"
+  elements: ["阳", "肉"]
+  description: "刚猛异常。 "
+  expRequired: 380
+-
+  id: "id_art_ling_palm_9"
+  name: "落英缤纷掌"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["木", "幻"]
+  description: "虚实相间。 "
+  expRequired: 420
+-
+  id: "id_art_ling_spear_10"
+  name: "追魂夺命枪"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["杀", "速"]
+  description: "枪出杀意凛冽，令对手魂飞魄散。 "
+  expRequired: 470
+-
+  id: "id_art_ling_bow_10"
+  name: "落日神箭坠"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["火", "杀"]
+  description: "携带极大爆发推力的神箭一击。 "
+  expRequired: 490
+-
+  id: "id_art_ling_staff_10"
+  name: "疯狂连环棍"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["力", "震"]
+  description: "极其狂暴的频率打击，令敌无喘息之机。 "
+  expRequired: 440
+-
+  id: "id_art_ling_shield_10"
+  name: "不动金刚御"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["土", "气"]
+  description: "极致防御，护体罡气宛如铜墙铁壁。 "
+  expRequired: 480
+-
+  id: "id_art_ling_claw_10"
+  name: "撕天烈地爪"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["力", "杀"]
+  description: "破坏力极强，能碎甲伤肉。 "
+  expRequired: 470
+-
+  id: "id_art_ling_kick_10"
+  name: "无影迷踪脚"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["速", "幻"]
+  description: "速度极快，带起重重残影。 "
+  expRequired: 450
+-
+  id: "id_art_ling_sound_10"
+  name: "静心镇魂曲"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["音", "魂"]
+  description: "安抚狂躁神智，破除外道迷惑。 "
+  expRequired: 460
+-
+  id: "id_art_ling_poison_10"
+  name: "剧毒死兆领域"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["毒", "术"]
+  description: "周身产生剧毒瘴气。 "
+  expRequired: 480
+-
+  id: "id_art_ling_fire_9"
+  name: "赤焰烈火斩"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["火", "金"]
+  description: "斩击中附带狂暴火劲，焚肉入骨。 "
+  expRequired: 420
+-
+  id: "id_art_ling_thunder_9"
+  name: "雷光闪灭斩"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["雷", "金"]
+  description: "快如闪电，带起炽目雷芒。 "
+  expRequired: 430
+-
+  id: "id_art_ling_ice_9"
+  name: "极冷霜寒箭"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["冰", "术"]
+  description: "离弦之箭带起彻骨寒气，减缓目标动作。 "
+  expRequired: 410
+-
+  id: "id_art_ling_wood_9"
+  name: "万物复苏灵光"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["木", "生"]
+  description: "草木灵气汇聚，修复周身细微创伤。 "
+  expRequired: 450
+-
+  id: "id_art_ling_metal_9"
+  name: "金刚不坏身"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["金", "肉"]
+  description: "强化皮肉硬度，犹如金铁铸就。 "
+  expRequired: 460
+-
+  id: "id_art_ling_earth_9"
+  name: "流沙地陷术"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["土", "控"]
+  description: "改变局部地形，产生泥沼困住对手。 "
+  expRequired: 430
+-
+  id: "id_art_ling_dark_9"
+  name: "虚无暗影步"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["暗", "速"]
+  description: "身如鬼魅，极大提高身法闪避。 "
+  expRequired: 440
+-
+  id: "id_art_ling_light_9"
+  name: "玄天光之盾"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["光", "防"]
+  description: "汇聚纯阳灵力产生圣洁防御。 "
+  expRequired: 420
+-
+  id: "id_art_ling_nature_9"
+  name: "万灵自然之友"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["生", "术"]
+  description: "心合造化，大幅降低妖兽对你的敌意。 "
+  expRequired: 450
+-
+  id: "id_art_ling_blood_9"
+  name: "玄阴血液凝固咒"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["血", "阴"]
+  description: "阴寒之力入体，凝滞对手血气运行。 "
+  expRequired: 490
+-
+  id: "id_art_ling_luck_9"
+  name: "鸿蒙机缘巧合"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["运", "幻"]
+  description: "天命所归，常能在危机中莫名避开攻击。 "
+  expRequired: 700
+-
+  id: "id_art_ling_sword_11"
+  name: "御气剑波回旋"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["气", "术"]
+  description: "控制剑气回旋，对目标造成二次打击。 "
+  expRequired: 440
+-
+  id: "id_art_ling_blade_11"
+  name: "五虎大劈砍"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["力", "金"]
+  description: "简单而直接的巨力挥砍，势重千钧。 "
+  expRequired: 450
+-
+  id: "id_art_ling_fist_10"
+  name: "八极崩拳"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["力", "金"]
+  description: "发力刚猛极，产生恐怖的内劲穿透力。 "
+  expRequired: 480
+-
+  id: "id_art_ling_palm_10"
+  name: "雪落无痕掌"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["冰", "幻"]
+  description: "掌势如飞雪漫天，清冷曼妙。 "
+  expRequired: 430
+-
+  id: "id_art_ling_spear_11"
+  name: "怒龙贯心钻"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["术", "力"]
+  description: "强大的灵力螺旋产生的恐怖贯穿力。 "
+  expRequired: 460
+-
+  id: "id_art_fan_sword_1"
+  name: "基础剑法"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["金"]
+  description: "最简单直接的刺、劈、挂。 "
+  expRequired: 100
+-
+  id: "id_art_fan_blade_1"
+  name: "于开山大刀术"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["力"]
+  description: "势大利沉的劈砍基础。 "
+  expRequired: 120
+-
+  id: "id_art_fan_fist_1"
+  name: "黑虎拳"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["力"]
+  description: "入门级别的刚猛拳法。 "
+  expRequired: 110
+-
+  id: "id_art_fan_palm_1"
+  name: "推山掌"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["气"]
+  description: "学习发力技巧的基础掌法。 "
+  expRequired: 100
+-
+  id: "id_art_fan_spear_1"
+  name: "于中平枪"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["术"]
+  description: "唯快不破的扎枪基础。 "
+  expRequired: 130
+-
+  id: "id_art_fan_bow_1"
+  name: "百步穿杨"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["速"]
+  description: "基础的瞄准与。 "
+  expRequired: 140
+-
+  id: "id_art_fan_staff_1"
+  name: "打狗棒"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["木"]
+  description: "灵活多变的基础棍法。 "
+  expRequired: 110
+-
+  id: "id_art_fan_shield_1"
+  name: "铁布衫"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["肉"]
+  description: "增强抗击打能力。 "
+  expRequired: 150
+-
+  id: "id_art_fan_claw_1"
+  name: "于锁喉功"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["肉"]
+  description: "产生的致命基础。 "
+  expRequired: 130
+-
+  id: "id_art_fan_kick_1"
+  name: "由连环腿"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["速"]
+  description: "连绵不绝的基础踢技。 "
+  expRequired: 120
+-
+  id: "id_art_fan_sword_2"
+  name: "于灵蛇剑法"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["术"]
+  description: "诡谲多变的基础剑法。 "
+  expRequired: 180
+-
+  id: "id_art_fan_blade_2"
+  name: "于快刀"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["速"]
+  description: "专注于出刀速度。 "
+  expRequired: 170
+-
+  id: "id_art_fan_fist_2"
+  name: "长拳"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["力"]
+  description: "大开大合。 "
+  expRequired: 160
+-
+  id: "id_art_fan_palm_2"
+  name: "绵掌"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["柔"]
+  description: "柔中。 "
+  expRequired: 175
+-
+  id: "id_art_fan_spear_2"
+  name: "于六合枪"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["术"]
+  description: "严谨的攻守基础。 "
+  expRequired: 190
+-
+  id: "id_art_fan_bow_2"
+  name: "连珠射"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["速"]
+  description: "提高射速。 "
+  expRequired: 200
+-
+  id: "id_art_fan_staff_2"
+  name: "三节棍"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["术"]
+  description: "技巧。 "
+  expRequired: 180
+-
+  id: "id_art_fan_shield_2"
+  name: "于八卦盾"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["防"]
+  description: "步伐。 "
+  expRequired: 170
+-
+  id: "id_art_fan_claw_2"
+  name: "分筋术"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["肉"]
+  description: "由。 "
+  expRequired: 185
+-
+  id: "id_art_fan_kick_2"
+  name: "于旋风踢"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["风"]
+  description: "由。 "
+  expRequired: 190
+-
+  id: "id_art_fan_sword_3"
+  name: "于雪花剑"
+  type: "martial_art"
+  grade: "fan"
+  rank: "d"
+  elements: ["冰"]
+  description: "剑影由纷飞。 "
+  expRequired: 220
+-
+  id: "id_art_fan_blade_3"
+  name: "于断水流"
+  type: "martial_art"
+  grade: "fan"
+  rank: "d"
+  elements: ["水"]
+  description: "刀法由速。 "
+  expRequired: 230
+-
+  id: "id_art_fan_fist_3"
+  name: "金刚拳"
+  type: "martial_art"
+  grade: "fan"
+  rank: "d"
+  elements: ["金"]
+  description: "力量。 "
+  expRequired: 240
+-
+  id: "id_art_fan_palm_3"
+  name: "于于烈焰掌"
+  type: "martial_art"
+  grade: "fan"
+  rank: "d"
+  elements: ["火"]
+  description: "带。 "
+  expRequired: 250
+-
+  id: "id_art_fan_spear_3"
+  name: "游龙枪"
+  type: "martial_art"
+  grade: "fan"
+  rank: "d"
+  elements: ["水"]
+  description: "由。 "
+  expRequired: 260
+-
+  id: "id_art_fan_bow_3"
+  name: "鸣镝射"
+  type: "martial_art"
+  grade: "fan"
+  rank: "d"
+  elements: ["音"]
+  description: "由干扰。 "
+  expRequired: 270
+-
+  id: "id_art_fan_staff_3"
+  name: "于于疯魔棍"
+  type: "martial_art"
+  grade: "fan"
+  rank: "d"
+  elements: ["力"]
+  description: "由。 "
+  expRequired: 250
+-
+  id: "id_art_fan_shield_3"
+  name: "于磐石"
+  type: "martial_art"
+  grade: "fan"
+  rank: "d"
+  elements: ["土"]
+  description: "由。 "
+  expRequired: 240
+-
+  id: "id_art_fan_claw_3"
+  name: "于于阴风爪"
+  type: "martial_art"
+  grade: "fan"
+  rank: "d"
+  elements: ["阴"]
+  description: "。 "
+  expRequired: 280
+-
+  id: "id_art_fan_kick_3"
+  name: "于铁腿"
+  type: "martial_art"
+  grade: "fan"
+  rank: "d"
+  elements: ["金"]
+  description: "。 "
+  expRequired: 260
+-
+  id: "id_art_fan_sword_4"
+  name: "青锋十三式"
+  type: "martial_art"
+  grade: "fan"
+  rank: "d"
+  elements: ["金", "术"]
+  description: "江湖流传甚广的精妙剑招。 "
+  expRequired: 280
+-
+  id: "id_art_fan_blade_4"
+  name: "血战八方"
+  type: "martial_art"
+  grade: "fan"
+  rank: "d"
+  elements: ["血", "力"]
+  description: "以命搏命的凶悍刀法。 "
+  expRequired: 300
+-
+  id: "id_art_fan_fist_4"
+  name: "醉八仙"
+  type: "martial_art"
+  grade: "fan"
+  rank: "d"
+  elements: ["术", "幻"]
+  description: "身形摇晃，招式难以捉摸。 "
+  expRequired: 290
+-
+  id: "id_art_fan_palm_4"
+  name: "劈瓦掌"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["力"]
+  description: "练习掌力的基础手段。 "
+  expRequired: 90
+-
+  id: "id_art_fan_spear_4"
+  name: "梅花枪"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["木", "幻"]
+  description: "枪头如梅花点缀，虚实难辨。 "
+  expRequired: 210
+-
+  id: "id_art_fan_bow_4"
+  name: "袖箭术"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["刺", "暗"]
+  description: "用于防身的暗器技巧。 "
+  expRequired: 180
+-
+  id: "id_art_fan_staff_4"
+  name: "牧童棍"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["木"]
+  description: "随处可见的简易棍法。 "
+  expRequired: 80
+-
+  id: "id_art_fan_shield_4"
+  name: "锅盖由防御"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["防"]
+  description: "极其简陋的基础。 "
+  expRequired: 70
+-
+  id: "id_art_fan_claw_4"
+  name: "掏心手"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["刺", "杀"]
+  description: "下三滥的偷袭手法。 "
+  expRequired: 190
+-
+  id: "id_art_fan_kick_4"
+  name: "扫地堂腿"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["震"]
+  description: "攻击下盘。 "
+  expRequired: 100
+-
+  id: "id_art_fan_sound_1"
+  name: "口哨"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["音"]
+  description: "由信号传递。 "
+  expRequired: 50
+-
+  id: "id_art_fan_poison_1"
+  name: "于石灰粉"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["毒", "暗"]
+  description: "由。 "
+  expRequired: 80
+-
+  id: "id_art_fan_fire_1"
+  name: "火把击"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["火"]
+  description: "简单的灼烧。 "
+  expRequired: 90
+-
+  id: "id_art_fan_thunder_1"
+  name: "产生的麻感"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["雷"]
+  description: "极其微弱。 "
+  expRequired: 100
+-
+  id: "id_art_fan_ice_1"
+  name: "于于井水凉感"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["冰"]
+  description: "微产生的冷。 "
+  expRequired: 85
+-
+  id: "id_art_fan_wood_1"
+  name: "树枝刺"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["木"]
+  description: "由辅助打击。 "
+  expRequired: 95
+-
+  id: "id_art_fan_metal_1"
+  name: "用磨刀术"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["金"]
+  description: "临时增加。 "
+  expRequired: 110
+-
+  id: "id_art_fan_earth_1"
+  name: "扔石头"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["土"]
+  description: "。 "
+  expRequired: 70
+-
+  id: "id_art_fan_dark_1"
+  name: "蒙眼"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["暗"]
+  description: "简单的视角干扰。 "
+  expRequired: 90
+-
+  id: "id_art_fan_light_1"
+  name: "于于反光"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["光"]
+  description: "由铜镜等。 "
+  expRequired: 80
+-
+  id: "id_art_fan_nature_1"
+  name: "包扎"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["生"]
+  description: "。 "
+  expRequired: 120
+-
+  id: "id_art_fan_blood_1"
+  name: "划脉"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["血"]
+  description: "由。 "
+  expRequired: 150
+-
+  id: "id_art_fan_luck_1"
+  name: "闭眼乱打"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["运"]
+  description: "幸运。 "
+  expRequired: 200
+-
+  id: "id_art_fan_sword_5"
+  name: "清风剑"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["风"]
+  description: "由。 "
+  expRequired: 180
+-
+  id: "id_art_fan_blade_5"
+  name: "裂石刀"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["土"]
+  description: "。 "
+  expRequired: 190
+-
+  id: "id_art_fan_fist_5"
+  name: "于铁线拳"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["金"]
+  description: "劲。 "
+  expRequired: 200
+-
+  id: "id_art_fan_palm_5"
+  name: "于游龙掌"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["水"]
+  description: "。 "
+  expRequired: 210
+-
+  id: "id_art_fan_spear_5"
+  name: "由流星枪"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["火"]
+  description: "由。 "
+  expRequired: 220
+-
+  id: "id_art_fan_bow_5"
+  name: "箭气"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["气"]
+  description: "练习气流。 "
+  expRequired: 230
+-
+  id: "id_art_fan_staff_5"
+  name: "由伏虎棍"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["阳"]
+  description: "。 "
+  expRequired: 240
+-
+  id: "id_art_fan_shield_5"
+  name: "玄武防御"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["阴"]
+  description: "。 "
+  expRequired: 250
+-
+  id: "id_art_fan_claw_5"
+  name: "鹰之爪"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["风"]
+  description: "。 "
+  expRequired: 260
+-
+  id: "id_art_fan_kick_5"
+  name: "登天由脚"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["气"]
+  description: "。 "
+  expRequired: 270
+-
+  id: "id_art_fan_sword_6"
+  name: "三才剑"
+  type: "martial_art"
+  grade: "fan"
+  rank: "d"
+  elements: ["气", "术"]
+  description: "讲究天、地、人合一。 "
+  expRequired: 300
+-
+  id: "id_art_fan_blade_6"
+  name: "斩马刀"
+  type: "martial_art"
+  grade: "fan"
+  rank: "d"
+  elements: ["力", "杀"]
+  description: "由战场。 "
+  expRequired: 310
+-
+  id: "id_art_fan_fist_6"
+  name: "由中拳"
+  type: "martial_art"
+  grade: "fan"
+  rank: "d"
+  elements: ["力", "震"]
+  description: "简单的发力。 "
+  expRequired: 320
+-
+  id: "id_art_fan_palm_6"
+  name: "由击"
+  type: "martial_art"
+  grade: "fan"
+  rank: "d"
+  elements: ["术", "速"]
+  description: "。 "
+  expRequired: 330
+-
+  id: "id_art_fan_spear_6"
+  name: "枪"
+  type: "martial_art"
+  grade: "fan"
+  rank: "d"
+  elements: ["速", "术"]
+  description: "。 "
+  expRequired: 340
+-
+  id: "id_art_fan_bow_6"
+  name: "由箭"
+  type: "martial_art"
+  grade: "fan"
+  rank: "d"
+  elements: ["术", "刺"]
+  description: "。 "
+  expRequired: 350
+-
+  id: "id_art_fan_staff_6"
+  name: "棍"
+  type: "martial_art"
+  grade: "fan"
+  rank: "d"
+  elements: ["力", "震"]
+  description: "。 "
+  expRequired: 360
+-
+  id: "id_art_fan_shield_6"
+  name: "盾"
+  type: "martial_art"
+  grade: "fan"
+  rank: "d"
+  elements: ["术", "防"]
+  description: "。 "
+  expRequired: 370
+-
+  id: "id_art_fan_claw_6"
+  name: "爪"
+  type: "martial_art"
+  grade: "fan"
+  rank: "d"
+  elements: ["术", "杀"]
+  description: "。 "
+  expRequired: 380
+-
+  id: "id_art_fan_kick_6"
+  name: "脚"
+  type: "martial_art"
+  grade: "fan"
+  rank: "d"
+  elements: ["术", "速"]
+  description: "。 "
+  expRequired: 390
+-
+  id: "id_art_fan_sound_2"
+  name: "由拍手"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["音"]
+  description: "节奏感。 "
+  expRequired: 60
+-
+  id: "id_art_fan_poison_2"
+  name: "由巴豆由粉"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["毒"]
+  description: "干扰。 "
+  expRequired: 90
+-
+  id: "id_art_fan_fire_2"
+  name: "由火油"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["火"]
+  description: "简单。 "
+  expRequired: 110
+-
+  id: "id_art_fan_thunder_2"
+  name: "由电鱼感"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["雷"]
+  description: "。 "
+  expRequired: 120
+-
+  id: "id_art_fan_ice_2"
+  name: "由冰块由击"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["冰"]
+  description: "。 "
+  expRequired: 100
+-
+  id: "id_art_fan_wood_2"
+  name: "由竹签刺"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["木"]
+  description: "。 "
+  expRequired: 110
+-
+  id: "id_art_fan_metal_2"
+  name: "由钉子由设"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["金"]
+  description: "由。 "
+  expRequired: 130
+-
+  id: "id_art_fan_earth_2"
+  name: "泥巴由迷"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["土"]
+  description: "。 "
+  expRequired: 80
+-
+  id: "id_art_fan_dark_2"
+  name: "吹灯"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["暗"]
+  description: "。 "
+  expRequired: 70
+-
+  id: "id_art_fan_light_2"
+  name: "由屏幕由闪"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["光"]
+  description: "。 "
+  expRequired: 90
+-
+  id: "id_art_fan_nature_2"
+  name: "止痛"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["生"]
+  description: "。 "
+  expRequired: 130
+-
+  id: "id_art_fan_blood_2"
+  name: "嗅味"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["血"]
+  description: "。 "
+  expRequired: 140
+-
+  id: "id_art_fan_luck_2"
+  name: "泼皮由打"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["运"]
+  description: "。 "
+  expRequired: 220
+-
+  id: "id_art_fan_sword_7"
+  name: "由快剑"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["速"]
+  description: "。 "
+  expRequired: 190
+-
+  id: "id_art_fan_blade_7"
+  name: "快刀"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["速"]
+  description: "。 "
+  expRequired: 200
+-
+  id: "id_art_fan_fist_7"
+  name: "快拳"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["速"]
+  description: "。 "
+  expRequired: 210
+-
+  id: "id_art_fan_palm_7"
+  name: "快掌"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["速"]
+  description: "。 "
+  expRequired: 220
+-
+  id: "id_art_fan_spear_7"
+  name: "由快枪"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["速"]
+  description: "。 "
+  expRequired: 230
+-
+  id: "id_art_fan_bow_7"
+  name: "快箭"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["速"]
+  description: "。 "
+  expRequired: 240
+-
+  id: "id_art_fan_staff_7"
+  name: "由快棍"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["速"]
+  description: "。 "
+  expRequired: 250
+-
+  id: "id_art_fan_shield_7"
+  name: "快盾"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["速"]
+  description: "。 "
+  expRequired: 260
+-
+  id: "id_art_fan_claw_7"
+  name: "由快爪"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["速"]
+  description: "。 "
+  expRequired: 270
+-
+  id: "id_art_fan_kick_7"
+  name: "由快脚"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["速"]
+  description: "。 "
+  expRequired: 280
+-
+  id: "id_art_fan_sword_8"
+  name: "于松风剑"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["风", "木"]
+  description: "。 "
+  expRequired: 190
+-
+  id: "id_art_fan_blade_8"
+  name: "由厚土刀"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["土", "力"]
+  description: "。 "
+  expRequired: 200
+-
+  id: "id_art_fan_fist_8"
+  name: "由石头拳"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["土", "肉"]
+  description: "。 "
+  expRequired: 110
+-
+  id: "id_art_fan_palm_8"
+  name: "由落叶掌"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["木", "风"]
+  description: "。 "
+  expRequired: 100
+-
+  id: "id_art_fan_spear_8"
+  name: "由蛇矛"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["毒", "术"]
+  description: "。 "
+  expRequired: 210
+-
+  id: "id_art_fan_bow_8"
+  name: "由穿云箭"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["气", "速"]
+  description: "。 "
+  expRequired: 230
+-
+  id: "id_art_fan_staff_8"
+  name: "由熟铁棍"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["金"]
+  description: "。 "
+  expRequired: 130
+-
+  id: "id_art_fan_shield_8"
+  name: "皮甲防御"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["肉"]
+  description: "。 "
+  expRequired: 140
+-
+  id: "id_art_fan_claw_8"
+  name: "由虎爪功"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["肉", "力"]
+  description: "。 "
+  expRequired: 180
+-
+  id: "id_art_fan_kick_8"
+  name: "由大力脚"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["力"]
+  description: "。 "
+  expRequired: 190
+-
+  id: "id_art_fan_sword_9"
+  name: "由入门剑法"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["金"]
+  description: "最根本。 "
+  expRequired: 80
+-
+  id: "id_art_fan_blade_9"
+  name: "由砍柴刀法"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["力"]
+  description: "。 "
+  expRequired: 70
+-
+  id: "id_art_fan_fist_9"
+  name: "由小洪拳"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["力"]
+  description: "。 "
+  expRequired: 90
+-
+  id: "id_art_fan_palm_9"
+  name: "由大圣掌"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["术"]
+  description: "。 "
+  expRequired: 110
+-
+  id: "id_art_fan_spear_9"
+  name: "竹枪基础"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["木"]
+  description: "。 "
+  expRequired: 60
+-
+  id: "id_art_fan_bow_9"
+  name: "木弓基础"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["木"]
+  description: "。 "
+  expRequired: 80
+-
+  id: "id_art_fan_staff_9"
+  name: "由扁担功"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["木"]
+  description: "。 "
+  expRequired: 70
+-
+  id: "id_art_fan_shield_9"
+  name: "硬气功"
+  type: "martial_art"
+  grade: "fan"
+  rank: "e"
+  elements: ["肉"]
+  description: "。 "
+  expRequired: 190
+-
+  id: "id_art_fan_claw_9"
+  name: "锁喉"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["肉"]
+  description: "。 "
+  expRequired: 130
+-
+  id: "id_art_fan_kick_9"
+  name: "扫堂腿"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["力"]
+  description: "。 "
+  expRequired: 110
+-
+  id: "id_art_fan_sound_3"
+  name: "拍桌由"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["音"]
+  description: "。 "
+  expRequired: 40
+-
+  id: "id_art_fan_poison_3"
+  name: "由巴豆"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["毒"]
+  description: "。 "
+  expRequired: 100
+-
+  id: "id_art_fan_fire_3"
+  name: "由此火星"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["火"]
+  description: "。 "
+  expRequired: 90
+-
+  id: "id_art_fan_thunder_3"
+  name: "由针扎感"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["雷"]
+  description: "。 "
+  expRequired: 110
+-
+  id: "id_art_fan_ice_3"
+  name: "由冰水由泼"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["冰"]
+  description: "。 "
+  expRequired: 100
+-
+  id: "id_art_fan_wood_3"
+  name: "由柳条由抽"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["木"]
+  description: "。 "
+  expRequired: 80
+-
+  id: "id_art_fan_metal_3"
+  name: "铁锅由砸"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["金"]
+  description: "。 "
+  expRequired: 130
+-
+  id: "id_art_fan_earth_3"
+  name: "挖坑术"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["土"]
+  description: "。 "
+  expRequired: 150
+-
+  id: "id_art_fan_dark_3"
+  name: "由屏息"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["暗"]
+  description: "。 "
+  expRequired: 110
+-
+  id: "id_art_fan_light_3"
+  name: "由亮瞎"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["光"]
+  description: "。 "
+  expRequired: 90
+-
+  id: "id_art_fan_nature_3"
+  name: "由草药敷"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["生"]
+  description: "。 "
+  expRequired: 120
+-
+  id: "id_art_fan_blood_3"
+  name: "咬破唇"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["血"]
+  description: "。 "
+  expRequired: 100
+-
+  id: "id_art_fan_luck_3"
+  name: "由乱扔"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["运"]
+  description: "。 "
+  expRequired: 200
+-
+  id: "id_art_fan_sword_10"
+  name: "普通剑招"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["金"]
+  description: "。 "
+  expRequired: 90
+-
+  id: "id_art_fan_blade_10"
+  name: "由刀砍"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["金"]
+  description: "。 "
+  expRequired: 95
+-
+  id: "id_art_fan_fist_10"
+  name: "王八拳"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["力"]
+  description: "。 "
+  expRequired: 50
+-
+  id: "id_art_fan_palm_10"
+  name: "由拍背"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["肉"]
+  description: "。 "
+  expRequired: 60
+-
+  id: "id_art_fan_spear_10"
+  name: "由捅击"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["术"]
+  description: "。 "
+  expRequired: 100
+-
+  id: "id_art_fan_bow_10"
+  name: "射兔"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["速"]
+  description: "。 "
+  expRequired: 120
+-
+  id: "id_art_fan_staff_10"
+  name: "由敲头"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["力"]
+  description: "。 "
+  expRequired: 110
+-
+  id: "id_art_fan_shield_10"
+  name: "躲避"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["防"]
+  description: "。 "
+  expRequired: 130
+-
+  id: "id_art_fan_claw_10"
+  name: "抓挠"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["肉"]
+  description: "。 "
+  expRequired: 80
+-
+  id: "id_art_fan_kick_10"
+  name: "踏步"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["气"]
+  description: "。 "
+  expRequired: 90
+-
+  id: "id_art_fan_sound_4"
+  name: "由啸"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["音"]
+  description: "。 "
+  expRequired: 70
+-
+  id: "id_art_fan_poison_4"
+  name: "脏"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["毒"]
+  description: "。 "
+  expRequired: 60
+-
+  id: "id_art_fan_fire_4"
+  name: "由火棍"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["火"]
+  description: "。 "
+  expRequired: 120
+-
+  id: "id_art_fan_thunder_4"
+  name: "综合"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["力"]
+  description: "。 "
+  expRequired: 150
+-
+  id: "id_art_fan_ice_4"
+  name: "由冷水"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["冰"]
+  description: "。 "
+  expRequired: 110
+-
+  id: "id_art_fan_wood_4"
+  name: "扫帚"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["木"]
+  description: "。 "
+  expRequired: 90
+-
+  id: "id_art_fan_metal_4"
+  name: "锄头"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["金"]
+  description: "。 "
+  expRequired: 130
+-
+  id: "id_art_fan_earth_4"
+  name: "砖头"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["土"]
+  description: "。 "
+  expRequired: 100
+-
+  id: "id_art_fan_dark_4"
+  name: "由躲藏"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["暗"]
+  description: "。 "
+  expRequired: 120
+-
+  id: "id_art_fan_light_4"
+  name: "由亮相"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["光"]
+  description: "。 "
+  expRequired: 110
+-
+  id: "id_art_fan_nature_4"
+  name: "喝水"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["生"]
+  description: "。 "
+  expRequired: 80
+-
+  id: "id_art_fan_blood_4"
+  name: "吐血"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["血"]
+  description: "。 "
+  expRequired: 150
+-
+  id: "id_art_fan_luck_4"
+  name: "运气"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["运"]
+  description: "。 "
+  expRequired: 200
+-
+  id: "id_art_fan_sword_11"
+  name: "基础剑一"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["金"]
+  description: "。 "
+  expRequired: 100
+-
+  id: "id_art_fan_blade_11"
+  name: "由基础刀一"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["金"]
+  description: "。 "
+  expRequired: 110
+-
+  id: "id_art_fan_fist_11"
+  name: "综合练"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["力"]
+  description: "。 "
+  expRequired: 120
+-
+  id: "id_art_fan_palm_11"
+  name: "由综合掌"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["气"]
+  description: "。 "
+  expRequired: 110
+-
+  id: "id_art_fan_spear_11"
+  name: "综合枪"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["术"]
+  description: "。 "
+  expRequired: 130
+-
+  id: "id_art_fan_bow_11"
+  name: "综合弓"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["速"]
+  description: "。 "
+  expRequired: 140
+-
+  id: "id_art_fan_staff_11"
+  name: "综合棍"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["力"]
+  description: "。 "
+  expRequired: 130
+-
+  id: "id_art_fan_shield_11"
+  name: "综合盾"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["防"]
+  description: "。 "
+  expRequired: 140
+-
+  id: "id_art_fan_claw_11"
+  name: "综合爪"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["肉"]
+  description: "。 "
+  expRequired: 150
+-
+  id: "id_art_fan_kick_11"
+  name: "由综合脚"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["速"]
+  description: "。 "
+  expRequired: 160
+-
+  id: "id_art_fan_sound_11"
+  name: "由综合音"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["音"]
+  description: "。 "
+  expRequired: 100
+-
+  id: "id_art_fan_poison_11"
+  name: "由综合毒"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["毒"]
+  description: "。 "
+  expRequired: 110
+-
+  id: "id_art_fan_fire_11"
+  name: "综合火"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["火"]
+  description: "。 "
+  expRequired: 120
+-
+  id: "id_art_fan_thunder_11"
+  name: "由综合雷"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["雷"]
+  description: "。 "
+  expRequired: 130
+-
+  id: "id_art_fan_ice_11"
+  name: "由综合冰"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["冰"]
+  description: "。 "
+  expRequired: 110
+-
+  id: "id_art_fan_wood_11"
+  name: "由综合木"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["木"]
+  description: "。 "
+  expRequired: 100
+-
+  id: "id_art_fan_metal_11"
+  name: "由综合金"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["金"]
+  description: "。 "
+  expRequired: 120
+-
+  id: "id_art_fan_earth_11"
+  name: "由综合土"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["土"]
+  description: "。 "
+  expRequired: 110
+-
+  id: "id_art_fan_dark_11"
+  name: "由综合暗"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["暗"]
+  description: "。 "
+  expRequired: 120
+-
+  id: "id_art_fan_light_11"
+  name: "由综合光"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["光"]
+  description: "。 "
+  expRequired: 110
+-
+  id: "id_art_fan_nature_11"
+  name: "由综合生"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["生"]
+  description: "。 "
+  expRequired: 130
+-
+  id: "id_art_fan_blood_11"
+  name: "由综合血"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["血"]
+  description: "。 "
+  expRequired: 140
+-
+  id: "id_art_fan_luck_11"
+  name: "由综合运"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["运"]
+  description: "。 "
+  expRequired: 150
+-
+  id: "id_art_fan_sword_12"
+  name: "基础剑九"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["金"]
+  description: "。 "
+  expRequired: 100
+-
+  id: "id_art_fan_blade_12"
+  name: "于基础刀九"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["金"]
+  description: "。 "
+  expRequired: 110
+-
+  id: "id_art_fan_fist_12"
+  name: "由基础拳九"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["力"]
+  description: "。 "
+  expRequired: 90
+-
+  id: "id_art_fan_palm_12"
+  name: "由基础掌九"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["气"]
+  description: "。 "
+  expRequired: 100
+-
+  id: "id_art_fan_spear_12"
+  name: "由基础枪九"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["术"]
+  description: "。 "
+  expRequired: 120
+-
+  id: "id_art_fan_bow_12"
+  name: "由基础弓九"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["速"]
+  description: "。 "
+  expRequired: 130
+-
+  id: "id_art_fan_staff_12"
+  name: "由基础棍九"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["力"]
+  description: "。 "
+  expRequired: 110
+-
+  id: "id_art_fan_shield_12"
+  name: "由基础盾九"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["防"]
+  description: "。 "
+  expRequired: 120
+-
+  id: "id_art_fan_claw_12"
+  name: "由基础爪九"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["肉"]
+  description: "。 "
+  expRequired: 130
+-
+  id: "id_art_fan_kick_12"
+  name: "由基础脚九"
+  type: "martial_art"
+  grade: "fan"
+  rank: "f"
+  elements: ["速"]
+  description: "。 "
+  expRequired: 140
+-
+  id: "id_art_xian_sword_5"
+  name: "桃花雨落剑"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["木", "幻"]
+  description: "剑气如桃花，柔中带刚，迷人眼目。"
+  expRequired: 920
+-
+  id: "id_art_xian_blade_4"
+  name: "雷火绝地斩"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["雷", "火"]
+  description: "雷火交织，毁灭一切。 "
+  expRequired: 1050
+-
+  id: "id_art_xian_fist_4"
+  name: "大弥勒手"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["力", "阳"]
+  description: "笑容中藏带极致掌力。 "
+  expRequired: 950
+-
+  id: "id_art_xian_palm_5"
+  name: "碧渊掌"
+  type: "martial_art"
+  grade: "xian"
+  rank: "a"
+  elements: ["水", "吸"]
+  description: "如深渊般吸纳对手真气。 "
+  expRequired: 880
+-
+  id: "id_art_xian_spear_4"
+  name: "点星矛"
+  type: "martial_art"
+  grade: "xian"
+  rank: "a"
+  elements: ["星", "刺"]
+  description: "一点寒芒先到，随后枪星陨。 "
+  expRequired: 900
+-
+  id: "id_art_xian_bow_4"
+  name: "音速箭"
+  type: "martial_art"
+  grade: "xian"
+  rank: "a"
+  elements: ["速", "音"]
+  description: "伴随音爆产生的致命一击。 "
+  expRequired: 920
+-
+  id: "id_art_xian_staff_4"
+  name: "产生的地动感"
+  type: "martial_art"
+  grade: "xian"
+  rank: "a"
+  elements: ["土"]
+  description: "通过震动感产生的平衡破坏。 "
+  expRequired: 850
+-
+  id: "id_art_xian_shield_4"
+  name: "水幕天华"
+  type: "martial_art"
+  grade: "xian"
+  rank: "a"
+  elements: ["水", "防"]
+  description: "极其韧性产生的水盾。 "
+  expRequired: 820
+-
+  id: "id_art_xian_claw_4"
+  name: "产生的撕裂感"
+  type: "martial_art"
+  grade: "xian"
+  rank: "a"
+  elements: ["肉"]
+  description: "单纯强调肉身力量产生的爪法。 "
+  expRequired: 850
+-
+  id: "id_art_xian_kick_4"
+  name: "影武者"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["暗", "速"]
+  description: "影子里踢出的杀招。 "
+  expRequired: 980
+-
+  id: "id_art_xian_sound_4"
+  name: "霓裳羽衣曲"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["音", "幻"]
+  description: "不仅迷人，且致命。 "
+  expRequired: 950
+-
+  id: "id_art_xian_illusion_4"
+  name: "庄周梦蝶"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["幻", "神"]
+  description: "让对手产生关于现实的置疑。 "
+  expRequired: 1100
+-
+  id: "id_art_xian_poison_4"
+  name: "三日化骨"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["毒"]
+  description: "潜伏期产生的剧毒。 "
+  expRequired: 1050
+-
+  id: "id_art_xian_fire_4"
+  name: "三味真火"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["火", "气"]
+  description: "不仅焚烧肉身，且焚烧神魂。 "
+  expRequired: 1200
+-
+  id: "id_art_xian_thunder_4"
+  name: "雷霆万钧"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["雷", "力"]
+  description: "大面积的雷电轰击。 "
+  expRequired: 1100
+-
+  id: "id_art_xian_ice_4"
+  name: "绝对零度"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["冰", "死"]
+  description: "寂灭产生的寒意。 "
+  expRequired: 1250
+-
+  id: "id_art_xian_wood_4"
+  name: "建木之影"
+  type: "martial_art"
+  grade: "xian"
+  rank: "a"
+  elements: ["木", "暗"]
+  description: "地下深处的掠夺感。 "
+  expRequired: 900
+-
+  id: "id_art_xian_metal_4"
+  name: "万剑归一"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["金", "术"]
+  description: "所有剑气聚合为唯一一剑。 "
+  expRequired: 1150
+-
+  id: "id_art_xian_earth_4"
+  name: "泰山压顶"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["土", "力"]
+  description: "极度沉重的压迫感。 "
+  expRequired: 1000
+-
+  id: "id_art_xian_dark_4"
+  name: "黑夜统领"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["暗"]
+  description: "统治于黑夜的气场。 "
+  expRequired: 1100
+-
+  id: "id_art_xian_nature_4"
+  name: "生生不息"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["生"]
+  description: "在战斗中无限生命。 "
+  expRequired: 1150
+-
+  id: "id_art_xian_blood_4"
+  name: "血气爆发"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["血", "力"]
+  description: "引燃气血产生的极意。 "
+  expRequired: 1050
+-
+  id: "id_art_xian_space_4"
+  name: "维度切割"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["空"]
+  description: "无视坚韧度的切割打击。 "
+  expRequired: 1300
+-
+  id: "id_art_xian_luck_4"
+  name: "天佑之"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["运"]
+  description: "奇迹般的躲避感。 "
+  expRequired: 1200
+-
+  id: "id_art_xian_soul_2"
+  name: "产生的碎魂感"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["魂"]
+  description: "针对神魂产生的必杀。 "
+  expRequired: 1100
+-
+  id: "id_art_xian_ancient_1"
+  name: "太古神力"
+  type: "martial_art"
+  grade: "xian"
+  rank: "s"
+  elements: ["古", "力"]
+  description: "追溯远古的极致之美。 "
+  expRequired: 1200
+-
+  id: "id_art_ling_sword_1"
+  name: "疾风剑法"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["风", "剑"]
+  description: "快剑，适合入门弟子。"
+  expRequired: 400
+-
+  id: "id_art_ling_blade_1"
+  name: "开山刀法"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["土", "力"]
+  description: "势沉力猛的基础刀法。"
+  expRequired: 420
+-
+  id: "id_art_ling_fist_1"
+  name: "伏虎拳"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["力", "阳"]
+  description: "降龙伏虎的刚猛拳法。"
+  expRequired: 380
+-
+  id: "id_art_ling_palm_1"
+  name: "绵掌"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["水", "柔"]
+  description: "以柔克刚，连绵不绝。"
+  expRequired: 350
+-
+  id: "id_art_ling_spear_2"
+  name: "追影枪"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["速", "刺"]
+  description: "枪影如幻阵感。 "
+  expRequired: 430
+-
+  id: "id_art_ling_bow_2"
+  name: "连珠箭"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["速"]
+  description: "快速三连发。 "
+  expRequired: 400
+-
+  id: "id_art_ling_staff_2"
+  name: "疯魔棍"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["力"]
+  description: "毫无规则于极致破坏。 "
+  expRequired: 410
+-
+  id: "id_art_ling_shield_2"
+  name: "铁壁"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["金", "防"]
+  description: "单纯防御。 "
+  expRequired: 380
+-
+  id: "id_art_ling_claw_2"
+  name: "龙爪手"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["肉", "力"]
+  description: "刚猛的基础爪法。 "
+  expRequired: 420
+-
+  id: "id_art_ling_kick_2"
+  name: "无影脚"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["风", "速"]
+  description: "让人看不到踢出的频率。 "
+  expRequired: 390
+-
+  id: "id_art_ling_sound_2"
+  name: "魔音"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["音", "魂"]
+  description: "扰乱心智的乐声。 "
+  expRequired: 450
+-
+  id: "id_art_ling_illusion_2"
+  name: "障眼法"
+  type: "martial_art"
+  grade: "ling"
+  rank: "c"
+  elements: ["幻"]
+  description: "掩盖方位的基础幻术。 "
+  expRequired: 280
+-
+  id: "id_art_ling_poison_2"
+  name: "化骨粉劲"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["毒"]
+  description: "腐蚀经络的阴毒劲气。 "
+  expRequired: 440
+-
+  id: "id_art_ling_fire_2"
+  name: "流火"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["火"]
+  description: "附带灼烧感的掌法。 "
+  expRequired: 400
+-
+  id: "id_art_ling_thunder_2"
+  name: "掌心雷"
+  type: "martial_art"
+  grade: "ling"
+  rank: "c"
+  elements: ["雷"]
+  description: "爆发出一丝丝雷电。 "
+  expRequired: 320
+-
+  id: "id_art_ling_ice_2"
+  name: "寒气"
+  type: "martial_art"
+  grade: "ling"
+  rank: "c"
+  elements: ["冰"]
+  description: "减缓对手速度。 "
+  expRequired: 300
+-
+  id: "id_art_ling_wood_2"
+  name: "纠缠感"
+  type: "martial_art"
+  grade: "ling"
+  rank: "c"
+  elements: ["木"]
+  description: "干扰对手重心。 "
+  expRequired: 310
+-
+  id: "id_art_ling_metal_2"
+  name: "锋锐"
+  type: "martial_art"
+  grade: "ling"
+  rank: "c"
+  elements: ["金"]
+  description: "增加一点点穿透感。 "
+  expRequired: 330
+-
+  id: "id_art_ling_earth_2"
+  name: "沉重感"
+  type: "martial_art"
+  grade: "ling"
+  rank: "c"
+  elements: ["土"]
+  description: "增加自身稳固感。 "
+  expRequired: 300
+-
+  id: "id_art_ling_dark_2"
+  name: "潜行"
+  type: "martial_art"
+  grade: "ling"
+  rank: "c"
+  elements: ["暗"]
+  description: "在阴影中移动。 "
+  expRequired: 320
+-
+  id: "id_art_ling_nature_2"
+  name: "治愈感"
+  type: "martial_art"
+  grade: "ling"
+  rank: "c"
+  elements: ["生"]
+  description: "极其微弱的恢复。 "
+  expRequired: 280
+-
+  id: "id_art_ling_blood_2"
+  name: "气血上涌"
+  type: "martial_art"
+  grade: "ling"
+  rank: "c"
+  elements: ["血"]
+  description: "极其短的一瞬间爆发。 "
+  expRequired: 350
+-
+  id: "id_art_ling_luck_2"
+  name: "凑巧感"
+  type: "martial_art"
+  grade: "ling"
+  rank: "c"
+  elements: ["运"]
+  description: "仅仅处于运气爆发。 "
+  expRequired: 500
+-
+  id: "id_art_ling_sword_2"
+  name: "三叠浪剑"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["剑", "水"]
+  description: "带波浪波动的剑招。 "
+  expRequired: 450
+-
+  id: "id_art_ling_blade_2"
+  name: "霹雳刀"
+  type: "martial_art"
+  grade: "ling"
+  rank: "b"
+  elements: ["雷", "力"]
+  description: "迅捷猛烈的刀法。 "
+  expRequired: 430

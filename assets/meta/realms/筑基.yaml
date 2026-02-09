@@ -1,0 +1,33 @@
+id: "筑基"
+lifespan: 250
+layers:
+  -
+    level: 1
+    expRequired: 300
+  -
+    level: 2
+    expRequired: 345
+  -
+    level: 3
+    expRequired: 397
+  -
+    level: 4
+    expRequired: 456
+  -
+    level: 5
+    expRequired: 525
+  -
+    level: 6
+    expRequired: 603
+  -
+    level: 7
+    expRequired: 694
+  -
+    level: 8
+    expRequired: 798
+  -
+    level: 9
+    expRequired: 918
+  -
+    level: 10
+    expRequired: 1055

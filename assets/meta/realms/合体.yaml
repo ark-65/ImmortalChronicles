@@ -1,0 +1,33 @@
+id: "合体"
+lifespan: 10000
+layers:
+  -
+    level: 1
+    expRequired: 800
+  -
+    level: 2
+    expRequired: 920
+  -
+    level: 3
+    expRequired: 1058
+  -
+    level: 4
+    expRequired: 1217
+  -
+    level: 5
+    expRequired: 1399
+  -
+    level: 6
+    expRequired: 1609
+  -
+    level: 7
+    expRequired: 1850
+  -
+    level: 8
+    expRequired: 2128
+  -
+    level: 9
+    expRequired: 2447
+  -
+    level: 10
+    expRequired: 2814

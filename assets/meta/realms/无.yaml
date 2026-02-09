@@ -1,0 +1,33 @@
+id: "无"
+lifespan: 60
+layers:
+  -
+    level: 1
+    expRequired: 100
+  -
+    level: 2
+    expRequired: 115
+  -
+    level: 3
+    expRequired: 132
+  -
+    level: 4
+    expRequired: 152
+  -
+    level: 5
+    expRequired: 175
+  -
+    level: 6
+    expRequired: 201
+  -
+    level: 7
+    expRequired: 231
+  -
+    level: 8
+    expRequired: 266
+  -
+    level: 9
+    expRequired: 306
+  -
+    level: 10
+    expRequired: 352

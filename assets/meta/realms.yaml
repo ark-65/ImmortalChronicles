@@ -1,0 +1,581 @@
+version: 1
+realms:
+  -
+    id: "无"
+    lifespan: 60
+    layers:
+      -
+        level: 1
+        expRequired: 100
+      -
+        level: 2
+        expRequired: 115
+      -
+        level: 3
+        expRequired: 132
+      -
+        level: 4
+        expRequired: 152
+      -
+        level: 5
+        expRequired: 175
+      -
+        level: 6
+        expRequired: 201
+      -
+        level: 7
+        expRequired: 231
+      -
+        level: 8
+        expRequired: 266
+      -
+        level: 9
+        expRequired: 306
+      -
+        level: 10
+        expRequired: 352
+  -
+    id: "炼气"
+    lifespan: 120
+    layers:
+      -
+        level: 1
+        expRequired: 200
+      -
+        level: 2
+        expRequired: 230
+      -
+        level: 3
+        expRequired: 264
+      -
+        level: 4
+        expRequired: 304
+      -
+        level: 5
+        expRequired: 350
+      -
+        level: 6
+        expRequired: 402
+      -
+        level: 7
+        expRequired: 463
+      -
+        level: 8
+        expRequired: 532
+      -
+        level: 9
+        expRequired: 612
+      -
+        level: 10
+        expRequired: 704
+  -
+    id: "筑基"
+    lifespan: 250
+    layers:
+      -
+        level: 1
+        expRequired: 300
+      -
+        level: 2
+        expRequired: 345
+      -
+        level: 3
+        expRequired: 397
+      -
+        level: 4
+        expRequired: 456
+      -
+        level: 5
+        expRequired: 525
+      -
+        level: 6
+        expRequired: 603
+      -
+        level: 7
+        expRequired: 694
+      -
+        level: 8
+        expRequired: 798
+      -
+        level: 9
+        expRequired: 918
+      -
+        level: 10
+        expRequired: 1055
+  -
+    id: "金丹"
+    lifespan: 500
+    layers:
+      -
+        level: 1
+        expRequired: 400
+      -
+        level: 2
+        expRequired: 460
+      -
+        level: 3
+        expRequired: 529
+      -
+        level: 4
+        expRequired: 608
+      -
+        level: 5
+        expRequired: 700
+      -
+        level: 6
+        expRequired: 805
+      -
+        level: 7
+        expRequired: 925
+      -
+        level: 8
+        expRequired: 1064
+      -
+        level: 9
+        expRequired: 1224
+      -
+        level: 10
+        expRequired: 1407
+  -
+    id: "元婴"
+    lifespan: 1000
+    layers:
+      -
+        level: 1
+        expRequired: 500
+      -
+        level: 2
+        expRequired: 575
+      -
+        level: 3
+        expRequired: 661
+      -
+        level: 4
+        expRequired: 760
+      -
+        level: 5
+        expRequired: 875
+      -
+        level: 6
+        expRequired: 1006
+      -
+        level: 7
+        expRequired: 1157
+      -
+        level: 8
+        expRequired: 1330
+      -
+        level: 9
+        expRequired: 1530
+      -
+        level: 10
+        expRequired: 1759
+  -
+    id: "化神"
+    lifespan: 2000
+    layers:
+      -
+        level: 1
+        expRequired: 600
+      -
+        level: 2
+        expRequired: 690
+      -
+        level: 3
+        expRequired: 793
+      -
+        level: 4
+        expRequired: 913
+      -
+        level: 5
+        expRequired: 1049
+      -
+        level: 6
+        expRequired: 1207
+      -
+        level: 7
+        expRequired: 1388
+      -
+        level: 8
+        expRequired: 1596
+      -
+        level: 9
+        expRequired: 1835
+      -
+        level: 10
+        expRequired: 2111
+  -
+    id: "炼虚"
+    lifespan: 5000
+    layers:
+      -
+        level: 1
+        expRequired: 700
+      -
+        level: 2
+        expRequired: 805
+      -
+        level: 3
+        expRequired: 926
+      -
+        level: 4
+        expRequired: 1065
+      -
+        level: 5
+        expRequired: 1224
+      -
+        level: 6
+        expRequired: 1408
+      -
+        level: 7
+        expRequired: 1619
+      -
+        level: 8
+        expRequired: 1862
+      -
+        level: 9
+        expRequired: 2141
+      -
+        level: 10
+        expRequired: 2463
+  -
+    id: "合体"
+    lifespan: 10000
+    layers:
+      -
+        level: 1
+        expRequired: 800
+      -
+        level: 2
+        expRequired: 920
+      -
+        level: 3
+        expRequired: 1058
+      -
+        level: 4
+        expRequired: 1217
+      -
+        level: 5
+        expRequired: 1399
+      -
+        level: 6
+        expRequired: 1609
+      -
+        level: 7
+        expRequired: 1850
+      -
+        level: 8
+        expRequired: 2128
+      -
+        level: 9
+        expRequired: 2447
+      -
+        level: 10
+        expRequired: 2814
+  -
+    id: "大乘"
+    lifespan: 50000
+    layers:
+      -
+        level: 1
+        expRequired: 900
+      -
+        level: 2
+        expRequired: 1035
+      -
+        level: 3
+        expRequired: 1190
+      -
+        level: 4
+        expRequired: 1369
+      -
+        level: 5
+        expRequired: 1574
+      -
+        level: 6
+        expRequired: 1810
+      -
+        level: 7
+        expRequired: 2082
+      -
+        level: 8
+        expRequired: 2394
+      -
+        level: 9
+        expRequired: 2753
+      -
+        level: 10
+        expRequired: 3166
+  -
+    id: "人仙"
+    lifespan: 100000
+    layers:
+      -
+        level: 1
+        expRequired: 1000
+      -
+        level: 2
+        expRequired: 1150
+      -
+        level: 3
+        expRequired: 1323
+      -
+        level: 4
+        expRequired: 1521
+      -
+        level: 5
+        expRequired: 1749
+      -
+        level: 6
+        expRequired: 2011
+      -
+        level: 7
+        expRequired: 2313
+      -
+        level: 8
+        expRequired: 2660
+      -
+        level: 9
+        expRequired: 3059
+      -
+        level: 10
+        expRequired: 3518
+  -
+    id: "地仙"
+    lifespan: 150000
+    layers:
+      -
+        level: 1
+        expRequired: 1100
+      -
+        level: 2
+        expRequired: 1265
+      -
+        level: 3
+        expRequired: 1455
+      -
+        level: 4
+        expRequired: 1673
+      -
+        level: 5
+        expRequired: 1924
+      -
+        level: 6
+        expRequired: 2212
+      -
+        level: 7
+        expRequired: 2544
+      -
+        level: 8
+        expRequired: 2926
+      -
+        level: 9
+        expRequired: 3365
+      -
+        level: 10
+        expRequired: 3870
+  -
+    id: "天仙"
+    lifespan: 200000
+    layers:
+      -
+        level: 1
+        expRequired: 1200
+      -
+        level: 2
+        expRequired: 1380
+      -
+        level: 3
+        expRequired: 1587
+      -
+        level: 4
+        expRequired: 1825
+      -
+        level: 5
+        expRequired: 2099
+      -
+        level: 6
+        expRequired: 2414
+      -
+        level: 7
+        expRequired: 2776
+      -
+        level: 8
+        expRequired: 3192
+      -
+        level: 9
+        expRequired: 3671
+      -
+        level: 10
+        expRequired: 4221
+  -
+    id: "金仙"
+    lifespan: 500000
+    layers:
+      -
+        level: 1
+        expRequired: 1300
+      -
+        level: 2
+        expRequired: 1495
+      -
+        level: 3
+        expRequired: 1719
+      -
+        level: 4
+        expRequired: 1977
+      -
+        level: 5
+        expRequired: 2274
+      -
+        level: 6
+        expRequired: 2615
+      -
+        level: 7
+        expRequired: 3007
+      -
+        level: 8
+        expRequired: 3458
+      -
+        level: 9
+        expRequired: 3977
+      -
+        level: 10
+        expRequired: 4573
+  -
+    id: "太乙金仙"
+    lifespan: 1000000
+    layers:
+      -
+        level: 1
+        expRequired: 1400
+      -
+        level: 2
+        expRequired: 1610
+      -
+        level: 3
+        expRequired: 1851
+      -
+        level: 4
+        expRequired: 2129
+      -
+        level: 5
+        expRequired: 2449
+      -
+        level: 6
+        expRequired: 2816
+      -
+        level: 7
+        expRequired: 3238
+      -
+        level: 8
+        expRequired: 3724
+      -
+        level: 9
+        expRequired: 4283
+      -
+        level: 10
+        expRequired: 4925
+  -
+    id: "大罗金仙"
+    lifespan: 5000000
+    layers:
+      -
+        level: 1
+        expRequired: 1500
+      -
+        level: 2
+        expRequired: 1725
+      -
+        level: 3
+        expRequired: 1984
+      -
+        level: 4
+        expRequired: 2281
+      -
+        level: 5
+        expRequired: 2624
+      -
+        level: 6
+        expRequired: 3017
+      -
+        level: 7
+        expRequired: 3470
+      -
+        level: 8
+        expRequired: 3990
+      -
+        level: 9
+        expRequired: 4589
+      -
+        level: 10
+        expRequired: 5277
+  -
+    id: "混元大罗金仙"
+    lifespan: 10000000
+    layers:
+      -
+        level: 1
+        expRequired: 1600
+      -
+        level: 2
+        expRequired: 1840
+      -
+        level: 3
+        expRequired: 2116
+      -
+        level: 4
+        expRequired: 2433
+      -
+        level: 5
+        expRequired: 2798
+      -
+        level: 6
+        expRequired: 3218
+      -
+        level: 7
+        expRequired: 3701
+      -
+        level: 8
+        expRequired: 4256
+      -
+        level: 9
+        expRequired: 4894
+      -
+        level: 10
+        expRequired: 5629
+  -
+    id: "圣人"
+    lifespan: 99999999
+    layers:
+      -
+        level: 1
+        expRequired: 1700
+      -
+        level: 2
+        expRequired: 1955
+      -
+        level: 3
+        expRequired: 2248
+      -
+        level: 4
+        expRequired: 2585
+      -
+        level: 5
+        expRequired: 2973
+      -
+        level: 6
+        expRequired: 3419
+      -
+        level: 7
+        expRequired: 3932
+      -
+        level: 8
+        expRequired: 4522
+      -
+        level: 9
+        expRequired: 5200
+      -
+        level: 10
+        expRequired: 5980
+generatedAt: "2026-02-07T15:04:09.913756"

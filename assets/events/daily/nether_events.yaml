@@ -1,0 +1,82 @@
+-
+  id: "nether_survival_waste"
+  title: "魔界岁月"
+  description: "魔风呼啸，你在荒芜的黑土上苟活。"
+  worlds: ["nether"]
+  minAge: 3
+  effects: { age: 1 }
+  choices:
+    -
+      id: "hide"
+      label: "龟缩藏匿"
+      effects: { log: "你屏住呼吸躲过一劫，毫发无损。" }
+    -
+      id: "hunt"
+      label: "猎取魔兽"
+      effects:
+        delta: { strength: 1, exp: 10 }
+        log: "你搏杀弱小魔兽，在杀戮中成长。"
+  weight: 5
+-
+  id: "nether_soul_absorption"
+  title: "幽冥汲取"
+  description: "魔界裂隙中溢出狂暴的灵气。"
+  worlds: ["nether"]
+  minAge: 8
+  effects: { age: 1 }
+  choices:
+    -
+      id: "force_absorb"
+      label: "强行炼化"
+      effects:
+        delta: { exp: 80, hp: -10 }
+        log: "你强忍剧痛炼化魔气，修为大进但伤了经脉。"
+    -
+      id: "observe_void"
+      label: "坐看虚无"
+      effects:
+        delta: { intelligence: 2, lucky: 1 }
+        log: "你在混乱中寻找秩序，神魂愈发坚韧。"
+  weight: 3
+-
+  id: "nether_demon_arena"
+  title: "血腥角斗"
+  description: "你在魔都的边缘，被迫参与了一场生存竞争。"
+  worlds: ["nether"]
+  minAge: 13
+  effects: { age: 1 }
+  choices:
+    -
+      id: "slaughter"
+      label: "杀出重围"
+      effects:
+        delta: { strength: 5, exp: 100 }
+        log: "你满身伤痕地站在尸堆上，魔气森严。"
+    -
+      id: "intimidate"
+      label: "气势压制"
+      effects:
+        delta: { charm: 3, intelligence: 1 }
+        log: "你仅凭眼神就惊退了对手，展现了王霸之气。"
+  weight: 2
+-
+  id: "nether_dark_monument"
+  title: "残碑遗刻"
+  description: "你在绝地中发现了一块刻满上古魔文的残碑。"
+  worlds: ["nether"]
+  minAge: 15
+  effects: { age: 1 }
+  choices:
+    -
+      id: "decipher"
+      label: "暴力破解"
+      effects:
+        delta: { intelligence: 5, exp: 200 }
+        log: "你领悟了残碑上的杀伐之意，甚至有些入魔。"
+    -
+      id: "worship"
+      label: "默默祭拜"
+      effects:
+        delta: { lucky: 5 }
+        log: "你感叹前行者的不易，冥冥中得到了护佑。"
+  weight: 2

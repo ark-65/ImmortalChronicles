@@ -4,10 +4,17 @@ import 'dart:math';
 import '../models/models.dart';
 import '../services/storage_service.dart';
 import 'adventure_page.dart';
-import '../data/parent_roles.dart';
 import '../data/reference_repository.dart';
 
 final _refRepo = ReferenceRepository();
+
+({String father, String mother}) _pickParentRoles({required int familyScore, required int luck}) {
+  if (familyScore >= 90) return (father: '长生大能', mother: '仙族神女');
+  if (familyScore >= 70) return (father: '世家之主', mother: '隐世传人');
+  if (familyScore >= 50) return (father: '修仙名宿', mother: '宗门长老');
+  if (familyScore >= 30) return (father: '商贾巨富', mother: '书香门第');
+  return (father: '老实巴交的农夫', mother: '勤劳质朴的村妇');
+}
 
 FamilyTemplate _pickFamilyTemplate(int familyScore) {
   final families = _refRepo.families;
@@ -85,7 +92,7 @@ class _AttributeSetupPageState extends State<AttributeSetupPage> {
       _ => '人界',
     };
     final fs = state.familyScore;
-    final parentRoles = pickParentRoles(familyScore: fs, luck: state.luck);
+    final parentRoles = _pickParentRoles(familyScore: fs, luck: state.luck);
     String familyTier;
     String parentRealm;
     String clanSize;

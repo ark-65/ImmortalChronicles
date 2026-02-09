@@ -1,0 +1,13 @@
+-
+  id: "template_exp_small"
+  template: true
+  effects:
+    delta: { exp: 15 }
+    log: "你通过不懈努力，获得了一丝感悟。"
+
+-
+  id: "template_lucky_encounter"
+  template: true
+  effects:
+    delta: { luck: 1 }
+    log: "你似乎运气不错，遇到了一些好事。"

@@ -1,0 +1,33 @@
+id: "金仙"
+lifespan: 500000
+layers:
+  -
+    level: 1
+    expRequired: 1300
+  -
+    level: 2
+    expRequired: 1495
+  -
+    level: 3
+    expRequired: 1719
+  -
+    level: 4
+    expRequired: 1977
+  -
+    level: 5
+    expRequired: 2274
+  -
+    level: 6
+    expRequired: 2615
+  -
+    level: 7
+    expRequired: 3007
+  -
+    level: 8
+    expRequired: 3458
+  -
+    level: 9
+    expRequired: 3977
+  -
+    level: 10
+    expRequired: 4573

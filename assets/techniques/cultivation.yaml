@@ -1,0 +1,4590 @@
+-
+  id: "cult_fire_sss_1"
+  name: "九阳焚天诀"
+  type: "cultivation"
+  grade: "dao"
+  rank: "sss"
+  elements: ["火", "阳"]
+  description: "至阳至刚之登峰造极之法，修炼至深处可焚山煮海。"
+  expRequired: 2000
+-
+  id: "cult_ice_sss_1"
+  name: "玄冥万劫冰"
+  type: "cultivation"
+  grade: "dao"
+  rank: "sss"
+  elements: ["冰", "阴"]
+  description: "极北苦寒之地流传之圣法，冻结真元，永坠寒冥。"
+  expRequired: 2000
+-
+  id: "cult_thunder_sss_1"
+  name: "太乙雷罡真解"
+  type: "cultivation"
+  grade: "dao"
+  rank: "sss"
+  elements: ["雷", "风"]
+  description: "引九天神雷入体，代天行罚，刚猛无俦。"
+  expRequired: 2000
+-
+  id: "cult_gold_sss_1"
+  name: "大洞真经"
+  type: "cultivation"
+  grade: "dao"
+  rank: "sss"
+  elements: ["金", "阳"]
+  description: "太上混元至极宝经，演化金之本源，无坚不摧。"
+  expRequired: 2000
+-
+  id: "cult_wood_sss_1"
+  name: "万古长青诀"
+  type: "cultivation"
+  grade: "dao"
+  rank: "sss"
+  elements: ["木", "生"]
+  description: "生生不息，寿元漫长，一叶落而万物生。"
+  expRequired: 2000
+-
+  id: "cult_earth_sss_1"
+  name: "麒麟镇世录"
+  type: "cultivation"
+  grade: "dao"
+  rank: "sss"
+  elements: ["土", "山"]
+  description: "稳如泰山，大地之力加持，万法不侵。"
+  expRequired: 2000
+-
+  id: "cult_chaos_sss_1"
+  name: "混沌衍世经"
+  type: "cultivation"
+  grade: "dao"
+  rank: "sss"
+  elements: ["混沌", "虚无"]
+  description: "开天辟地之功，演化万物，统御诸天。"
+  expRequired: 2500
+-
+  id: "cult_mortal_a_1"
+  name: "厚土功"
+  type: "cultivation"
+  grade: "fan"
+  rank: "a"
+  elements: ["土"]
+  description: "扎根大地，稳健平和，是基础修行的佳选。"
+  expRequired: 300
+-
+  id: "cult_water_b_1"
+  name: "叠浪诀"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["水"]
+  description: "真气如浪潮叠涌，连绵不绝。"
+  expRequired: 500
+-
+  id: "cult_mortal_fan_fire_1"
+  name: "赤火功"
+  type: "cultivation"
+  grade: "fan"
+  rank: "c"
+  elements: ["火"]
+  description: "采集地火精华修炼，真气灼热。"
+  expRequired: 150
+-
+  id: "cult_mortal_fan_wood_1"
+  name: "长青功"
+  type: "cultivation"
+  grade: "fan"
+  rank: "c"
+  elements: ["木"]
+  description: "汲取草木精气，延年益寿，恢复力强。"
+  expRequired: 150
+-
+  id: "cult_mortal_fan_metal_1"
+  name: "锐金诀"
+  type: "cultivation"
+  grade: "fan"
+  rank: "c"
+  elements: ["金"]
+  description: "磨砺锋芒，真气如金铁般坚硬锐利。"
+  expRequired: 150
+-
+  id: "cult_spirit_ling_ice_1"
+  name: "寒霜心法"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["冰"]
+  description: "真气阴寒刺骨，可冻结敌手经脉。"
+  expRequired: 400
+-
+  id: "cult_spirit_ling_thunder_1"
+  name: "奔雷劲"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["雷"]
+  description: "动若惊雷，真气中蕴含狂暴的雷霆之力。"
+  expRequired: 400
+-
+  id: "cult_immortal_xian_wind_1"
+  name: "御风飞仙经"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["风"]
+  description: "身驭清风，飘渺如仙，速度快到极致。"
+  expRequired: 800
+-
+  id: "cult_immortal_xian_yin_1"
+  name: "九幽冥月功"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["阴", "月"]
+  description: "沟通九幽之气，真气阴冷诡秘，变幻莫测。"
+  expRequired: 850
+-
+  id: "cult_saint_sheng_light_1"
+  name: "大日如来经"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "s"
+  elements: ["光", "阳"]
+  description: "煌煌大日，普照世间，克制一切阴邪之物。"
+  expRequired: 1200
+-
+  id: "cult_saint_sheng_dark_1"
+  name: "吞天魔功"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "s"
+  elements: ["暗", "吞噬"]
+  description: "吞噬万物精血修为，进境极快，但易遭天谴。"
+  expRequired: 1300
+-
+  id: "cult_spirit_ling_metal_1"
+  name: "金钢诀"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["金"]
+  description: "真气沉重如汞，体质增强，无畏刀兵。"
+  expRequired: 550
+-
+  id: "cult_spirit_ling_wood_1"
+  name: "乙木生灵典"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["木"]
+  description: "蕴含浓郁生机，伤势恢复极快，法力连绵。"
+  expRequired: 550
+-
+  id: "cult_spirit_ling_water_1"
+  name: "玄水经"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["水"]
+  description: "阴柔如水，善于束缚与化解敌人攻势。"
+  expRequired: 550
+-
+  id: "cult_spirit_ling_fire_1"
+  name: "离火内经"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["火"]
+  description: "真气炽烈，如离火之精，焚尽八荒。"
+  expRequired: 550
+-
+  id: "cult_spirit_ling_earth_1"
+  name: "厚土归元功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["土"]
+  description: "与大地共鸣，防御无双，真气雄浑稳健。"
+  expRequired: 550
+-
+  id: "cult_xian_variant_lightning_1"
+  name: "九天雷帝诀"
+  type: "cultivation"
+  grade: "xian"
+  rank: "s"
+  elements: ["雷"]
+  description: "掌控九天神雷，攻伐无双，霸道绝伦。"
+  expRequired: 1000
+-
+  id: "cult_xian_concept_life_1"
+  name: "涅槃重生法"
+  type: "cultivation"
+  grade: "xian"
+  rank: "ss"
+  elements: ["生", "阳"]
+  description: "在毁灭中寻求新生，浴火重生，逆转生死。"
+  expRequired: 1400
+-
+  id: "cult_dao_supreme_space_1"
+  name: "虚空造化经"
+  type: "cultivation"
+  grade: "dao"
+  rank: "sss"
+  elements: ["虚无", "神"]
+  description: "于虚无中开辟造化，掌握空间本源，无视界限。"
+  expRequired: 2800
+-
+  id: "cult_dao_sword_stars_1"
+  name: "星辰剑道经"
+  type: "cultivation"
+  grade: "dao"
+  rank: "sss"
+  elements: ["星", "剑", "神"]
+  description: "以亿万星辰演化剑意，剑气纵横寰宇，破灭星空。"
+  expRequired: 2600
+-
+  id: "cult_dao_reincarnation_1"
+  name: "轮回往生经"
+  type: "cultivation"
+  grade: "dao"
+  rank: "sss"
+  elements: ["生", "死", "时"]
+  description: "掌管六道轮回，断生死，逆阴阳，超脱世外。"
+  expRequired: 3000
+-
+  id: "cult_dao_destiny_1"
+  name: "偷天换日诀"
+  type: "cultivation"
+  grade: "dao"
+  rank: "sss"
+  elements: ["运", "幻", "神"]
+  description: "窃取天地气运，操纵命运因果，欺天瞒地。"
+  expRequired: 2700
+-
+  id: "cult_dao_truth_1"
+  name: "玄黄至尊经"
+  type: "cultivation"
+  grade: "dao"
+  rank: "sss"
+  elements: ["土", "金", "神"]
+  description: "玄黄之母气淬骨，凝聚至尊法身，诸法不侵。"
+  expRequired: 2600
+-
+  id: "cult_dao_primordial_1"
+  name: "原始真解"
+  type: "cultivation"
+  grade: "dao"
+  rank: "sss"
+  elements: ["混沌", "古"]
+  description: "万法之源，追溯远古混沌之秘，开启肉身与灵魂之枷锁。"
+  expRequired: 2500
+-
+  id: "cult_dao_eternal_1"
+  name: "永恒天功"
+  type: "cultivation"
+  grade: "dao"
+  rank: "sss"
+  elements: ["时", "空", "阳"]
+  description: "证得永恒果位，不磨不灭，与天地同寿，日月齐辉。"
+  expRequired: 3000
+-
+  id: "cult_dao_killing_1"
+  name: "杀戮屠仙录"
+  type: "cultivation"
+  grade: "dao"
+  rank: "sss"
+  elements: ["杀", "煞", "力"]
+  description: "以杀止杀，凝聚滔天杀气。杀一人为罪，杀万人为雄，杀尽仙神为至尊。"
+  expRequired: 2800
+-
+  id: "cult_dao_ice_soul_1"
+  name: "绝对零度经"
+  type: "cultivation"
+  grade: "dao"
+  rank: "sss"
+  elements: ["冰", "寒", "暗"]
+  description: "冻结时空，将万物推向寂灭的终点，绝对的寒冷。"
+  expRequired: 2600
+-
+  id: "cult_dao_fire_divine_1"
+  name: "帝火焚星图"
+  type: "cultivation"
+  grade: "dao"
+  rank: "sss"
+  elements: ["火", "阳", "星"]
+  description: "掌控诸天神火，一念之间，星河陨灭，万物皆灰。"
+  expRequired: 2600
+-
+  id: "cult_dao_thunder_wrath_1"
+  name: "三天正法雷帝功"
+  type: "cultivation"
+  grade: "dao"
+  rank: "sss"
+  elements: ["雷", "风", "光"]
+  description: "代天行罚，掌控审判之雷，诸邪退避，神魔俯首。"
+  expRequired: 2700
+-
+  id: "cult_dao_shadow_void_1"
+  name: "无影虚空经"
+  type: "cultivation"
+  grade: "dao"
+  rank: "sss"
+  elements: ["暗", "空", "幻"]
+  description: "身化虚无，游走于阴影与空间之间，无迹可寻。"
+  expRequired: 2500
+-
+  id: "cult_dao_body_supreme_1"
+  name: "大荒囚天指内经"
+  type: "cultivation"
+  grade: "dao"
+  rank: "sss"
+  elements: ["力", "土", "古"]
+  description: "淬炼绝强肉身，力可拔山，手可擒龙，镇压一个时代。"
+  expRequired: 2700
+-
+  id: "cult_dao_dragon_god_1"
+  name: "太虚龙神典"
+  type: "cultivation"
+  grade: "dao"
+  rank: "sss"
+  elements: ["神", "化", "力"]
+  description: "化身太虚龙神，真元雄厚如海，龙威震慑九天。"
+  expRequired: 2800
+-
+  id: "cult_sheng_fire_gold_1"
+  name: "太阳真火心法"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["火", "金"]
+  description: "采太阳精火，炼就纯阳金身。"
+  expRequired: 1500
+-
+  id: "cult_sheng_ice_yin_1"
+  name: "太阴寒潭经"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["冰", "阴"]
+  description: "真气如万年寒潭，寂静而恐怖。"
+  expRequired: 1500
+-
+  id: "cult_sheng_wind_space_1"
+  name: "虚空踏风步内篇"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "s"
+  elements: ["风", "空"]
+  description: "身融长风，一念跨山河。"
+  expRequired: 1300
+-
+  id: "cult_sheng_thunder_law_1"
+  name: "紫电驱邪录"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "s"
+  elements: ["雷", "光"]
+  description: "紫气东来，雷霆万钧，专克邪魔。"
+  expRequired: 1400
+-
+  id: "cult_sheng_wood_life_1"
+  name: "草木皆兵心经"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "s"
+  elements: ["木", "化"]
+  description: "点化草木，赋予灵性，众木皆为我用。"
+  expRequired: 1350
+-
+  id: "cult_sheng_earth_seal_1"
+  name: "大地封镇典"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "s"
+  elements: ["土", "封"]
+  description: "以大地之名，封印世间一切浮躁。"
+  expRequired: 1400
+-
+  id: "cult_sheng_water_mystic_1"
+  name: "天河引流诀"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "s"
+  elements: ["水", "空"]
+  description: "引九天之水，浩浩汤汤，横无际涯。"
+  expRequired: 1300
+-
+  id: "cult_sheng_blood_asura_1"
+  name: "阿修罗屠录"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["血", "杀"]
+  description: "于尸山血海中求道，战力无双。"
+  expRequired: 1600
+-
+  id: "cult_sheng_illusion_sky_1"
+  name: "梦蝶化蝶经"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "s"
+  elements: ["幻", "变"]
+  description: "庄周梦蝶，虚实转换，真假难辨。"
+  expRequired: 1250
+-
+  id: "cult_sheng_soul_night_1"
+  name: "勾魂摄魄典"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "s"
+  elements: ["魂", "暗"]
+  description: "掌控灵魂，玩弄生死于股掌之间。"
+  expRequired: 1450
+-
+  id: "cult_sheng_alchemy_dan_1"
+  name: "神农百草图"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "s"
+  elements: ["药", "木"]
+  description: "尝遍百草，精通药理，真元自带药香。"
+  expRequired: 1200
+-
+  id: "cult_sheng_body_iron_1"
+  name: "琉璃不灭体"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["金", "土"]
+  description: "肉身化琉璃，万法不侵，金刚不坏。"
+  expRequired: 1550
+-
+  id: "cult_sheng_sword_sacred_1"
+  name: "万剑归宗法"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["剑", "金"]
+  description: "以气驭剑，万剑如雨，天地臣服。"
+  expRequired: 1500
+-
+  id: "cult_sheng_music_heaven_1"
+  name: "九霄云外音"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "s"
+  elements: ["音", "风"]
+  description: "律动天地，以音入道，洗涤灵魂。"
+  expRequired: 1300
+-
+  id: "cult_sheng_star_path_1"
+  name: "周天星斗图"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["星", "空"]
+  description: "引动天上繁星，演化阵法，统御虚空。"
+  expRequired: 1600
+-
+  id: "cult_sheng_ghost_king_1"
+  name: "阎罗冥铁身"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "s"
+  elements: ["暗", "金"]
+  description: "炼就冥界法身，力大无穷，身硬如铁。"
+  expRequired: 1400
+-
+  id: "cult_sheng_phoenix_reg_1"
+  name: "仙凰涅槃心"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["火", "生"]
+  description: "凤凰血脉传承，不死不灭，欲火重生。"
+  expRequired: 1700
+-
+  id: "cult_sheng_dragon_core_1"
+  name: "真龙傲天诀"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["力", "水"]
+  description: "真龙传承，霸道无双，统治江河湖海。"
+  expRequired: 1650
+-
+  id: "cult_sheng_zen_mind_1"
+  name: "菩提明镜功"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "s"
+  elements: ["光", "神"]
+  description: "静心明悟，照破一切虚妄与黑暗。"
+  expRequired: 1200
+-
+  id: "cult_sheng_monster_tame_1"
+  name: "万兽奔腾经"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "s"
+  elements: ["兽", "力"]
+  description: "沟通万兽，与群妖同行，号令百兽。"
+  expRequired: 1350
+-
+  id: "cult_sheng_ice_sword_1"
+  name: "寒月剑典"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "s"
+  elements: ["冰", "剑"]
+  description: "剑气如月华，清冷而致命。"
+  expRequired: 1400
+-
+  id: "cult_sheng_shadow_kill_1"
+  name: "暗影杀录"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "s"
+  elements: ["暗", "杀"]
+  description: "隐匿于虚无，屠戮于无形。"
+  expRequired: 1450
+-
+  id: "cult_sheng_lightning_wing_1"
+  name: "雷翼化羽经"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "s"
+  elements: ["雷", "风"]
+  description: "背生雷翼，绝速冲击，毁天灭地。"
+  expRequired: 1500
+-
+  id: "cult_sheng_gold_fist_1"
+  name: "白虎裂天典"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["金", "力"]
+  description: "白虎杀伐之道，无坚不破，勇往直前。"
+  expRequired: 1600
+-
+  id: "cult_sheng_toxic_corpse_1"
+  name: "万毒噬心功"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "s"
+  elements: ["毒", "暗"]
+  description: "以剧毒淬体，百毒不侵，举手投足间传播瘟疫。"
+  expRequired: 1300
+-
+  id: "cult_sheng_heaven_punish_1"
+  name: "天劫引流术"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["雷", "运"]
+  description: "玩弄天劫，将雷罚化为己用，凶险万分。"
+  expRequired: 1750
+-
+  id: "cult_sheng_yin_yang_dual_1"
+  name: "两仪合欢功"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "s"
+  elements: ["阴", "阳"]
+  description: "阴阳调和，刚柔并济，进境极稳。"
+  expRequired: 1200
+-
+  id: "cult_sheng_void_swallow_1"
+  name: "虚无吞食录"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["混沌", "暗"]
+  description: "模仿黑洞之威，吸纳一切能量。"
+  expRequired: 1800
+-
+  id: "cult_sheng_mountain_peak_1"
+  name: "五岳镇魔图"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "s"
+  elements: ["土", "神"]
+  description: "显化五岳神山，镇压四海八荒。"
+  expRequired: 1400
+-
+  id: "cult_sheng_sea_surge_1"
+  name: "无尽汪洋经"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "s"
+  elements: ["水", "回复"]
+  description: "法力如汪洋大海，无穷无尽，自愈力极强。"
+  expRequired: 1300
+-
+  id: "cult_sheng_star_fall_1"
+  name: "乱星坠落典"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["星", "杀"]
+  description: "星辰陨落之势，破灭万物生机。"
+  expRequired: 1650
+-
+  id: "cult_sheng_ancient_god_1"
+  name: "天神降世法"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "sss"
+  elements: ["神", "阳"]
+  description: "引神灵入体，短暂获得神之伟力。"
+  expRequired: 1900
+-
+  id: "cult_sheng_ghost_flame_1"
+  name: "碧落幽火诀"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "s"
+  elements: ["火", "魂"]
+  description: "幽冥之火，灼烧灵魂，不死不休。"
+  expRequired: 1400
+-
+  id: "cult_sheng_sword_master_1"
+  name: "一剑开天术"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["剑", "空"]
+  description: "极致的锋利，能够切割空间，划破虚空。"
+  expRequired: 1600
+-
+  id: "cult_sheng_forest_maze_1"
+  name: "森罗万象典"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "s"
+  elements: ["木", "幻"]
+  description: "掌控森林之影，变幻莫测，困杀千军万马。"
+  expRequired: 1350
+-
+  id: "cult_sheng_lava_eruption_1"
+  name: "地心熔岩功"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "s"
+  elements: ["火", "土"]
+  description: "如火山爆发般的爆发力，势不可挡。"
+  expRequired: 1400
+-
+  id: "cult_sheng_wind_blade_1"
+  name: "屠风九式心法"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "s"
+  elements: ["风", "金"]
+  description: "极其轻灵的真气，随风而动，化风为刃。"
+  expRequired: 1250
+-
+  id: "cult_sheng_divine_insight_1"
+  name: "天机洞察录"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["运", "神"]
+  description: "预判先机，运筹帷幄，始终占据主动。"
+  expRequired: 1550
+-
+  id: "cult_sheng_space_crack_1"
+  name: "裂空真解"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["空"]
+  description: "掌握最纯粹的空间碎片，粉碎虚空障碍。"
+  expRequired: 1650
+-
+  id: "cult_sheng_evil_blood_1"
+  name: "血魔降世经"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "s"
+  elements: ["血", "暗"]
+  description: "以生灵血气为介，入魔证道，凶残异常。"
+  expRequired: 1500
+-
+  id: "cult_sheng_light_speed_1"
+  name: "极光遁影诀"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["光", "风"]
+  description: "极致的速度，光影过处，人已在天涯。"
+  expRequired: 1600
+-
+  id: "cult_sheng_life_cycle_1"
+  name: "枯荣轮回心经"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "s"
+  elements: ["生", "死"]
+  description: "枯荣交替，生生不息，磨不灭意志。"
+  expRequired: 1400
+-
+  id: "cult_sheng_demon_seal_1"
+  name: "镇魔碑文功"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "s"
+  elements: ["土", "神"]
+  description: "以身为碑，镇压一切魔头，克制邪气。"
+  expRequired: 1300
+-
+  id: "cult_sheng_frost_bite_1"
+  name: "玄冥冰蚕典"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "s"
+  elements: ["冰", "毒"]
+  description: "寒冷中带有致命的毒素，防不胜防。"
+  expRequired: 1350
+-
+  id: "cult_sheng_golden_armor_1"
+  name: "天庭金甲诀"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "s"
+  elements: ["金", "阳"]
+  description: "披挂金甲，如神将降世，威猛无敌。"
+  expRequired: 1450
+-
+  id: "cult_sheng_cloud_mist_1"
+  name: "云雾飘渺录"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "s"
+  elements: ["水", "幻"]
+  description: "身如云雾，变幻不定，善于躲避与困敌。"
+  expRequired: 1200
+-
+  id: "cult_sheng_earthquake_1"
+  name: "震岳裂地功"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "s"
+  elements: ["土", "力"]
+  description: "引发大地之力震动，造成毁灭性打击。"
+  expRequired: 1400
+-
+  id: "cult_sheng_heavenly_fire_1"
+  name: "青莲地心火典"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["火", "木"]
+  description: "地火之母，狂暴而温顺，炼体炼气之宝。"
+  expRequired: 1600
+-
+  id: "cult_sheng_ancient_beast_1"
+  name: "饕餮吞天术"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "ss"
+  elements: ["暗", "力"]
+  description: "饕餮血脉，吞噬万物，百无禁忌。"
+  expRequired: 1700
+-
+  id: "cult_sheng_spirit_oracle_1"
+  name: "灵犀通神法"
+  type: "cultivation"
+  grade: "sheng"
+  rank: "s"
+  elements: ["神", "木"]
+  description: "与天地草木共鸣，获得神启。"
+  expRequired: 1200
+-
+  id: "cult_xian_fire_1"
+  name: "地煞赤火功"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["火", "地"]
+  description: "采集地底地煞火气，霸道难驯。"
+  expRequired: 750
+-
+  id: "cult_xian_water_1"
+  name: "碧波潮汐诀"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["水"]
+  description: "真气如钱塘潮，连绵叠涨，声势惊人。"
+  expRequired: 700
+-
+  id: "cult_xian_metal_1"
+  name: "庚金破体气"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["金"]
+  description: "修一口无坚不摧的庚金锐气。"
+  expRequired: 800
+-
+  id: "cult_xian_wood_1"
+  name: "枯木逢春经"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["木", "生"]
+  description: "向死而生，断肢重生的奇奥法门。"
+  expRequired: 850
+-
+  id: "cult_xian_earth_1"
+  name: "镇岳功"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["土"]
+  description: "身如五岳，不动如山。"
+  expRequired: 750
+-
+  id: "cult_xian_thunder_1"
+  name: "九天轰雷典"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["雷"]
+  description: "爆发力极强，瞬间决出生死。"
+  expRequired: 900
+-
+  id: "cult_xian_ice_1"
+  name: "素女冰心经"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["冰"]
+  description: "斩断杂念，唯余一颗剔透冰心。"
+  expRequired: 700
+-
+  id: "cult_xian_wind_1"
+  name: "逍遥御风经"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["风"]
+  description: "乘风而行，不带一丝烟火气。"
+  expRequired: 750
+-
+  id: "cult_xian_dark_1"
+  name: "幽冥邪功"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["暗"]
+  description: "吞噬月华，阴毒诡谲。"
+  expRequired: 800
+-
+  id: "cult_xian_light_1"
+  name: "大光明咒"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["光"]
+  description: "煌煌光明，诸邪避易。"
+  expRequired: 800
+-
+  id: "cult_xian_space_1"
+  name: "缩地成寸术"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["空"]
+  description: "初步触摸空间规律的移动功法。"
+  expRequired: 950
+-
+  id: "cult_xian_sword_1"
+  name: "天罡剑气功"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["剑", "金"]
+  description: "采集天罡正气，化为剑气杀敌。"
+  expRequired: 800
+-
+  id: "cult_xian_blade_1"
+  name: "狂风叠浪刀"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["风", "水"]
+  description: "刀如狂风，力如叠浪，迅捷沉重。"
+  expRequired: 750
+-
+  id: "cult_xian_soul_1"
+  name: "镇魂经"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["魂"]
+  description: "稳固神魂，对抗幻术。"
+  expRequired: 850
+-
+  id: "cult_xian_luck_1"
+  name: "吉星高照录"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["运"]
+  description: "提升气运的玄学功法。"
+  expRequired: 1000
+-
+  id: "cult_xian_array_1"
+  name: "阵法基础心得"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["神"]
+  description: "以阵入道的基础功法。"
+  expRequired: 700
+-
+  id: "cult_xian_fire_2"
+  name: "六脉赤阳掌内篇"
+  type: "cultivation"
+  grade: "xian"
+  rank: "b"
+  elements: ["火", "阳"]
+  description: "阳刚正大，真气灼烧一切。"
+  expRequired: 650
+-
+  id: "cult_xian_water_2"
+  name: "太阴癸水功"
+  type: "cultivation"
+  grade: "xian"
+  rank: "b"
+  elements: ["水", "阴"]
+  description: "阴柔致死，化骨消融。"
+  expRequired: 650
+-
+  id: "cult_xian_metal_2"
+  name: "白虎裂空爪功"
+  type: "cultivation"
+  grade: "xian"
+  rank: "b"
+  elements: ["金", "杀"]
+  description: "充满戾气的金属性功法。"
+  expRequired: 700
+-
+  id: "cult_xian_wood_2"
+  name: "万木长春典"
+  type: "cultivation"
+  grade: "xian"
+  rank: "b"
+  elements: ["木"]
+  description: "生机绵密，寿命悠长。"
+  expRequired: 700
+-
+  id: "cult_xian_earth_2"
+  name: "九重山劲"
+  type: "cultivation"
+  grade: "xian"
+  rank: "b"
+  elements: ["土"]
+  description: "力如重山，连绵不绝。"
+  expRequired: 750
+-
+  id: "cult_xian_thunder_2"
+  name: "奔雷手心法"
+  type: "cultivation"
+  grade: "xian"
+  rank: "b"
+  elements: ["雷"]
+  description: "出手如雷，迅猛无比。"
+  expRequired: 680
+-
+  id: "cult_xian_ice_2"
+  name: "极寒玄冰劲"
+  type: "cultivation"
+  grade: "xian"
+  rank: "b"
+  elements: ["冰"]
+  description: "凝聚千年玄冰，冻结敌手。"
+  expRequired: 680
+-
+  id: "cult_xian_wind_2"
+  name: "回旋狂飙诀"
+  type: "cultivation"
+  grade: "xian"
+  rank: "b"
+  elements: ["风"]
+  description: "引起小型飓风，真气凌乱伤敌。"
+  expRequired: 650
+-
+  id: "cult_xian_dark_2"
+  name: "影遁术内功"
+  type: "cultivation"
+  grade: "xian"
+  rank: "b"
+  elements: ["暗"]
+  description: "能够在阴影中穿梭的法门。"
+  expRequired: 750
+-
+  id: "cult_xian_light_2"
+  name: "圣火令神功"
+  type: "cultivation"
+  grade: "xian"
+  rank: "b"
+  elements: ["光", "火"]
+  description: "圣火焚世，光明普照。"
+  expRequired: 700
+-
+  id: "cult_xian_element_1"
+  name: "五行轮转功"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["金", "木", "水", "火", "土"]
+  description: "五行互补，圆润如一。"
+  expRequired: 900
+-
+  id: "cult_xian_monster_1"
+  name: "妖皇炼体术"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["肉", "力"]
+  description: "模仿大妖淬炼体魄的法门。"
+  expRequired: 850
+-
+  id: "cult_xian_poison_1"
+  name: "七彩毒经"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["毒"]
+  description: "色彩斑斓中蕴含致命杀机。"
+  expRequired: 800
+-
+  id: "cult_xian_sound_1"
+  name: "狮子吼心法"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["音"]
+  description: "声震九域，令胆怯者肝胆欲裂。"
+  expRequired: 750
+-
+  id: "cult_xian_star_1"
+  name: "北斗观想经"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["星", "神"]
+  description: "观想繁星，扩展灵台。"
+  expRequired: 850
+-
+  id: "cult_xian_void_1"
+  name: "虚空寂灭经"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["空", "死"]
+  description: "归于虚无，归于寂灭。"
+  expRequired: 900
+-
+  id: "cult_xian_ancient_1"
+  name: "太古遗篇"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["古"]
+  description: "从远古遗迹中发掘的断断续续的功法。"
+  expRequired: 950
+-
+  id: "cult_xian_spirit_1"
+  name: "万灵朝拜功"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["神", "灵"]
+  description: "受到万千弱小生灵的祝福与膜拜。"
+  expRequired: 800
+-
+  id: "cult_xian_blood_1"
+  name: "血煞归元大法"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["血"]
+  description: "汲取天地间的煞气与死气，化作凶残真元。"
+  expRequired: 850
+-
+  id: "cult_xian_fire_3"
+  name: "烈炎焚心诀"
+  type: "cultivation"
+  grade: "xian"
+  rank: "b"
+  elements: ["火", "内"]
+  description: "真气如熔岩般灼热，淬炼五脏六腑。"
+  expRequired: 680
+-
+  id: "cult_xian_water_3"
+  name: "弱水三千法"
+  type: "cultivation"
+  grade: "xian"
+  rank: "b"
+  elements: ["水"]
+  description: "真气极其沉重，鹅毛不浮，束缚力惊人。"
+  expRequired: 680
+-
+  id: "cult_xian_metal_3"
+  name: "破军金罡"
+  type: "cultivation"
+  grade: "xian"
+  rank: "b"
+  elements: ["金", "杀"]
+  description: "战场冲锋之气，无坚不摧，杀气腾腾。"
+  expRequired: 720
+-
+  id: "cult_xian_wood_3"
+  name: "青灵长明经"
+  type: "cultivation"
+  grade: "xian"
+  rank: "b"
+  elements: ["木", "光"]
+  description: "如青色神灯，照亮识海，生机不绝。"
+  expRequired: 700
+-
+  id: "cult_xian_earth_3"
+  name: "地陷诀"
+  type: "cultivation"
+  grade: "xian"
+  rank: "b"
+  elements: ["土"]
+  description: "掌控重力，令敌深陷泥潭，动弹不得。"
+  expRequired: 700
+-
+  id: "cult_xian_thunder_3"
+  name: "磁光电极典"
+  type: "cultivation"
+  grade: "xian"
+  rank: "b"
+  elements: ["雷", "磁"]
+  description: "雷电与磁场结合，能够操纵金铁之物。"
+  expRequired: 750
+-
+  id: "cult_xian_ice_3"
+  name: "凝晶冻魂经"
+  type: "cultivation"
+  grade: "xian"
+  rank: "b"
+  elements: ["冰", "魂"]
+  description: "极致的寒意，能将魂魄冻结。"
+  expRequired: 750
+-
+  id: "cult_xian_wind_3"
+  name: "烈风狂舞集"
+  type: "cultivation"
+  grade: "xian"
+  rank: "b"
+  elements: ["风"]
+  description: "风刃如织，无孔不入。"
+  expRequired: 680
+-
+  id: "cult_xian_dark_3"
+  name: "极夜吞噬功"
+  type: "cultivation"
+  grade: "xian"
+  rank: "b"
+  elements: ["暗"]
+  description: "在黑暗中，你就是主宰。"
+  expRequired: 720
+-
+  id: "cult_xian_light_3"
+  name: "圣灵洗礼录"
+  type: "cultivation"
+  grade: "xian"
+  rank: "b"
+  elements: ["光", "圣"]
+  description: "洗涤身心，去除负面状态，克制血邪。"
+  expRequired: 700
+-
+  id: "cult_xian_space_2"
+  name: "虚空之门感悟"
+  type: "cultivation"
+  grade: "xian"
+  rank: "b"
+  elements: ["空"]
+  description: "初步理解空间之门，能够进行短距离闪避。"
+  expRequired: 800
+-
+  id: "cult_xian_body_1"
+  name: "铁甲玄武劲"
+  type: "cultivation"
+  grade: "xian"
+  rank: "b"
+  elements: ["肉", "水", "土"]
+  description: "防御力极强，如同穿上厚重的龟甲。"
+  expRequired: 720
+-
+  id: "cult_xian_alchemy_1"
+  name: "丹鼎真经"
+  type: "cultivation"
+  grade: "xian"
+  rank: "b"
+  elements: ["药", "火"]
+  description: "通过服用丹药辅助提升，药效翻倍。"
+  expRequired: 600
+-
+  id: "cult_xian_illusion_1"
+  name: "幻海迷情录"
+  type: "cultivation"
+  grade: "xian"
+  rank: "b"
+  elements: ["幻", "色"]
+  description: "针对心智薄弱者，效果拔群。"
+  expRequired: 650
+-
+  id: "cult_xian_sword_2"
+  name: "御剑飞行诀"
+  type: "cultivation"
+  grade: "xian"
+  rank: "b"
+  elements: ["剑", "风"]
+  description: "千里不留行，速度与帅气并重。"
+  expRequired: 680
+-
+  id: "cult_xian_fire_4"
+  name: "熔浆炼狱典"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["火", "土"]
+  description: "将周围化为炼狱，焚毁敌军。"
+  expRequired: 800
+-
+  id: "cult_xian_water_4"
+  name: "深海压力经"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["水", "力"]
+  description: "真元带有深海数万米的压力。"
+  expRequired: 800
+-
+  id: "cult_xian_metal_4"
+  name: "黄金狮吼经"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["金", "音"]
+  description: "大吼声中带有金锐之气，撕碎耳膜。"
+  expRequired: 820
+-
+  id: "cult_xian_wood_4"
+  name: "万寿无疆大法"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["木", "寿"]
+  description: "极其小众，只为活得更久。"
+  expRequired: 900
+-
+  id: "cult_xian_earth_4"
+  name: "泰山压顶诀"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["土", "力"]
+  description: "纯粹的力量压制，势不可挡。"
+  expRequired: 800
+-
+  id: "cult_xian_thunder_4"
+  name: "万钧雷霆典"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["雷", "金"]
+  description: "每一道雷霆都带有金属性开锋的效果。"
+  expRequired: 850
+-
+  id: "cult_xian_ice_4"
+  name: "万载寒冰髓"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["冰", "神"]
+  description: "冰之精华，能够作为本命真元中心。"
+  expRequired: 880
+-
+  id: "cult_xian_wind_4"
+  name: "龙卷杀戮劲"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["风", "杀"]
+  description: "将杀戮融入每一丝风中。"
+  expRequired: 800
+-
+  id: "cult_xian_dark_4"
+  name: "永夜君王典"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["暗", "神"]
+  description: "在黑暗中，你就是至高无上的王。"
+  expRequired: 900
+-
+  id: "cult_xian_light_4"
+  name: "圣光审判录"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["光"]
+  description: "以光柱审判罪恶，威力惊人。"
+  expRequired: 850
+-
+  id: "cult_xian_yin_yang_1"
+  name: "两仪阴阳经"
+  type: "cultivation"
+  grade: "xian"
+  rank: "s"
+  elements: ["阴", "阳"]
+  description: "包含阴阳至理，变化无穷。"
+  expRequired: 1000
+-
+  id: "cult_xian_life_1"
+  name: "生命礼赞"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["生"]
+  description: "对生命的极致赞美，自愈能力极强。"
+  expRequired: 800
+-
+  id: "cult_xian_death_1"
+  name: "死亡凋零录"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["死"]
+  description: "所过之处，万物枯萎凋零。"
+  expRequired: 850
+-
+  id: "cult_xian_star_2"
+  name: "坠神星云诀"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["星", "空"]
+  description: "引动星云之力，吞噬灵气所构成的防御。"
+  expRequired: 880
+-
+  id: "cult_xian_weapon_1"
+  name: "百兵之主心法"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["金", "变"]
+  description: "能够轻松驾驭各种制式和非制式的法宝。"
+  expRequired: 800
+-
+  id: "cult_xian_element_2"
+  name: "三花聚顶功"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["神", "灵", "精"]
+  description: "肉体、精神、灵气三者合一。"
+  expRequired: 950
+-
+  id: "cult_xian_sky_1"
+  name: "通天之路"
+  type: "cultivation"
+  grade: "xian"
+  rank: "b"
+  elements: ["神", "阳"]
+  description: "旨在沟通上界的修行笔记。"
+  expRequired: 700
+-
+  id: "cult_xian_ghost_1"
+  name: "鬼火磷粉劲"
+  type: "cultivation"
+  grade: "xian"
+  rank: "b"
+  elements: ["火", "阴"]
+  description: "阴毒的火焰，无法被水熄灭。"
+  expRequired: 680
+-
+  id: "cult_xian_blood_2"
+  name: "血影分身大法"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["血", "幻"]
+  description: "以自身血液制造替身，是极佳的保命手段。"
+  expRequired: 900
+-
+  id: "cult_xian_heart_1"
+  name: "玲珑剔透心"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["神"]
+  description: "增强悟性，极其难得的纯净功法。"
+  expRequired: 950
+-
+  id: "cult_xian_fire_5"
+  name: "琉璃净火功"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["火", "光"]
+  description: "如琉璃般纯净的火焰，焚尽业障。"
+  expRequired: 850
+-
+  id: "cult_xian_water_5"
+  name: "玄冥玄液诀"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["水", "阴"]
+  description: "凝水成液，其重无比，压垮神魂。"
+  expRequired: 800
+-
+  id: "cult_xian_metal_5"
+  name: "巨阙剑意经"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["金", "力"]
+  description: "不仅锋利，更有万钧之重，大巧不工。"
+  expRequired: 820
+-
+  id: "cult_xian_wood_5"
+  name: "万木之森图"
+  type: "cultivation"
+  grade: "xian"
+  rank: "a"
+  elements: ["木", "幻"]
+  description: "在识海中种下一片森林，生机不绝。"
+  expRequired: 850
+-
+  id: "cult_ling_fire_1"
+  name: "烈炎诀"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["火"]
+  description: "基础的火焰修行法，威力尚可。"
+  expRequired: 300
+-
+  id: "cult_ling_water_1"
+  name: "清水经"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["水"]
+  description: "中规中矩的水属性修行法。"
+  expRequired: 280
+-
+  id: "cult_ling_metal_4"
+  name: "精钢劲"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["金"]
+  description: "强化真气的穿透性。"
+  expRequired: 320
+-
+  id: "cult_ling_wood_4"
+  name: "回春功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["木"]
+  description: "偏向医疗与恢复的修行法。"
+  expRequired: 300
+-
+  id: "cult_ling_earth_4"
+  name: "磐石功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["土"]
+  description: "如同磐石般稳固的基础法门。"
+  expRequired: 300
+-
+  id: "cult_ling_thunder_3"
+  name: "惊雷诀"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["雷"]
+  description: "捕捉自然界的雷气进行修行。"
+  expRequired: 350
+-
+  id: "cult_ling_ice_4"
+  name: "凝霜诀"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["冰"]
+  description: "产生一丝寒气的入门功法。"
+  expRequired: 300
+-
+  id: "cult_ling_wind_3"
+  name: "疾风诀"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["风"]
+  description: "提升身法灵活性的基础功法。"
+  expRequired: 280
+-
+  id: "cult_ling_dark_1"
+  name: "潜影功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["暗"]
+  description: "擅长收敛气息，匿于暗处。"
+  expRequired: 320
+-
+  id: "cult_ling_light_1"
+  name: "微光经"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["光"]
+  description: "感知光明的入门法。修炼至深可不惧黑暗。"
+  expRequired: 320
+-
+  id: "cult_ling_fire_2"
+  name: "熔火诀"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["火"]
+  description: "比烈炎诀更进一步，温度更高。"
+  expRequired: 400
+-
+  id: "cult_ling_water_2"
+  name: "碧波功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["水"]
+  description: "真气如碧波荡漾，绵延不绝。"
+  expRequired: 380
+-
+  id: "cult_ling_metal_5"
+  name: "玄铁重剑内功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["金", "力"]
+  description: "适配重型兵刃的修行功法。"
+  expRequired: 420
+-
+  id: "cult_ling_wood_5"
+  name: "灵芝养气法"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["木"]
+  description: "滋养五脏，法力纯净。"
+  expRequired: 400
+-
+  id: "cult_ling_earth_5"
+  name: "泰山劲"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["土"]
+  description: "势如泰山，虽然缓慢但极其沉重。"
+  expRequired: 400
+-
+  id: "cult_ling_thunder_4"
+  name: "闪电手内劲"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["雷"]
+  description: "雷电爆发，速度与威力兼备。"
+  expRequired: 450
+-
+  id: "cult_ling_ice_5"
+  name: "玄冰寒气"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["冰"]
+  description: "能够凝水成冰。真气阴冷。"
+  expRequired: 400
+-
+  id: "cult_ling_wind_4"
+  name: "旋风经"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["风"]
+  description: "掌控气流旋涡，化解攻击。"
+  expRequired: 380
+-
+  id: "cult_ling_dark_2"
+  name: "幽冥冥想录"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["暗"]
+  description: "沟通冥界气息，真气诡异。"
+  expRequired: 420
+-
+  id: "cult_ling_light_2"
+  name: "日曜功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["光", "阳"]
+  description: "如小太阳般耀眼，真气偏向刚猛。"
+  expRequired: 420
+-
+  id: "cult_ling_sword_1"
+  name: "灵剑心法"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["剑"]
+  description: "适合剑修的基础入门法。"
+  expRequired: 380
+-
+  id: "cult_ling_alchemy_1"
+  name: "百草养生诀"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["木", "药"]
+  description: "炼丹师常用的基础功法。"
+  expRequired: 350
+-
+  id: "cult_ling_monster_1"
+  name: "蛮兽劲"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["肉", "力"]
+  description: "通过模仿野兽呼吸来变强肉身。"
+  expRequired: 450
+-
+  id: "cult_ling_poison_1"
+  name: "五毒经"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["毒"]
+  description: "淬炼毒性真气，触之即腐。"
+  expRequired: 400
+-
+  id: "cult_ling_sound_1"
+  name: "惊云长啸功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["音"]
+  description: "啸声可令敌人产生瞬间僵直。"
+  expRequired: 380
+-
+  id: "cult_ling_star_1"
+  name: "观星入门"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["星"]
+  description: "初步获得星辰之力的加持。"
+  expRequired: 420
+-
+  id: "cult_ling_fire_3"
+  name: "流火功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["火", "流"]
+  description: "真气如流火，灵动而炽热。"
+  expRequired: 400
+-
+  id: "cult_ling_water_3"
+  name: "碧渊心法"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["水", "深"]
+  description: "真气稳重，法力回复较快。"
+  expRequired: 380
+-
+  id: "cult_ling_metal_6"
+  name: "断魂金芒"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["金", "魂"]
+  description: "金芒中带有冲击神魂的效果。"
+  expRequired: 500
+-
+  id: "cult_ling_wood_6"
+  name: "青松劲"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["木"]
+  description: "坚韧不拔，防御力在同阶中较好。"
+  expRequired: 300
+-
+  id: "cult_ling_earth_6"
+  name: "沉沙诀"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["土"]
+  description: "真气带有飞沙之意，干扰敌人。"
+  expRequired: 320
+-
+  id: "cult_ling_thunder_5"
+  name: "雷音灌顶功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["雷", "音"]
+  description: "雷声轰鸣，淬炼恐惧产生的杂念。"
+  expRequired: 420
+-
+  id: "cult_ling_ice_6"
+  name: "雪舞冰霜经"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["冰", "风"]
+  description: "产生漫天雪花的幻象，影响视线。"
+  expRequired: 400
+-
+  id: "cult_ling_wind_5"
+  name: "扶摇诀"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["风", "云"]
+  description: "扶摇直上，轻灵无比。"
+  expRequired: 400
+-
+  id: "cult_ling_dark_3"
+  name: "夜游录"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["暗"]
+  description: "适合在夜间修行的法门，真气增幅明显。"
+  expRequired: 420
+-
+  id: "cult_ling_light_3"
+  name: "晨曦经"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["光"]
+  description: "采集清晨第一缕阳光修行。"
+  expRequired: 420
+-
+  id: "cult_ling_fire_4"
+  name: "赤阳内功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["火", "阳"]
+  description: "阳气十足，克制一般阴物。"
+  expRequired: 500
+-
+  id: "cult_ling_water_4"
+  name: "寒潭吐息法"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["水", "冰"]
+  description: "呼吸间带有寒气，吐气成冰。"
+  expRequired: 480
+-
+  id: "cult_ling_metal_7"
+  name: "点钢秘录"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["金"]
+  description: "将真气凝聚于一点爆发，极具穿透力。"
+  expRequired: 480
+-
+  id: "cult_ling_wood_7"
+  name: "万木朝阳心经"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["木", "光"]
+  description: "生机向上，修炼速度较快。"
+  expRequired: 480
+-
+  id: "cult_ling_earth_7"
+  name: "移山劲"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["土", "力"]
+  description: "力大无穷，能搬运重物。"
+  expRequired: 520
+-
+  id: "cult_ling_thunder_6"
+  name: "五雷轰顶秘术内功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["雷"]
+  description: "霸道无比，真气狂暴难驯。"
+  expRequired: 550
+-
+  id: "cult_ling_ice_7"
+  name: "冰魄真经入门"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["冰"]
+  description: "凝聚冰魄，真气寒度提升一个档次。"
+  expRequired: 500
+-
+  id: "cult_ling_wind_6"
+  name: "暴风咆哮功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["风", "音"]
+  description: "动静结合，风助声势。"
+  expRequired: 480
+-
+  id: "cult_ling_dark_4"
+  name: "影魅心法"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["暗", "魅"]
+  description: "真气带有魅惑效果，干扰敌人心志。"
+  expRequired: 500
+-
+  id: "cult_ling_light_4"
+  name: "普渡慈航录"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["光", "圣"]
+  description: "慈悲为怀，具有一定的群体治疗效果。"
+  expRequired: 480
+-
+  id: "cult_ling_sword_2"
+  name: "洗剑经"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["剑", "水"]
+  description: "用水属性真气洗练剑意，圆润通透。"
+  expRequired: 480
+-
+  id: "cult_ling_blade_1"
+  name: "狂刀劲"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["力", "火"]
+  description: "刀势凶猛，一往无前。"
+  expRequired: 420
+-
+  id: "cult_ling_palm_1"
+  name: "铁砂掌心法"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["金", "土"]
+  description: "强化双掌的硬度与热度。"
+  expRequired: 300
+-
+  id: "cult_ling_fist_1"
+  name: "罗汉拳气"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["阳", "力"]
+  description: "佛门基础，中规中矩。"
+  expRequired: 300
+-
+  id: "cult_ling_leg_1"
+  name: "神行百变内力"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["风", "幻"]
+  description: "身法诡异，让敌手捉摸不透。"
+  expRequired: 420
+-
+  id: "cult_ling_body_2"
+  name: "铜皮铁骨功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["肉", "金"]
+  description: "强化肉身，能够抵挡普通兵刃。"
+  expRequired: 450
+-
+  id: "cult_ling_spirit_2"
+  name: "通灵术"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["神", "灵"]
+  description: "这种修行法让你更容易获得灵兽的信任。"
+  expRequired: 380
+-
+  id: "cult_ling_vibration_1"
+  name: "震动波功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["力", "震"]
+  description: "通过真气的微小振动来破坏目标内部结构。"
+  expRequired: 420
+-
+  id: "cult_ling_nature_1"
+  name: "归园田居录"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["木", "土"]
+  description: "恬淡平和，法力极为稳固。"
+  expRequired: 280
+-
+  id: "cult_ling_wine_1"
+  name: "酒仙诀"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["水", "醉"]
+  description: "半梦半醒间，真气运行别有一番玄妙。"
+  expRequired: 350
+-
+  id: "cult_ling_fire_5"
+  name: "青焰功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["火", "木"]
+  description: "青色的火焰，灼烧速度极快。"
+  expRequired: 410
+-
+  id: "cult_ling_water_5"
+  name: "冥河支流诀"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["水", "死"]
+  description: "真气中带有一丝腐朽的气息。"
+  expRequired: 430
+-
+  id: "cult_ling_metal_8"
+  name: "飞针秘传内功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["金", "木"]
+  description: "擅长操控连线，灵动细微。"
+  expRequired: 400
+-
+  id: "cult_ling_wood_8"
+  name: "荆棘林术"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["木", "反"]
+  description: "具有一定的反震伤效果。"
+  expRequired: 410
+-
+  id: "cult_ling_earth_8"
+  name: "流沙葬"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["土"]
+  description: "掌控沙土堆叠，活理敌人。"
+  expRequired: 410
+-
+  id: "cult_ling_thunder_7"
+  name: "破空雷闪"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["雷", "风"]
+  description: "短暂的爆发式移动法。"
+  expRequired: 430
+-
+  id: "cult_ling_ice_8"
+  name: "寒风凛冽经"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["冰", "风"]
+  description: "寒风刺骨，范围性压制。"
+  expRequired: 410
+-
+  id: "cult_ling_wind_7"
+  name: "云龙九变心法"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["风", "云"]
+  description: "在空中进行多次变向的技巧。"
+  expRequired: 500
+-
+  id: "cult_ling_dark_5"
+  name: "黑煞劲"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["暗", "煞"]
+  description: "带有强烈侵蚀性的黑色煞气。"
+  expRequired: 520
+-
+  id: "cult_ling_light_5"
+  name: "极光洗髓经"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["光"]
+  description: "提升资质的基础修行法门。"
+  expRequired: 550
+-
+  id: "cult_ling_fire_6"
+  name: "熔浆呼吸法"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["火", "土"]
+  description: "模拟熔岩流动，真元雄厚且灼热。"
+  expRequired: 420
+-
+  id: "cult_ling_water_6"
+  name: "灵泉滋养功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["水", "回复"]
+  description: "辅助回复灵力的基础法门。"
+  expRequired: 280
+-
+  id: "cult_ling_metal_9"
+  name: "碎玉劲"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["金", "震"]
+  description: "真气带有震荡之力，专门对付坚硬防御。"
+  expRequired: 330
+-
+  id: "cult_ling_wood_9"
+  name: "缠绕诀"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["木", "控制"]
+  description: "真元带有极强的粘性与生发力。"
+  expRequired: 400
+-
+  id: "cult_ling_earth_9"
+  name: "石甲术心法"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["土", "肉"]
+  description: "在体表凝聚石质薄膜。"
+  expRequired: 300
+-
+  id: "cult_ling_thunder_8"
+  name: "滚雷功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["雷"]
+  description: "真气如闷雷滚动，威力惊人。"
+  expRequired: 440
+-
+  id: "cult_ling_ice_9"
+  name: "凝冰指内劲"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["冰"]
+  description: "将寒气凝聚于指尖爆发。"
+  expRequired: 310
+-
+  id: "cult_ling_wind_8"
+  name: "微风拂柳录"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["风", "柔"]
+  description: "极其阴柔的风属性功法。"
+  expRequired: 290
+-
+  id: "cult_ling_dark_6"
+  name: "敛息术全书"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["暗"]
+  description: "极致的潜伏，躲避神识扫描。"
+  expRequired: 450
+-
+  id: "cult_ling_light_6"
+  name: "圣光礼赞"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["光"]
+  description: "带有轻微神圣感的修行法。"
+  expRequired: 410
+-
+  id: "cult_ling_fire_7"
+  name: "地火焚身诀"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["火"]
+  description: "极其狂暴的火属性修行法，容易走火入魔。"
+  expRequired: 550
+-
+  id: "cult_ling_water_7"
+  name: "弱水真经残卷"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["水"]
+  description: "虽然是残卷，但其属性特殊，威力巨大。"
+  expRequired: 520
+-
+  id: "cult_ling_metal_10"
+  name: "无妄金剑心法"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["金", "剑"]
+  description: "锐利到甚至影响持有者的性格。"
+  expRequired: 530
+-
+  id: "cult_ling_wood_10"
+  name: "万木朝宗典"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["木"]
+  description: "在森林中修行效果翻倍。"
+  expRequired: 500
+-
+  id: "cult_ling_earth_10"
+  name: "厚德载物经"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["土"]
+  description: "最为沉稳的修行法门，固本培元。"
+  expRequired: 500
+-
+  id: "cult_ling_thunder_9"
+  name: "雷光瞬狱杀内功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["雷", "杀"]
+  description: "充满进攻性的雷属性法门。"
+  expRequired: 580
+-
+  id: "cult_ling_ice_10"
+  name: "玄冥冰蚕劲"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["冰", "毒"]
+  description: "冰冷刺骨中带有寒毒。"
+  expRequired: 550
+-
+  id: "cult_ling_wind_9"
+  name: "暴风裂空诀"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["风", "空"]
+  description: "真气如刀，能引起局部空间的动荡。"
+  expRequired: 560
+-
+  id: "cult_ling_dark_7"
+  name: "幽暗君主经初篇"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["暗"]
+  description: "带有极强的统治力，在此真气笼罩下敌人战意全消。"
+  expRequired: 580
+-
+  id: "cult_ling_light_7"
+  name: "裁决之光录"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["光"]
+  description: "惩治罪恶的光明法，攻击力惊人。"
+  expRequired: 540
+-
+  id: "cult_ling_yin_yang_1"
+  name: "两仪协调法"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["阴", "阳"]
+  description: "平衡体内冲突力量的辅助修行法。"
+  expRequired: 400
+-
+  id: "cult_ling_spirit_3"
+  name: "万兽变内篇"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["化", "兽"]
+  description: "能够部分改变身体结构以获得妖兽的力量。"
+  expRequired: 480
+-
+  id: "cult_ling_body_3"
+  name: "金钟罩心法"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["肉", "阳"]
+  description: "产生护体金钟，防御全面。"
+  expRequired: 450
+-
+  id: "cult_ling_array_1"
+  name: "灵石阵纹图解"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["神", "土"]
+  description: "学习如何在身体经脉中铭刻阵纹。"
+  expRequired: 320
+-
+  id: "cult_ling_alchemy_2"
+  name: "火种淬炼法"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["火", "精"]
+  description: "提高真火纯度，适合高级炼丹师。"
+  expRequired: 420
+-
+  id: "cult_ling_soul_1"
+  name: "安神养魂大法"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["魂"]
+  description: "极其舒缓的法门，扩充识海容量。"
+  expRequired: 450
+-
+  id: "cult_ling_sound_2"
+  name: "龙吟虎啸功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["音", "气"]
+  description: "声如黄钟大吕，震人心魂。"
+  expRequired: 430
+-
+  id: "cult_ling_space_1"
+  name: "虚空碎片采集录"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["空"]
+  description: "学习如何收纳一丝空间碎片的基础。"
+  expRequired: 600
+-
+  id: "cult_ling_time_1"
+  name: "光阴荏苒功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "s"
+  elements: ["时"]
+  description: "极其罕见，能在短时间内加速真气运行效率。"
+  expRequired: 800
+-
+  id: "cult_ling_blood_1"
+  name: "血气如虹大法"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["血", "力"]
+  description: "血气方刚，真元狂暴。"
+  expRequired: 450
+-
+  id: "cult_ling_nature_2"
+  name: "四季轮转功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["木", "火", "金", "水"]
+  description: "真气随四季更迭而产生不同属性。"
+  expRequired: 550
+-
+  id: "cult_ling_sword_3"
+  name: "剑胆琴心录"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["剑", "音"]
+  description: "将音律感悟到的意境融入剑道修行。"
+  expRequired: 520
+-
+  id: "cult_ling_demon_1"
+  name: "天魔解体大法初窥"
+  type: "cultivation"
+  grade: "ling"
+  rank: "s"
+  elements: ["魔", "力"]
+  description: "通过这种修行法让自己在狂化后不至于完全迷失。"
+  expRequired: 700
+-
+  id: "cult_ling_zen_1"
+  name: "大悲咒内功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["阳", "神"]
+  description: "慈悲真元，自愈极强且克制阴物。"
+  expRequired: 400
+-
+  id: "cult_ling_dragon_1"
+  name: "龙力淬体录"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["力", "神"]
+  description: "虽然不够精深，但足以打下绝世基础。"
+  expRequired: 550
+-
+  id: "cult_ling_phoenix_1"
+  name: "火凤涅槃功入门"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["火", "生"]
+  description: "让真元带上不绝的生机与炽热。"
+  expRequired: 560
+-
+  id: "cult_ling_tiger_1"
+  name: "白虎杀神金书"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["金", "杀"]
+  description: "刚烈狂猛，是进攻派的首选。"
+  expRequired: 540
+-
+  id: "cult_ling_turtle_1"
+  name: "玄武镇海功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["水", "土"]
+  description: "极其厚重，法力规模庞大。"
+  expRequired: 550
+-
+  id: "cult_ling_bird_1"
+  name: "朱雀凌空录"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["火", "风"]
+  description: "真气轻灵，极速如火。"
+  expRequired: 530
+-
+  id: "cult_ling_star_2"
+  name: "贪狼星煞劲"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["星", "杀"]
+  description: "凶猛的星煞之气，侵蚀敌身。"
+  expRequired: 460
+-
+  id: "cult_ling_luck_1"
+  name: "好运连连诀"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["运"]
+  description: "运气好总是能碰到机缘的辅助法。"
+  expRequired: 500
+-
+  id: "cult_ling_vibration_2"
+  name: "回声爆破录"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["音", "震"]
+  description: "一种可以反弹音波震荡的修行技巧。"
+  expRequired: 440
+-
+  id: "cult_ling_crystal_1"
+  name: "明玉功基础"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["冰", "金"]
+  description: "真气如玉璧般坚硬却带着彻骨寒意。"
+  expRequired: 430
+-
+  id: "cult_ling_shadow_1"
+  name: "暗黑诅咒集"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["暗", "毒"]
+  description: "通过阴冷的真气损耗敌人生机。"
+  expRequired: 450
+-
+  id: "cult_ling_flame_1"
+  name: "三味真火引"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["火", "内"]
+  description: "修行三味真火的前置基础法目。"
+  expRequired: 520
+-
+  id: "cult_ling_breath_1"
+  name: "极境胎息法"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["神", "气"]
+  description: "近乎停止呼吸，完全依靠大自然的灵气供养。"
+  expRequired: 580
+-
+  id: "cult_ling_sand_1"
+  name: "大漠狂沙录"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["土", "风"]
+  description: "在沙漠地带修行能收事半功倍之效。"
+  expRequired: 410
+-
+  id: "cult_ling_sea_1"
+  name: "深海归墟经"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["水", "吸"]
+  description: "法力具有一种向心引力，吸收周围散逸之气。"
+  expRequired: 440
+-
+  id: "cult_ling_heaven_1"
+  name: "凌霄至气功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["气", "阳"]
+  description: "浩然而正大的一门修行法门。"
+  expRequired: 420
+-
+  id: "cult_ling_fire_8"
+  name: "星火燎原诀"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["火"]
+  description: "真气微弱却极具韧性，一点火星即可燃尽八方。"
+  expRequired: 400
+-
+  id: "cult_ling_water_8"
+  name: "碧波万顷功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["水"]
+  description: "真气如无际大海，雄浑壮丽。"
+  expRequired: 420
+-
+  id: "cult_ling_metal_11"
+  name: "白虹贯日气"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["金", "术"]
+  description: "修一口白虹气，瞬息百步，杀人于无形。"
+  expRequired: 430
+-
+  id: "cult_ling_wood_11"
+  name: "乙木分神录"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["木", "魂"]
+  description: "利用草木灵气滋养神魂的偏门法门。"
+  expRequired: 450
+-
+  id: "cult_ling_earth_11"
+  name: "地母养生经"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["土", "生"]
+  description: "虽然进境缓慢，但对身体几乎没有副作用。"
+  expRequired: 300
+-
+  id: "cult_ling_thunder_10"
+  name: "掌心雷秘法"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["雷"]
+  description: "能够在掌心凝聚雷球的基础秘法。"
+  expRequired: 350
+-
+  id: "cult_ling_ice_11"
+  name: "寒霜月华功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["冰", "阴"]
+  description: "在月光下修行可获得极大加成。"
+  expRequired: 410
+-
+  id: "cult_ling_wind_10"
+  name: "追风赶月步"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["风"]
+  description: "入门级的身法类功法。"
+  expRequired: 280
+-
+  id: "cult_ling_dark_8"
+  name: "玄冥鬼爪内功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["暗", "肉"]
+  description: "将真气融入十指，狠毒无比。"
+  expRequired: 420
+-
+  id: "cult_ling_light_8"
+  name: "辉煌意志典"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["光", "神"]
+  description: "真气中带有不屈的辉煌意志。"
+  expRequired: 430
+-
+  id: "cult_ling_fire_9"
+  name: "紫阳真气"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["火", "阳"]
+  description: "高阶紫色火焰，对魔物有极强杀伤力。"
+  expRequired: 550
+-
+  id: "cult_ling_water_9"
+  name: "千川汇海流"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["水"]
+  description: "一种可以吸取敌方攻击力并转化为自身回复的功法。"
+  expRequired: 580
+-
+  id: "cult_ling_metal_12"
+  name: "太乙神针内劲"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["金", "药"]
+  description: "针灸与真气结合，既可救人亦可杀人。"
+  expRequired: 540
+-
+  id: "cult_ling_wood_12"
+  name: "神农百草诀"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["木", "药"]
+  description: "极其出名的辅助功法，提升灵植亲和度。"
+  expRequired: 550
+-
+  id: "cult_ling_earth_12"
+  name: "土遁秘术"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["土", "空"]
+  description: "学习如何在土层中穿行逃命。"
+  expRequired: 480
+-
+  id: "cult_ling_thunder_11"
+  name: "震雷破军诀"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["雷", "杀"]
+  description: "充满杀戮意志的雷霆法。勇往直前。"
+  expRequired: 560
+-
+  id: "cult_ling_ice_12"
+  name: "冰魄银针劲"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["冰", "暗"]
+  description: "阴毒且寒冷，专门针对穴位。"
+  expRequired: 440
+-
+  id: "cult_ling_wind_11"
+  name: "凌虚度"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["风", "空"]
+  description: "踏虚而行，不落凡尘。"
+  expRequired: 550
+-
+  id: "cult_ling_dark_9"
+  name: "魔影缠身功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["暗", "诅咒"]
+  description: "让敌人陷入幻觉与诅咒中，无法自拔。"
+  expRequired: 560
+-
+  id: "cult_ling_light_9"
+  name: "神圣惩戒录"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["光", "术"]
+  description: "从天而降的光柱，执行神圣审判。"
+  expRequired: 580
+-
+  id: "cult_ling_fire_10"
+  name: "火流苏步法内功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["火", "风"]
+  description: "真气如火龙穿梭，速度极快。"
+  expRequired: 450
+-
+  id: "cult_ling_water_10"
+  name: "滴水穿石诀"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["水", "金"]
+  description: "以水之柔克金之刚。需要极强耐心。"
+  expRequired: 350
+-
+  id: "cult_ling_metal_13"
+  name: "巨灵开山功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["金", "力"]
+  description: "力量感十足，每一招都力重千钧。"
+  expRequired: 480
+-
+  id: "cult_ling_wood_13"
+  name: "青帝长生经残页"
+  type: "cultivation"
+  grade: "ling"
+  rank: "s"
+  elements: ["木", "生"]
+  description: "传说中青帝留下的断简，具有极强的治愈力。"
+  expRequired: 700
+-
+  id: "cult_ling_earth_13"
+  name: "坤地潜龙功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["土", "神"]
+  description: "藏龙于地下，爆发力极强。"
+  expRequired: 520
+-
+  id: "cult_ling_thunder_12"
+  name: "闪电奔雷拳心法"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["雷", "力"]
+  description: "将雷电凝聚于拳头上爆发出的技巧。"
+  expRequired: 450
+-
+  id: "cult_ling_ice_13"
+  name: "千层寒冰甲"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["冰", "土"]
+  description: "极佳的防御性功法。"
+  expRequired: 440
+-
+  id: "cult_ling_wind_12"
+  name: "云影飘踪"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["风", "幻"]
+  description: "身如云影，捉摸不定。"
+  expRequired: 410
+-
+  id: "cult_ling_dark_10"
+  name: "死寂之瞳内劲"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["暗", "魂"]
+  description: "让敌人感受到极致的孤独与恐惧。"
+  expRequired: 550
+-
+  id: "cult_ling_light_10"
+  name: "极乐净土功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["光", "阳"]
+  description: "洗涤一切罪恶，回归本心。"
+  expRequired: 540
+-
+  id: "cult_ling_element_2"
+  name: "小五行功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["金", "木", "水", "火", "土"]
+  description: "虽然每项都弱，但非常平衡。"
+  expRequired: 450
+-
+  id: "cult_ling_monster_4"
+  name: "贪食魔猪诀"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["肉", "吸"]
+  description: "虽然名字不好听，但对体力和耐力提升显著。"
+  expRequired: 300
+-
+  id: "cult_ling_alchemy_3"
+  name: "火中取栗法"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["火", "精"]
+  description: "在极端环境下提升真火掌控力的偏激法门。"
+  expRequired: 420
+-
+  id: "cult_ling_soul_2"
+  name: "炼魂丝法"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["魂", "控制"]
+  description: "将神魂凝聚如丝线，进行探查。 "
+  expRequired: 450
+-
+  id: "cult_ling_sound_3"
+  name: "九歌乐典"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["音", "神"]
+  description: "优美的旋律中带有安抚性的力量。"
+  expRequired: 410
+-
+  id: "cult_ling_space_2"
+  name: "空灵指术内功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "a"
+  elements: ["空"]
+  description: "一指点出，能够产生局部空间塌陷。"
+  expRequired: 600
+-
+  id: "cult_ling_yin_yang_2"
+  name: "黑白分明诀"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["阴", "阳"]
+  description: "加强对阴阳二气产生的敏感度。"
+  expRequired: 400
+-
+  id: "cult_ling_vibration_3"
+  name: "余音绕梁录"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["音", "控"]
+  description: "让音波真气在目标周围持续回响。"
+  expRequired: 430
+-
+  id: "cult_ling_crystal_2"
+  name: "琉璃不灭体残卷"
+  type: "cultivation"
+  grade: "ling"
+  rank: "s"
+  elements: ["金", "肉"]
+  description: "虽然只是残卷，但对防御力的提升是巨大的。"
+  expRequired: 750
+-
+  id: "id_cult_ling_leaf_1"
+  name: "落叶随风步心法"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["木", "风"]
+  description: "极其轻灵，让人感觉不到丝毫重量。"
+  expRequired: 300
+-
+  id: "id_cult_ling_fire_11"
+  name: "炭火劲"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["火"]
+  description: "真气如红炭，虽无猛火，但持久灼热。"
+  expRequired: 300
+-
+  id: "id_cult_ling_water_11"
+  name: "溪流功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["水"]
+  description: "法力流转轻快，适合根骨平平者。"
+  expRequired: 280
+-
+  id: "id_cult_ling_metal_14"
+  name: "碎铁掌内劲"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["金"]
+  description: "通过震动破坏金属的基础技巧。"
+  expRequired: 320
+-
+  id: "id_cult_ling_wood_14"
+  name: "藤蔓劲"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["木"]
+  description: "真气充满韧性，擅长缠斗。"
+  expRequired: 300
+-
+  id: "id_cult_ling_earth_14"
+  name: "夯土功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["土"]
+  description: "让真气极其凝实的基础法门。"
+  expRequired: 300
+-
+  id: "id_cult_ling_thunder_13"
+  name: "引雷针术内功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["雷", "金"]
+  description: "学会如何安全地引雷入体淬炼真气。"
+  expRequired: 450
+-
+  id: "id_cult_ling_ice_14"
+  name: "冰凌刺"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["冰"]
+  description: "简单的凝冰攻击手段。"
+  expRequired: 300
+-
+  id: "id_cult_ling_wind_13"
+  name: "乘风步"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["风"]
+  description: "借助微风提升速度的基础技巧。"
+  expRequired: 280
+-
+  id: "id_cult_ling_dark_11"
+  name: "匿迹术"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["暗"]
+  description: "在阴暗处隐藏身形的基础法门。"
+  expRequired: 320
+-
+  id: "id_cult_ling_light_11"
+  name: "荧光功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["光"]
+  description: "产生微弱光亮的修行法，适合夜间作业。"
+  expRequired: 320
+-
+  id: "id_cult_ling_fire_12"
+  name: "红焰诀"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["火"]
+  description: "标准火属性修行法，进境平稳。"
+  expRequired: 400
+-
+  id: "id_cult_ling_water_12"
+  name: "沧浪诀"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["水"]
+  description: "真气一浪高过一浪，气吞山河。"
+  expRequired: 420
+-
+  id: "id_cult_ling_metal_15"
+  name: "裂金式内劲"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["金"]
+  description: "带有撕裂效果的金属性修行法。"
+  expRequired: 430
+-
+  id: "id_cult_ling_wood_15"
+  name: "百草清心咒"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["木", "神"]
+  description: "清心寡欲，不容易走火入魔。"
+  expRequired: 400
+-
+  id: "id_cult_ling_earth_15"
+  name: "厚土归元术"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["土"]
+  description: "快速从大地中汲取灵气恢复的技巧。"
+  expRequired: 410
+-
+  id: "id_cult_ling_thunder_14"
+  name: "迅雷劲"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["雷"]
+  description: "专注于提升神经反应速度。"
+  expRequired: 450
+-
+  id: "id_cult_ling_ice_15"
+  name: "寒气逼人诀"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["冰"]
+  description: "真气外放即会产生明显的降温效果。"
+  expRequired: 410
+-
+  id: "id_cult_ling_wind_14"
+  name: "透骨风诀"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["风"]
+  description: "真气如寒风刺骨，专伤敌人经络。"
+  expRequired: 400
+-
+  id: "id_cult_ling_dark_12"
+  name: "冥想集"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["暗", "神"]
+  description: "在黑暗中磨练意志力的修行法。"
+  expRequired: 420
+-
+  id: "id_cult_ling_light_12"
+  name: "白昼流星功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["光", "星"]
+  description: "爆发出如流星般耀眼的真气。"
+  expRequired: 430
+-
+  id: "id_cult_ling_sword_4"
+  name: "基础剑意磨炼法"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["剑"]
+  description: "每天挥剑一万次的基础心法。"
+  expRequired: 400
+-
+  id: "id_cult_ling_blade_2"
+  name: "断水流刀法内功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["水", "力"]
+  description: "讲究一刀断流，真气极其瞬间爆发。"
+  expRequired: 450
+-
+  id: "id_cult_ling_fist_2"
+  name: "太极内功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["柔", "阳"]
+  description: "借力打力的基础修行法。"
+  expRequired: 420
+-
+  id: "id_cult_ling_body_4"
+  name: "百战金身入门"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["肉", "金"]
+  description: "在战斗中通过挨打来变强的奇特功法。"
+  expRequired: 500
+-
+  id: "id_cult_ling_luck_2"
+  name: "锦鲤经"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["运"]
+  description: "虽然不保证发财，但求个心理安慰。"
+  expRequired: 500
+-
+  id: "id_cult_ling_soul_3"
+  name: "清神醒脑诀"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["神"]
+  description: "快速缓解精神疲劳产生的不适。"
+  expRequired: 300
+-
+  id: "id_cult_ling_poison_2"
+  name: "毒砂内劲"
+  type: "cultivation"
+  grade: "ling"
+  rank: "b"
+  elements: ["毒", "土"]
+  description: "将泥土中的毒素淬炼入真气的技巧。"
+  expRequired: 400
+-
+  id: "id_cult_ling_alchemy_4"
+  name: "引火归元"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["火"]
+  description: "练习控火而专门设计的降温功法。"
+  expRequired: 280
+-
+  id: "id_cult_ling_music_1"
+  name: "乐理通解"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["音"]
+  description: "理解世间韵律的基础，辅助修行。"
+  expRequired: 280
+-
+  id: "id_cult_ling_array_2"
+  name: "布阵基础口诀"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["神"]
+  description: "背诵阵图，锻炼心算能力。"
+  expRequired: 300
+-
+  id: "id_cult_ling_beast_1"
+  name: "猫戏功"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["风", "肉"]
+  description: "提高身体灵敏度，像猫一样灵活。"
+  expRequired: 300
+-
+  id: "id_cult_ling_demon_2"
+  name: "魔气感应录"
+  type: "cultivation"
+  grade: "ling"
+  rank: "c"
+  elements: ["魔"]
+  description: "辨别魔气的入门法，防止被侵蚀。"
+  expRequired: 350
+-
+  id: "id_cult_fan_fire_1"
+  name: "引火术"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["火"]
+  description: "只能生火做饭的微末功夫。"
+  expRequired: 100
+-
+  id: "id_cult_fan_water_1"
+  name: "凝聚术"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["水"]
+  description: "从空气中凝聚少量淡水的基础法术。"
+  expRequired: 100
+-
+  id: "id_cult_fan_metal_1"
+  name: "铁布衫"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["肉"]
+  description: "江湖上流传极广的横练功夫。"
+  expRequired: 120
+-
+  id: "id_cult_fan_wood_1"
+  name: "养生桩"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["木"]
+  description: "站桩强身，老少皆宜。"
+  expRequired: 100
+-
+  id: "id_cult_fan_earth_1"
+  name: "千斤坠"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["力"]
+  description: "短时间增加体重，稳如泰山。"
+  expRequired: 110
+-
+  id: "id_cult_fan_thunder_1"
+  name: "打雷劲"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["雷"]
+  description: "仅仅能在手心产生微弱静电。"
+  expRequired: 150
+-
+  id: "id_cult_fan_ice_1"
+  name: "凉凉诀"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["冰"]
+  description: "夏天解暑的佳法。"
+  expRequired: 100
+-
+  id: "id_cult_fan_wind_1"
+  name: "顺风耳功"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["神"]
+  description: "强化听觉，偷听隔壁说话。"
+  expRequired: 120
+-
+  id: "id_cult_fan_dark_1"
+  name: "夜眼术"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["暗"]
+  description: "微弱光线下看清事物的技巧。"
+  expRequired: 120
+-
+  id: "id_cult_fan_light_1"
+  name: "萤火虫术"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["光"]
+  description: "把自己变亮，作为照明。"
+  expRequired: 100
+-
+  id: "id_cult_fan_flex_1"
+  name: "缩骨功"
+  type: "cultivation"
+  grade: "fan"
+  rank: "e"
+  elements: ["肉"]
+  description: "能够钻过狭窄洞穴的奇术。"
+  expRequired: 150
+-
+  id: "id_cult_fan_run_1"
+  name: "草上飞"
+  type: "cultivation"
+  grade: "fan"
+  rank: "e"
+  elements: ["风"]
+  description: "极其初级的轻功。"
+  expRequired: 140
+-
+  id: "id_cult_fan_power_1"
+  name: "大力神指"
+  type: "cultivation"
+  grade: "fan"
+  rank: "e"
+  elements: ["力"]
+  description: "指力大增，捏碎核桃。"
+  expRequired: 130
+-
+  id: "id_cult_fan_breath_1"
+  name: "龟息法"
+  type: "cultivation"
+  grade: "fan"
+  rank: "e"
+  elements: ["神"]
+  description: "模拟乌龟呼吸，延年益寿。"
+  expRequired: 120
+-
+  id: "id_cult_fan_dive_1"
+  name: "潜水术"
+  type: "cultivation"
+  grade: "fan"
+  rank: "e"
+  elements: ["水"]
+  description: "在水下闭气时间延长。"
+  expRequired: 120
+-
+  id: "id_cult_fan_jump_1"
+  name: "燕儿飞"
+  type: "cultivation"
+  grade: "fan"
+  rank: "e"
+  elements: ["风"]
+  description: "纵身一跃，可上房梁。"
+  expRequired: 140
+-
+  id: "id_cult_fan_vision_1"
+  name: "鹰眼术"
+  type: "cultivation"
+  grade: "fan"
+  rank: "e"
+  elements: ["神"]
+  description: "看清极远处飞蚊的身影。"
+  expRequired: 150
+-
+  id: "id_cult_fan_climb_1"
+  name: "壁虎游墙功"
+  type: "cultivation"
+  grade: "fan"
+  rank: "e"
+  elements: ["肉"]
+  description: "在垂直墙面上攀登的技巧。"
+  expRequired: 160
+-
+  id: "id_cult_fan_fire_2"
+  name: "灶火功"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["火"]
+  description: "常用于凡间厨师，能微弱感应火力。"
+  expRequired: 100
+-
+  id: "id_cult_fan_water_2"
+  name: "汲水诀"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["水"]
+  description: "让身体在干旱环境中流失水分减慢。"
+  expRequired: 100
+-
+  id: "id_cult_fan_metal_2"
+  name: "铁砂劲"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["金"]
+  description: "提升双手的坚硬程度。"
+  expRequired: 110
+-
+  id: "id_cult_fan_wood_2"
+  name: "种树功"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["木"]
+  description: "一种可以提升作物产量的微弱秘术。"
+  expRequired: 100
+-
+  id: "id_cult_fan_earth_2"
+  name: "掘地术"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["土"]
+  description: "挖洞速度提升的基础技巧。"
+  expRequired: 100
+-
+  id: "id_cult_fan_thunder_2"
+  name: "摩擦起电法"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["雷"]
+  description: "通过特殊呼吸产生微弱麻痹感。"
+  expRequired: 150
+-
+  id: "id_cult_fan_ice_2"
+  name: "冰水诀"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["冰"]
+  description: "能让一碗水稍微凉一点。"
+  expRequired: 100
+-
+  id: "id_cult_fan_wind_2"
+  name: "扇风掌"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["风"]
+  description: "挥手间产生微弱凉风。"
+  expRequired: 110
+-
+  id: "id_cult_fan_dark_2"
+  name: "藏猫猫秘笈"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["暗"]
+  description: "简单的潜伏与心理平衡产生的隐蔽感。"
+  expRequired: 120
+-
+  id: "id_cult_fan_light_2"
+  name: "反光术"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["光"]
+  description: "让真气在体表形成微弱的反光层。"
+  expRequired: 100
+-
+  id: "id_cult_fan_spirit_1"
+  name: "呼猪唤狗术"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["神"]
+  description: "模仿家畜叫声的基础法门。"
+  expRequired: 120
+-
+  id: "id_cult_fan_voice_1"
+  name: "腹语术"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["音"]
+  description: "不张嘴也能发出声音的技巧。"
+  expRequired: 130
+-
+  id: "id_cult_fan_skin_1"
+  name: "厚皮功"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["肉"]
+  description: "单纯增加脂肪厚度来防御。"
+  expRequired: 110
+-
+  id: "id_cult_fan_sleep_1"
+  name: "深度睡眠法"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["神"]
+  description: "通过快速入睡来恢复体力的技巧。"
+  expRequired: 100
+-
+  id: "id_cult_fan_eat_1"
+  name: "暴饮暴食功"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["内"]
+  description: "提升胃部消化效率。 "
+  expRequired: 100
+-
+  id: "id_cult_fan_fire_3"
+  name: "烛火术"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["火"]
+  description: "指尖燃起一点豆火。"
+  expRequired: 100
+-
+  id: "id_cult_fan_water_3"
+  name: "凝雾术"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["水"]
+  description: "局部产生少许雾气。"
+  expRequired: 100
+-
+  id: "id_cult_fan_metal_3"
+  name: "铁骨劲"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["金"]
+  description: "强化骨骼硬度。"
+  expRequired: 120
+-
+  id: "id_cult_fan_wood_3"
+  name: "护花功"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["木"]
+  description: "防止花草枯萎的微弱法力。"
+  expRequired: 100
+-
+  id: "id_cult_fan_earth_3"
+  name: "滚石劲"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["土"]
+  description: "能够轻松推动大型石块。"
+  expRequired: 110
+-
+  id: "id_cult_fan_thunder_3"
+  name: "雷爆响"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["雷"]
+  description: "让真气在体内发出微弱的雷鸣声。"
+  expRequired: 150
+-
+  id: "id_cult_fan_ice_3"
+  name: "寒风吹"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["冰"]
+  description: "呼出的气带有一丝凉意。"
+  expRequired: 100
+-
+  id: "id_cult_fan_wind_3"
+  name: "随风摆"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["风"]
+  description: "在风中能更自如地保持平衡。"
+  expRequired: 110
+-
+  id: "id_cult_fan_dark_3"
+  name: "影动术"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["暗"]
+  description: "能让一个人的影子稍微扭曲一点点。"
+  expRequired: 120
+-
+  id: "id_cult_fan_light_3"
+  name: "闪光术"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["光"]
+  description: "突然爆发出的一点点亮光。"
+  expRequired: 100
+-
+  id: "id_cult_fan_meditation_1"
+  name: "坐忘录"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["神"]
+  description: "通过静坐来平复心情。"
+  expRequired: 100
+-
+  id: "id_cult_fan_breath_2"
+  name: "吐纳法"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["气"]
+  description: "最最基础的灵气亲和法则。"
+  expRequired: 100
+-
+  id: "id_cult_fan_flex_2"
+  name: "柔体术"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["肉"]
+  description: "提升身体韧性。"
+  expRequired: 110
+-
+  id: "id_cult_fan_run_2"
+  name: "疾走功"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["风"]
+  description: "跑得稍微快一点。"
+  expRequired: 120
+-
+  id: "id_cult_fan_dig_1"
+  name: "地鼠功"
+  type: "cultivation"
+  grade: "fan"
+  rank: "e"
+  elements: ["土"]
+  description: "适合在松软泥土中挖掘。"
+  expRequired: 140
+-
+  id: "id_cult_fan_swim_1"
+  name: "鱼游术"
+  type: "cultivation"
+  grade: "fan"
+  rank: "e"
+  elements: ["水"]
+  description: "游泳速度显著提升。"
+  expRequired: 140
+-
+  id: "id_cult_fan_climb_2"
+  name: "猿爬功"
+  type: "cultivation"
+  grade: "fan"
+  rank: "e"
+  elements: ["肉"]
+  description: "爬树能手。"
+  expRequired: 140
+-
+  id: "id_cult_fan_stone_1"
+  name: "顽石功"
+  type: "cultivation"
+  grade: "fan"
+  rank: "e"
+  elements: ["土"]
+  description: "皮肤变得粗糙且坚韧。"
+  expRequired: 150
+-
+  id: "id_cult_fan_fist_1"
+  name: "长拳内劲"
+  type: "cultivation"
+  grade: "fan"
+  rank: "e"
+  elements: ["力"]
+  description: "这种修行法会强化出拳的力量感。"
+  expRequired: 150
+-
+  id: "id_cult_fan_kick_1"
+  name: "铁腿功"
+  type: "cultivation"
+  grade: "fan"
+  rank: "e"
+  elements: ["力"]
+  description: "这一双腿能踢裂普通木板。"
+  expRequired: 150
+-
+  id: "id_cult_fan_palm_1"
+  name: "碎砖内力"
+  type: "cultivation"
+  grade: "fan"
+  rank: "e"
+  elements: ["力"]
+  description: "手掌中产生的一种爆发力。"
+  expRequired: 150
+-
+  id: "id_cult_fan_sight_1"
+  name: "远视术"
+  type: "cultivation"
+  grade: "fan"
+  rank: "e"
+  elements: ["神"]
+  description: "瞳力增强，看清远处目标产生的小细节。"
+  expRequired: 160
+-
+  id: "id_cult_fan_smell_1"
+  name: "嗅觉强化"
+  type: "cultivation"
+  grade: "fan"
+  rank: "e"
+  elements: ["神"]
+  description: "能分辨各种药草混合的味道。"
+  expRequired: 150
+-
+  id: "id_cult_fan_touch_1"
+  name: "指间灵敏度"
+  type: "cultivation"
+  grade: "fan"
+  rank: "e"
+  elements: ["神"]
+  description: "指尖触感敏锐，适合精细活。"
+  expRequired: 140
+-
+  id: "id_cult_fan_hair_1"
+  name: "须发功"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["变"]
+  description: "控制毛发生长的微末本领。"
+  expRequired: 100
+-
+  id: "id_cult_fan_skin_2"
+  name: "滑溜溜诀"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["水"]
+  description: "体表分泌微弱粘液，防止被抓。"
+  expRequired: 120
+-
+  id: "id_cult_fan_color_1"
+  name: "变色术"
+  type: "cultivation"
+  grade: "fan"
+  rank: "e"
+  elements: ["幻"]
+  description: "让皮肤颜色稍微产生一点偏移。"
+  expRequired: 150
+-
+  id: "id_cult_fan_heat_1"
+  name: "暖身诀"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["火"]
+  description: "即使在寒冬也不容易冻死。"
+  expRequired: 110
+-
+  id: "id_cult_fan_cool_1"
+  name: "避暑术"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["冰"]
+  description: "即使在酷暑也感到凉爽。"
+  expRequired: 110
+-
+  id: "id_cult_fan_eat_2"
+  name: "杂食经"
+  type: "cultivation"
+  grade: "fan"
+  rank: "e"
+  elements: ["内"]
+  description: "能消化一些原本不能吃的东西。"
+  expRequired: 140
+-
+  id: "id_cult_fan_poison_1"
+  name: "抗毒入门"
+  type: "cultivation"
+  grade: "fan"
+  rank: "e"
+  elements: ["毒"]
+  description: "对普通蛇虫鼠蚁其毒性的轻微抵抗。"
+  expRequired: 150
+-
+  id: "id_cult_fan_talk_1"
+  name: "巧舌如簧"
+  type: "cultivation"
+  grade: "fan"
+  rank: "e"
+  elements: ["神"]
+  description: "提升说话的流畅度。 "
+  expRequired: 130
+-
+  id: "id_cult_fan_dance_1"
+  name: "轻舞曼妙"
+  type: "cultivation"
+  grade: "fan"
+  rank: "e"
+  elements: ["肉"]
+  description: "提升平衡感。 "
+  expRequired: 140
+-
+  id: "id_cult_fan_sing_1"
+  name: "清越之音"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["音"]
+  description: "让嗓门稍微好听一点的修行。"
+  expRequired: 110
+-
+  id: "id_cult_fan_writing_1"
+  name: "指绘功"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["神"]
+  description: "指尖能画出清晰的图案。 "
+  expRequired: 110
+-
+  id: "id_cult_fan_math_1"
+  name: "心算术"
+  type: "cultivation"
+  grade: "fan"
+  rank: "e"
+  elements: ["神"]
+  description: "提升计算速度的基础修行法。"
+  expRequired: 150
+-
+  id: "id_cult_fan_memory_1"
+  name: "记事贴"
+  type: "cultivation"
+  grade: "fan"
+  rank: "e"
+  elements: ["神"]
+  description: "稍微提升一下记忆力。 "
+  expRequired: 160
+-
+  id: "id_cult_fan_fear_1"
+  name: "胆气壮"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["神"]
+  description: "不容易被突然产生的惊吓而吓到。"
+  expRequired: 120
+-
+  id: "id_cult_fan_smile_1"
+  name: "和颜悦色"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["幻"]
+  description: "让表情更具亲和力。 "
+  expRequired: 110
+-
+  id: "id_cult_fan_standing_1"
+  name: "金鸡独立"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["肉"]
+  description: "训练极致的平衡感的基础。 "
+  expRequired: 110
+-
+  id: "id_cult_fan_holding_1"
+  name: "铁指功"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["金"]
+  description: "单纯指尖的力量训练。 "
+  expRequired: 110
+-
+  id: "id_cult_fan_throwing_1"
+  name: "准星诀"
+  type: "cultivation"
+  grade: "fan"
+  rank: "e"
+  elements: ["神"]
+  description: "抛射物精准度微弱提升。 "
+  expRequired: 140
+-
+  id: "id_cult_fan_balance_1"
+  name: "走钢丝秘诀"
+  type: "cultivation"
+  grade: "fan"
+  rank: "e"
+  elements: ["肉"]
+  description: "训练小脑的基础法门。 "
+  expRequired: 150
+-
+  id: "id_cult_fan_swimming_2"
+  name: "龟划步"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["水"]
+  description: "极其省力的游泳技巧。 "
+  expRequired: 120
+-
+  id: "id_cult_fan_digging_2"
+  name: "穿山爪印"
+  type: "cultivation"
+  grade: "fan"
+  rank: "e"
+  elements: ["土"]
+  description: "模拟穿山甲挖掘的手法产生的基础劲力。"
+  expRequired: 150
+-
+  id: "id_cult_fan_eat_3"
+  name: "辟谷初探"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["内"]
+  description: "学习如何通过少量进食维持更久的体力。"
+  expRequired: 100
+-
+  id: "id_cult_fan_water_4"
+  name: "取露法"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["水"]
+  description: "在早晨收采清露，极其微弱的水属性感悟。"
+  expRequired: 100
+-
+  id: "id_cult_fan_fire_4"
+  name: "钻木取火意"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["火"]
+  description: "最原始的火力感悟技巧。"
+  expRequired: 100
+-
+  id: "id_cult_fan_wood_4"
+  name: "编织劲"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["木"]
+  description: "让手指在编织时极其灵活的基础技巧。"
+  expRequired: 100
+-
+  id: "id_cult_fan_earth_4"
+  name: "石雕心法"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["土", "神"]
+  description: "通过雕刻石头磨练耐心。"
+  expRequired: 110
+-
+  id: "id_cult_fan_wind_4"
+  name: "捕风影"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["风"]
+  description: "感知空气流动的方向，预防风寒。"
+  expRequired: 100
+-
+  id: "id_cult_fan_luck_3"
+  name: "掷骰必胜法"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["运"]
+  description: "江湖骗子的心理技巧，虽然跟气运无关，但能增强心态产生的好运。"
+  expRequired: 120
+-
+  id: "id_cult_fan_vision_2"
+  name: "穿针引线功"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["神"]
+  description: "提升近距离视物精度。"
+  expRequired: 100
+-
+  id: "id_cult_fan_ear_1"
+  name: "地听功"
+  type: "cultivation"
+  grade: "fan"
+  rank: "e"
+  elements: ["神", "土"]
+  description: "趴在地上能听见百步外的马蹄声。"
+  expRequired: 150
+-
+  id: "id_cult_fan_skin_3"
+  name: "耐操功"
+  type: "cultivation"
+  grade: "fan"
+  rank: "e"
+  elements: ["肉"]
+  description: "极其皮实，不容易留下淤青。"
+  expRequired: 140
+-
+  id: "id_cult_fan_breath_3"
+  name: "长寿气"
+  type: "cultivation"
+  grade: "fan"
+  rank: "e"
+  elements: ["生"]
+  description: "调理呼吸，少生疾病。"
+  expRequired: 130
+-
+  id: "id_cult_fan_run_3"
+  name: "泥鳅钻路"
+  type: "cultivation"
+  grade: "fan"
+  rank: "e"
+  elements: ["风", "肉"]
+  description: "在人群中快速挤过去而不被发现。"
+  expRequired: 150
+-
+  id: "id_cult_fan_jump_2"
+  name: "登云梯入门"
+  type: "cultivation"
+  grade: "fan"
+  rank: "e"
+  elements: ["风"]
+  description: "能借力在墙面上多踩两脚。"
+  expRequired: 160
+-
+  id: "id_cult_fan_dig_2"
+  name: "盗墓劲"
+  type: "cultivation"
+  grade: "fan"
+  rank: "e"
+  elements: ["土"]
+  description: "擅长在地下挖掘产生的阴凉真气。"
+  expRequired: 150
+-
+  id: "id_cult_fan_climb_3"
+  name: "猴子上杠"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["肉"]
+  description: "极佳的双臂产生的基础力量训练。"
+  expRequired: 110
+-
+  id: "id_cult_fan_strength_1"
+  name: "二牛之力"
+  type: "cultivation"
+  grade: "fan"
+  rank: "d"
+  elements: ["力"]
+  description: "凡人武学的巅峰之一，力气极大。"
+  expRequired: 200
+-
+  id: "id_cult_fan_speed_1"
+  name: "快如闪电"
+  type: "cultivation"
+  grade: "fan"
+  rank: "d"
+  elements: ["风"]
+  description: "凡间顶尖轻功，瞬息数丈。"
+  expRequired: 200
+-
+  id: "id_cult_fan_iron_1"
+  name: "金钟罩初级"
+  type: "cultivation"
+  grade: "fan"
+  rank: "d"
+  elements: ["肉"]
+  description: "能够抵挡寻常刀剑砍杀。"
+  expRequired: 220
+-
+  id: "id_cult_fan_breath_4"
+  name: "先天正气诀"
+  type: "cultivation"
+  grade: "fan"
+  rank: "d"
+  elements: ["气"]
+  description: "凡间最顶级的内功心法，有机会以此入道。"
+  expRequired: 250
+-
+  id: "id_cult_fan_vision_3"
+  name: "夜游神功"
+  type: "cultivation"
+  grade: "fan"
+  rank: "d"
+  elements: ["暗", "神"]
+  description: "在漆黑地底如履平地的非凡目力。"
+  expRequired: 210
+-
+  id: "id_cult_fan_hearing_1"
+  name: "风语术"
+  type: "cultivation"
+  grade: "fan"
+  rank: "d"
+  elements: ["风", "神"]
+  description: "能听到风吹来的一百步外的窃窃私语。"
+  expRequired: 210
+-
+  id: "id_cult_fan_smell_2"
+  name: "灵鼻诀"
+  type: "cultivation"
+  grade: "fan"
+  rank: "d"
+  elements: ["神"]
+  description: "能嗅出十里外的宝物气息或妖气。"
+  expRequired: 220
+-
+  id: "id_cult_fan_poison_2"
+  name: "百毒不侵体残篇"
+  type: "cultivation"
+  grade: "fan"
+  rank: "d"
+  elements: ["毒"]
+  description: "虽然残缺，但普通毒素已无法伤你。"
+  expRequired: 250
+-
+  id: "id_cult_fan_swim_2"
+  name: "弄潮功"
+  type: "cultivation"
+  grade: "fan"
+  rank: "d"
+  elements: ["水"]
+  description: "在江海狂龙中如履平地。"
+  expRequired: 200
+-
+  id: "id_cult_fan_luck_4"
+  name: "气运加身术"
+  type: "cultivation"
+  grade: "fan"
+  rank: "d"
+  elements: ["运"]
+  description: "极其玄奥的凡间法门，能稍微感应凶吉。"
+  expRequired: 300
+-
+  id: "id_cult_fan_demon_1"
+  name: "镇鬼口诀"
+  type: "cultivation"
+  grade: "fan"
+  rank: "d"
+  elements: ["光", "神"]
+  description: "虽然只有口诀，但对弱小鬼魅有奇效。"
+  expRequired: 250
+-
+  id: "id_cult_fan_fire_5"
+  name: "薪火传承功"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["火", "气"]
+  description: "通过火焰传承气息的基础修行法。"
+  expRequired: 100
+-
+  id: "id_cult_fan_water_5"
+  name: "润物细无声"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["水", "回复"]
+  description: "潜移默化地滋润经络。"
+  expRequired: 100
+-
+  id: "id_cult_fan_metal_4"
+  name: "打铁心得"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["金", "力"]
+  description: "提升力量感。 "
+  expRequired: 110
+-
+  id: "id_cult_fan_wood_5"
+  name: "落花流水意"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["木", "水"]
+  description: "极其柔美的流动技巧。 "
+  expRequired: 100
+-
+  id: "id_cult_fan_earth_5"
+  name: "磐石不动产"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["土"]
+  description: "极其稳定的重心训练。 "
+  expRequired: 110
+-
+  id: "id_cult_fan_thunder_4"
+  name: "指间电光"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["雷"]
+  description: "产生一丝麻痹感的基础修行。 "
+  expRequired: 150
+-
+  id: "id_cult_fan_ice_4"
+  name: "凝冰一瞬轴"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["冰"]
+  description: "短时间保持清冷心态。 "
+  expRequired: 110
+-
+  id: "id_cult_fan_wind_5"
+  name: "随风倒"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["风"]
+  description: "顺应气流，避免硬碰硬。"
+  expRequired: 100
+-
+  id: "id_cult_fan_dark_4"
+  name: "影魅初探"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["暗"]
+  description: "对阴影的一点点感知。 "
+  expRequired: 120
+-
+  id: "id_cult_fan_light_4"
+  name: "追光者感悟"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["光"]
+  description: "对光明的一点点执着。 "
+  expRequired: 100
+-
+  id: "id_cult_fan_zen_1"
+  name: "产生的禅定法"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["神"]
+  description: "能让人快速冷静下来的修行方法。"
+  expRequired: 100
+-
+  id: "id_cult_fan_sword_1"
+  name: "木剑基础十式"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["剑"]
+  description: "孩童习剑的基础，虽然毫无杀伤力。"
+  expRequired: 100
+-
+  id: "id_cult_fan_body_1"
+  name: "皮糙肉厚功"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["肉"]
+  description: "加强抗击打能力的最低等功法。"
+  expRequired: 110
+-
+  id: "id_cult_fan_running_1"
+  name: "疾步如飞"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["风"]
+  description: "适合家丁跑腿，提升耐力。"
+  expRequired: 120
+-
+  id: "id_cult_fan_fishing_1"
+  name: "姜太公钓鱼心法"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["神", "水"]
+  description: "提升垂钓专注度。 "
+  expRequired: 100
+-
+  id: "id_cult_fan_climbing_1"
+  name: "走山人笔记"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["土"]
+  description: "在崎岖山道保持体力的心得。"
+  expRequired: 110
+-
+  id: "id_cult_fan_swimming_1"
+  name: "狗刨式"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["水"]
+  description: "最起码不至于淹死。 "
+  expRequired: 100
+-
+  id: "id_cult_fan_digging_1"
+  name: "地道战术内功"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["土"]
+  description: "在狭窄地下保持平稳呼吸。"
+  expRequired: 110
+-
+  id: "id_cult_fan_voice_2"
+  name: "扩音术"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["音"]
+  description: "让嗓门亮一点，适合喝叫。"
+  expRequired: 110
+-
+  id: "id_cult_fan_luck_5"
+  name: "逢凶化吉经"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["运"]
+  description: "求神拜佛的心得体悟。 "
+  expRequired: 120
+-
+  id: "id_cult_fan_dream_1"
+  name: "大梦几千秋录"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["幻", "神"]
+  description: "快速进入熟睡状态的修行方式。"
+  expRequired: 100
+-
+  id: "id_cult_fan_eye_1"
+  name: "明目凝神诀"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["神"]
+  description: "减轻阅读产生的疲劳感。"
+  expRequired: 100
+-
+  id: "id_cult_fan_ear_2"
+  name: "隔墙有耳术"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["神"]
+  description: "通过特殊听法了解周遭动向提示。"
+  expRequired: 110
+-
+  id: "id_cult_fan_nosmoke_1"
+  name: "无影潜踪步"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["风"]
+  description: "走起路来悄无声息的基础技巧。"
+  expRequired: 120
+-
+  id: "id_cult_fan_iron_2"
+  name: "硬气功"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["肉", "阳"]
+  description: "局部抗击打能力强化。 "
+  expRequired: 110
+-
+  id: "id_cult_fan_breath_5"
+  name: "清晨吐纳法"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["气", "阳"]
+  description: "极其基础的采气技巧。 "
+  expRequired: 100
+-
+  id: "id_cult_fan_water_6"
+  name: "弄潮儿笔记"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["水"]
+  description: "对水流律动的基本认知。 "
+  expRequired: 100
+-
+  id: "id_cult_fan_wood_6"
+  name: "草木皆惊传"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["木"]
+  description: "通过草木动向察觉危险的感知技巧。"
+  expRequired: 110
+-
+  id: "id_cult_fan_life_1"
+  name: "养生秘笈"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["生"]
+  description: "记载了长寿老人的基础训练心得。 "
+  expRequired: 100
+-
+  id: "id_cult_fan_light_5"
+  name: "借光秘籍"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["光"]
+  description: "在微弱光线中识别文字的秘籍。 "
+  expRequired: 120
+-
+  id: "id_cult_fan_dark_5"
+  name: "夜游小札"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["暗"]
+  description: "记载了黑夜中行动的注意事项。 "
+  expRequired: 120
+-
+  id: "id_cult_fan_spirit_2"
+  name: "万物生灵觉"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["灵"]
+  description: "对世间万物共情的基础感悟技巧。 "
+  expRequired: 120
+-
+  id: "id_cult_fan_fire_6"
+  name: "烈炎余晖功"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["火"]
+  description: "最后的一点暖意，夕阳产生的感悟。"
+  expRequired: 110
+-
+  id: "id_cult_fan_metal_5"
+  name: "炼气化金论"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["金"]
+  description: "极其粗浅的真气凝练金属性论述。"
+  expRequired: 120
+-
+  id: "id_cult_fan_earth_6"
+  name: "地久天长"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["土"]
+  description: "单纯强调坚韧持久的基础修行方法。"
+  expRequired: 110
+-
+  id: "id_cult_fan_thunder_5"
+  name: "雷惊风雨"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["雷"]
+  description: "雷电交加产生的惊恐情绪转化法。"
+  expRequired: 130
+-
+  id: "id_cult_fan_ice_5"
+  name: "寒霜降"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["冰"]
+  description: "白霜产生的微弱寒性真气。"
+  expRequired: 100
+-
+  id: "id_cult_fan_wind_6"
+  name: "天清地朗步"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["风"]
+  description: "保持身心通透的步行法。 "
+  expRequired: 120
+-
+  id: "id_cult_fan_soul_1"
+  name: "定魂珠内照"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["神"]
+  description: "通过想象体内有一颗珠子来稳固心神。"
+  expRequired: 100
+-
+  id: "id_cult_fan_sword_2"
+  name: "挥剑一百万次"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["剑"]
+  description: "只要功夫深，铁杵磨成针。最枯燥的基础训练。"
+  expRequired: 150
+-
+  id: "id_cult_fan_body_2"
+  name: "磨皮法"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["肉"]
+  description: "单纯为了磨出厚茧的防御方法。 "
+  expRequired: 110
+-
+  id: "id_cult_fan_breath_6"
+  name: "夕阳呼吸法"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["气", "阴"]
+  description: "采薄暮之气，极其阴凉。 "
+  expRequired: 100
+-
+  id: "id_cult_fan_water_7"
+  name: "静心洗手诀"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["水"]
+  description: "通过洗手带来的清凉感来辅助悟道。"
+  expRequired: 100
+-
+  id: "id_cult_fan_wood_7"
+  name: "乙木微灵术"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["木"]
+  description: "对微弱灵气的感知法。 "
+  expRequired: 120
+-
+  id: "id_cult_fan_luck_6"
+  name: "趋吉避凶三十六变"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["运"]
+  description: "市井术士的经验汇编。 "
+  expRequired: 120
+-
+  id: "id_cult_fan_eye_2"
+  name: "微观法"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["神"]
+  description: "长时间注视蚂蚁而练就的集中力。"
+  expRequired: 100
+-
+  id: "id_cult_fan_ear_3"
+  name: "听声辩位入门"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["神"]
+  description: "虽然蒙着眼，也能大概知道方位。 "
+  expRequired: 110
+-
+  id: "id_cult_fan_nosmoke_2"
+  name: "猫步经"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["风"]
+  description: "像猫一样行走的心法技巧。 "
+  expRequired: 120
+-
+  id: "id_cult_fan_life_2"
+  name: "龟延年"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["生"]
+  description: "极其缓和的长命百岁修行录。 "
+  expRequired: 100
+-
+  id: "id_cult_fan_demon_2"
+  name: "正气歌"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["阳", "音"]
+  description: "通过高声背诵正气歌来缓解恐惧。"
+  expRequired: 110
+-
+  id: "id_cult_fan_light_6"
+  name: "萤光洗髓"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["光"]
+  description: "幻想自己被微光包裹，极其微弱的暗示效果。"
+  expRequired: 120
+-
+  id: "id_cult_fan_dark_6"
+  name: "影魔基础笔记"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["暗"]
+  description: "对黑暗的一点点畏惧与好奇转化。 "
+  expRequired: 120
+-
+  id: "id_cult_fan_vibration_1"
+  name: "空谷回波功"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["音"]
+  description: "在山谷中大喊并倾听回声的修行方法。"
+  expRequired: 110
+-
+  id: "id_cult_fan_fire_7"
+  name: "烟火漫空"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["火"]
+  description: "记载了关于烟火爆裂的短暂感悟。 "
+  expRequired: 110
+-
+  id: "id_cult_fan_star_1"
+  name: "看星星的心得"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["星"]
+  description: "单纯记录星空位置的基础知识。 "
+  expRequired: 100
+-
+  id: "id_cult_fan_ancient_1"
+  name: "老祖宗传言"
+  type: "cultivation"
+  grade: "fan"
+  rank: "f"
+  elements: ["古"]
+  description: "村头老人代代相传的神秘传说感悟。"
+  expRequired: 120

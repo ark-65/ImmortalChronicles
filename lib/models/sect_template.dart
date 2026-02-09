@@ -4,6 +4,7 @@ class SectTemplate {
   final List<String> elements;
   final List<String> specialties;
   final List<String> weapons;
+  final List<String> coreTechniqueIds;
   final String tier;
 
   const SectTemplate({
@@ -12,6 +13,7 @@ class SectTemplate {
     required this.elements,
     required this.specialties,
     this.weapons = const [],
+    this.coreTechniqueIds = const [],
     required this.tier,
   });
 
@@ -21,6 +23,7 @@ class SectTemplate {
         elements: List<String>.from(json['elements'] ?? const []),
         specialties: List<String>.from(json['specialties'] ?? const []),
         weapons: List<String>.from(json['weapons'] ?? const []),
+        coreTechniqueIds: List<String>.from(json['coreTechniqueIds'] ?? const []),
         tier: json['tier'] ?? '',
       );
 
@@ -30,6 +33,7 @@ class SectTemplate {
         'elements': elements,
         'specialties': specialties,
         'weapons': weapons,
+        'coreTechniqueIds': coreTechniqueIds,
         'tier': tier,
       };
 }

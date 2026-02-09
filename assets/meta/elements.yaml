@@ -1,0 +1,17 @@
+version: 1
+categories:
+  - id: "basic"
+    name: "基础五行"
+    elements: ["金", "木", "水", "火", "土"]
+  - id: "variant"
+    name: "进阶变异"
+    elements: ["雷", "风", "冰", "阴", "阳", "毒"]
+  - id: "special"
+    name: "特殊属性"
+    elements: ["力", "肉", "气", "神", "魂", "生", "死", "瞳"]
+  - id: "skill"
+    name: "技艺/副职"
+    elements: ["药", "精", "术", "阵", "音", "血", "变"]
+  - id: "dao"
+    name: "至高大道"
+    elements: ["时", "空", "混沌", "虚无", "运", "灭", "因果", "星", "古"]

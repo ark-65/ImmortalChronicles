@@ -8,3 +8,6 @@ export 'technique.dart';
 export 'sect_template.dart';
 export 'world_map.dart';
 export 'medicine.dart';
+export 'weapon_type.dart';
+export 'growth_stage.dart';
+export 'element_category.dart';

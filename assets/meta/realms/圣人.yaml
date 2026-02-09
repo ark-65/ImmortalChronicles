@@ -1,0 +1,33 @@
+id: "圣人"
+lifespan: 99999999
+layers:
+  -
+    level: 1
+    expRequired: 1700
+  -
+    level: 2
+    expRequired: 1955
+  -
+    level: 3
+    expRequired: 2248
+  -
+    level: 4
+    expRequired: 2585
+  -
+    level: 5
+    expRequired: 2973
+  -
+    level: 6
+    expRequired: 3419
+  -
+    level: 7
+    expRequired: 3932
+  -
+    level: 8
+    expRequired: 4522
+  -
+    level: 9
+    expRequired: 5200
+  -
+    level: 10
+    expRequired: 5980

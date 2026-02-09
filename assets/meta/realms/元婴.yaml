@@ -1,0 +1,33 @@
+id: "元婴"
+lifespan: 1000
+layers:
+  -
+    level: 1
+    expRequired: 500
+  -
+    level: 2
+    expRequired: 575
+  -
+    level: 3
+    expRequired: 661
+  -
+    level: 4
+    expRequired: 760
+  -
+    level: 5
+    expRequired: 875
+  -
+    level: 6
+    expRequired: 1006
+  -
+    level: 7
+    expRequired: 1157
+  -
+    level: 8
+    expRequired: 1330
+  -
+    level: 9
+    expRequired: 1530
+  -
+    level: 10
+    expRequired: 1759

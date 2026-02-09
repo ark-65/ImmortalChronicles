@@ -1,0 +1,140 @@
+-
+  id: "fan_recovery_pill"
+  name: "回元散"
+  grade: "凡"
+  effect: "小幅恢复气血，适合凡修与低阶修士日常疗伤。"
+  bonuses: { hp: 20 }
+  rarity: 1
+-
+  id: "fan_bone_liquor"
+  name: "续骨膏"
+  grade: "凡"
+  effect: "接骨疗伤之良药，可修复轻微骨折。"
+  bonuses: { hp: 15, strength: 0.1 }
+  rarity: 1
+-
+  id: "fan_energy_extract"
+  name: "补气汤"
+  grade: "凡"
+  effect: "凡人间常用的补品，可略微提升体力。"
+  bonuses: { hp: 10, exp: 5 }
+  rarity: 2
+-
+  id: "ling_qi_pill"
+  name: "聚灵丹"
+  grade: "灵"
+  effect: "提升灵气恢复并短暂提升悟性。"
+  bonuses: { exp: 50, intelligence: 1 }
+  rarity: 3
+-
+  id: "ling_foundation_liquid"
+  name: "筑基液"
+  grade: "灵"
+  effect: "辅助筑基之物，可提升突破概率。"
+  bonuses: { lucky: 1, exp: 100 }
+  rarity: 4
+-
+  id: "ling_fire_pill"
+  name: "赤阳丹"
+  grade: "灵"
+  effect: "蕴含火属性精气，适合火灵根修士。"
+  bonuses: { exp: 80, strength: 1 }
+  rarity: 4
+-
+  id: "ling_ice_dew"
+  name: "凝冰露"
+  grade: "灵"
+  effect: "清心寡欲，压制心魔干扰。"
+  bonuses: { intelligence: 2, lucky: 1 }
+  rarity: 4
+-
+  id: "xian_body_pill"
+  name: "洗髓丹"
+  grade: "仙"
+  effect: "淬炼根骨，提升基础体质，辅助突破金丹/元婴。"
+  bonuses: { strength: 5, charm: 2 }
+  rarity: 6
+-
+  id: "xian_spirit_root_pill"
+  name: "塑根丹"
+  grade: "仙"
+  effect: "修补残损灵根，提升修仙资质。"
+  bonuses: { intelligence: 5, exp: 500 }
+  rarity: 7
+-
+  id: "xian_thunder_fruit"
+  name: "九雷仙果"
+  grade: "仙"
+  effect: "遭受雷劫时服用，可提升雷抗力。"
+  bonuses: { hp: 200, strength: 10 }
+  rarity: 7
+-
+  id: "xian_void_dust"
+  name: "空灵散"
+  grade: "仙"
+  effect: "感悟虚空大道，大幅提升身法。"
+  bonuses: { charm: 3, intelligence: 3 }
+  rarity: 7
+-
+  id: "xian_nine_life_grass"
+  name: "九命金丹"
+  grade: "仙"
+  effect: "起死回生之妙药，增加寿元并修复重伤。"
+  bonuses: { lifespan: 20, hp: 1000 }
+  rarity: 8
+-
+  id: "sheng_life_extension"
+  name: "长生玉露"
+  grade: "圣"
+  effect: "延寿 50 年并稳固神魂，极为罕见。"
+  bonuses: { lifespan: 50, intelligence: 10 }
+  rarity: 8
+-
+  id: "sheng_nirvana_pill"
+  name: "涅槃丹"
+  grade: "圣"
+  effect: "破后而立，服用后属性随机重塑，概率大幅提升。"
+  bonuses: { lucky: 5, strength: 20 }
+  rarity: 9
+-
+  id: "sheng_holy_water"
+  name: "瑶池圣水"
+  grade: "圣"
+  effect: "洗涤灵魂垢秽，彻底提升灵识强度。"
+  bonuses: { intelligence: 15, charm: 5 }
+  rarity: 9
+-
+  id: "sheng_chaos_marrow"
+  name: "混沌石髓"
+  grade: "圣"
+  effect: "蕴含原始混沌之气，极度增强体魄。"
+  bonuses: { strength: 50, hp: 5000 }
+  rarity: 9
+-
+  id: "dao_pill"
+  name: "混元道果"
+  grade: "道"
+  effect: "顿悟大道气息，突破失败可保底重试一次。"
+  bonuses: { exp: 2000, lucky: 10, intelligence: 20 }
+  rarity: 10
+-
+  id: "dao_source_essence"
+  name: "鸿蒙紫气"
+  grade: "道"
+  effect: "天地初开之母气，乃证道成神之关键。"
+  bonuses: { lifespan: 500, lucky: 20, strength: 100, intelligence: 100 }
+  rarity: 10
+-
+  id: "dao_time_fragment"
+  name: "岁月神沙"
+  grade: "道"
+  effect: "执掌时光流转，大幅延长修行者的寿元上限。"
+  bonuses: { lifespan: 1000 }
+  rarity: 10
+-
+  id: "dao_karma_pill"
+  name: "因果悟道丹"
+  grade: "道"
+  effect: "斩断虚妄因果，直接提示对大道的理解。"
+  bonuses: { exp: 10000, intelligence: 50 }
+  rarity: 10

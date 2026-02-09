@@ -1,0 +1,56 @@
+-
+  id: "age_1_sounds"
+  title: "牙牙学语"
+  description: "你发出稚嫩的声音。"
+  worlds: ["mortal", "immortal", "nether"]
+  minAge: 0
+  maxAge: 1
+  choices:
+    - id: "ying"
+      label: "嘤嘤嘤"
+      effects: { delta: { charm: 1 }, log: "你的软萌哭声让屋里的人心都化了。" }
+    - id: "wow"
+      label: "哇哇哇"
+      effects: { delta: { family: 1 }, log: "娘听到哭声赶来喂食。" }
+    - id: "haha"
+      label: "哈哈哈"
+      effects: { delta: { luck: 1 }, log: "开朗的笑声回荡。" }
+  weight: 5
+
+-
+  id: "age_2_report"
+  title: "吃奶睡觉的一年"
+  description: "除了吃奶就是睡觉。"
+  worlds: ["mortal", "immortal", "nether"]
+  minAge: 2
+  maxAge: 2
+  choices:
+    - id: "eat"
+      label: "安心吃奶"
+      effects: { delta: { family: 1 } }
+    - id: "sleep"
+      label: "继续睡觉"
+      effects: { delta: { luck: 1 } }
+    - id: "cry"
+      label: "随意哭闹"
+      effects: { delta: { charm: -1, strength: 1 } }
+  weight: 5
+
+-
+  id: "age_3_play"
+  title: "蹒跚学步"
+  description: "你开始能在庭院里乱跑。"
+  worlds: ["mortal", "immortal", "nether"]
+  minAge: 3
+  maxAge: 10
+  choices:
+    - id: "run"
+      label: "到处奔跑"
+      effects: { delta: { strength: 1 } }
+    - id: "observe"
+      label: "观察自然"
+      effects: { delta: { intelligence: 1 } }
+    - id: "hide"
+      label: "躲在母亲身后"
+      effects: { delta: { charm: 1 } }
+  weight: 4

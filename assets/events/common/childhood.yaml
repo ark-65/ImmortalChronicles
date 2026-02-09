@@ -1,0 +1,324 @@
+-
+  id: "age_4_curiosity"
+  title: "好奇心萌芽"
+  description: "你开始对外面的世界产生疑问。"
+  worlds: ["mortal", "immortal", "nether"]
+  minAge: 4
+  maxAge: 12
+  choices:
+    - id: "ask_story"
+      label: "缠着长辈讲故事"
+      effects:
+        delta: { intelligence: 1 }
+        log: "长辈向你讲述三界概况。"
+    - id: "find_bug"
+      label: "抓虫子玩"
+      effects:
+        delta: { luck: 1 }
+    - id: "help_house"
+      label: "帮忙做事"
+      effects:
+        delta: { family: 1 }
+  weight: 4
+
+-
+  id: "daily_family_training"
+  title: "家族启蒙"
+  description: "家族长老传唤族中子弟，共同修习功法与武技。"
+  worlds: ["mortal", "immortal"]
+  minAge: 5
+  maxAge: 30
+  conditions:
+    chance: 0.8
+  prerequisites: ["root_awakened", "cultivation_started"]
+  effects:
+    delta: { intelligence: 1 }
+  choices:
+    - id: "family_skill"
+      label: "修习家族功法"
+      effects:
+        learnFamilyTechnique: true
+        delta: { intelligence: 1, strength: 1 }
+        log: "你反复研读家族心法，感悟渐深。"
+    - id: "family_martial"
+      label: "修习家族武技"
+      effects:
+        learnFamilyTechnique: true
+        delta: { strength: 2 }
+        log: "你在演武场挥汗如雨，磨炼家族武道。"
+    - id: "play"
+      label: "继续玩耍"
+  weight: 1
+
+-
+  id: "age_6_root_test"
+  title: "灵根检测"
+  description: "你被带到灵根台，光柱缓缓升起。"
+  worlds: ["mortal", "immortal"]
+  minAge: 6
+  maxAge: 12
+  conditions:
+    unique: true
+  effects:
+    talentLevelName: "已觉醒"
+    realm: "炼气"
+    pendingEvents: ["age_6_root_choice"]
+  choices:
+    - id: "high_profile"
+      label: "高调入场"
+      effects: { delta: { charm: 1 } }
+    - id: "normal"
+      label: "普通入场"
+    - id: "low_profile"
+      label: "低调入场"
+      effects: { delta: { luck: 1 } }
+  weight: 6
+
+-
+  id: "age_6_root_choice"
+  title: "灵根觉醒后的抉择"
+  description: "灵根已显，你可以开始修行。"
+  worlds: ["mortal", "immortal"]
+  minAge: 6
+  maxAge: 15
+  conditions: { unique: true }
+  prerequisites: ["root_awakened"]
+  choices:
+    - id: "cultivate_path"
+      label: "学习家族功法"
+      effects:
+        canCultivate: true
+        learnFamilyTechnique: true
+        setExp: 0
+        setExpRequired: 200
+    - id: "mortal_path"
+      label: "放弃修炼"
+      effects: { canCultivate: false, realm: "无" }
+  weight: 10
+
+-
+  id: "m_child_study"
+  templateId: "template_exp_small"
+  title: "童年学习"
+  description: "你开始识字与算术。"
+  worlds: ["mortal"]
+  minAge: 6
+  maxAge: 30
+  conditions: { chance: 0.7 }
+  effects:
+    delta: { intelligence: 2 }
+    unlockLiteracy: true
+  choices:
+    - id: "recite"
+      label: "背诵经文"
+      effects: { delta: { intelligence: 2 } }
+    - id: "question"
+      label: "向师长发问"
+      effects: { delta: { intelligence: 1, charm: 1 } }
+    - id: "skip"
+      label: "偷懒摸鱼"
+      effects: { delta: { luck: 1, intelligence: -1 } }
+  weight: 3
+
+-
+  id: "age_7_study_clan"
+  title: "族学读书"
+  description: "你开始识字抄经，了解家族史。"
+  worlds: ["mortal", "immortal"]
+  minAge: 7
+  maxAge: 25
+  effects: { unlockLiteracy: true }
+  choices:
+    - id: "history"
+      label: "研读族史"
+      effects: { delta: { intelligence: 1 } }
+    - id: "copy"
+      label: "抄写经卷"
+      effects: { delta: { intelligence: 1, charm: 1 } }
+    - id: "skip"
+      label: "偷偷翘课"
+      effects: { delta: { luck: 1, intelligence: -1 } }
+  weight: 5
+
+-
+  id: "age_8_spar"
+  title: "童子比武"
+  description: "族内举行童子场，你也报名参与。"
+  worlds: ["mortal", "immortal", "nether"]
+  minAge: 8
+  maxAge: 25
+  prerequisites: ["cultivation_started"]
+  choices:
+    - id: "sword"
+      label: "试剑"
+      effects: { delta: { strength: 1 } }
+    - id: "fist"
+      label: "赤手搏斗"
+      effects: { delta: { strength: 2, charm: -1 } }
+    - id: "observe"
+      label: "旁观学习"
+      effects: { delta: { intelligence: 1 } }
+  weight: 4
+
+-
+  id: "age_9_market"
+  templateId: "template_lucky_encounter"
+  title: "坊市见闻"
+  description: "你前往坊市，琳琅满目的灵材让你目不暇接。"
+  worlds: ["mortal", "immortal"]
+  minAge: 9
+  maxAge: 40
+  choices:
+    - id: "buy_talisman"
+      label: "买张护身符"
+      effects: { delta: { luck: 1, family: -1 } }
+    - id: "haggle"
+      label: "练习砍价"
+      effects: { delta: { charm: 1 } }
+    - id: "learn"
+      label: "观察交易"
+      effects: { delta: { intelligence: 1 } }
+  weight: 3
+
+-
+  id: "age_10_trial"
+  title: "后山小试"
+  description: "后山试炼开始，考验你的胆识。"
+  worlds: ["mortal", "immortal", "nether"]
+  minAge: 10
+  maxAge: 50
+  prerequisites: ["cultivation_started"]
+  choices:
+    - id: "lead"
+      label: "带头闯阵"
+      effects: { delta: { strength: 2, luck: -1 } }
+    - id: "analyze"
+      label: "观察机关"
+      effects: { delta: { intelligence: 2 } }
+    - id: "stay_safe"
+      label: "谨慎跟随"
+      effects: { delta: { luck: 1, charm: 1 } }
+  weight: 3
+
+-
+  id: "age_11_break"
+  title: "首次冲击"
+  description: "你尝试运转功法，冲击体内关隘。"
+  worlds: ["mortal", "immortal"]
+  minAge: 11
+  maxAge: 40
+  prerequisites: ["cultivation_started"]
+  choices:
+    - id: "hard_push"
+      label: "强行冲关"
+      effects: { delta: { strength: 1 } }
+    - id: "steady"
+      label: "稳扎稳打"
+      effects: { delta: { intelligence: 1 } }
+    - id: "giveup"
+      label: "决定暂缓"
+      effects: { delta: { luck: 1 } }
+  weight: 2
+
+-
+  id: "age_12_depart"
+  title: "外出历练"
+  description: "你获得首次独自外出的许可。"
+  worlds: ["mortal", "immortal"]
+  minAge: 12
+  maxAge: 60
+  prerequisites: ["cultivation_started"]
+  choices:
+    - id: "mountain"
+      label: "上山采药"
+      effects: { delta: { luck: 1, intelligence: 1 } }
+    - id: "town"
+      label: "城中历练"
+      effects: { delta: { charm: 1 } }
+    - id: "meditate"
+      label: "闭关稳固"
+      effects: { delta: { intelligence: 1, family: 1 } }
+  weight: 2
+
+-
+  id: "mortal_sect_invite_12"
+  title: "宗门接引"
+  description: "宗门接引使者抵达，挑选可造之材。"
+  worlds: ["mortal"]
+  minAge: 12
+  maxAge: 40
+  prerequisites: ["non_top_family_only"]
+  choices:
+    - id: "attend_test"
+      label: "参加灵根测试"
+      effects: { pendingEvents: ["sect_root_test_result"] }
+    - id: "decline"
+      label: "婉拒机会"
+  familyTiers: ["农户", "寒门", "豪门", "官宦"]
+  weight: 4
+
+-
+  id: "sect_root_test_result"
+  title: "宗门灵根检测"
+  description: "长老主持灵根石，你的天赋显现。"
+  worlds: ["mortal"]
+  minAge: 12
+  maxAge: 40
+  prerequisites: ["non_top_family_only"]
+  choices:
+    - id: "pass"
+      label: "灵根合格"
+      effects:
+        talentLevelName: "已觉醒"
+        realm: "炼气"
+        sectId: "generic_sect"
+        pendingEvents: ["join_sect"]
+    - id: "fail"
+      label: "灵根不足"
+      effects:
+        talentLevelName: "凡体"
+        pendingEvents: ["mortal_fallback"]
+  weight: 4
+
+-
+  id: "m_street_fight"
+  title: "街头打架"
+  description: "你卷入了一场打斗。"
+  worlds: ["mortal"]
+  minAge: 10
+  maxAge: 80
+  conditions: { chance: 0.4 }
+  effects: { delta: { strength: 2, charm: -1 } }
+  choices:
+    - id: "swing"
+      label: "全力挥拳"
+      effects: { delta: { strength: 2, charm: -1 } }
+    - id: "dodge"
+      label: "闪避为主"
+      effects: { delta: { luck: 1, strength: 1 } }
+    - id: "avoid"
+      label: "躲开冲突"
+      effects: { delta: { charm: 1, strength: -1 } }
+  familyTiers: ["农户", "寒门"]
+  weight: 2
+
+-
+  id: "m_noble_meet"
+  title: "偶遇贵人"
+  description: "贵人提点你的人生道路。"
+  worlds: ["mortal"]
+  minAge: 8
+  maxAge: 60
+  conditions: { chance: 0.2, needsLiteracy: true }
+  effects: { delta: { family: 1, charm: 1 } }
+  choices:
+    - id: "befriend"
+      label: "结交贵人"
+      effects: { delta: { charm: 1, family: 1 } }
+    - id: "ask_advice"
+      label: "虚心求教"
+      effects: { delta: { intelligence: 1, family: 1 } }
+    - id: "miss"
+      label: "错过机会"
+      effects: { delta: { luck: -1 } }
+  weight: 1

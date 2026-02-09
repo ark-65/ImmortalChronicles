@@ -1,17 +1,31 @@
+import 'enums.dart';
+
 enum TechniqueGrade { fan, ling, xian, sheng, dao }
+
+enum TechniqueType { cultivation, martialArt }
 
 enum ProficiencyStage { chuKui, xiaoYou, dengTang, dengFeng }
 
 class Technique {
+  final String id;
   final String name;
+  final TechniqueType type;
   final TechniqueGrade grade;
+  final OpportunityTier rank;
+  final List<String> elements;
+  final String description;
   ProficiencyStage stage;
   int exp;
   int expRequired;
 
   Technique({
+    required this.id,
     required this.name,
+    required this.type,
     required this.grade,
+    required this.rank,
+    required this.elements,
+    this.description = '',
     required this.stage,
     required this.exp,
     required this.expRequired,
@@ -46,19 +60,39 @@ class Technique {
   }
 
   Map<String, dynamic> toJson() => {
+        'id': id,
         'name': name,
+        'type': type.name,
         'grade': grade.name,
+        'rank': rank.name,
+        'elements': elements,
+        'description': description,
         'stage': stage.name,
         'exp': exp,
         'expRequired': expRequired,
       };
 
   factory Technique.fromJson(Map<String, dynamic> json) => Technique(
+        id: json['id'] ?? '',
         name: json['name'],
-        grade: TechniqueGrade.values
-            .firstWhere((e) => e.name == json['grade'], orElse: () => TechniqueGrade.fan),
-        stage: ProficiencyStage.values
-            .firstWhere((e) => e.name == json['stage'], orElse: () => ProficiencyStage.chuKui),
+        type: TechniqueType.values.firstWhere(
+          (e) => e.name == json['type'],
+          orElse: () => TechniqueType.martialArt,
+        ),
+        grade: TechniqueGrade.values.firstWhere(
+          (e) => e.name == json['grade'],
+          orElse: () => TechniqueGrade.fan,
+        ),
+        rank: OpportunityTier.values.firstWhere(
+          (e) => e.name == json['rank'],
+          orElse: () => OpportunityTier.c,
+        ),
+        elements: List<String>.from(json['elements'] ?? []),
+        description: json['description'] ?? '',
+        stage: ProficiencyStage.values.firstWhere(
+          (e) => e.name == json['stage'],
+          orElse: () => ProficiencyStage.chuKui,
+        ),
         exp: json['exp'] ?? 0,
         expRequired: json['expRequired'] ?? 100,
       );

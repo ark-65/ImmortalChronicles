@@ -1,0 +1,101 @@
+-
+  id: "join_sect"
+  title: "拜入宗门"
+  description: "你有机会加入一座宗门，选择你的去向。"
+  worlds: ["mortal", "immortal"]
+  minAge: 13
+  maxAge: 60
+  conditions: { needsLiteracy: true, needsCultivation: true }
+  effects: { age: 0 }
+  choices:
+    - id: "pick_fire"
+      label: "投赤炎剑宗（天级）"
+      effects: { delta: { family: 1, exp: 20 }, log: "你拜入赤炎剑宗。", sectId: "fire_sword_sect" }
+    - id: "pick_star"
+      label: "投星河书院（圣地）"
+      effects: { delta: { intelligence: 1, exp: 25 }, log: "你进入星河书院。", sectId: "star_academy" }
+    - id: "pick_none"
+      label: "暂不入宗"
+      effects: { log: "你选择暂时游历四方。" }
+  weight: 3
+
+-
+  id: "teen_trial"
+  title: "少年试炼"
+  description: "你参与山门试炼，检验基础修为。"
+  worlds: ["mortal", "immortal", "nether"]
+  minAge: 13
+  maxAge: 40
+  prerequisites: ["cultivation_started"]
+  effects: { age: 0, delta: { exp: 20, strength: 1 } }
+  weight: 4
+
+-
+  id: "foundation_push"
+  title: "冲击筑基"
+  description: "你尝试凝聚筑基，稳固根基。"
+  worlds: ["mortal", "immortal"]
+  minAge: 16
+  maxAge: 100
+  prerequisites: ["cultivation_started"]
+  effects: { age: 0, delta: { exp: 30 } }
+  weight: 3
+
+-
+  id: "clan_competition"
+  title: "族比争锋"
+  description: "家族比武开始，你登场一试身手。"
+  worlds: ["mortal", "immortal"]
+  minAge: 18
+  maxAge: 80
+  prerequisites: ["cultivation_started"]
+  choices:
+    - id: "allout"
+      label: "全力一战"
+      effects: { delta: { exp: 30, strength: 1 } }
+    - id: "saveface"
+      label: "稳健求胜"
+      effects: { delta: { exp: 20, charm: 1 } }
+    - id: "observe"
+      label: "旁观学习"
+      effects: { delta: { intelligence: 1, exp: 15 } }
+  weight: 3
+
+-
+  id: "clan_secret_realm"
+  title: "族中秘境邀约"
+  description: "长老发现隐匿洞府，挑选年轻一辈前去探索。"
+  worlds: ["mortal", "immortal"]
+  minAge: 16
+  maxAge: 150
+  conditions: { chance: 0.05, chanceLuckBoost: 0.1 }
+  prerequisites: ["root_awakened"]
+  choices:
+    - id: "stay_safe"
+      label: "谨慎为妙"
+      effects: { delta: { intelligence: 1, exp: 10 } }
+    - id: "explore"
+      label: "前去探索"
+      effects: { delta: { strength: 1, luck: 1, exp: 30 } }
+  weight: 2
+
+-
+  id: "sect_trial_invite"
+  title: "宗门外门试炼"
+  description: "师门发出试炼令，要求弟子前往秘地历练。"
+  worlds: ["mortal", "immortal"]
+  minAge: 15
+  maxAge: 200
+  conditions: { chance: 0.08, chanceLuckBoost: 0.08 }
+  prerequisites: ["sect_accepted", "cultivation_started"]
+  choices:
+    - id: "decline"
+      label: "申请暂缓"
+      effects: { delta: { charm: -1 } }
+    - id: "join"
+      label: "报名参加"
+      effects: { delta: { exp: 35, luck: 1 } }
+    - id: "solo"
+      label: "独自闯荡"
+      effects: { delta: { strength: 1, intelligence: 1, exp: 45 } }
+  weight: 2

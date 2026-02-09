@@ -1,0 +1,85 @@
+-
+  id: "immortal_mountain_meditation"
+  title: "仙山闲居"
+  description: "你随族中长辈在仙山间日常起居，未涉修行。"
+  worlds: ["immortal"]
+  minAge: 3
+  conditions: { needsNonCultivation: true }
+  effects: { age: 0 }
+  choices:
+    -
+      id: "meditate"
+      label: "静心参悟"
+      effects:
+        delta: { intelligence: 1, exp: 8 }
+        log: "在仙山云雾中，你悟出一丝法理。"
+    -
+      id: "stroll"
+      label: "游赏仙山"
+      effects:
+        delta: { charm: 1 }
+        log: "你在瑶池仙山漫步，心境澄明。"
+  weight: 5
+-
+  id: "immortal_listen_lectures"
+  title: "高谈阔论"
+  description: "族中长老在空谷传道，你在一旁旁听。"
+  worlds: ["immortal"]
+  minAge: 6
+  effects: { age: 1 }
+  choices:
+    -
+      id: "focused"
+      label: "神情专注"
+      effects:
+        delta: { intelligence: 3, exp: 20 }
+        log: "长老的讲解深入浅出，让你受益匪浅。"
+    -
+      id: "doze_off"
+      label: "昏昏欲睡"
+      effects:
+        delta: { lucky: 1 }
+        log: "你睡着了，梦中似乎见到了仙人弈棋。"
+  weight: 3
+-
+  id: "immortal_herb_garden"
+  title: "灵田打理"
+  description: "你在长辈的指导下，照看仙草园。"
+  worlds: ["immortal"]
+  minAge: 10
+  effects: { age: 1 }
+  choices:
+    -
+      id: "meticulous"
+      label: "细心灌溉"
+      effects:
+        delta: { intelligence: 2, lucky: 2 }
+        log: "灵药长势良好，你对药理有了初步认识。"
+    -
+      id: "play"
+      label: "与仙鹤戏"
+      effects:
+        delta: { charm: 2, strength: 1 }
+        log: "你与仙鹤共舞，身法愈发轻盈。"
+  weight: 2
+-
+  id: "immortal_spirit_view"
+  title: "星垂平野"
+  description: "仙界之夜，众星璀璨，灵气如潮。"
+  worlds: ["immortal"]
+  minAge: 12
+  effects: { age: 1 }
+  choices:
+    -
+      id: "absorb"
+      label: "纳气吐蕊"
+      effects:
+        delta: { exp: 50, strength: 2 }
+        log: "你吸收了充沛的月华精气，体质得以改善。"
+    -
+      id: "wish"
+      label: "对星许愿"
+      effects:
+        delta: { lucky: 3 }
+        log: "你向星辰许下心愿，隐约感到因果波动。"
+  weight: 2

@@ -1,0 +1,33 @@
+id: "天仙"
+lifespan: 200000
+layers:
+  -
+    level: 1
+    expRequired: 1200
+  -
+    level: 2
+    expRequired: 1380
+  -
+    level: 3
+    expRequired: 1587
+  -
+    level: 4
+    expRequired: 1825
+  -
+    level: 5
+    expRequired: 2099
+  -
+    level: 6
+    expRequired: 2414
+  -
+    level: 7
+    expRequired: 2776
+  -
+    level: 8
+    expRequired: 3192
+  -
+    level: 9
+    expRequired: 3671
+  -
+    level: 10
+    expRequired: 4221

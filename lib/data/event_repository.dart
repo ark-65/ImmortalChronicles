@@ -1,16 +1,13 @@
-import 'dart:convert';
-
-import 'package:flutter/services.dart';
-import 'package:yaml/yaml.dart';
-
+import 'package:flutter/foundation.dart';
 import '../models/models.dart';
-import 'sample_events.dart';
+import '../services/asset_service.dart';
 
 class EventRepository {
   static final EventRepository _instance = EventRepository._internal();
   factory EventRepository() => _instance;
   EventRepository._internal();
 
+  final AssetService _assetService = AssetService();
   final Map<String, LifeEventConfig> _byId = {};
   final Map<String, List<LifeEventConfig>> _tables = {};
   bool _loaded = false;
@@ -43,61 +40,89 @@ class EventRepository {
   }
 
   Future<void> _loadAll() async {
-    int loadedCount = 0;
     try {
-      final manifest = await rootBundle.loadString('AssetManifest.json');
-      final assets = (json.decode(manifest) as Map<String, dynamic>).keys;
-      final eventFiles = assets.where((p) => p.startsWith('assets/events/'));
+      final manifest = await _assetService.getManifest();
+      final eventFiles = manifest.where((p) => p.startsWith('assets/events/')).toList();
 
-      for (final path in eventFiles) {
-        final name =
-            path.split('/').last.replaceAll('.yaml', '').replaceAll('.json', '');
-        final raw = await rootBundle.loadString(path);
-        final List<dynamic> list = path.endsWith('.yaml')
-            ? (loadYaml(raw) as YamlList).toList()
-            : (json.decode(raw) as List<dynamic>);
-        final configs = list
-            .map((e) => LifeEventConfig.fromJson(Map<String, dynamic>.from(e)))
-            .toList();
-        _tables[name] = configs;
-        for (final c in configs) {
-          _byId[c.id] = c;
-        }
-        loadedCount += configs.length;
+      if (eventFiles.isEmpty) {
+        debugPrint('[EventRepository] No asset events found.');
+        return;
       }
-    } catch (_) {
-      // ignore and fall back
-    }
 
-    // 若未找到资产文件或加载失败，则回落到现有 Dart 常量表，避免运行期无事件
-    if (loadedCount == 0) {
-      _loadFromConstSample();
+      // First pass: Load all raw configs
+      final rawConfigs = <String, Map<String, dynamic>>{};
+      _tables.clear();
+      
+      for (final path in eventFiles) {
+        final content = await _assetService.loadFile(path);
+        final tableName = path.split('/').last.split('.').first;
+        
+        if (content is List) {
+          for (var item in content) {
+            if (item is Map) {
+              final id = item['id']?.toString() ?? '';
+              if (id.isNotEmpty) {
+                final data = Map<String, dynamic>.from(item);
+                rawConfigs[id] = data;
+                // Temporary add to table to keep track of associations
+                _tables.putIfAbsent(tableName, () => []).add(LifeEventConfig.fromJson(data));
+              }
+            }
+          }
+        }
+      }
+
+      // Second pass: Process templates and finalize configs
+      _byId.clear();
+      for (final id in rawConfigs.keys) {
+        _byId[id] = _resolveConfig(id, rawConfigs);
+      }
+
+      // Update tables with resolved configs
+      for (final tableName in _tables.keys) {
+        _tables[tableName] = _tables[tableName]!
+            .map((e) => _byId[e.id] ?? e)
+            .toList();
+      }
+
+      debugPrint('[EventRepository] loaded ${_byId.length} events from assets');
+    } catch (e) {
+      debugPrint('[EventRepository] load failed: $e');
     }
   }
 
-  void _loadFromConstSample() {
-    // 直接使用原有的 sampleEvents 列表进行分表，保证兼容
-    List<LifeEventConfig> filter(int min, int max) => sampleEvents
-        .where((e) => (e.minAge ?? 0) <= max && (e.maxAge ?? 2000) >= min)
-        .toList();
-
-    _tables['age_0_3'] = filter(0, 3);
-    _tables['age_4_6'] = filter(4, 6);
-    _tables['age_7_12'] = filter(7, 12);
-    _tables['age_13_18'] = filter(13, 18);
-    _tables['clan_chance'] =
-        sampleEvents.where((e) => e.id.startsWith('clan_')).toList();
-    _tables['sect_chance'] =
-        sampleEvents.where((e) => e.id.startsWith('sect_')).toList();
-    _tables['mortal_daily'] =
-        sampleEvents.where((e) => e.id.startsWith('mortal_daily_')).toList();
-    _tables['immortal_daily'] =
-        sampleEvents.where((e) => e.id.startsWith('immortal_daily_')).toList();
-    _tables['nether_daily'] =
-        sampleEvents.where((e) => e.id.startsWith('nether_daily_')).toList();
-
-    for (final c in sampleEvents) {
-      _byId[c.id] = c;
+  LifeEventConfig _resolveConfig(String id, Map<String, Map<String, dynamic>> rawConfigs) {
+    final raw = rawConfigs[id]!;
+    final templateId = raw['templateId']?.toString();
+    
+    if (templateId != null && rawConfigs.containsKey(templateId)) {
+      final template = _resolveConfig(templateId, rawConfigs);
+      return _merge(template, LifeEventConfig.fromJson(raw));
     }
+    
+    return LifeEventConfig.fromJson(raw);
   }
+
+  LifeEventConfig _merge(LifeEventConfig template, LifeEventConfig override) {
+    // Check if worlds was explicitly provided in JSON
+    final hasWorlds = override.toJson()['worlds'] != null;
+
+    return template.copyWith(
+      id: override.id,
+      title: override.title.isEmpty ? template.title : override.title,
+      description: override.description.isEmpty ? template.description : override.description,
+      worlds: hasWorlds ? override.worlds : template.worlds,
+      regions: override.regions ?? template.regions,
+      minAge: override.minAge ?? template.minAge,
+      maxAge: override.maxAge ?? template.maxAge,
+      mapIds: override.mapIds ?? template.mapIds,
+      familyTiers: override.familyTiers ?? template.familyTiers,
+      conditions: {...template.conditions, ...override.conditions},
+      prerequisites: [...template.prerequisites, ...override.prerequisites].toSet().toList(),
+      effects: {...template.effects, ...override.effects},
+      choices: override.choices.isEmpty ? template.choices : override.choices,
+      weight: (override.toJson()['weight'] != null) ? override.weight : template.weight,
+    );
+  }
+
 }

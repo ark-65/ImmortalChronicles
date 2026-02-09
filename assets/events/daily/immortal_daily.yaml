@@ -1,0 +1,43 @@
+-
+  id: "immortal_daily_cultivate"
+  title: "仙界吐纳"
+  description: "仙气汇聚，你调息运转，法力更稳。"
+  worlds:
+    - "immortal"
+  regions: null
+  minAge: 13
+  maxAge: null
+  conditions:
+    chance: 0.7
+    chanceLuckBoost: 0.05
+  prerequisites:
+    - "cultivation_started"
+    - "root_awakened"
+  effects:
+    age: 0
+    delta:
+      exp: 15
+      intelligence: 1
+  choices:
+
+  weight: 1
+
+-
+  id: "immortal_explore_random"
+  title: "仙界游历"
+  description: "你踏出洞府，决定在仙界各处行走。"
+  worlds: ["immortal"]
+  minAge: 13
+  prerequisites: ["cultivation_started", "root_awakened"]
+  effects: { age: 0 }
+  choices:
+    - id: "mountain_hunt"
+      label: "入山猎妖"
+      effects: { delta: { strength: 1, exp: 25 }, log: "你斩杀低阶妖兽。" }
+    - id: "market"
+      label: "逛仙坊市"
+      effects: { delta: { charm: 1, exp: 12 }, log: "你见识了稀罕法宝。" }
+    - id: "secret_forest"
+      label: "探幽灵林"
+      effects: { delta: { luck: 1, intelligence: 1, exp: 18 }, log: "你采得灵药。" }
+  weight: 2

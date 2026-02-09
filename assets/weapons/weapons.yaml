@@ -1,0 +1,115 @@
+-
+  id: "blade"
+  name: "刀"
+  description: "单刃劈砍武器，爆发力强，适合贴身与破甲。"
+  examples: ["柳叶刀", "环首刀", "朴刀", "苗刀"]
+-
+  id: "sword"
+  name: "剑"
+  description: "双刃刺击/劈砍平衡，讲究剑意与身法。"
+  examples: ["长剑", "青锋剑", "重剑", "软剑"]
+-
+  id: "spear"
+  name: "枪"
+  description: "长柄刺击，“百兵之王”，攻守兼备，适合远点控制。"
+  examples: ["红缨枪", "方天画戟式枪", "龙吟枪", "霸王枪"]
+-
+  id: "staff"
+  name: "棍"
+  description: "无刃长杆打击，圆融不伤刃，适合基础与群战。"
+  examples: ["齐眉棍", "少林禅杖", "哨棒", "盘龙棍"]
+-
+  id: "club"
+  name: "棒"
+  description: "较棍更重，常带棱或刺，偏重破甲与震荡。"
+  examples: ["狼牙棒", "流星棒", "骨朵"]
+-
+  id: "axe"
+  name: "斧"
+  description: "重型劈砍，适合开山破阵，但耗力大。"
+  examples: ["短柄斧", "长柄开山斧", "宣花斧"]
+-
+  id: "yue"
+  name: "钺"
+  description: "宽刃礼兵或重器，威仪与杀伤并存。"
+  examples: ["青铜钺", "巨刃钺"]
+-
+  id: "hook"
+  name: "钩"
+  description: "前端弯曲可勾拿卸力，擒拿与破绽制造。"
+  examples: ["虎头钩", "护手钩", "吴钩"]
+-
+  id: "fork"
+  name: "叉"
+  description: "多尖刺击，长柄控制，多用于水战或围猎。"
+  examples: ["鱼叉", "牛角叉", "飞叉"]
+-
+  id: "tang"
+  name: "镗"
+  description: "长柄多尖的复合兵，兼具拍、刺、挑。"
+  examples: ["凤翅镗", "雁翅镗"]
+-
+  id: "shuo"
+  name: "槊"
+  description: "重型长矛，矛头修长，常见于骑战。"
+  examples: ["马槊", "步槊"]
+-
+  id: "whip"
+  name: "鞭"
+  description: "硬鞭多节铁质，软鞭可卷绕，讲究节奏与手腕。"
+  examples: ["铁节鞭", "九节鞭", "钢鞭"]
+-
+  id: "jian"
+  name: "锏"
+  description: "无刃棱状短兵，震骨碎筋，常为近身护身兵。"
+  examples: ["四棱锏", "撒菱锏"]
+-
+  id: "hammer"
+  name: "锤"
+  description: "重击破甲，惯性大，需巨力掌控。"
+  examples: ["金瓜锤", "流星锤", "擂鼓瓮金锤"]
+-
+  id: "claw"
+  name: "抓"
+  description: "飞爪软索，远距勾取/擒拿或攀爬奇袭。"
+  examples: ["金龙爪", "飞天爪", "鹰爪"]
+-
+  id: "crutch"
+  name: "拐"
+  description: "短棍侧带横柄，可钩可挡，灵活制敌。"
+  examples: ["丁字拐", "铁拐", "旋风拐"]
+-
+  id: "meteor"
+  name: "流星"
+  description: "软索系重物，借离心力抽击，兼具暗器特性。"
+  examples: ["流星锤", "飞星镖"]
+-
+  id: "halberd"
+  name: "戟"
+  description: "矛戈结合，可刺可勾，阵战/破阵常用。"
+  examples: ["青龙偃月戟", "方天画戟", "十字戟"]
+-
+  id: "ge"
+  name: "戈"
+  description: "横刃钩杀，古战阵主流，可挑可绞。"
+  examples: ["青铜戈", "长戈"]
+-
+  id: "bow"
+  name: "弓弩"
+  description: "远程射击，机缘事件可触发“百步穿杨”或陷阱解法。"
+  examples: ["强弓", "连发弩", "灵木弓"]
+-
+  id: "fan"
+  name: "扇"
+  description: "文士常用，暗藏机关或附带法术增幅。"
+  examples: ["铁骨扇", "玉玲珑", "阴阳扇"]
+-
+  id: "brush"
+  name: "笔"
+  description: "判官笔或符笔，点击穴位或凌空绘符。"
+  examples: ["判官笔", "乾坤笔"]
+-
+  id: "zither"
+  name: "琴"
+  description: "音波攻击，大范围干扰或杀伤。"
+  examples: ["天魔琴", "焦尾琴"]

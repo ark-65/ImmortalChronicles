@@ -1,0 +1,33 @@
+id: "大乘"
+lifespan: 50000
+layers:
+  -
+    level: 1
+    expRequired: 900
+  -
+    level: 2
+    expRequired: 1035
+  -
+    level: 3
+    expRequired: 1190
+  -
+    level: 4
+    expRequired: 1369
+  -
+    level: 5
+    expRequired: 1574
+  -
+    level: 6
+    expRequired: 1810
+  -
+    level: 7
+    expRequired: 2082
+  -
+    level: 8
+    expRequired: 2394
+  -
+    level: 9
+    expRequired: 2753
+  -
+    level: 10
+    expRequired: 3166
