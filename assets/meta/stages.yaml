@@ -24,7 +24,14 @@ stages:
   -
     id: "adult"
     minAge: 21
-    maxAge: 2000
+    maxAge: 1000
+    allowCombat: true
+    allowLiteracy: true
+    allowCultivation: true
+  -
+    id: "elder"
+    minAge: 1001
+    maxAge: 999999
     allowCombat: true
     allowLiteracy: true
     allowCultivation: true

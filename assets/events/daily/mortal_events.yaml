@@ -1,31 +1,83 @@
 -
-  id: "mortal_fallback"
+  id: "mortal_routine_year"
   title: "平淡一年"
   description: "一年平平无奇地过去了。"
-  worlds:
-    - "mortal"
-  regions: null
+  worlds: ["mortal"]
   minAge: 3
-  maxAge: null
-  conditions:
-
-  prerequisites:
-
-  effects:
-    age: 1
+  effects: { age: 1 }
   choices:
     -
       id: "routine"
       label: "按部就班"
-      effects:
-        log: "你循规蹈矩地过完这一年。"
-      followup: null
+      effects: { log: "你循规蹈矩地过完这一年。" }
     -
       id: "small_try"
       label: "默默练气"
       effects:
-        delta:
-          exp: 5
+        delta: { exp: 5 }
         log: "你抓紧时间打坐，略有所得。"
-      followup: null
-  weight: 1
+  weight: 5
+-
+  id: "mortal_study_literacy"
+  title: "私塾求学"
+  description: "你在镇上的私塾读书识字。"
+  worlds: ["mortal"]
+  minAge: 6
+  maxAge: 15
+  effects: { age: 1 }
+  choices:
+    -
+      id: "hard_study"
+      label: "勤学苦读"
+      effects:
+        delta: { intelligence: 2 }
+        log: "你在经史子集中学到了不少知识。"
+    -
+      id: "slacker"
+      label: "逃课玩耍"
+      effects:
+        delta: { charm: 1 }
+        log: "你经常逃课，在山野间玩得很开心。"
+  weight: 2
+-
+  id: "mortal_family_help"
+  title: "家族杂役"
+  description: "你在家族中帮忙处理日常琐事。"
+  worlds: ["mortal"]
+  minAge: 10
+  effects: { age: 1 }
+  choices:
+    -
+      id: "diligent"
+      label: "勤勤恳恳"
+      effects:
+        delta: { strength: 1, exp: 10 }
+        log: "你的努力得到了族中长辈的认可。"
+    -
+      id: "socialize"
+      label: "交结玩伴"
+      effects:
+        delta: { charm: 2 }
+        log: "你和族里同龄的孩子打成一片。"
+  weight: 3
+-
+  id: "mortal_market_exploration"
+  title: "市井见闻"
+  description: "你在集市上闲逛，观察众生百态。"
+  worlds: ["mortal"]
+  minAge: 12
+  effects: { age: 1 }
+  choices:
+    -
+      id: "observe"
+      label: "静观默思"
+      effects:
+        delta: { intelligence: 1, lucky: 1 }
+        log: "市井间的烟火气让你对凡尘有了更深的感悟。"
+    -
+      id: "trade"
+      label: "尝试小摊"
+      effects:
+        delta: { money: 10 }
+        log: "你通过倒卖小玩意，赚了一点零花钱。"
+  weight: 2
