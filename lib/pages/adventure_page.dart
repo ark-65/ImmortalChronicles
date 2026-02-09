@@ -535,14 +535,14 @@ class _AdventurePageState extends State<AdventurePage> {
                   onPressed: ended || state.ap <= 0
                       ? (ended ? _newLife : null)
                       : (pendingChoiceEvent == null && eventOptions == null ? _advance : null),
-                  child: Text(ended ? '重开' : '事件（消耗AP）'),
+                  child: Text(ended ? '重开' : '事件'),
                 ),
               ),
               Expanded(
                 child: OutlinedButton(
                   onPressed:
                       ended ? _showLog : () => _advance(forceNextYear: true),
-                  child: Text(ended ? '查看日志' : '跳到下一岁（放弃剩余AP）'),
+                  child: Text(ended ? '查看日志' : '跳到下一岁'),
                 ),
               ),
               const SizedBox(width: 12),

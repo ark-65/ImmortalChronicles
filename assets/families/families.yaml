@@ -1543,7 +1543,7 @@
     - "id_art_fan_blade_11"
   tier: "二品"
 -
-  id: "lower_一品_A"
+  id: "di_family_a"
   name: "下界一品世家A"
   elements:
     - "水"
@@ -1554,7 +1554,7 @@
     - "id_art_fan_sword_12"
   tier: "一品"
 -
-  id: "lower_一品_B"
+  id: "di_family_b"
   name: "下界一品世家B"
   elements:
     - "火"
@@ -1565,7 +1565,7 @@
     - "id_art_fan_blade_11"
   tier: "一品"
 -
-  id: "lower_一品_C"
+  id: "di_family_c"
   name: "下界一品世家C"
   elements:
     - "木"
@@ -1576,7 +1576,7 @@
     - "id_art_fan_staff_11"
   tier: "一品"
 -
-  id: "lower_二品_A"
+  id: "ren_family_a"
   name: "下界二品世家A"
   elements:
     - "水"
@@ -1587,7 +1587,7 @@
     - "id_art_fan_sword_12"
   tier: "二品"
 -
-  id: "lower_二品_B"
+  id: "ren_family_b"
   name: "下界二品世家B"
   elements:
     - "火"
@@ -1598,7 +1598,7 @@
     - "id_art_fan_blade_12"
   tier: "二品"
 -
-  id: "lower_二品_C"
+  id: "ren_family_c"
   name: "下界二品世家C"
   elements:
     - "木"
@@ -1609,7 +1609,7 @@
     - "id_art_fan_staff_12"
   tier: "二品"
 -
-  id: "lower_三品_A"
+  id: "san_family_a"
   name: "下界三品世家A"
   elements:
     - "水"
@@ -1620,7 +1620,7 @@
     - "id_art_fan_sword_11"
   tier: "三品"
 -
-  id: "lower_三品_B"
+  id: "san_family_b"
   name: "下界三品世家B"
   elements:
     - "火"
@@ -1631,7 +1631,7 @@
     - "id_art_fan_blade_11"
   tier: "三品"
 -
-  id: "lower_三品_C"
+  id: "san_family_c"
   name: "下界三品世家C"
   elements:
     - "木"
@@ -1642,7 +1642,7 @@
     - "id_art_fan_staff_11"
   tier: "三品"
 -
-  id: "lower_四品_A"
+  id: "si_family_a"
   name: "下界四品世家A"
   elements:
     - "水"
@@ -1653,7 +1653,7 @@
     - "id_art_fan_sword_11"
   tier: "四品"
 -
-  id: "lower_四品_B"
+  id: "si_family_b"
   name: "下界四品世家B"
   elements:
     - "火"
@@ -1664,7 +1664,7 @@
     - "id_art_fan_blade_12"
   tier: "四品"
 -
-  id: "lower_四品_C"
+  id: "si_family_c"
   name: "下界四品世家C"
   elements:
     - "木"
@@ -1675,7 +1675,7 @@
     - "id_art_fan_staff_12"
   tier: "四品"
 -
-  id: "lower_五品_A"
+  id: "wu_family_a"
   name: "下界五品世家A"
   elements:
     - "水"
@@ -1686,7 +1686,7 @@
     - "id_art_fan_sword_12"
   tier: "五品"
 -
-  id: "lower_五品_B"
+  id: "wu_family_b"
   name: "下界五品世家B"
   elements:
     - "火"
@@ -1697,7 +1697,7 @@
     - "id_art_fan_blade_11"
   tier: "五品"
 -
-  id: "lower_五品_C"
+  id: "wu_family_c"
   name: "下界五品世家C"
   elements:
     - "木"
@@ -1708,7 +1708,7 @@
     - "id_art_fan_staff_12"
   tier: "五品"
 -
-  id: "lower_六品_A"
+  id: "liu_family_a"
   name: "下界六品世家A"
   elements:
     - "水"
@@ -1719,7 +1719,7 @@
     - "id_art_fan_sword_11"
   tier: "六品"
 -
-  id: "lower_六品_B"
+  id: "liu_family_b"
   name: "下界六品世家B"
   elements:
     - "火"
@@ -1730,7 +1730,7 @@
     - "id_art_fan_blade_11"
   tier: "六品"
 -
-  id: "lower_六品_C"
+  id: "liu_family_c"
   name: "下界六品世家C"
   elements:
     - "木"
@@ -1741,7 +1741,7 @@
     - "id_art_fan_staff_11"
   tier: "六品"
 -
-  id: "lower_七品_A"
+  id: "qi_family_a"
   name: "下界七品世家A"
   elements:
     - "水"
@@ -1752,7 +1752,7 @@
     - "id_art_fan_sword_12"
   tier: "七品"
 -
-  id: "lower_七品_B"
+  id: "qi_family_b"
   name: "下界七品世家B"
   elements:
     - "火"
@@ -1763,7 +1763,7 @@
     - "id_art_fan_blade_12"
   tier: "七品"
 -
-  id: "lower_七品_C"
+  id: "qi_family_c"
   name: "下界七品世家C"
   elements:
     - "木"
@@ -1774,7 +1774,7 @@
     - "id_art_fan_staff_12"
   tier: "七品"
 -
-  id: "lower_八品_A"
+  id: "ba_family_a"
   name: "下界八品世家A"
   elements:
     - "水"
@@ -1785,7 +1785,7 @@
     - "id_art_fan_sword_11"
   tier: "八品"
 -
-  id: "lower_八品_B"
+  id: "ba_family_b"
   name: "下界八品世家B"
   elements:
     - "火"
@@ -1796,7 +1796,7 @@
     - "id_art_fan_blade_11"
   tier: "八品"
 -
-  id: "lower_八品_C"
+  id: "ba_family_c"
   name: "下界八品世家C"
   elements:
     - "木"
@@ -1807,7 +1807,7 @@
     - "id_art_fan_staff_11"
   tier: "八品"
 -
-  id: "lower_九品_A"
+  id: "jiu_family_a"
   name: "下界九品世家A"
   elements:
     - "水"
@@ -1818,7 +1818,7 @@
     - "id_art_fan_sword_12"
   tier: "九品"
 -
-  id: "lower_九品_B"
+  id: "jiu_family_b"
   name: "下界九品世家B"
   elements:
     - "火"
@@ -1829,7 +1829,7 @@
     - "id_art_fan_blade_12"
   tier: "九品"
 -
-  id: "lower_九品_C"
+  id: "jiu_family_c"
   name: "下界九品世家C"
   elements:
     - "木"

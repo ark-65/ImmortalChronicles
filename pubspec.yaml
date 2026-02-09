@@ -60,7 +60,13 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/events/
+    - assets/events/age/
+    - assets/events/daily/
+    - assets/events/common/
+    - assets/events/career/
+    - assets/events/family/
+    - assets/events/spatial/
+    - assets/events/templates/
     - assets/maps/
     - assets/families/
     - assets/sects/

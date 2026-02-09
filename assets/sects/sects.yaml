@@ -19,7 +19,7 @@
     - "art_fist_sss_2"
     - "art_eye_sss_1"
   tier: "霸主"
-  vassalIds: ["圣地_0", "圣地_10", "圣地_21", "圣地_27", "sheng_10"]
+  vassalIds: ["sheng_sect_0", "sheng_sect_10", "sheng_sect_21", "sheng_sect_27", "sheng_10"]
 -
   id: "overlord_sect_1"
   name: "鸿蒙神宗"
@@ -41,7 +41,7 @@
     - "art_eye_sss_1"
     - "art_leg_sss_1"
   tier: "霸主"
-  vassalIds: ["圣地_1", "圣地_12", "圣地_23", "圣地_25", "sheng_12"]
+  vassalIds: ["sheng_sect_1", "sheng_sect_12", "sheng_sect_23", "sheng_sect_25", "sheng_12"]
 -
   id: "overlord_sect_2"
   name: "混元道宫"
@@ -63,7 +63,7 @@
     - "art_sword_sss_2"
     - "art_fist_sss_1"
   tier: "霸主"
-  vassalIds: ["圣地_2", "圣地_13", "圣地_20", "圣地_26", "sheng_2"]
+  vassalIds: ["sheng_sect_2", "sheng_sect_13", "sheng_sect_20", "sheng_sect_26", "sheng_2"]
 -
   id: "overlord_sect_3"
   name: "太上神庭"
@@ -85,7 +85,7 @@
     - "art_eye_sss_1"
     - "art_sword_sss_2"
   tier: "霸主"
-  vassalIds: ["圣地_3", "圣地_14", "圣地_24", "圣地_28", "sheng_11"]
+  vassalIds: ["sheng_sect_3", "sheng_sect_14", "sheng_sect_24", "sheng_sect_28", "sheng_11"]
 -
   id: "overlord_sect_4"
   name: "永恒圣殿"
@@ -108,7 +108,7 @@
     - "art_sword_sss_1"
   tier: "霸主"
 -
-  id: "圣地_0"
+  id: "sheng_sect_0"
   name: "昆仑仙宗"
   elements:
     - "火"
@@ -126,7 +126,7 @@
   tier: "圣地"
   parentId: "overlord_sect_0"
 -
-  id: "圣地_1"
+  id: "sheng_sect_1"
   name: "蓬莱仙岛"
   elements:
     - "水"
@@ -143,9 +143,9 @@
     - "cult_sheng_illusion_sky_1"
   tier: "圣地"
   parentId: "overlord_sect_0"
-  vassalIds: ["天_0", "天_6", "天_20", "天_21"]
+  vassalIds: ["xian_sect_0", "xian_sect_6", "xian_sect_20", "xian_sect_21"]
 -
-  id: "圣地_2"
+  id: "sheng_sect_2"
   name: "瑶池圣境"
   elements:
     - "木"
@@ -162,7 +162,7 @@
     - "id_art_sheng_nature_2"
   tier: "圣地"
 -
-  id: "圣地_3"
+  id: "sheng_sect_3"
   name: "紫霄宫"
   elements:
     - "雷"
@@ -179,7 +179,7 @@
     - "id_art_sheng_thunder_1"
   tier: "圣地"
 -
-  id: "圣地_4"
+  id: "sheng_sect_4"
   name: "太虚殿"
   elements:
     - "空"
@@ -196,7 +196,7 @@
     - "id_art_sheng_dark_1"
   tier: "圣地"
 -
-  id: "圣地_5"
+  id: "sheng_sect_5"
   name: "玄黄圣院"
   elements:
     - "土"
@@ -213,7 +213,7 @@
     - "id_art_sheng_shield_2"
   tier: "圣地"
 -
-  id: "圣地_6"
+  id: "sheng_sect_6"
   name: "星河书院"
   elements:
     - "星"
@@ -230,7 +230,7 @@
     - "id_art_xian_bow_1"
   tier: "圣地"
 -
-  id: "圣地_7"
+  id: "sheng_sect_7"
   name: "苍穹天宫"
   elements:
     - "气"
@@ -247,7 +247,7 @@
     - "id_art_sheng_bow_1"
   tier: "圣地"
 -
-  id: "圣地_8"
+  id: "sheng_sect_8"
   name: "紫府剑宗"
   elements:
     - "金"
@@ -263,7 +263,7 @@
     - "id_art_xian_sword_2"
   tier: "圣地"
 -
-  id: "圣地_9"
+  id: "sheng_sect_9"
   name: "寂灭寺"
   elements:
     - "金"
@@ -280,7 +280,7 @@
     - "id_art_sheng_fist_2"
   tier: "圣地"
 -
-  id: "圣地_10"
+  id: "sheng_sect_10"
   name: "凌霄宝殿"
   elements:
     - "光"
@@ -297,7 +297,7 @@
     - "id_art_sheng_shield_1"
   tier: "圣地"
 -
-  id: "圣地_11"
+  id: "sheng_sect_11"
   name: "北斗圣宗"
   elements:
     - "星"
@@ -314,7 +314,7 @@
     - "id_art_xian_sword_stars_1"
   tier: "圣地"
 -
-  id: "圣地_12"
+  id: "sheng_sect_12"
   name: "仙凰宫"
   elements:
     - "火"
@@ -331,7 +331,7 @@
     - "id_art_sheng_sound_1"
   tier: "圣地"
 -
-  id: "圣地_13"
+  id: "sheng_sect_13"
   name: "极光神殿"
   elements:
     - "光"
@@ -348,7 +348,7 @@
     - "id_art_sheng_bow_2"
   tier: "圣地"
 -
-  id: "圣地_14"
+  id: "sheng_sect_14"
   name: "雷泽殿"
   elements:
     - "雷"
@@ -365,7 +365,7 @@
     - "id_art_sheng_thunder_1"
   tier: "圣地"
 -
-  id: "圣地_15"
+  id: "sheng_sect_15"
   name: "幽冥鬼门"
   elements:
     - "暗"
@@ -382,7 +382,7 @@
     - "id_art_sheng_ghost_1"
   tier: "圣地"
 -
-  id: "圣地_16"
+  id: "sheng_sect_16"
   name: "琅琊书院"
   elements:
     - "气"
@@ -399,7 +399,7 @@
     - "id_art_sheng_sword_1"
   tier: "圣地"
 -
-  id: "圣地_17"
+  id: "sheng_sect_17"
   name: "缥缈宫"
   elements:
     - "幻"
@@ -416,7 +416,7 @@
     - "id_art_sheng_wind_1"
   tier: "圣地"
 -
-  id: "圣地_18"
+  id: "sheng_sect_18"
   name: "赤霄圣殿"
   elements:
     - "火"
@@ -433,7 +433,7 @@
     - "id_art_sheng_fire_1"
   tier: "圣地"
 -
-  id: "圣地_19"
+  id: "sheng_sect_19"
   name: "玄冰仙宫"
   elements:
     - "冰"
@@ -450,7 +450,7 @@
     - "id_art_sheng_ice_1"
   tier: "圣地"
 -
-  id: "天_0"
+  id: "xian_sect_0"
   name: "烈焰刀宗"
   elements:
     - "火"
@@ -465,7 +465,7 @@
     - "id_art_xian_blade_4"
   tier: "天"
 -
-  id: "天_1"
+  id: "xian_sect_1"
   name: "风雷剑宗"
   elements:
     - "风"
@@ -480,7 +480,7 @@
     - "id_art_xian_sword_5"
   tier: "仙宗"
 -
-  id: "天_2"
+  id: "xian_sect_2"
   name: "玄火宗"
   elements:
     - "火"
@@ -494,7 +494,7 @@
     - "id_art_xian_blade_2"
   tier: "仙宗"
 -
-  id: "天_3"
+  id: "xian_sect_3"
   name: "青冥阁"
   elements:
     - "风"
@@ -509,7 +509,7 @@
     - "id_art_xian_sword_3"
   tier: "仙宗"
 -
-  id: "天_4"
+  id: "xian_sect_4"
   name: "天机门"
   elements:
     - "术"
@@ -524,7 +524,7 @@
     - "id_art_xian_luck_4"
   tier: "仙宗"
 -
-  id: "天_5"
+  id: "xian_sect_5"
   name: "太乙剑宗"
   elements:
     - "阳"
@@ -539,7 +539,7 @@
     - "id_art_xian_sword_2"
   tier: "仙宗"
 -
-  id: "天_6"
+  id: "xian_sect_6"
   name: "天河宗"
   elements:
     - "水"
@@ -553,7 +553,7 @@
     - "id_art_xian_palm_5"
   tier: "仙宗"
 -
-  id: "天_7"
+  id: "xian_sect_7"
   name: "赤阳宗"
   elements:
     - "火"
@@ -568,7 +568,7 @@
     - "id_art_xian_blade_3"
   tier: "仙宗"
 -
-  id: "天_8"
+  id: "xian_sect_8"
   name: "星月宗"
   elements:
     - "星"
@@ -584,7 +584,7 @@
     - "id_art_xian_illusion_4"
   tier: "仙宗"
 -
-  id: "天_9"
+  id: "xian_sect_9"
   name: "太白剑宗"
   elements:
     - "金"
@@ -599,7 +599,7 @@
     - "id_art_xian_sword_4"
   tier: "仙宗"
 -
-  id: "天_10"
+  id: "xian_sect_10"
   name: "天雷宗"
   elements:
     - "雷"
@@ -613,7 +613,7 @@
     - "id_art_xian_hammer_1"
   tier: "仙宗"
 -
-  id: "天_11"
+  id: "xian_sect_11"
   name: "云霄剑宗"
   elements:
     - "风"
@@ -628,7 +628,7 @@
     - "id_art_xian_sword_1"
   tier: "仙宗"
 -
-  id: "天_12"
+  id: "xian_sect_12"
   name: "落星宗"
   elements:
     - "星"
@@ -644,7 +644,7 @@
     - "id_art_xian_spear_4"
   tier: "仙宗"
 -
-  id: "天_13"
+  id: "xian_sect_13"
   name: "青木宗"
   elements:
     - "木"
@@ -660,7 +660,7 @@
     - "id_art_xian_staff_4"
   tier: "仙宗"
 -
-  id: "天_14"
+  id: "xian_sect_14"
   name: "金乌宗"
   elements:
     - "火"
@@ -675,7 +675,7 @@
     - "id_art_xian_blade_4"
   tier: "仙宗"
 -
-  id: "天_15"
+  id: "xian_sect_15"
   name: "玄冥宗"
   elements:
     - "冰"
@@ -690,7 +690,7 @@
     - "id_art_xian_sword_5"
   tier: "仙宗"
 -
-  id: "天_16"
+  id: "xian_sect_16"
   name: "乾元门"
   elements:
     - "气"
@@ -706,7 +706,7 @@
     - "id_art_xian_fist_4"
   tier: "仙宗"
 -
-  id: "天_17"
+  id: "xian_sect_17"
   name: "无极宗"
   elements:
     - "混沌"
@@ -722,7 +722,7 @@
     - "id_art_xian_staff_4"
   tier: "仙宗"
 -
-  id: "天_18"
+  id: "xian_sect_18"
   name: "太清观"
   elements:
     - "气"
@@ -738,7 +738,7 @@
     - "id_art_xian_sword_2"
   tier: "仙宗"
 -
-  id: "天_19"
+  id: "xian_sect_19"
   name: "天香谷"
   elements:
     - "药"
@@ -754,277 +754,277 @@
     - "id_art_xian_illusion_4"
   tier: "仙宗"
 -
-  id: "天_20"
+  id: "xian_sect_20"
   name: "九华剑阁"
   elements: ["金", "风"]
   specialties: ["九华剑气", "步虚履空"]
   weapons: ["剑", "枪"]
   coreTechniqueIds: ["cult_xian_metal_3", "id_art_xian_sword_1"]
   tier: "仙宗"
-  parentId: "圣地_1"
+  parentId: "sheng_sect_1"
 -
-  id: "天_21"
+  id: "xian_sect_21"
   name: "灵犀宫"
   elements: ["木", "水"]
   specialties: ["灵犀一指", "润物无声"]
   weapons: ["扇", "针"]
   coreTechniqueIds: ["cult_xian_wood_3", "id_art_xian_fan_2"]
   tier: "仙宗"
-  parentId: "圣地_1"
+  parentId: "sheng_sect_1"
 -
-  id: "天_22"
+  id: "xian_sect_22"
   name: "星罗棋布宗"
   elements: ["灵", "术"]
   specialties: ["星罗阵法", "因果算尽"]
   weapons: ["棋盘", "笔"]
   coreTechniqueIds: ["cult_sheng_divine_insight_1", "id_art_xian_brush_1"]
   tier: "仙宗"
-  parentId: "圣地_6"
+  parentId: "sheng_sect_6"
 -
-  id: "天_23"
+  id: "xian_sect_23"
   name: "神煅谷"
   elements: ["火", "金"]
   specialties: ["地火神炉", "百炼成钢"]
   weapons: ["锤", "斧"]
   coreTechniqueIds: ["cult_xian_fire_3", "id_art_xian_hammer_1"]
   tier: "仙宗"
-  parentId: "圣地_5"
+  parentId: "sheng_sect_5"
 -
-  id: "天_24"
+  id: "xian_sect_24"
   name: "清风门"
   elements: ["风", "云"]
   specialties: ["清风徐来", "化云大法"]
   weapons: ["剑", "扇"]
   coreTechniqueIds: ["cult_xian_sky_1", "id_art_xian_fan_1"]
   tier: "仙宗"
-  parentId: "圣地_7"
+  parentId: "sheng_sect_7"
 -
-  id: "天_25"
+  id: "xian_sect_25"
   name: "血魔宗"
   elements: ["血", "暗"]
   specialties: ["血魔大法", "噬魂勾魄"]
   weapons: ["镰", "钩"]
   coreTechniqueIds: ["cult_xian_blood_2", "id_art_xian_claw_4"]
   tier: "仙宗"
-  parentId: "圣地_15"
+  parentId: "sheng_sect_15"
 -
-  id: "天_26"
+  id: "xian_sect_26"
   name: "冰魄山庄"
   elements: ["冰", "阴"]
   specialties: ["冰魄寒光", "傲雪欺霜"]
   weapons: ["剑", "刺"]
   coreTechniqueIds: ["cult_xian_ice_3", "id_art_xian_sword_5"]
   tier: "仙宗"
-  parentId: "圣地_19"
+  parentId: "sheng_sect_19"
 -
-  id: "天_27"
+  id: "xian_sect_27"
   name: "金身堂"
   elements: ["力", "金"]
   specialties: ["不动如山", "铁臂神拳"]
   weapons: ["拳", "盾"]
   coreTechniqueIds: ["cult_xian_heart_1", "id_art_xian_fist_4"]
   tier: "仙宗"
-  parentId: "圣地_9"
+  parentId: "sheng_sect_9"
 -
-  id: "天_28"
+  id: "xian_sect_28"
   name: "幻心阁"
   elements: ["幻", "音"]
   specialties: ["幻心迷梦", "碎玉断声"]
   weapons: ["琴", "扇"]
   coreTechniqueIds: ["cult_xian_star_2", "id_art_xian_illusion_4"]
   tier: "仙宗"
-  parentId: "圣地_17"
+  parentId: "sheng_sect_17"
 -
-  id: "天_29"
+  id: "xian_sect_29"
   name: "遁天派"
   elements: ["风", "空"]
   specialties: ["遁天无痕", "瞬息万里"]
   weapons: ["飞剑", "锥"]
   coreTechniqueIds: ["cult_xian_space_2", "id_art_xian_staff_4"]
   tier: "仙宗"
-  parentId: "圣地_4"
+  parentId: "sheng_sect_4"
 -
-  id: "天_30"
+  id: "xian_sect_30"
   name: "天罡门"
   elements: ["阳", "雷"]
   specialties: ["天罡正气", "五雷轰顶"]
   weapons: ["锤", "戟"]
   coreTechniqueIds: ["cult_xian_thunder_4", "id_art_xian_hammer_1"]
   tier: "仙宗"
-  parentId: "圣地_3"
+  parentId: "sheng_sect_3"
 -
-  id: "天_31"
+  id: "xian_sect_31"
   name: "长青宗"
   elements: ["木", "生"]
   specialties: ["万古长青", "枯木逢春"]
   weapons: ["杖", "扇"]
   coreTechniqueIds: ["cult_xian_wood_3", "id_art_xian_staff_4"]
   tier: "仙宗"
-  parentId: "圣地_2"
+  parentId: "sheng_sect_2"
 -
-  id: "天_32"
+  id: "xian_sect_32"
   name: "离火阁"
   elements: ["火", "阳"]
   specialties: ["离火灼天", "烈焰焚烧"]
   weapons: ["刀", "剑"]
   coreTechniqueIds: ["cult_xian_fire_5", "id_art_xian_blade_3"]
   tier: "仙宗"
-  parentId: "圣地_18"
+  parentId: "sheng_sect_18"
 -
-  id: "天_33"
+  id: "xian_sect_33"
   name: "重玄派"
   elements: ["土", "力"]
   specialties: ["重玄之力", "地动山摇"]
   weapons: ["锤", "斧"]
   coreTechniqueIds: ["cult_xian_earth_4", "id_art_xian_spear_4"]
   tier: "仙宗"
-  parentId: "圣地_5"
+  parentId: "sheng_sect_5"
 -
-  id: "天_34"
+  id: "xian_sect_34"
   name: "太虚洞"
   elements: ["空", "幻"]
   specialties: ["太虚步", "镜里乾坤"]
   weapons: ["扇", "剑"]
   coreTechniqueIds: ["cult_xian_space_2", "id_art_xian_illusion_4"]
   tier: "仙宗"
-  parentId: "圣地_4"
+  parentId: "sheng_sect_4"
 -
-  id: "天_35"
+  id: "xian_sect_35"
   name: "天机宗"
   elements: ["术", "灵"]
   specialties: ["天机测算", "命途多舛"]
   weapons: ["笔", "盘"]
   coreTechniqueIds: ["cult_sheng_divine_insight_1", "id_art_xian_luck_4"]
   tier: "仙宗"
-  parentId: "圣地_29"
+  parentId: "sheng_sect_29"
 -
-  id: "天_36"
+  id: "xian_sect_36"
   name: "雷音寺"
   elements: ["雷", "金"]
   specialties: ["雷音贯耳", "罗汉金身"]
   weapons: ["杖", "拳"]
   coreTechniqueIds: ["cult_xian_thunder_3", "id_art_xian_fist_4"]
   tier: "仙宗"
-  parentId: "圣地_9"
+  parentId: "sheng_sect_9"
 -
-  id: "天_37"
+  id: "xian_sect_37"
   name: "影杀阁"
   elements: ["暗", "阴"]
   specialties: ["潜龙出渊", "一击必杀"]
   weapons: ["匕", "刺"]
   coreTechniqueIds: ["cult_xian_ice_3", "id_art_xian_sword_5"]
   tier: "仙宗"
-  parentId: "圣地_15"
+  parentId: "sheng_sect_15"
 -
-  id: "天_38"
+  id: "xian_sect_38"
   name: "神象宗"
   elements: ["力", "土"]
   specialties: ["神象镇狱", "力拔千钧"]
   weapons: ["象牙", "锤"]
   coreTechniqueIds: ["cult_xian_heart_1", "id_art_xian_fist_4"]
   tier: "仙宗"
-  parentId: "圣地_5"
+  parentId: "sheng_sect_5"
 -
-  id: "天_39"
+  id: "xian_sect_39"
   name: "金乌门"
   elements: ["火", "光"]
   specialties: ["金乌负日", "曜日灼伤"]
   weapons: ["弓", "戟"]
   coreTechniqueIds: ["cult_xian_fire_3", "id_art_xian_blade_4"]
   tier: "仙宗"
-  parentId: "圣地_10"
+  parentId: "sheng_sect_10"
 -
-  id: "天_40"
+  id: "xian_sect_40"
   name: "星河派"
   elements: ["星", "术"]
   specialties: ["指星问路", "星辰变"]
   weapons: ["剑", "罗盘"]
   coreTechniqueIds: ["cult_xian_star_2", "id_art_xian_illusion_4"]
   tier: "仙宗"
-  parentId: "圣地_6"
+  parentId: "sheng_sect_6"
 -
-  id: "天_41"
+  id: "xian_sect_41"
   name: "药王门"
   elements: ["药", "生"]
   specialties: ["妙手回春", "百草集注"]
   weapons: ["针", "鼎"]
   coreTechniqueIds: ["cult_xian_alchemy_1", "id_art_xian_illusion_4"]
   tier: "仙宗"
-  parentId: "圣地_2"
+  parentId: "sheng_sect_2"
 -
-  id: "天_42"
+  id: "xian_sect_42"
   name: "驭兽山庄"
   elements: ["兽", "力"]
   specialties: ["万兽朝苍", "兽神变"]
   weapons: ["鞭", "爪"]
   coreTechniqueIds: ["cult_xian_heart_1", "id_art_xian_fist_4"]
   tier: "仙宗"
-  parentId: "圣地_24"
+  parentId: "sheng_sect_24"
 -
-  id: "天_43"
+  id: "xian_sect_43"
   name: "天风阁"
   elements: ["风", "气"]
   specialties: ["裂空风刃", "御风前行"]
   weapons: ["弩", "扇"]
   coreTechniqueIds: ["cult_xian_sky_1", "id_art_xian_fan_1"]
   tier: "仙宗"
-  parentId: "圣地_7"
+  parentId: "sheng_sect_7"
 -
-  id: "天_44"
+  id: "xian_sect_44"
   name: "焚天谷"
   elements: ["火", "土"]
   specialties: ["焚天炼狱", "地动山摇"]
   weapons: ["刀", "斧"]
   coreTechniqueIds: ["cult_xian_fire_5", "id_art_xian_blade_3"]
   tier: "仙宗"
-  parentId: "圣地_18"
+  parentId: "sheng_sect_18"
 -
-  id: "天_45"
+  id: "xian_sect_45"
   name: "极地宫"
   elements: ["冰", "冷"]
   specialties: ["极地风霜", "绝对零度"]
   weapons: ["杖", "剑"]
   coreTechniqueIds: ["cult_xian_ice_3", "id_art_xian_sword_5"]
   tier: "仙宗"
-  parentId: "圣地_19"
+  parentId: "sheng_sect_19"
 -
-  id: "天_46"
+  id: "xian_sect_46"
   name: "罗刹门"
   elements: ["阴", "杀"]
   specialties: ["罗刹之影", "灭绝十字斩"]
   weapons: ["爪", "链"]
   coreTechniqueIds: ["cult_immortal_xian_yin_1", "id_art_xian_sword_3"]
   tier: "仙宗"
-  parentId: "圣地_15"
+  parentId: "sheng_sect_15"
 -
-  id: "天_47"
+  id: "xian_sect_47"
   name: "龙泉山庄"
   elements: ["力", "水"]
   specialties: ["龙魂不灭", "润世甘霖"]
   weapons: ["枪", "剑"]
   coreTechniqueIds: ["cult_xian_heart_1", "id_art_xian_fist_4"]
   tier: "仙宗"
-  parentId: "圣地_0"
+  parentId: "sheng_sect_0"
 -
-  id: "天_48"
+  id: "xian_sect_48"
   name: "玄冥门"
   elements: ["水", "阴"]
   specialties: ["玄冥之息", "玄武盾"]
   weapons: ["盾", "锤"]
   coreTechniqueIds: ["cult_xian_ice_3", "id_art_xian_shield_4"]
   tier: "仙宗"
-  parentId: "圣地_23"
+  parentId: "sheng_sect_23"
 -
-  id: "天_49"
+  id: "xian_sect_49"
   name: "天机府"
   elements: ["术", "运"]
   specialties: ["算无遗策", "瞒天过海"]
   weapons: ["笔", "扇"]
   coreTechniqueIds: ["cult_sheng_divine_insight_1", "id_art_xian_luck_4"]
   tier: "仙宗"
-  parentId: "圣地_29"
+  parentId: "sheng_sect_29"
 -
-  id: "地_0"
+  id: "di_sect_0"
   name: "丹霞门"
   elements:
     - "火"
@@ -1040,7 +1040,7 @@
     - "id_art_ling_spear_2"
   tier: "一品"
 -
-  id: "地_1"
+  id: "di_sect_1"
   name: "厚土派"
   elements:
     - "土"
@@ -1055,7 +1055,7 @@
     - "id_art_ling_shield_2"
   tier: "一品"
 -
-  id: "地_2"
+  id: "di_sect_2"
   name: "青莲教"
   elements:
     - "水"
@@ -1071,7 +1071,7 @@
     - "id_art_ling_fan_2"
   tier: "一品"
 -
-  id: "地_3"
+  id: "di_sect_3"
   name: "碧落派"
   elements:
     - "木"
@@ -1086,7 +1086,7 @@
     - "id_art_ling_sword_2"
   tier: "一品"
 -
-  id: "地_4"
+  id: "di_sect_4"
   name: "黄泉门"
   elements:
     - "暗"
@@ -1102,7 +1102,7 @@
     - "id_art_ling_hook_2"
   tier: "一品"
 -
-  id: "地_5"
+  id: "di_sect_5"
   name: "青云门"
   elements:
     - "气"
@@ -1117,7 +1117,7 @@
     - "id_art_ling_sword_1"
   tier: "一品"
 -
-  id: "地_6"
+  id: "di_sect_6"
   name: "望川派"
   elements:
     - "水"
@@ -1133,7 +1133,7 @@
     - "id_art_ling_sound_2"
   tier: "一品"
 -
-  id: "地_7"
+  id: "di_sect_7"
   name: "幽谷宗"
   elements:
     - "阴"
@@ -1149,7 +1149,7 @@
     - "id_art_ling_claw_2"
   tier: "一品"
 -
-  id: "地_8"
+  id: "di_sect_8"
   name: "白猿山"
   elements:
     - "力"
@@ -1165,7 +1165,7 @@
     - "id_art_ling_fist_1"
   tier: "一品"
 -
-  id: "地_9"
+  id: "di_sect_9"
   name: "丹鼎宗"
   elements:
     - "药"
@@ -1181,7 +1181,7 @@
     - "id_art_ling_fire_2"
   tier: "一品"
 -
-  id: "地_10"
+  id: "di_sect_10"
   name: "雷鸣堂"
   elements:
     - "雷"
@@ -1195,7 +1195,7 @@
     - "id_art_ling_thunder_2"
   tier: "一品"
 -
-  id: "地_11"
+  id: "di_sect_11"
   name: "落雪谷"
   elements:
     - "冰"
@@ -1211,7 +1211,7 @@
     - "id_art_ling_sword_2"
   tier: "一品"
 -
-  id: "地_12"
+  id: "di_sect_12"
   name: "药王谷"
   elements:
     - "药"
@@ -1227,7 +1227,7 @@
     - "id_art_ling_nature_2"
   tier: "一品"
 -
-  id: "地_13"
+  id: "di_sect_13"
   name: "铁剑门"
   elements:
     - "金"
@@ -1241,7 +1241,7 @@
     - "id_art_ling_sword_1"
   tier: "一品"
 -
-  id: "地_14"
+  id: "di_sect_14"
   name: "青蛇堂"
   elements:
     - "木"
@@ -1257,7 +1257,7 @@
     - "id_art_ling_poison_2"
   tier: "一品"
 -
-  id: "地_15"
+  id: "di_sect_15"
   name: "丹阳宗"
   elements:
     - "火"
@@ -1273,7 +1273,7 @@
     - "id_art_ling_sword_2"
   tier: "一品"
 -
-  id: "地_16"
+  id: "di_sect_16"
   name: "玄石派"
   elements:
     - "土"
@@ -1288,7 +1288,7 @@
     - "id_art_ling_shield_2"
   tier: "一品"
 -
-  id: "地_17"
+  id: "di_sect_17"
   name: "炎阳门"
   elements:
     - "火"
@@ -1302,7 +1302,7 @@
     - "id_art_ling_blade_2"
   tier: "一品"
 -
-  id: "地_18"
+  id: "di_sect_18"
   name: "落木山"
   elements:
     - "木"
@@ -1316,7 +1316,7 @@
     - "id_art_ling_staff_2"
   tier: "一品"
 -
-  id: "地_19"
+  id: "di_sect_19"
   name: "松涛门"
   elements:
     - "木"
@@ -1330,279 +1330,278 @@
     - "cult_spirit_ling_wind_1"
     - "id_art_ling_sword_1"
   tier: "一品"
-  tier: "一品"
 -
-  id: "地_20"
+  id: "di_sect_20"
   name: "真武山"
   elements: ["力", "土"]
   specialties: ["真武神力", "玄武背山"]
   weapons: ["盾", "锤"]
   coreTechniqueIds: ["cult_spirit_ling_earth_1", "id_art_ling_shield_2"]
   tier: "一品"
-  parentId: "天_27"
+  parentId: "xian_sect_27"
 -
-  id: "地_21"
+  id: "di_sect_21"
   name: "听风谷"
   elements: ["风", "幻"]
   specialties: ["听风辨位", "风影迷踪"]
   weapons: ["扇", "刺"]
   coreTechniqueIds: ["cult_spirit_ling_wind_1", "id_art_ling_fan_2"]
   tier: "一品"
-  parentId: "天_24"
+  parentId: "xian_sect_24"
 -
-  id: "地_22"
+  id: "di_sect_22"
   name: "烈阳宗"
   elements: ["火", "阳"]
   specialties: ["烈阳神光", "焚烧万物"]
   weapons: ["刀", "剑"]
   coreTechniqueIds: ["cult_spirit_ling_fire_1", "id_art_ling_blade_2"]
   tier: "一品"
-  parentId: "天_32"
+  parentId: "xian_sect_32"
 -
-  id: "地_23"
+  id: "di_sect_23"
   name: "冰云庵"
   elements: ["冰", "阴"]
   specialties: ["冰云诀", "傲霜冷月"]
   weapons: ["剑", "拂"]
   coreTechniqueIds: ["cult_spirit_ling_ice_1", "id_art_ling_sword_2"]
   tier: "一品"
-  parentId: "天_26"
+  parentId: "xian_sect_26"
 -
-  id: "地_24"
+  id: "di_sect_24"
   name: "青锋门"
   elements: ["金", "金"]
   specialties: ["青锋一剑", "金气贯体"]
   weapons: ["剑", "枪"]
   coreTechniqueIds: ["cult_spirit_ling_metal_1", "id_art_ling_sword_1"]
   tier: "一品"
-  parentId: "天_20"
+  parentId: "xian_sect_20"
 -
-  id: "地_25"
+  id: "di_sect_25"
   name: "毒煞教"
   elements: ["毒", "暗"]
   specialties: ["千毒万煞", "腐蚀心神"]
   weapons: ["刺", "钩"]
   coreTechniqueIds: ["cult_spirit_ling_dark_1", "id_art_ling_poison_2"]
   tier: "一品"
-  parentId: "天_25"
+  parentId: "xian_sect_25"
 -
-  id: "地_26"
+  id: "di_sect_26"
   name: "雷兽山"
   elements: ["雷", "兽"]
   specialties: ["雷兽变", "狂雷天降"]
   weapons: ["爪", "锤"]
   coreTechniqueIds: ["cult_spirit_ling_thunder_1", "id_art_ling_thunder_2"]
   tier: "一品"
-  parentId: "天_30"
+  parentId: "xian_sect_30"
 -
-  id: "地_27"
+  id: "di_sect_27"
   name: "药王宗"
   elements: ["药", "木"]
   specialties: ["丹心仁厚", "百草万变"]
   weapons: ["针", "鼎"]
   coreTechniqueIds: ["cult_spirit_ling_wood_1", "id_art_ling_nature_2"]
   tier: "一品"
-  parentId: "天_41"
+  parentId: "xian_sect_41"
 -
-  id: "地_28"
+  id: "di_sect_28"
   name: "星宿府"
   elements: ["星", "占"]
   specialties: ["星宿移位", "命理推演"]
   weapons: ["棋盘", "剑"]
   coreTechniqueIds: ["cult_spirit_ling_water_1", "id_art_ling_sound_2"]
   tier: "一品"
-  parentId: "天_40"
+  parentId: "xian_sect_40"
 -
-  id: "地_29"
+  id: "di_sect_29"
   name: "重锤堂"
   elements: ["金", "力"]
   specialties: ["重锤轰天", "千锤百炼"]
   weapons: ["锤", "斧"]
   coreTechniqueIds: ["cult_spirit_ling_metal_1", "id_art_ling_fist_1"]
   tier: "一品"
-  parentId: "天_23"
+  parentId: "xian_sect_23"
 -
-  id: "地_30"
+  id: "di_sect_30"
   name: "幻剑盟"
   elements: ["幻", "剑"]
   specialties: ["幻影流光", "剑意缥缈"]
   weapons: ["剑", "刺"]
   coreTechniqueIds: ["cult_spirit_ling_water_1", "id_art_ling_sword_2"]
   tier: "一品"
-  parentId: "天_28"
+  parentId: "xian_sect_28"
 -
-  id: "地_31"
+  id: "di_sect_31"
   name: "长生门"
   elements: ["木", "生"]
   specialties: ["延年益寿", "长生不老"]
   weapons: ["杖", "扇"]
   coreTechniqueIds: ["cult_spirit_ling_wood_1", "id_art_ling_nature_2"]
   tier: "一品"
-  parentId: "天_31"
+  parentId: "xian_sect_31"
 -
-  id: "地_32"
+  id: "di_sect_32"
   name: "极冻谷"
   elements: ["冰", "水"]
   specialties: ["绝对冰封", "千里雪飘"]
   weapons: ["剑", "锤"]
   coreTechniqueIds: ["cult_spirit_ling_ice_1", "id_art_ling_spear_2"]
   tier: "一品"
-  parentId: "天_45"
+  parentId: "xian_sect_45"
 -
-  id: "地_33"
+  id: "di_sect_33"
   name: "御气门"
   elements: ["气", "风"]
   specialties: ["御气乘风", "气吞山河"]
   weapons: ["扇", "弓"]
   coreTechniqueIds: ["cult_spirit_ling_wind_1", "id_art_ling_fan_2"]
   tier: "一品"
-  parentId: "天_43"
+  parentId: "xian_sect_43"
 -
-  id: "地_34"
+  id: "di_sect_34"
   name: "土元宗"
   elements: ["土", "金"]
   specialties: ["土元护体", "点石成金"]
   weapons: ["盾", "刀"]
   coreTechniqueIds: ["cult_spirit_ling_earth_1", "id_art_ling_shield_2"]
   tier: "一品"
-  parentId: "天_33"
+  parentId: "xian_sect_33"
 -
-  id: "地_35"
+  id: "di_sect_35"
   name: "暗影宗"
   elements: ["暗", "影"]
   specialties: ["暗影袭杀", "影遁无形"]
   weapons: ["匕", "钩"]
   coreTechniqueIds: ["cult_spirit_ling_dark_1", "id_art_ling_poison_2"]
   tier: "一品"
-  parentId: "天_37"
+  parentId: "xian_sect_37"
 -
-  id: "地_36"
+  id: "di_sect_36"
   name: "力王宗"
   elements: ["力", "阳"]
   specialties: ["天生神力", "力王降临"]
   weapons: ["锤", "拳"]
   coreTechniqueIds: ["cult_spirit_ling_metal_1", "id_art_ling_fist_1"]
   tier: "一品"
-  parentId: "天_38"
+  parentId: "xian_sect_38"
 -
-  id: "地_37"
+  id: "di_sect_37"
   name: "天阵门"
   elements: ["术", "灵"]
   specialties: ["阵法万千", "天干地支"]
   weapons: ["盘", "笔"]
   coreTechniqueIds: ["cult_spirit_ling_water_1", "id_art_ling_sound_2"]
   tier: "一品"
-  parentId: "天_35"
+  parentId: "xian_sect_35"
 -
-  id: "地_38"
+  id: "di_sect_38"
   name: "血刀门"
   elements: ["血", "火"]
   specialties: ["嗜血狂杀", "血焰升空"]
   weapons: ["刀", "镰"]
   coreTechniqueIds: ["cult_spirit_ling_fire_1", "id_art_ling_blade_2"]
   tier: "一品"
-  parentId: "天_25"
+  parentId: "xian_sect_25"
 -
-  id: "地_39"
+  id: "di_sect_39"
   name: "狂象宗"
   elements: ["力", "土"]
   specialties: ["狂象踏地", "力拔千钧"]
   weapons: ["锤", "柱"]
   coreTechniqueIds: ["cult_spirit_ling_earth_1", "id_art_ling_shield_2"]
   tier: "一品"
-  parentId: "天_38"
+  parentId: "xian_sect_38"
 -
-  id: "地_40"
+  id: "di_sect_40"
   name: "星愿阁"
   elements: ["星", "幻"]
   specialties: ["星愿成真", "幻象人生"]
   weapons: ["笔", "扇"]
   coreTechniqueIds: ["cult_spirit_ling_water_1", "id_art_ling_sound_2"]
   tier: "一品"
-  parentId: "天_40"
+  parentId: "xian_sect_40"
 -
-  id: "地_41"
+  id: "di_sect_41"
   name: "仙草宗"
   elements: ["生", "药"]
   specialties: ["仙草妙用", "长生不老"]
   weapons: ["针", "锄"]
   coreTechniqueIds: ["cult_spirit_ling_wood_1", "id_art_ling_nature_2"]
   tier: "一品"
-  parentId: "天_41"
+  parentId: "xian_sect_41"
 -
-  id: "地_42"
+  id: "di_sect_42"
   name: "驱兽教"
   elements: ["兽", "魂"]
   specialties: ["万兽驱策", "魂契共生"]
   weapons: ["鞭", "哨"]
   coreTechniqueIds: ["cult_spirit_ling_wood_1", "id_art_ling_nature_2"]
   tier: "一品"
-  parentId: "天_42"
+  parentId: "xian_sect_42"
 -
-  id: "地_43"
+  id: "di_sect_43"
   name: "轻风派"
   elements: ["风", "气"]
   specialties: ["轻若鸿毛", "踏雪无痕"]
   weapons: ["剑", "靴"]
   coreTechniqueIds: ["cult_spirit_ling_wind_1", "id_art_ling_fan_2"]
   tier: "一品"
-  parentId: "天_43"
+  parentId: "xian_sect_43"
 -
-  id: "地_44"
+  id: "di_sect_44"
   name: "地火门"
   elements: ["火", "土"]
   specialties: ["熔岩爆发", "烈火焚身"]
   weapons: ["刀", "斧"]
   coreTechniqueIds: ["cult_spirit_ling_fire_1", "id_art_ling_blade_2"]
   tier: "一品"
-  parentId: "天_44"
+  parentId: "xian_sect_44"
 -
-  id: "地_45"
+  id: "di_sect_45"
   name: "霜风寨"
   elements: ["冰", "风"]
   specialties: ["霜林尽染", "狂风肆虐"]
   weapons: ["剑", "扇"]
   coreTechniqueIds: ["cult_spirit_ling_ice_1", "id_art_ling_sword_2"]
   tier: "一品"
-  parentId: "天_45"
+  parentId: "xian_sect_45"
 -
-  id: "地_46"
+  id: "di_sect_46"
   name: "阴魂教"
   elements: ["阴", "魂"]
   specialties: ["阴魂不散", "摄魂夺魄"]
   weapons: ["链", "钩"]
   coreTechniqueIds: ["cult_spirit_ling_dark_1", "id_art_ling_poison_2"]
   tier: "一品"
-  parentId: "天_46"
+  parentId: "xian_sect_46"
 -
-  id: "地_47"
+  id: "di_sect_47"
   name: "潜龙宗"
   elements: ["力", "水"]
   specialties: ["潜龙出水", "神龙摆尾"]
   weapons: ["枪", "棍"]
   coreTechniqueIds: ["cult_spirit_ling_water_1", "id_art_ling_spear_2"]
   tier: "一品"
-  parentId: "天_47"
+  parentId: "xian_sect_47"
 -
-  id: "地_48"
+  id: "di_sect_48"
   name: "冥河宗"
   elements: ["水", "阴"]
   specialties: ["冥河洗礼", "万劫不复"]
   weapons: ["钩", "刺"]
   coreTechniqueIds: ["cult_spirit_ling_ice_1", "id_art_ling_sword_2"]
   tier: "一品"
-  parentId: "天_48"
+  parentId: "xian_sect_48"
 -
-  id: "地_49"
+  id: "di_sect_49"
   name: "问天府"
   elements: ["术", "运"]
   specialties: ["问天卜卦", "顺承天意"]
   weapons: ["盘", "笔"]
   coreTechniqueIds: ["cult_spirit_ling_water_1", "id_art_ling_sound_2"]
   tier: "一品"
-  parentId: "天_49"
+  parentId: "xian_sect_49"
 -
-  id: "人_0"
+  id: "ren_sect_0"
   name: "柳巷武馆"
   elements:
     - "水"
@@ -1618,7 +1617,7 @@
     - "id_art_fan_staff_11"
   tier: "二品"
 -
-  id: "人_1"
+  id: "ren_sect_1"
   name: "竹海武馆"
   elements:
     - "木"
@@ -1634,7 +1633,7 @@
     - "id_art_fan_sword_11"
   tier: "二品"
 -
-  id: "人_2"
+  id: "ren_sect_2"
   name: "渔火武堂"
   elements:
     - "火"
@@ -1650,7 +1649,7 @@
     - "id_art_fan_fist_11"
   tier: "二品"
 -
-  id: "人_3"
+  id: "ren_sect_3"
   name: "铁匠武馆"
   elements:
     - "火"
@@ -1666,7 +1665,7 @@
     - "id_art_fan_blade_11"
   tier: "二品"
 -
-  id: "人_4"
+  id: "ren_sect_4"
   name: "织坊拳社"
   elements:
     - "金"
@@ -1681,7 +1680,7 @@
     - "id_art_fan_fist_12"
   tier: "二品"
 -
-  id: "人_5"
+  id: "ren_sect_5"
   name: "车匠镖局"
   elements:
     - "力"
@@ -1697,7 +1696,7 @@
     - "id_art_fan_blade_11"
   tier: "二品"
 -
-  id: "人_6"
+  id: "ren_sect_6"
   name: "驿站武堂"
   elements:
     - "气"
@@ -1713,7 +1712,7 @@
     - "id_art_fan_spear_11"
   tier: "二品"
 -
-  id: "人_7"
+  id: "ren_sect_7"
   name: "山村习武堂"
   elements:
     - "土"
@@ -1729,7 +1728,7 @@
     - "id_art_fan_fist_11"
   tier: "二品"
 -
-  id: "人_8"
+  id: "ren_sect_8"
   name: "河湾武舍"
   elements:
     - "水"
@@ -1744,7 +1743,7 @@
     - "id_art_fan_palm_11"
   tier: "二品"
 -
-  id: "人_9"
+  id: "ren_sect_9"
   name: "渔村武馆"
   elements:
     - "水"
@@ -1758,7 +1757,7 @@
     - "id_art_fan_spear_12"
   tier: "二品"
 -
-  id: "人_10"
+  id: "ren_sect_10"
   name: "林间武馆"
   elements:
     - "木"
@@ -1774,7 +1773,7 @@
     - "id_art_fan_bow_11"
   tier: "二品"
 -
-  id: "人_11"
+  id: "ren_sect_11"
   name: "云水武社"
   elements:
     - "水"
@@ -1790,7 +1789,7 @@
     - "id_art_fan_fist_12"
   tier: "二品"
 -
-  id: "人_12"
+  id: "ren_sect_12"
   name: "麦田武馆"
   elements:
     - "土"
@@ -1806,7 +1805,7 @@
     - "id_art_fan_staff_11"
   tier: "二品"
 -
-  id: "人_13"
+  id: "ren_sect_13"
   name: "茶铺武馆"
   elements:
     - "水"
@@ -1822,7 +1821,7 @@
     - "id_art_fan_palm_12"
   tier: "二品"
 -
-  id: "人_14"
+  id: "ren_sect_14"
   name: "柴门拳馆"
   elements:
     - "力"
@@ -1837,7 +1836,7 @@
     - "id_art_fan_fist_11"
   tier: "二品"
 -
-  id: "人_15"
+  id: "ren_sect_15"
   name: "杏林医馆"
   elements:
     - "药"
@@ -1852,7 +1851,7 @@
     - "id_art_fan_poison_11"
   tier: "二品"
 -
-  id: "人_16"
+  id: "ren_sect_16"
   name: "江舟武馆"
   elements:
     - "水"
@@ -1868,7 +1867,7 @@
     - "id_art_fan_staff_11"
   tier: "二品"
 -
-  id: "人_17"
+  id: "ren_sect_17"
   name: "瓦巷武馆"
   elements:
     - "土"
@@ -1884,7 +1883,7 @@
     - "id_art_fan_blade_11"
   tier: "二品"
 -
-  id: "人_18"
+  id: "ren_sect_18"
   name: "落雪武馆"
   elements:
     - "冰"
@@ -1898,7 +1897,7 @@
     - "id_art_fan_sword_11"
   tier: "二品"
 -
-  id: "人_19"
+  id: "ren_sect_19"
   name: "青石拳社"
   elements:
     - "土"
@@ -1913,272 +1912,272 @@
     - "id_art_fan_fist_12"
   tier: "二品"
 -
-  id: "人_20"
+  id: "ren_sect_20"
   name: "黑虎武馆"
   elements: ["力", "阴"]
   specialties: ["黑虎掏心", "横练功夫"]
   weapons: ["拳", "爪"]
   coreTechniqueIds: ["cult_mortal_a_1", "id_art_fan_fist_11"]
   tier: "二品"
-  parentId: "地_20"
+  parentId: "di_sect_20"
 -
-  id: "人_21"
+  id: "ren_sect_21"
   name: "顺风镖局"
   elements: ["风", "气"]
   specialties: ["顺风而行", "飞檐走壁"]
   weapons: ["镖", "短剑"]
   coreTechniqueIds: ["cult_mortal_a_1", "id_art_fan_blade_11"]
   tier: "二品"
-  parentId: "地_21"
+  parentId: "di_sect_21"
 -
-  id: "人_22"
+  id: "ren_sect_22"
   name: "铁血武馆"
   elements: ["力", "血"]
   specialties: ["铁血丹心", "刚猛无俦"]
   weapons: ["拳", "刀"]
   coreTechniqueIds: ["cult_mortal_a_1", "id_art_fan_fist_12"]
   tier: "二品"
-  parentId: "地_22"
+  parentId: "di_sect_22"
 -
-  id: "人_23"
+  id: "ren_sect_23"
   name: "寒风武馆"
   elements: ["冰", "风"]
   specialties: ["凛冬已至", "风驰电掣"]
   weapons: ["剑", "扇"]
   coreTechniqueIds: ["cult_spirit_ling_ice_1", "id_art_fan_sword_11"]
   tier: "二品"
-  parentId: "地_23"
+  parentId: "di_sect_23"
 -
-  id: "人_24"
+  id: "ren_sect_24"
   name: "疾风剑舍"
   elements: ["风", "金"]
   specialties: ["快剑无影", "疾影随行"]
   weapons: ["剑", "刺"]
   coreTechniqueIds: ["cult_spirit_ling_wind_1", "id_art_fan_sword_12"]
   tier: "二品"
-  parentId: "地_24"
+  parentId: "di_sect_24"
 -
-  id: "人_25"
+  id: "ren_sect_25"
   name: "阴山拳社"
   elements: ["阴", "煞"]
   specialties: ["阴冥劲", "碎骨掌"]
   weapons: ["拳", "钩"]
   coreTechniqueIds: ["cult_mortal_a_1", "id_art_fan_fist_11"]
   tier: "二品"
-  parentId: "地_25"
+  parentId: "di_sect_25"
 -
-  id: "人_26"
+  id: "ren_sect_26"
   name: "天影武堂"
   elements: ["暗", "空"]
   specialties: ["天影幻化", "潜影袭杀"]
   weapons: ["刺", "钩"]
   coreTechniqueIds: ["cult_spirit_ling_dark_1", "id_art_fan_poison_11"]
   tier: "二品"
-  parentId: "地_26"
+  parentId: "di_sect_26"
 -
-  id: "人_27"
+  id: "ren_sect_27"
   name: "济世堂"
   elements: ["药", "水"]
   specialties: ["悬壶济世", "妙手偶得"]
   weapons: ["针", "鼎"]
   coreTechniqueIds: ["cult_mortal_fan_wood_1", "id_art_fan_poison_11"]
   tier: "二品"
-  parentId: "地_27"
+  parentId: "di_sect_27"
 -
-  id: "人_28"
+  id: "ren_sect_28"
   name: "星罗武馆"
   elements: ["星", "术"]
   specialties: ["星罗棋布", "推天算地"]
   weapons: ["棋盘", "剑"]
   coreTechniqueIds: ["cult_spirit_ling_water_1", "id_art_fan_sword_11"]
   tier: "二品"
-  parentId: "地_28"
+  parentId: "di_sect_28"
 -
-  id: "人_29"
+  id: "ren_sect_29"
   name: "金石社"
   elements: ["金", "土"]
   specialties: ["金坚石硬", "不动如山"]
   weapons: ["锤", "盾"]
   coreTechniqueIds: ["cult_spirit_ling_metal_1", "id_art_fan_staff_11"]
   tier: "二品"
-  parentId: "地_29"
+  parentId: "di_sect_29"
 -
-  id: "人_30"
+  id: "ren_sect_30"
   name: "幻月阁"
   elements: ["幻", "水"]
   specialties: ["水中捞月", "梦幻虚影"]
   weapons: ["扇", "琴"]
   coreTechniqueIds: ["cult_spirit_ling_water_1", "id_art_fan_illusion_11"]
   tier: "二品"
-  parentId: "地_30"
+  parentId: "di_sect_30"
 -
-  id: "人_31"
+  id: "ren_sect_31"
   name: "青松武馆"
   elements: ["木", "风"]
   specialties: ["青松劲", "疾风步"]
   weapons: ["剑", "棍"]
   coreTechniqueIds: ["cult_mortal_fan_wood_1", "id_art_fan_staff_11"]
   tier: "二品"
-  parentId: "地_31"
+  parentId: "di_sect_31"
 -
-  id: "人_32"
+  id: "ren_sect_32"
   name: "霜叶社"
   elements: ["冰", "木"]
   specialties: ["霜叶红于二月花", "寒气入体"]
   weapons: ["剑", "扇"]
   coreTechniqueIds: ["cult_spirit_ling_ice_1", "id_art_fan_sword_11"]
   tier: "二品"
-  parentId: "地_32"
+  parentId: "di_sect_32"
 -
-  id: "人_33"
+  id: "ren_sect_33"
   name: "烈火武馆"
   elements: ["火", "阳"]
   specialties: ["烈火燎原", "刚阳之气"]
   weapons: ["刀", "拳"]
   coreTechniqueIds: ["cult_mortal_fan_fire_1", "id_art_fan_blade_11"]
   tier: "二品"
-  parentId: "地_34"
+  parentId: "di_sect_34"
 -
-  id: "人_34"
+  id: "ren_sect_34"
   name: "土元拳馆"
   elements: ["土", "力"]
   specialties: ["土元厚劲", "崩山击"]
   weapons: ["拳", "盾"]
   coreTechniqueIds: ["cult_mortal_a_1", "id_art_fan_fist_12"]
   tier: "二品"
-  parentId: "地_39"
+  parentId: "di_sect_39"
 -
-  id: "人_35"
+  id: "ren_sect_35"
   name: "暗影派"
   elements: ["暗", "阴"]
   specialties: ["影子戏", "潜行暗杀"]
   weapons: ["刺", "钩"]
   coreTechniqueIds: ["cult_spirit_ling_dark_1", "id_art_fan_poison_11"]
   tier: "二品"
-  parentId: "地_35"
+  parentId: "di_sect_35"
 -
-  id: "人_36"
+  id: "ren_sect_36"
   name: "力士堂"
   elements: ["力", "土"]
   specialties: ["力士扛鼎", "铜皮铁骨"]
   weapons: ["锤", "柱"]
   coreTechniqueIds: ["cult_mortal_a_1", "id_art_fan_fist_11"]
   tier: "二品"
-  parentId: "地_36"
+  parentId: "di_sect_36"
 -
-  id: "人_37"
+  id: "ren_sect_37"
   name: "阵图社"
   elements: ["术", "灵"]
   specialties: ["基础阵法图", "灵气感应"]
   weapons: ["笔", "盘"]
   coreTechniqueIds: ["cult_spirit_ling_water_1", "id_art_fan_staff_11"]
   tier: "二品"
-  parentId: "地_37"
+  parentId: "di_sect_37"
 -
-  id: "人_38"
+  id: "ren_sect_38"
   name: "血刀武馆"
   elements: ["血", "火"]
   specialties: ["血气方刚", "狂暴快刀"]
   weapons: ["刀", "镰"]
   coreTechniqueIds: ["cult_mortal_fan_fire_1", "id_art_fan_blade_11"]
   tier: "二品"
-  parentId: "地_38"
+  parentId: "di_sect_38"
 -
-  id: "人_39"
+  id: "ren_sect_39"
   name: "象力馆"
   elements: ["力", "兽"]
   specialties: ["小象步", "蛮力一击"]
   weapons: ["拳", "棍"]
   coreTechniqueIds: ["cult_mortal_a_1", "id_art_fan_fist_12"]
   tier: "二品"
-  parentId: "地_39"
+  parentId: "di_sect_39"
 -
-  id: "人_40"
+  id: "ren_sect_40"
   name: "夜星阁"
   elements: ["星", "暗"]
   specialties: ["夜观星象", "星影重重"]
   weapons: ["扇", "刺"]
   coreTechniqueIds: ["cult_spirit_ling_water_1", "id_art_fan_sword_11"]
   tier: "二品"
-  parentId: "地_40"
+  parentId: "di_sect_40"
 -
-  id: "人_41"
+  id: "ren_sect_41"
   name: "百草社"
   elements: ["生", "药"]
   specialties: ["百草识真", "简单炼药"]
   weapons: ["药锄", "针"]
   coreTechniqueIds: ["cult_spirit_ling_wood_1", "id_art_fan_poison_11"]
   tier: "二品"
-  parentId: "地_41"
+  parentId: "di_sect_41"
 -
-  id: "人_42"
+  id: "ren_sect_42"
   name: "驯兽馆"
   elements: ["兽", "力"]
   specialties: ["驯犬术", "猛虎下山"]
   weapons: ["鞭", "哨"]
   coreTechniqueIds: ["cult_spirit_ling_wood_1", "id_art_fan_staff_11"]
   tier: "二品"
-  parentId: "地_42"
+  parentId: "di_sect_42"
 -
-  id: "人_43"
+  id: "ren_sect_43"
   name: "微风武馆"
   elements: ["风", "气"]
   specialties: ["拂柳劲", "随风动"]
   weapons: ["扇", "剑"]
   coreTechniqueIds: ["cult_spirit_ling_wind_1", "id_art_fan_sword_12"]
   tier: "二品"
-  parentId: "地_43"
+  parentId: "di_sect_43"
 -
-  id: "人_44"
+  id: "ren_sect_44"
   name: "地热武堂"
   elements: ["火", "土"]
   specialties: ["地热喷发", "焦土劲"]
   weapons: ["刀", "拳"]
   coreTechniqueIds: ["cult_mortal_fan_fire_1", "id_art_fan_blade_11"]
   tier: "二品"
-  parentId: "地_44"
+  parentId: "di_sect_44"
 -
-  id: "人_45"
+  id: "ren_sect_45"
   name: "寒霜门"
   elements: ["冰", "冷"]
   specialties: ["寒霜满面", "凝水成冰"]
   weapons: ["剑", "锥"]
   coreTechniqueIds: ["cult_spirit_ling_ice_1", "id_art_fan_sword_11"]
   tier: "二品"
-  parentId: "地_45"
+  parentId: "di_sect_45"
 -
-  id: "人_46"
+  id: "ren_sect_46"
   name: "通灵社"
   elements: ["魂", "灵"]
   specialties: ["通灵仪式", "唤魂术"]
   weapons: ["盘", "笔"]
   coreTechniqueIds: ["cult_spirit_ling_dark_1", "id_art_fan_poison_11"]
   tier: "二品"
-  parentId: "地_46"
+  parentId: "di_sect_46"
 -
-  id: "人_47"
+  id: "ren_sect_47"
   name: "蛟龙馆"
   elements: ["力", "水"]
   specialties: ["蛟龙入海", "破浪击"]
   weapons: ["棍", "叉"]
   coreTechniqueIds: ["cult_spirit_ling_water_1", "id_art_fan_staff_12"]
   tier: "二品"
-  parentId: "地_47"
+  parentId: "di_sect_47"
 -
-  id: "人_48"
+  id: "ren_sect_48"
   name: "冥河拳舍"
   elements: ["阴", "水"]
   specialties: ["冥河死水", "浮尸掌"]
   weapons: ["拳", "刺"]
   coreTechniqueIds: ["cult_spirit_ling_ice_1", "id_art_fan_fist_11"]
   tier: "二品"
-  parentId: "地_48"
+  parentId: "di_sect_48"
 -
-  id: "人_49"
+  id: "ren_sect_49"
   name: "卜天阁"
   elements: ["运", "术"]
   specialties: ["抽签算卦", "铁口直断"]
   weapons: ["幡", "卦"]
   coreTechniqueIds: ["cult_spirit_ling_water_1", "id_art_fan_staff_11"]
   tier: "二品"
-  parentId: "地_49"
+  parentId: "di_sect_49"

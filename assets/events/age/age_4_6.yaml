@@ -1,0 +1,334 @@
+# --- 4-6岁：童蒙养正 (Early Childhood) ---
+
+# ==========================================
+# 1. 仙界/修真世家 (Immortal / Cultivator)
+# ==========================================
+
+-
+  id: "age_4_study_immortal"
+  title: "仙族启蒙"
+  description: "家族的学堂开启了，但这可不是普通的读书识字。"
+  worlds: ["immortal"]
+  familyTiers: ["霸主", "圣地", "顶级", "仙族", "灵界修真世家", "灵界普通家族"]
+  minAge: 4
+  maxAge: 6
+  effects: { age: 0 }
+  choices:
+    -
+      id: "read_dao"
+      label: "诵读道经"
+      effects:
+        delta: { intelligence: 3, exp: 20 }
+        log: "你摇头晃脑地诵读晦涩难懂的经文，虽不明其意，但觉得灵台清明。"
+    -
+      id: "identify_herbs"
+      label: "辨识灵草"
+      effects:
+        delta: { intelligence: 2, exp: 25 }
+        log: "长老教你辨认百草，你趁机尝了几株甘甜的灵果，灵力大增。"
+    -
+      id: "meditate"
+      label: "感应天地"
+      effects:
+        delta: { exp: 40 }
+        log: "你尝试模仿大人打坐，虽然腿麻了，但隐约感觉到周围有光点跳动。"
+    -
+      id: "skip_class"
+      label: "逃课去玩"
+      effects:
+        delta: { charm: 2, strength: 2, exp: 10 }
+        log: "你溜到后山抓灵蝶，被巡山弟子捉了回来，但他看你可爱，送了你一颗糖。"
+  weight: 200
+
+-
+  id: "age_4_pet_immortal"
+  title: "灵兽幼崽"
+  description: "在家族兽栏旁，一只落单的灵兽幼崽怯生生地看着你。"
+  worlds: ["immortal"]
+  familyTiers: ["霸主", "圣地", "顶级", "仙族", "灵界修真世家"]
+  minAge: 4
+  maxAge: 6
+  effects: { age: 0 }
+  choices:
+    -
+      id: "feed_spirit_fruit"
+      label: "喂灵果"
+      effects:
+        delta: { charm: 3, luck: 1 }
+        log: "它开心地吃了你的灵果，蹭了蹭你的手，似乎认主了。"
+    -
+      id: "tease_it"
+      label: "逗弄它"
+      effects:
+        delta: { strength: 1, exp: 10 }
+        log: "你揪它的尾巴，被它喷了一口小火苗/水柱，弄得灰头土脸，但觉得很好玩。"
+    -
+      id: "report_elder"
+      label: "告诉长老"
+      effects:
+        delta: { family: 2 }
+        log: "长老夸你懂事，将幼崽带回了育兽室悉心照料。"
+  weight: 180
+
+-
+  id: "age_4_artifact_mishap"
+  title: "法宝误触"
+  description: "你溜进父亲的炼器室，看到桌上放着一个未完成的法器。"
+  worlds: ["immortal"]
+  familyTiers: ["霸主", "圣地", "顶级", "仙族", "灵界修真世家"]
+  minAge: 4
+  maxAge: 6
+  effects: { age: 0 }
+  choices:
+    -
+      id: "touch_it"
+      label: "好奇戳戳"
+      effects:
+        delta: { exp: 30, strength: -1 }
+        log: "法器突然释放出一道电流/灵压，把你电得酥麻，却也疏通了部分经脉。"
+    -
+      id: "add_material"
+      label: "乱加材料"
+      effects:
+        delta: { intelligence: 2, luck: 2 }
+        log: "你随手扔进去一块矿石，没想到误打误撞，竟然让法器品阶提升了！"
+    -
+      id: "watch_quietly"
+      label: "静静观察"
+      effects:
+        delta: { intelligence: 3 }
+        log: "你仔细观察法器上的纹路，虽然看不懂，但觉得很是玄奥。"
+  weight: 180
+
+# ==========================================
+# 2. 凡界世家/高门 (Noble / Wealthy)
+# ==========================================
+
+-
+  id: "age_4_study_noble"
+  title: "入私塾"
+  description: "到了该启蒙的年纪，家里请了严厉的先生。"
+  worlds: ["mortal"]
+  familyTiers: ["一品", "二品", "三品", "四品", "天", "地"]
+  minAge: 4
+  maxAge: 6
+  effects: { age: 0 }
+  choices:
+    -
+      id: "study_literature"
+      label: "习文断字"
+      effects:
+        delta: { intelligence: 3, family: 1 }
+        log: "先生夸你天资聪颖，是个读书种子，父亲听了大悦。"
+    -
+      id: "practice_martial"
+      label: "扎马步"
+      effects:
+        delta: { strength: 3, exp: 5 }
+        log: "你不爱读书，偏爱舞枪弄棒，父亲叹了口气，请了武师教你打熬筋骨。"
+    -
+      id: "learn_music"
+      label: "学琴棋"
+      effects:
+        delta: { charm: 3, intelligence: 1 }
+        log: "丝竹之音入耳，你展现出惊人的艺术天赋，令府中上下称奇。"
+    -
+      id: "play_tricks"
+      label: "捉弄先生"
+      effects:
+        delta: { charm: 1, luck: -1 }
+        log: "你在先生的茶里放了盐，被罚站一下午，但成了同龄人中的孩子王。"
+  weight: 150
+
+-
+  id: "age_4_kite_noble"
+  title: "春日纸鸢"
+  description: "草长莺飞二月天，府中组织去郊外踏青放纸鸢。"
+  worlds: ["mortal"]
+  familyTiers: ["一品", "二品", "三品", "四品"]
+  minAge: 4
+  maxAge: 6
+  effects: { age: 0 }
+  choices:
+    -
+      id: "run_wild"
+      label: "撒欢奔跑"
+      effects:
+        delta: { strength: 2, luck: 1 }
+        log: "你拉着纸鸢满山跑，摔了好几跤也不觉得疼，身体反而更壮实了。"
+    -
+      id: "paint_kite"
+      label: "绘制纸鸢"
+      effects:
+        delta: { intelligence: 2, charm: 1 }
+        log: "你亲手画了一只大蜈蚣/蝴蝶，虽然丑了点，但它是飞得最高的。"
+    -
+      id: "cut_string"
+      label: "剪断丝线"
+      effects:
+        delta: { intelligence: 1, exp: 5 }
+        log: "你看着纸鸢飞入云端，心中莫名生出一股向往自由/成仙的念头。"
+  weight: 130
+
+-
+  id: "age_4_ancestor_noble"
+  title: "祭拜祖先"
+  description: "清明时节，全族人齐聚祠堂，气氛庄严肃穆。"
+  worlds: ["mortal"]
+  familyTiers: ["一品", "二品", "三品", "四品", "天", "地"]
+  minAge: 4
+  maxAge: 6
+  effects: { age: 0 }
+  choices:
+    -
+      id: "kowtow"
+      label: "恭敬磕头"
+      effects:
+        delta: { family: 3, luck: 1 }
+        log: "你规规矩矩地磕了头，族长夸你懂礼数，赏了你一块点心。"
+    -
+      id: "look_around"
+      label: "东张西望"
+      effects:
+        delta: { intelligence: 1, family: -1 }
+        log: "你好奇地盯着祖先牌位看，总觉得最高的那个牌位在发光（错觉？）。"
+    -
+      id: "fall_asleep"
+      label: "跪着睡着"
+      effects:
+        delta: { charm: 1, family: -1 }
+        log: "仪式太长了，你睡得口水直流，逗笑了旁边的婶婶。"
+  weight: 130
+
+# ==========================================
+# 3. 凡界贫苦/普通 (Poor / Commoner)
+# ==========================================
+
+-
+  id: "age_4_work_poor"
+  title: "穷人的孩子"
+  description: "穷人的孩子早当家，你已经能帮家里干点活了。"
+  worlds: ["mortal"]
+  familyTiers: ["五品", "六品", "七品", "八品", "九品", "人"]
+  minAge: 4
+  maxAge: 6
+  effects: { age: 0 }
+  choices:
+    -
+      id: "herd_cattle"
+      label: "放牛"
+      effects:
+        delta: { strength: 2, exp: 5 }
+        log: "你骑在牛背上，吹着短笛，看着夕阳西下，心境竟有一丝莫名契合天道。"
+    -
+      id: "collect_wood"
+      label: "拾柴火"
+      effects:
+        delta: { strength: 2, family: 1 }
+        log: "你背着小竹篓满山跑，不仅捡满了柴，还顺手采了点野果给妹妹吃。"
+    -
+      id: "catch_fish"
+      label: "下河摸鱼"
+      effects:
+        delta: { luck: 2, charm: 1 }
+        log: "你运气不错，摸到几条肥硕的鲫鱼，今晚家里能喝上鲜美的鱼汤了。"
+    -
+      id: "stare_sky"
+      label: "发呆看云"
+      effects:
+        delta: { intelligence: 1, luck: 1 }
+        log: "你躺在草垛上发呆，觉得天上的云好像一只大鸟，甚至想跟着飞走。"
+  weight: 150
+
+-
+  id: "age_4_rat_poor"
+  title: "米缸之战"
+  description: "家里米缸见底了，却还有老鼠来偷吃！"
+  worlds: ["mortal"]
+  familyTiers: ["五品", "六品", "七品", "八品", "九品", "人"]
+  minAge: 4
+  maxAge: 6
+  effects: { age: 0 }
+  choices:
+    -
+      id: "catch_rat"
+      label: "设陷阱捉鼠"
+      effects:
+        delta: { intelligence: 2, strength: 1 }
+        log: "你用破碗和树枝做了个陷阱，成功抓住了这只硕鼠，保住了最后的口粮。"
+    -
+      id: "chase_rat"
+      label: "拿棍子打"
+      effects:
+        delta: { strength: 2 }
+        log: "你追着老鼠满屋跑，虽然没打着，但把它吓得不敢再来了。"
+    -
+      id: "cry_hungry"
+      label: "饿哭了"
+      effects:
+        delta: { family: 1, strength: -1 }
+        log: "父母看着你哭，叹了口气，去隔壁借了半碗米煮粥给你喝。"
+  weight: 130
+
+-
+  id: "age_4_winter_poor"
+  title: "寒冬将至"
+  description: "今年的冬天特别冷，家里的被褥单薄。"
+  worlds: ["mortal"]
+  familyTiers: ["五品", "六品", "七品", "八品", "九品", "人"]
+  minAge: 4
+  maxAge: 6
+  effects: { age: 0 }
+  choices:
+    -
+      id: "huddle_together"
+      label: "全家挤挤"
+      effects:
+        delta: { family: 3 }
+        log: "一家人挤在一起取暖，虽然冷，但心是热的。"
+    -
+      id: "run_warm"
+      label: "跑步取暖"
+      effects:
+        delta: { strength: 3, exp: 5 }
+        log: "你在雪地里不停地跑跳，虽然冻得手脚生疮，但体魄更强健了。"
+    -
+      id: "straw_bed"
+      label: "加铺稻草"
+      effects:
+        delta: { intelligence: 2, luck: 1 }
+        log: "你聪明地在床铺下垫了厚厚的干稻草，竟然比棉被还暖和。"
+  weight: 130
+
+# ==========================================
+# 4. 通用 (Universal)
+# ==========================================
+
+-
+  id: "age_4_playmates"
+  title: "童年玩伴"
+  description: "不论出身如何，孩子总归是需要伙伴的。"
+  worlds: ["mortal", "immortal"]
+  minAge: 4
+  maxAge: 6
+  effects: { age: 0 }
+  choices:
+    -
+      id: "play_leader"
+      label: "争当老大"
+      effects:
+        delta: { strength: 1, charm: 2 }
+        log: "凭借你的力气/智慧，你成功让周围的小孩都听你的指挥。"
+    -
+      id: "share_toys"
+      label: "分享玩具/食物"
+      effects:
+        delta: { charm: 3, family: 1 }
+        log: "你很大方，大家都喜欢和你玩，你结交了不少真心朋友。"
+    -
+      id: "loner"
+      label: "独自玩耍"
+      effects:
+        delta: { intelligence: 2, exp: 5 }
+        log: "你觉得他们都很幼稚，不如自己琢磨点有意思的事情。"
+  weight: 100

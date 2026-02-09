@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'pages/attribute_setup_page.dart';
+import 'pages/splash_page.dart';
 
 void main() {
   runApp(const LifeSimApp());
@@ -17,7 +17,7 @@ class LifeSimApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
         useMaterial3: true,
       ),
-      home: const AttributeSetupPage(),
+      home: const SplashPage(),
     );
   }
 }

@@ -44,26 +44,31 @@ class ReferenceRepository {
   }
 
   FamilyTemplate? familyById(String? id) =>
-      families.firstWhere((f) => f.id == id, orElse: () => families.first);
+      families.isEmpty ? null : families.firstWhere((f) => f.id == id, orElse: () => families.first);
       
-  SectTemplate? sectById(String? id) => sects.firstWhere(
-        (s) => s.id == id,
-        orElse: () => sects.isNotEmpty ? sects.first : throw StateError('No sects loaded'),
-      );
+  SectTemplate? sectById(String? id) =>
+      sects.isEmpty ? null : sects.firstWhere((s) => s.id == id, orElse: () => sects.first);
 
   Technique? techniqueById(String? id) =>
       techniques.firstWhere((t) => t.id == id, orElse: () => techniques.first);
 
-  MapZone? mapById(String? id) => maps.firstWhere(
-        (m) => m.id == id,
-        orElse: () => maps.isNotEmpty ? maps.first : throw StateError('No maps loaded'),
-      );
+  MapZone? mapById(String? id) =>
+      maps.isEmpty ? null : maps.firstWhere((m) => m.id == id, orElse: () => maps.first);
 
   MapZone defaultMapFor(World world) {
     final list = maps.where((m) => m.world == world).toList();
     if (list.isNotEmpty) return list.first;
     if (maps.isNotEmpty) return maps.first;
-    throw StateError('No maps loaded for world $world');
+    
+    // Emergency Fallback
+    return MapZone(
+      id: 'fallback_map',
+      name: '边缘荒地',
+      world: world,
+      region: Region.ren,
+      tier: '人',
+      description: '游离于六界之外的未知区域（数据加载失败保护）。',
+    );
   }
 
   GrowthStage currentStage(int age) {

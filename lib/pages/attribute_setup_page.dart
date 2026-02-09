@@ -54,7 +54,16 @@ FamilyTemplate _pickFamilyTemplate(int familyScore) {
               .contains(f.tier))
       .toList();
   if (mundanePool.isNotEmpty) return mundanePool[rng.nextInt(mundanePool.length)];
-  return families.first;
+  if (families.isNotEmpty) return families.first;
+  // Final hardcoded fallback if asset loading failed completely
+  return const FamilyTemplate(
+    id: 'mundane_fallback',
+    name: '平民百姓',
+    elements: [],
+    weapons: [],
+    coreTechniqueIds: [],
+    tier: '九品',
+  );
 }
 
 class AttributeSetupPage extends StatefulWidget {
@@ -71,6 +80,7 @@ class _AttributeSetupPageState extends State<AttributeSetupPage> {
   int charm = 0;
   int luck = 0;
   int family = 0;
+  bool _isInitialized = false;
   static const totalPoints = 30;
 
   int get used => strength + intelligence + charm + luck + family;
@@ -79,7 +89,16 @@ class _AttributeSetupPageState extends State<AttributeSetupPage> {
   @override
   void initState() {
     super.initState();
-    _refRepo.ensureLoaded(); // 异步预加载资产，失败则回落内置数据
+    _initData();
+  }
+
+  Future<void> _initData() async {
+    await _refRepo.ensureLoaded();
+    if (mounted) {
+      setState(() {
+        _isInitialized = true;
+      });
+    }
   }
 
   LifeEventEntry _buildBirthIntro(PlayerState state) {
@@ -135,7 +154,9 @@ class _AttributeSetupPageState extends State<AttributeSetupPage> {
     if (state.familyTemplateId != null) {
       final tpl = _refRepo.families.firstWhere(
         (f) => f.id == state.familyTemplateId,
-        orElse: () => _refRepo.families.first,
+        orElse: () => _refRepo.families.isNotEmpty 
+            ? _refRepo.families.first 
+            : const FamilyTemplate(id: 'unknown', name: '未知', elements: [], weapons: [], coreTechniqueIds: [], tier: '九品'),
       );
       familyName = tpl.name;
     }
@@ -251,8 +272,8 @@ class _AttributeSetupPageState extends State<AttributeSetupPage> {
             Text('剩余点数：$remain'),
             const SizedBox(height: 20),
             ElevatedButton(
-              onPressed: canStart ? _startGame : null,
-              child: const Text('开始人生'),
+              onPressed: (canStart && _isInitialized) ? _startGame : null,
+              child: _isInitialized ? const Text('开始人生') : const SizedBox(height: 20, width: 20, child: CircularProgressIndicator(strokeWidth: 2)),
             ),
             const SizedBox(height: 8),
             OutlinedButton(

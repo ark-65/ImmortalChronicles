@@ -1,0 +1,303 @@
+# --- 1岁：第一次说话 (First Words) ---
+
+# 1. 仙界/霸主/圣地
+-
+  id: "age_1_speak_immortal"
+  title: "初试仙音"
+  description: "你看着周围瑞气千条，身边的长辈们正期待地看着你，你决定开口叫人。"
+  worlds: ["immortal"]
+  familyTiers: ["霸主", "圣地", "顶级", "仙族"]
+  minAge: 0
+  maxAge: 1
+  effects: { age: 0 }
+  choices:
+    -
+      id: "call_grandpa"
+      label: "叫爷爷"
+      effects:
+        delta: { strength: 3, exp: 20 }
+        log: "爷爷满心欢喜，随手拿出一株百年血灵芝化入你的体内，为你打下坚实根基。"
+    -
+      id: "call_grandma"
+      label: "叫奶奶"
+      effects:
+        delta: { charm: 3, luck: 2 }
+        log: "奶奶笑得合不拢嘴，将一块温润的暖玉挂在你的脖子上，此玉似乎有凝神静气之效。"
+    -
+      id: "call_dad"
+      label: "叫父亲"
+      effects:
+        delta: { intelligence: 3 }
+        log: "父亲微微颔首，目光如炬，开始用神识探查你的经脉，并传授了一句晦涩的口诀。"
+    -
+      id: "call_mom"
+      label: "叫娘亲"
+      effects:
+        delta: { charm: 2, family: 2, exp: 10 }
+        log: "娘亲温柔地抱起你，一股精纯的先天元气渡入你体内，助你洗筋伐髓。"
+    -
+      id: "call_sibling"
+      label: "叫兄长/姐姐"
+      effects:
+        delta: { strength: 1, family: 1, exp: 5 }
+        log: "兄长/姐姐兴奋地做鬼脸逗你笑，承诺等你长大了带你去抓灵兽玩。"
+  weight: 200
+
+# 2. 凡界世家/高门 (一品~四品)
+-
+  id: "age_1_speak_noble"
+  title: "牙牙学语"
+  description: "你躺在锦绣摇篮中，看着衣着华贵的亲族，发出了第一声呼唤。"
+  worlds: ["mortal"]
+  familyTiers: ["一品", "二品", "三品", "四品", "天", "地"]
+  minAge: 0
+  maxAge: 1
+  effects: { age: 0 }
+  choices:
+    -
+      id: "call_grandpa"
+      label: "叫爷爷"
+      effects:
+        delta: { luck: 2 }
+        log: "爷爷很是高兴，从腰间解下一块瑞泽玉佩塞到你手里，说是能保平安。"
+    -
+      id: "call_grandma"
+      label: "叫奶奶"
+      effects:
+        delta: { charm: 2, family: 1 }
+        log: "奶奶慈祥地摸摸你的头，命人打了一副长命金锁，亲自为你戴上。"
+    -
+      id: "call_mom"
+      label: "叫娘亲"
+      effects:
+        delta: { charm: 2, family: 1 }
+        log: "娘亲温柔地抱起你，吩咐丫鬟多加一床丝被，生怕你着凉。"
+    -
+      id: "call_dad"
+      label: "叫父亲"
+      effects:
+        delta: { strength: 2 }
+        log: "父亲大笑三声，捏了捏你的骨骼，夸赞你是块练武的好料子。"
+  weight: 150
+
+# 3. 凡界贫苦/普通 (五品及以下)
+-
+  id: "age_1_speak_poor"
+  title: "开口说话"
+  description: "家徒四壁，但家人的关爱并未因此减少。你看着劳累的长辈，决定叫一声。"
+  worlds: ["mortal"]
+  familyTiers: ["五品", "六品", "七品", "八品", "九品", "人"]
+  minAge: 0
+  maxAge: 1
+  effects: { age: 0 }
+  choices:
+    -
+      id: "call_grandpa"
+      label: "叫爷爷"
+      effects:
+        delta: { strength: 1, charm: 1 }
+        log: "爷爷虽然拿不出什么礼物，但他开心地把你举高高，让你看窗外的飞鸟。"
+    -
+      id: "call_grandma"
+      label: "叫奶奶"
+      effects:
+        delta: { charm: 1, luck: 1 }
+        log: "奶奶笑眯着眼，从怀里掏出一块舍不得吃的麦芽糖，悄悄塞进你嘴里。"
+    -
+      id: "call_mom"
+      label: "叫娘亲"
+      effects:
+        delta: { strength: 1 }
+        log: "娘亲眼中泛着泪花，把自己舍不得吃的鸡蛋羹喂到了你嘴边。"
+    -
+      id: "call_dad"
+      label: "叫爹"
+      effects:
+        delta: { family: 1 }
+        log: "爹爹放下手中的农具/活计，用粗糙的大手摸了摸你的头，憨厚地笑了。"
+  weight: 150
+
+# --- 2岁：抓周 (Zhuazhou) ---
+
+# 1. 仙界抓周
+-
+  id: "age_2_grab_immortal"
+  title: "仙家抓周"
+  description: "周岁宴上，面前摆放的不是凡俗之物，而是流光溢彩的仙家法宝。"
+  worlds: ["immortal"]
+  familyTiers: ["霸主", "圣地", "顶级", "仙族", "灵界修真世家"]
+  minAge: 1
+  maxAge: 2
+  effects: { age: 0 }
+  conditions:
+    unique: true
+  choices:
+    -
+      id: "grab_sword"
+      label: "抓飞剑"
+      effects:
+        delta: { strength: 3, exp: 30 }
+        log: "你一把抓住了那柄袖珍飞剑，剑鸣清越，长辈们赞道：‘此子杀伐果断，剑心通明！’"
+    -
+      id: "grab_scripture"
+      label: "抓玉简"
+      effects:
+        delta: { intelligence: 3, exp: 30 }
+        log: "你捧起古朴的玉简贴在额头，长辈们点头：‘天生慧根，好读书，好悟道！’"
+    -
+      id: "grab_pill"
+      label: "抓丹药"
+      effects:
+        delta: { strength: 2, intelligence: 1, exp: 40 }
+        log: "你抓起丹瓶就往嘴里送，逗得大家哄堂大笑：‘是个有福气的，将来必是丹道奇才（吃货）。’"
+    -
+      id: "grab_mirror"
+      label: "抓宝镜"
+      effects:
+        delta: { charm: 3, luck: 2, exp: 20 }
+        log: "你抱起一面流光溢彩的宝镜，镜中倒映出不凡异象，众人惊叹：‘此子身具慧眼，可勘破虚妄。’"
+    -
+      id: "grab_nothing"
+      label: "什么都不抓"
+      effects:
+        delta: { luck: 5, exp: 10 }
+        log: "你对满地宝物视若无睹，只顾着自己玩手指。老祖宗大笑：‘万物不萦于心，是修逍遥道的好苗子！’"
+  weight: 200
+
+# 2. 凡界抓周
+-
+  id: "age_2_grab_mortal"
+  title: "周岁抓周"
+  description: "红布上摆满了各式物件，长辈们围成一圈，看你会抓什么。"
+  worlds: ["mortal"]
+  minAge: 1
+  maxAge: 2
+  effects: { age: 0 }
+  conditions:
+    unique: true
+  choices:
+    -
+      id: "grab_pen"
+      label: "抓毛笔"
+      effects:
+        delta: { intelligence: 2, family: 1 }
+        log: "你抓起了毛笔，父亲欣慰道：‘将来定能考取功名，光宗耀祖。’"
+    -
+      id: "grab_abacus"
+      label: "抓算盘"
+      effects:
+        delta: { intelligence: 1, family: 2 }
+        log: "你拨弄着算盘珠子，母亲笑道：‘这孩子精明，将来是个管家的好手。’"
+    -
+      id: "grab_rouge"
+      label: "抓胭脂"
+      effects:
+        delta: { charm: 3 }
+        log: "你抓起了胭脂盒，周围人打趣道：‘是个风流种/爱美胚子，将来定是一表人才。’"
+    -
+      id: "grab_bun"
+      label: "抓馒头"
+      effects:
+        delta: { strength: 2 }
+        log: "你抓起馒头就啃，大家笑道：‘能吃是福，这孩子好养活！’"
+    -
+      id: "grab_toy"
+      label: "抓拨浪鼓"
+      effects:
+        delta: { charm: 1, luck: 2 }
+        log: "你摇着拨浪鼓咯咯直笑，一生平安喜乐，或许也是一种福分。"
+  weight: 150
+
+# --- 3岁：探索 (Exploration) ---
+
+# 1. 仙界/修真家族探索
+-
+  id: "age_3_explore_cultivator"
+  title: "家族禁地"
+  description: "你趁看守不注意，溜进了家族的某处重地。"
+  worlds: ["immortal"]
+  familyTiers: ["霸主", "圣地", "顶级", "仙族", "灵界修真世家", "灵界普通家族"]
+  minAge: 2
+  maxAge: 3
+  effects: { age: 0 }
+  choices:
+    -
+      id: "alchemy_room"
+      label: "炼丹房"
+      effects:
+        delta: { intelligence: 2, exp: 10 }
+        log: "你被药香吸引，虽然被长老拎了出来，但也蹭了一身药力。"
+    -
+      id: "beast_pen"
+      label: "灵兽园"
+      effects:
+        delta: { charm: 2, luck: 1 }
+        log: "你居然骑在一头幼年灵鹤身上，它没有生气，反而带你飞了一圈。"
+    -
+      id: "ancestral_hall"
+      label: "祖师堂"
+      effects:
+        delta: { family: 2, exp: 10 }
+        log: "你在祖师画像前睡着了，醒来时感觉身体轻盈了许多。"
+    -
+      id: "weapon_rack"
+      label: "演武场"
+      effects:
+        delta: { strength: 3, exp: 15 }
+        log: "你抱起一把还没开刃的木剑比划了两下，居然有模有样。"
+  weight: 180
+
+# 2. 凡界探索
+-
+  id: "age_3_explore_mortal"
+  title: "村口探险"
+  description: "你可以摇摇晃晃地跑远一点了，这次你去了哪里？"
+  worlds: ["mortal"]
+  familyTiers: ["五品", "六品", "七品", "八品", "九品", "人"]
+  minAge: 2
+  maxAge: 3
+  effects: { age: 0 }
+  choices:
+    -
+      id: "mud_pit"
+      label: "玩泥巴"
+      effects:
+        delta: { strength: 1, charm: -1 }
+        log: "你和邻居家的小狗在泥坑里打滚，弄得一身泥，虽然挨了骂但很开心。"
+    -
+      id: "listen_story"
+      label: "听书"
+      effects:
+        delta: { intelligence: 1, luck: 1 }
+        log: "你凑在村口老树下，听游方道士讲那‘剑仙斩龙’的故事，听得入迷。"
+    -
+      id: "chase_chicken"
+      label: "追芦花鸡"
+      effects:
+        delta: { strength: 1, char: 1 }
+        log: "你追着大公鸡满院子跑，通过这种方式锻炼了体魄。"
+    -
+      id: "climb_tree"
+      label: "爬树掏蛋"
+      effects:
+        delta: { strength: 2, luck: -1 }
+        log: "你试图爬上老槐树掏鸟蛋，结果摔了个屁股墩，好在皮实没受伤。"
+  weight: 150
+
+# 通用保底 (Fallback)
+-
+  id: "age_generic_sleep"
+  title: "贪睡"
+  description: "这个年纪，除了长身体，没什么比睡觉更重要了。"
+  worlds: ["mortal", "immortal", "nether"]
+  minAge: 0
+  maxAge: 3
+  effects: { age: 0 }
+  choices:
+    -
+      id: "sleep_more"
+      label: "睡大觉"
+      effects:
+        delta: { strength: 1, exp: 5 }
+        log: "你睡得很沉，身体正在飞速发育。"
+  weight: 5

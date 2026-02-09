@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'enums.dart';
 import '../data/reference_repository.dart';
+import 'life_event_config.dart';
 import 'life_event_entry.dart';
 import 'special_talent.dart';
 import 'technique.dart';
@@ -35,6 +36,7 @@ class PlayerState {
   String? familyTemplateId;
   String? sectId;
   String? currentMapId;
+  Map<String, double> elementProfile; // 灵根属性占比 {金: 0.8, 木: 0.2}
 
   int get familyScore => (family * 5).clamp(0, 100);
 
@@ -46,7 +48,38 @@ class PlayerState {
     return base;
   }
 
-  int get maxLifespan => ReferenceRepository().realmLifespan[realm] ?? 60;
+  int get maxLifespan => ReferenceRepository().realmLifespan[realm] ?? 100;
+
+  // 家境护体等级判定
+  int get protectionLevel {
+    if (familyScore >= 100) return 5; // 与天同寿
+    if (familyScore >= 95) return 4; // 仙缘护体
+    if (familyScore >= 80) return 3; // 延年益寿
+    if (familyScore >= 60) return 2; // 富贵安康
+    if (familyScore >= 30) return 1; // 温饱保障
+    return 0;
+  }
+
+  // 免疫特定死亡事件
+  bool isProtectedFrom(LifeEventConfig event) {
+    bool isDeath = event.effects['alive'] == false || event.effects['ending'] != null;
+    if (!isDeath) return false;
+
+    // 根据护体等级免疫特定类型的事件（逻辑可扩展）
+    final String? type = event.conditions['type'];
+    if (protectionLevel >= 5) return true; // 几乎免疫所有非剧情性死亡
+    if (protectionLevel >= 4 && type == 'natural') return true;
+    if (protectionLevel >= 3 && type == 'accident') return true;
+    if (protectionLevel >= 1 && age < 18) return true; // 18岁前温饱保障
+
+    return false;
+  }
+
+  // 年度结算：刷新AP
+  void nextYear() {
+    age += 1;
+    ap = apPerYear;
+  }
 
   PlayerState({
     required this.name,
@@ -77,6 +110,7 @@ class PlayerState {
     this.familyTemplateId,
     this.sectId,
     this.currentMapId,
+    required this.elementProfile,
   });
 
   factory PlayerState.newGame({
@@ -107,7 +141,7 @@ class PlayerState {
       realm: '无',
       talentLevelName: '未知',
       hasLiteracy: false,
-      canCultivate: true,
+      canCultivate: false,
       alive: true,
       talentLevel: TalentLevel.zhen,
       techniques: [],
@@ -118,6 +152,7 @@ class PlayerState {
       familyTemplateId: null,
       sectId: null,
       currentMapId: null,
+      elementProfile: {},
     )..ap = 1;
   }
 
@@ -150,6 +185,7 @@ class PlayerState {
         'familyTemplateId': familyTemplateId,
         'sectId': sectId,
         'currentMapId': currentMapId,
+        'elementProfile': elementProfile,
       };
 
   factory PlayerState.fromJson(Map<String, dynamic> json) => PlayerState(
@@ -197,5 +233,6 @@ class PlayerState {
         familyTemplateId: json['familyTemplateId'],
         sectId: json['sectId'],
         currentMapId: json['currentMapId'],
+        elementProfile: Map<String, double>.from(json['elementProfile'] ?? {}),
       );
 }

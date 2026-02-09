@@ -45,7 +45,8 @@ class EventRepository {
       final eventFiles = manifest.where((p) => p.startsWith('assets/events/')).toList();
 
       if (eventFiles.isEmpty) {
-        debugPrint('[EventRepository] No asset events found.');
+        debugPrint('[EventRepository] No asset events found. Loading built-in fallbacks.');
+        _loadBuiltInFallbacks();
         return;
       }
 
@@ -88,7 +89,39 @@ class EventRepository {
       debugPrint('[EventRepository] loaded ${_byId.length} events from assets');
     } catch (e) {
       debugPrint('[EventRepository] load failed: $e');
+      _loadBuiltInFallbacks();
     }
+  }
+
+  void _loadBuiltInFallbacks() {
+    // Basic survival events to ensure game runs even without assets
+    final fallbackEvents = [
+      LifeEventConfig(
+        id: 'mortal_daily_fallback',
+        title: '平淡的一年',
+        description: '这一年风调雨顺，无事发生。',
+        worlds: [World.mortal],
+        effects: const {'age': 1},
+        weight: 100,
+      ),
+      LifeEventConfig(
+        id: 'immortal_daily_fallback',
+        title: '闭关苦修',
+        description: '山中无甲子，寒尽不知年。',
+        worlds: [World.immortal],
+        effects: const {'age': 1, 'exp': 10},
+        weight: 100,
+      ),
+    ];
+    
+    _byId.clear();
+    _tables.clear();
+    for (final e in fallbackEvents) {
+      _byId[e.id] = e;
+      _tables.putIfAbsent('mortal_daily', () => []).add(e);
+      _tables.putIfAbsent('immortal_daily', () => []).add(e);
+    }
+    debugPrint('[EventRepository] Loaded ${fallbackEvents.length} builtin fallback events.');
   }
 
   LifeEventConfig _resolveConfig(String id, Map<String, Map<String, dynamic>> rawConfigs) {
@@ -122,6 +155,7 @@ class EventRepository {
       effects: {...template.effects, ...override.effects},
       choices: override.choices.isEmpty ? template.choices : override.choices,
       weight: (override.toJson()['weight'] != null) ? override.weight : template.weight,
+      duration: override.duration ?? template.duration,
     );
   }
 

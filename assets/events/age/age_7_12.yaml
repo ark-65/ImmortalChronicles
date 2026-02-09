@@ -1,0 +1,334 @@
+# --- 7-12岁：少年初成 (Preadolescence) ---
+
+# ==========================================
+# 1. 仙界/修真世家 (Immortal / Cultivator)
+# ==========================================
+
+-
+  id: "age_7_train_immortal"
+  title: "打熬筋骨"
+  description: "不管天赋如何，修行的基础必须扎实。长辈们开始对你进行正式训练。"
+  worlds: ["immortal"]
+  familyTiers: ["霸主", "圣地", "顶级", "仙族", "灵界修真世家", "灵界普通家族"]
+  minAge: 7
+  maxAge: 12
+  effects: { age: 0 }
+  choices:
+    -
+      id: "medicated_bath"
+      label: "药浴淬体"
+      effects:
+        delta: { strength: 3, exp: 50, family: -1 }
+        log: "药浴痛入骨髓，但你咬牙坚持了下来，感觉皮肤变得坚韧如牛皮。"
+    -
+      id: "qi_sensing"
+      label: "引气入体"
+      effects:
+        delta: { exp: 60, intelligence: 2 }
+        log: "在聚灵阵中，你第一次清晰地捕捉到了那一缕游离的灵气，并将其纳入丹田。"
+    -
+      id: "sword_practice"
+      label: "练习剑术"
+      effects:
+        delta: { strength: 2, exp: 40 }
+        log: "日挥千剑，虽然手臂酸痛，但你对剑招的理解日益精进。"
+    -
+      id: "ask_elder"
+      label: "请教老祖"
+      effects:
+        delta: { intelligence: 3, exp: 40, charm: 1 }
+        log: "你壮着胆子去问老祖问题，老祖虽言语不多，但指点直指要害，令你茅塞顿开。"
+  weight: 200
+
+-
+  id: "age_7_alchemy_try_immortal"
+  title: "炼丹初尝试"
+  description: "你也是家族一份子，总得学点修真百艺。这次你被分到了丹房打杂。"
+  worlds: ["immortal"]
+  familyTiers: ["霸主", "圣地", "顶级", "仙族", "灵界修真世家"]
+  minAge: 7
+  maxAge: 12
+  effects: { age: 0 }
+  choices:
+    -
+      id: "control_fire"
+      label: "控火"
+      effects:
+        delta: { intelligence: 3, exp: 30 }
+        log: "你全神贯注控制地火，虽然眉毛被烧焦了一点，但对火元素的亲和力提升了。"
+    -
+      id: "sort_herbs"
+      label: "分拣药材"
+      effects:
+        delta: { intelligence: 2, luck: 1 }
+        log: "你从废料堆里检出了一株被误扔的珍稀灵草，受到了执事长老的表扬。"
+    -
+      id: "steal_pill"
+      label: "偷吃废丹"
+      effects:
+        delta: { strength: 2, exp: 40, charm: -1 }
+        log: "你吞下几颗还有药效的废丹，肚子疼了三天，但修为居然涨了一截。"
+  weight: 180
+
+-
+  id: "age_7_weapon_immortal"
+  title: "挑选兵器"
+  description: "到了这个年纪，该有一把趁手的兵器了，家族武库对你开放了一次。"
+  worlds: ["immortal"]
+  familyTiers: ["霸主", "圣地", "顶级", "仙族", "灵界修真世家"]
+  minAge: 7
+  maxAge: 12
+  effects: { age: 0 }
+  choices:
+    -
+      id: "choose_sword"
+      label: "三尺青锋"
+      effects:
+        delta: { strength: 2, charm: 2 }
+        log: "你选了一把造型飘逸的长剑，自觉帅气逼人，从此立志做个剑仙。"
+    -
+      id: "choose_heavy"
+      label: "重锤/巨斧"
+      effects:
+        delta: { strength: 4, speed: -1 }
+        log: "既然要打，就要一力降十会！你选了最重的武器，挥舞起来虎虎生风。"
+    -
+      id: "choose_fan"
+      label: "折扇/玉笛"
+      effects:
+        delta: { intelligence: 1, charm: 3 }
+        log: "兵器太粗鲁了，你选了件奇门兵器，准备走儒雅随和（阴险狡诈）路线。"
+  weight: 180
+
+# ==========================================
+# 2. 凡界世家 (Noble / Wealthy)
+# ==========================================
+
+-
+  id: "age_7_grow_noble"
+  title: "世家子弟"
+  description: "作为家族的希望，你开始接触更深层面的培养。"
+  worlds: ["mortal"]
+  familyTiers: ["一品", "二品", "三品", "四品", "天", "地"]
+  minAge: 7
+  maxAge: 12
+  effects: { age: 0 }
+  choices:
+    -
+      id: "poetry_society"
+      label: "参加诗会"
+      effects:
+        delta: { charm: 3, intelligence: 2 }
+        log: "你在诗会上出口成章，博得了“神童”的美誉，名扬乡里。"
+    -
+      id: "hunt_trip"
+      label: "随父围猎"
+      effects:
+        delta: { strength: 3, family: 1 }
+        log: "你第一次拉开强弓射中了一只野兔，父亲大笑着把猎物赏给了你。"
+    -
+      id: "house_management"
+      label: "学习管家"
+      effects:
+        delta: { intelligence: 2, family: 2 }
+        log: "母亲教你查看账本和管理下人，你明白了维持一个大家族的不易。"
+    -
+      id: "secret_book"
+      label: "偷看杂书"
+      effects:
+        delta: { luck: 2, exp: 5 }
+        log: "你在书房角落翻到一本泛黄的《如来神掌/长生诀》，虽然看着像假的，但你练得津津有味。"
+  weight: 150
+
+-
+  id: "age_7_bully_noble"
+  title: "学堂纠纷"
+  description: "学堂里有个权贵纨绔子弟总是欺负人，今天他把目光投向了你/你的朋友。"
+  worlds: ["mortal"]
+  familyTiers: ["一品", "二品", "三品", "四品"]
+  minAge: 7
+  maxAge: 12
+  effects: { age: 0 }
+  choices:
+    -
+      id: "fight_back"
+      label: "反击"
+      effects:
+        delta: { strength: 3, charm: 1 }
+        log: "你一拳打在他鼻梁上，虽然事后被先生罚了，但没人再敢小瞧你。"
+    -
+      id: "reason"
+      label: "讲道理"
+      effects:
+        delta: { intelligence: 3, charm: 2 }
+        log: "你引经据典，把他驳得哑口无言，羞愧而逃。先生夸你有君子之风。"
+    -
+      id: "tell_parent"
+      label: "告家长"
+      effects:
+        delta: { family: 2, strength: -1 }
+        log: "你父亲亲自出面，对方家长不得不登门道歉。你明白了权势的重要性。"
+  weight: 130
+
+-
+  id: "age_7_crush_noble"
+  title: "青梅竹马"
+  description: "表妹/表哥/邻家玩伴来家里做客，你们一起度过了一个下午。"
+  worlds: ["mortal"]
+  familyTiers: ["一品", "二品", "三品", "四品", "天", "地"]
+  minAge: 7
+  maxAge: 12
+  effects: { age: 0 }
+  choices:
+    -
+      id: "play_hide"
+      label: "捉迷藏"
+      effects:
+        delta: { charm: 2, luck: 1 }
+        log: "你们在后花园玩得很开心，临别时对方送了你一个香囊/玉坠。"
+    -
+      id: "show_off"
+      label: "炫耀才艺"
+      effects:
+        delta: { charm: 3 }
+        log: "你展示了一套剑法/弹了一曲，看对方崇拜的眼神，你心里美滋滋的。"
+    -
+      id: "tease"
+      label: "恶作剧"
+      effects:
+        delta: { charm: 1, family: -1 }
+        log: "你放毛毛虫吓唬对方，结果把人弄哭了，被母亲训了一顿。"
+  weight: 130
+
+# ==========================================
+# 3. 凡界贫苦 (Poor / Commoner)
+# ==========================================
+
+-
+  id: "age_7_work_poor"
+  title: "谋生计"
+  description: "半大小子，吃穷老子。家里粮食紧缺，你必须为生计奔波。"
+  worlds: ["mortal"]
+  familyTiers: ["五品", "六品", "七品", "八品", "九品", "人"]
+  minAge: 7
+  maxAge: 12
+  effects: { age: 0 }
+  choices:
+    -
+      id: "apprentice"
+      label: "做学徒"
+      effects:
+        delta: { strength: 2, intelligence: 1, exp: 5 }
+        log: "你去铁匠铺/木匠铺当了学徒，虽然师傅脾气臭，但你学到了一门手艺。"
+    -
+      id: "collect_herbs"
+      label: "进山采药"
+      effects:
+        delta: { luck: 1, exp: 20 }
+        log: "你冒险进入深山，险些滑落山崖，但采到了一株年份尚可的药草，换了不少铜板。"
+    -
+      id: "help_farm"
+      label: "下地干活"
+      effects:
+        delta: { strength: 3, family: 1 }
+        log: "你顶着烈日锄地，汗水滴入土中，你体会到了“粒粒皆辛苦”的真谛。"
+    -
+      id: "beg_story"
+      label: "缠着道士"
+      effects:
+        delta: { intelligence: 2, exp: 10 }
+        log: "村里来了个跛脚道士，你分了他半块饼，他教了你一套名为“吐纳法”的呼吸节奏。"
+  weight: 150
+
+-
+  id: "age_7_flood_poor"
+  title: "天灾人祸"
+  description: "连日大雨，村边的小河涨水了，淹了家里的几亩薄田。"
+  worlds: ["mortal"]
+  familyTiers: ["五品", "六品", "七品", "八品", "九品", "人"]
+  minAge: 7
+  maxAge: 12
+  effects: { age: 0 }
+  choices:
+    -
+      id: "save_grain"
+      label: "抢收粮食"
+      effects:
+        delta: { strength: 2, family: 2 }
+        log: "你和父兄一起在泥水里抢收，累得直不起腰，但保住了过冬的口粮。"
+    -
+      id: "catch_fish_flood"
+      label: "顺手捕鱼"
+      effects:
+        delta: { luck: 2, strength: 1 }
+        log: "水退后，坑洼里留下了不少鱼虾。虽然庄稼毁了，但这几顿能吃得好点。"
+    -
+      id: "pray"
+      label: "祈求龙王"
+      effects:
+        delta: { intelligence: 1 }
+        log: "你跟着村里的老人去龙王庙烧香，看着泥塑的神像，你心中充满了迷茫。"
+  weight: 130
+
+-
+  id: "age_7_street_poor"
+  title: "街头智慧"
+  description: "为了不被欺负/为了卖出山货，你必须学会在街头生存。"
+  worlds: ["mortal"]
+  familyTiers: ["五品", "六品", "七品", "八品", "九品", "人"]
+  minAge: 7
+  maxAge: 12
+  effects: { age: 0 }
+  choices:
+    -
+      id: "fight_thief"
+      label: "抓小偷"
+      effects:
+        delta: { strength: 2, charm: 2 }
+        log: "你勇敢地抓住了想偷阿婆钱袋的小贼，被集市上的人称为“小英雄”。"
+    -
+      id: "haggle"
+      label: "讨价还价"
+      effects:
+        delta: { intelligence: 3, family: 1 }
+        log: "你凭着三寸不烂之舌，硬是把那一筐山货多卖了五个铜板。"
+    -
+      id: "run_fast"
+      label: "练腿脚"
+      effects:
+        delta: { strength: 3, speed: 1 }
+        log: "遇到恶霸收保护费，你别的不会，跑得比兔子还快，保护了自己的财产。"
+  weight: 130
+
+# ==========================================
+# 4. 通用 (Universal)
+# ==========================================
+
+-
+  id: "age_7_chance"
+  title: "无意间的发现"
+  description: "你在玩耍/干活时，发现了一些不同寻常的东西。"
+  worlds: ["mortal", "immortal"]
+  minAge: 7
+  maxAge: 12
+  effects: { age: 0 }
+  choices:
+    -
+      id: "weird_stone"
+      label: "捡起怪石"
+      effects:
+        delta: { luck: 3, exp: 10 }
+        log: "这块石头温热如玉，晚上睡觉时放在枕边，你会做一个光怪陆离的梦。"
+    -
+      id: "save_animal"
+      label: "救助小兽"
+      effects:
+        delta: { charm: 3, luck: 1 }
+        log: "你从捕兽夹下救了一只白狐/青蛇，它深深看了你一眼，消失在丛林中。"
+    -
+      id: "ignore"
+      label: "不予理会"
+      effects:
+        delta: { intelligence: 1 }
+        log: "多一事不如少一事，你径直走开了，回家吃饭要紧。"
+  weight: 80
