@@ -3,7 +3,7 @@ class FamilyTemplate {
   final String name;
   final List<String> elements;
   final List<String> weapons;
-  final List<String> coreTechniques;
+  final List<String> coreTechniqueIds;
   final String tier; // 霸主/圣地/天/地/人 或 下界一至九品
 
   const FamilyTemplate({
@@ -11,7 +11,7 @@ class FamilyTemplate {
     required this.name,
     required this.elements,
     required this.weapons,
-    required this.coreTechniques,
+    required this.coreTechniqueIds,
     required this.tier,
   });
 
@@ -20,7 +20,7 @@ class FamilyTemplate {
         name: json['name'] ?? '',
         elements: List<String>.from(json['elements'] ?? const []),
         weapons: List<String>.from(json['weapons'] ?? const []),
-        coreTechniques: List<String>.from(json['coreTechniques'] ?? const []),
+        coreTechniqueIds: List<String>.from(json['coreTechniqueIds'] ?? const []),
         tier: json['tier'] ?? '',
       );
 
@@ -29,7 +29,7 @@ class FamilyTemplate {
         'name': name,
         'elements': elements,
         'weapons': weapons,
-        'coreTechniques': coreTechniques,
+        'coreTechniqueIds': coreTechniqueIds,
         'tier': tier,
       };
 }

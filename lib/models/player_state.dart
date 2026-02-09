@@ -1,7 +1,7 @@
 import 'dart:math';
 
-import '../data/realms.dart';
 import 'enums.dart';
+import '../data/reference_repository.dart';
 import 'life_event_entry.dart';
 import 'special_talent.dart';
 import 'technique.dart';
@@ -46,7 +46,7 @@ class PlayerState {
     return base;
   }
 
-  int get maxLifespan => realmLifespan[realm] ?? 60;
+  int get maxLifespan => ReferenceRepository().realmLifespan[realm] ?? 60;
 
   PlayerState({
     required this.name,

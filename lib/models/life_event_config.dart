@@ -31,6 +31,7 @@ class LifeEventChoice {
 }
 
 class LifeEventConfig {
+  final String? templateId;
   final String id;
   final String title;
   final String description;
@@ -40,12 +41,15 @@ class LifeEventConfig {
   final int? maxAge;
   final Map<String, dynamic> conditions;
   // 前置需求，避免滥用 conditions 字典，常见如 requiresRootAwakened / requiresCultivationStarted
+  final List<String>? mapIds;
+  final List<String>? familyTiers;
   final List<String> prerequisites;
   final Map<String, dynamic> effects;
   final List<LifeEventChoice> choices;
   final int weight;
 
   const LifeEventConfig({
+    this.templateId,
     required this.id,
     required this.title,
     required this.description,
@@ -54,6 +58,8 @@ class LifeEventConfig {
     this.minAge,
     this.maxAge,
     this.conditions = const {},
+    this.mapIds,
+    this.familyTiers,
     this.prerequisites = const [],
     this.effects = const {},
     this.choices = const [],
@@ -96,6 +102,7 @@ class LifeEventConfig {
     }
 
     return LifeEventConfig(
+      templateId: json['templateId'],
       id: json['id'] ?? '',
       title: json['title'] ?? '',
       description: json['description'] ?? '',
@@ -103,6 +110,8 @@ class LifeEventConfig {
       regions: parseRegions(json['regions']),
       minAge: json['minAge'],
       maxAge: json['maxAge'],
+      mapIds: (json['mapIds'] as List?)?.cast<String>(),
+      familyTiers: (json['familyTiers'] as List?)?.cast<String>(),
       conditions: Map<String, dynamic>.from(json['conditions'] ?? const {}),
       prerequisites:
           List<String>.from(json['prerequisites'] ?? const <String>[]),
@@ -113,6 +122,7 @@ class LifeEventConfig {
   }
 
   Map<String, dynamic> toJson() => {
+        'templateId': templateId,
         'id': id,
         'title': title,
         'description': description,
@@ -120,10 +130,48 @@ class LifeEventConfig {
         'regions': regions?.map((e) => e.name).toList(),
         'minAge': minAge,
         'maxAge': maxAge,
+        'mapIds': mapIds,
+        'familyTiers': familyTiers,
         'conditions': conditions,
         'prerequisites': prerequisites,
         'effects': effects,
         'choices': choices.map((c) => c.toJson()).toList(),
         'weight': weight,
       };
+
+  LifeEventConfig copyWith({
+    String? templateId,
+    String? id,
+    String? title,
+    String? description,
+    List<World>? worlds,
+    List<Region>? regions,
+    int? minAge,
+    int? maxAge,
+    List<String>? mapIds,
+    List<String>? familyTiers,
+    Map<String, dynamic>? conditions,
+    List<String>? prerequisites,
+    Map<String, dynamic>? effects,
+    List<LifeEventChoice>? choices,
+    int? weight,
+  }) {
+    return LifeEventConfig(
+      templateId: templateId ?? this.templateId,
+      id: id ?? this.id,
+      title: title ?? this.title,
+      description: description ?? this.description,
+      worlds: worlds ?? this.worlds,
+      regions: regions ?? this.regions,
+      minAge: minAge ?? this.minAge,
+      maxAge: maxAge ?? this.maxAge,
+      mapIds: mapIds ?? this.mapIds,
+      familyTiers: familyTiers ?? this.familyTiers,
+      conditions: conditions ?? this.conditions,
+      prerequisites: prerequisites ?? this.prerequisites,
+      effects: effects ?? this.effects,
+      choices: choices ?? this.choices,
+      weight: weight ?? this.weight,
+    );
+  }
 }

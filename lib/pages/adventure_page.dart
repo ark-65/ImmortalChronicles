@@ -1,6 +1,4 @@
 import 'dart:math';
-import '../data/realms.dart';
-
 import 'package:flutter/material.dart';
 
 import '../models/models.dart';
@@ -22,6 +20,7 @@ class _AdventurePageState extends State<AdventurePage> {
   late EventEngine engine;
   LifeEventConfig? lastEvent;
   LifeEventConfig? pendingChoiceEvent;
+  List<LifeEventConfig>? eventOptions;
   bool autoSaving = false;
   final expGainPerEvent = 15;
   final expGainPerChoice = 10;
@@ -199,9 +198,10 @@ class _AdventurePageState extends State<AdventurePage> {
     if (state.ending != null) return;
     if (forceNextYear) {
       pendingChoiceEvent = null;
+      eventOptions = null;
     }
 
-    // 手动跳年：先推进一年并写年报，随后事件不再额外加龄/扣AP
+    // Manual year skip
     bool skipAgeInEvent = false;
     if (forceNextYear) {
       state.age += 1;
@@ -222,40 +222,65 @@ class _AdventurePageState extends State<AdventurePage> {
       skipAgeInEvent = true;
     }
 
-    final event = await engine.pickEvent(state);
-    if (event.choices.isNotEmpty) {
-      pendingChoiceEvent = event;
-      lastEvent = event;
+    final options = await engine.pickOptions(state, count: 3);
+    
+    if (options.length > 1) {
+      // Show options for user to pick
+      setState(() {
+        eventOptions = options;
+        lastEvent = null;
+        pendingChoiceEvent = null;
+      });
     } else {
-      engine.applyEffects(
-        state,
-        event,
-        consumeAp: !forceNextYear,
-        extraEffects: {
-          'delta': {'exp': expGainPerEvent},
-          if (skipAgeInEvent) 'age': 0,
-        },
-      );
-      // 使用最新 lifeEvents 描述（含额外log）作为卡片展示
-      final latest = state.lifeEvents.isNotEmpty ? state.lifeEvents.last : null;
+      // Single mandatory/story event
+      final event = options.first;
+      eventOptions = null;
+      if (event.choices.isNotEmpty) {
+        pendingChoiceEvent = event;
+        lastEvent = event;
+      } else {
+        engine.applyEffects(
+          state,
+          event,
+          consumeAp: !forceNextYear,
+          extraEffects: {
+            'delta': {'exp': expGainPerEvent},
+            if (skipAgeInEvent) 'age': 0,
+          },
+        );
+        final latest = state.lifeEvents.isNotEmpty ? state.lifeEvents.last : null;
+        lastEvent = LifeEventConfig(
+          id: event.id,
+          title: event.title,
+          description: latest?.description ?? event.description,
+          worlds: event.worlds,
+        );
+      }
+    }
+
+    await _persist();
+    if (!mounted) return;
+    setState(() {});
+  }
+
+  void _selectEventOption(LifeEventConfig event) async {
+    engine.applyEffects(
+      state,
+      event,
+      consumeAp: true,
+      extraEffects: {'delta': {'exp': expGainPerEvent}},
+    );
+    final latest = state.lifeEvents.isNotEmpty ? state.lifeEvents.last : null;
+    setState(() {
+      eventOptions = null;
       lastEvent = LifeEventConfig(
         id: event.id,
         title: event.title,
         description: latest?.description ?? event.description,
         worlds: event.worlds,
       );
-      // 若经验足够且无待选事件，则在卡片下附加突破快捷按钮
-      if (state.exp >= state.expRequired) {
-        pendingChoiceEvent = null; // 保持无待选，直接用卡片提示
-      }
-      // 每突破小境界增加寿元：用 maxLifespan 由 realmLifespan 直接体现；此处不额外加龄
-    }
-
-    // 移除被动跳年的副作用：只有 forceNextYear 时才增龄
-
+    });
     await _persist();
-    if (!mounted) return;
-    setState(() {});
   }
 
   void _pickChoice(LifeEventChoice choice) async {
@@ -375,63 +400,87 @@ class _AdventurePageState extends State<AdventurePage> {
         state.ending == null &&
         state.realm != '无';
 
-    final bodyCard = Card(
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(lastEvent?.title ?? '等待启程',
-                style: Theme.of(context).textTheme.titleLarge),
-            const SizedBox(height: 8),
-            Text(lastEvent?.description ?? '点击继续前行开始你的历程。'),
-            if (pendingChoiceEvent != null) ...[
-              const SizedBox(height: 12),
-              Wrap(
-                spacing: 8,
-                runSpacing: 8,
-                children: pendingChoiceEvent!.choices
-                    .map(
-                      (c) => ElevatedButton(
-                        onPressed: () => _pickChoice(c),
-                        child: Text(c.label),
+    final bodyCard = eventOptions != null
+        ? Column(
+            children: eventOptions!
+                .map((e) => Card(
+                      margin: const EdgeInsets.only(bottom: 8),
+                      child: InkWell(
+                        onTap: () => _selectEventOption(e),
+                        child: Padding(
+                          padding: const EdgeInsets.all(16),
+                          child: Row(
+                            children: [
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(e.title, style: Theme.of(context).textTheme.titleMedium),
+                                    const SizedBox(height: 4),
+                                    Text(e.description, maxLines: 2, overflow: TextOverflow.ellipsis),
+                                  ],
+                                ),
+                              ),
+                              const Icon(Icons.chevron_right),
+                            ],
+                          ),
+                        ),
                       ),
-                    )
-                    .toList(),
+                    ))
+                .toList(),
+          )
+        : Card(
+            child: Padding(
+              padding: const EdgeInsets.all(16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(lastEvent?.title ?? '等待启程', style: Theme.of(context).textTheme.titleLarge),
+                  const SizedBox(height: 8),
+                  Text(lastEvent?.description ?? '点击继续前行开始你的历程。'),
+                  if (pendingChoiceEvent != null) ...[
+                    const SizedBox(height: 12),
+                    Wrap(
+                      spacing: 8,
+                      runSpacing: 8,
+                      children: pendingChoiceEvent!.choices
+                          .map(
+                            (c) => ElevatedButton(
+                              onPressed: () => _pickChoice(c),
+                              child: Text(c.label),
+                            ),
+                          )
+                          .toList(),
+                    ),
+                    if (canBreakthrough)
+                      Padding(
+                        padding: const EdgeInsets.only(top: 4),
+                        child: ElevatedButton(
+                          onPressed: _tryBreakthrough,
+                          child: const Text('尝试突破（扣AP）'),
+                        ),
+                      ),
+                  ],
+                  if (pendingChoiceEvent == null && state.techniques.isNotEmpty && canBreakthrough)
+                    Padding(
+                      padding: const EdgeInsets.only(top: 12),
+                      child: ElevatedButton(
+                        onPressed: _tryBreakthrough,
+                        child: const Text('闭关突破（扣AP）'),
+                      ),
+                    ),
+                  if (pendingChoiceEvent == null && state.techniques.isNotEmpty && canCultivateNow)
+                    Padding(
+                      padding: const EdgeInsets.only(top: 8),
+                      child: OutlinedButton(
+                        onPressed: _doCultivate,
+                        child: Text('闭关修炼（扣AP，经验 +$expGainPerEvent）'),
+                      ),
+                    ),
+                ],
               ),
-              if (canBreakthrough)
-                Padding(
-                  padding: const EdgeInsets.only(top: 4),
-                  child: ElevatedButton(
-                    onPressed: _tryBreakthrough,
-                    child: const Text('尝试突破（扣AP）'),
-                  ),
-                ),
-            ],
-            if (pendingChoiceEvent == null &&
-                state.techniques.isNotEmpty &&
-                canBreakthrough)
-              Padding(
-                padding: const EdgeInsets.only(top: 12),
-                child: ElevatedButton(
-                  onPressed: _tryBreakthrough,
-                  child: const Text('闭关突破（扣AP）'),
-                ),
-              ),
-            if (pendingChoiceEvent == null &&
-                state.techniques.isNotEmpty &&
-                canCultivateNow)
-              Padding(
-                padding: const EdgeInsets.only(top: 8),
-                child: OutlinedButton(
-                  onPressed: _doCultivate,
-                  child: Text('闭关修炼（扣AP，经验 +$expGainPerEvent）'),
-                ),
-              ),
-          ],
-        ),
-      ),
-    );
+            ),
+          );
 
     final ended = state.ending != null || !state.alive;
 
@@ -485,7 +534,7 @@ class _AdventurePageState extends State<AdventurePage> {
                 child: ElevatedButton(
                   onPressed: ended || state.ap <= 0
                       ? (ended ? _newLife : null)
-                      : (pendingChoiceEvent == null ? _advance : null),
+                      : (pendingChoiceEvent == null && eventOptions == null ? _advance : null),
                   child: Text(ended ? '重开' : '事件（消耗AP）'),
                 ),
               ),
