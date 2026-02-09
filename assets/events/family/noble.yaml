@@ -1,0 +1,29 @@
+-
+  id: "noble_tea_ceremony"
+  title: "茶道交流"
+  description: "长辈带你参加家族间的茶会。"
+  worlds: ["mortal", "immortal"]
+  minAge: 6
+  maxAge: 18
+  familyTiers: ["豪门", "官宦", "修仙家族", "霸主"]
+  choices:
+    - id: "etiquette"
+      label: "展现礼仪"
+      effects: { delta: { charm: 2, intelligence: 1 }, log: "你的举止得体，获得了他族长辈的称赞。" }
+    - id: "listen"
+      label: "静心倾听"
+      effects: { delta: { intelligence: 2 }, log: "你从长辈的谈话中获取了不少外界秘闻。" }
+  weight: 2
+
+-
+  id: "noble_resources"
+  title: "家族资助"
+  description: "作为核心子弟，你获得了一批额外的修行资源。"
+  worlds: ["mortal", "immortal"]
+  minAge: 13
+  familyTiers: ["修仙家族", "霸主"]
+  prerequisites: ["cultivation_started"]
+  effects:
+    delta: { exp: 50, luck: 1 }
+    log: "你服用了珍贵的灵丹，修为大增。"
+  weight: 1

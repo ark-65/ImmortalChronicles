@@ -1,0 +1,30 @@
+-
+  id: "sect_library_encounter"
+  title: "经阁奇遇"
+  description: "你在宗门藏经阁翻阅古籍时，意外发现一处夹层。"
+  worlds: ["mortal", "immortal"]
+  mapIds: ["sect_main_library", "ling_xiao_sect"]
+  conditions: { chance: 0.05 }
+  choices:
+    - id: "read"
+      label: "研读残页"
+      effects: { delta: { intelligence: 3, exp: 100 }, log: "你领悟了古籍中的一丝残意。" }
+    - id: "report"
+      label: "上交宗门"
+      effects: { delta: { family: 2, charm: 1 }, log: "宗门长老大加赞赏，并给了你不少奖励。" }
+  weight: 5
+
+-
+  id: "sect_training_court"
+  title: "演武场切磋"
+  description: "演武场上人声鼎沸，你决定去磨炼一番。"
+  worlds: ["mortal", "immortal"]
+  mapIds: ["sect_training_court"]
+  choices:
+    - id: "spar"
+      label: "找人对练"
+      effects: { delta: { strength: 1, exp: 30 }, log: "你在一场场对练中积累了战斗经验。" }
+    - id: "meditate"
+      label: "观摩石碑"
+      effects: { delta: { intelligence: 1 }, log: "你看着演武场中心的剑意石碑，陷入沉思。" }
+  weight: 3

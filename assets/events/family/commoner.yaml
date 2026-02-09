@@ -1,0 +1,27 @@
+-
+  id: "commoner_chores"
+  title: "家庭杂务"
+  description: "家里农忙或生意繁忙，长辈让你帮忙。"
+  worlds: ["mortal"]
+  minAge: 6
+  maxAge: 12
+  familyTiers: ["农户", "寒门"]
+  choices:
+    - id: "field_work"
+      label: "下地干活"
+      effects: { delta: { strength: 2 }, log: "虽然辛苦，但你的筋骨得到了锻炼。" }
+    - id: "business"
+      label: "帮忙看店"
+      effects: { delta: { intelligence: 1, charm: 1 }, log: "你学会了如何与各种客人打交道。" }
+  weight: 2
+
+-
+  id: "commoner_simple_joy"
+  title: "乡间乐趣"
+  description: "你在村口捕捉蜻蜓，或在溪边摸鱼。"
+  worlds: ["mortal"]
+  minAge: 4
+  maxAge: 8
+  familyTiers: ["农户", "寒门"]
+  effects: { delta: { luck: 1 }, log: "无忧无虑的孩子最容易获得上天的眷顾。" }
+  weight: 3

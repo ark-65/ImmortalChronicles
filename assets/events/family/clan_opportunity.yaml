@@ -1,0 +1,83 @@
+-
+  id: "clan_secret_realm"
+  title: "族中秘境邀约"
+  description: "长老发现隐匿洞府，挑选年轻一辈前去探索。"
+  worlds:
+    - "mortal"
+    - "immortal"
+  regions: null
+  minAge: 16
+  maxAge: 40
+  conditions:
+    chance: 0.05
+    chanceLuckBoost: 0.1
+  prerequisites:
+    - "root_awakened"
+  effects:
+    age: 0
+  choices:
+    -
+      id: "stay_safe"
+      label: "谨慎为妙"
+      effects:
+        delta:
+          intelligence: 1
+          exp: 10
+        log: "你选择留守后方，帮忙记录阵纹，收获些许感悟。"
+      followup: null
+    -
+      id: "explore"
+      label: "前去探索"
+      effects:
+        delta:
+          strength: 1
+          luck: 1
+          exp: 30
+        log: "你随队深入洞府，避开陷阱并取得一块灵矿。"
+      followup: null
+  weight: 2
+-
+  id: "clan_competition"
+  title: "族比争锋"
+  description: "家族比武开始，你登场一试身手。"
+  worlds:
+    - "mortal"
+    - "immortal"
+  regions: null
+  minAge: 18
+  maxAge: 35
+  conditions:
+
+  prerequisites:
+    - "cultivation_started"
+  effects:
+    age: 0
+    delta:
+      exp: 25
+      charm: 1
+  choices:
+    -
+      id: "allout"
+      label: "全力一战"
+      effects:
+        delta:
+          exp: 30
+          strength: 1
+      followup: null
+    -
+      id: "saveface"
+      label: "稳健求胜"
+      effects:
+        delta:
+          exp: 20
+          charm: 1
+      followup: null
+    -
+      id: "observe"
+      label: "旁观学习"
+      effects:
+        delta:
+          intelligence: 1
+          exp: 15
+      followup: null
+  weight: 3

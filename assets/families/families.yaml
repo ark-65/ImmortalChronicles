@@ -1,0 +1,1277 @@
+-
+  id: "guzu"
+  name: "古族"
+  elements:
+    - "火"
+    - "阳"
+    - "金"
+  weapons:
+    - "枪"
+    - "刀"
+  coreTechniqueIds:
+    - "cult_fire_sss_1"
+    - "id_art_sheng_spear_1"
+    - "art_palm_sss_1"
+  tier: "霸主"
+-
+  id: "shizu"
+  name: "石族"
+  elements:
+    - "土"
+    - "雷"
+    - "金"
+  weapons:
+    - "斧"
+    - "锤"
+  coreTechniqueIds:
+    - "cult_thunder_sss_1"
+    - "art_dao_fist_truth_1"
+    - "id_art_sheng_hammer_1"
+  tier: "霸主"
+-
+  id: "yejia"
+  name: "叶族"
+  elements:
+    - "木"
+    - "风"
+    - "水"
+  weapons:
+    - "剑"
+    - "弓弩"
+  coreTechniqueIds:
+    - "cult_wood_sss_1"
+    - "art_sword_sss_1"
+    - "art_dao_bow_destiny_1"
+  tier: "霸主"
+-
+  id: "jijia"
+  name: "姬家"
+  elements:
+    - "金"
+  weapons:
+    - "剑"
+    - "枪"
+  coreTechniqueIds:
+    - "cult_gold_sss_1"
+    - "art_sword_sss_2"
+    - "id_art_sheng_spear_1"
+  tier: "霸主"
+-
+  id: "sheng_0"
+  name: "药族"
+  elements:
+    - "药"
+    - "木"
+  weapons:
+    - "针"
+    - "炉"
+  coreTechniqueIds:
+    - "cult_sheng_alchemy_dan_1"
+    - "id_art_sheng_nature_2"
+  tier: "圣地"
+-
+  id: "sheng_1"
+  name: "妖族"
+  elements:
+    - "神"
+    - "力"
+  weapons:
+    - "爪"
+    - "戟"
+  coreTechniqueIds:
+    - "cult_sheng_ancient_beast_1"
+    - "id_art_sheng_claw_2"
+  tier: "圣地"
+-
+  id: "sheng_2"
+  name: "萧家"
+  elements:
+    - "火"
+    - "阳"
+  weapons:
+    - "尺"
+    - "刀"
+  coreTechniqueIds:
+    - "cult_sheng_heavenly_fire_1"
+    - "id_art_sheng_blade_2"
+  tier: "圣地"
+-
+  id: "sheng_3"
+  name: "云岚世家"
+  elements:
+    - "风"
+    - "云"
+  weapons:
+    - "剑"
+  coreTechniqueIds:
+    - "cult_sheng_wind_blade_1"
+    - "id_art_sheng_sword_1"
+  tier: "圣地"
+-
+  id: "sheng_4"
+  name: "紫府世家"
+  elements:
+    - "金"
+  weapons:
+    - "剑"
+  coreTechniqueIds:
+    - "cult_sheng_sword_master_1"
+    - "id_art_sheng_sword_2"
+  tier: "圣地"
+-
+  id: "sheng_5"
+  name: "金龙族"
+  elements:
+    - "力"
+    - "水"
+  weapons:
+    - "戟"
+    - "爪"
+  coreTechniqueIds:
+    - "cult_sheng_dragon_core_1"
+    - "id_art_sheng_spear_1"
+  tier: "圣地"
+-
+  id: "sheng_6"
+  name: "仙凰族"
+  elements:
+    - "生"
+    - "火"
+  weapons:
+    - "琴"
+  coreTechniqueIds:
+    - "cult_sheng_phoenix_reg_1"
+    - "id_art_sheng_sound_1"
+  tier: "圣地"
+-
+  id: "sheng_7"
+  name: "北冥世家"
+  elements:
+    - "水"
+    - "阴"
+  weapons:
+    - "剑"
+  coreTechniqueIds:
+    - "cult_sheng_ice_yin_1"
+    - "id_art_sheng_sword_2"
+  tier: "圣地"
+-
+  id: "sheng_8"
+  name: "南宫世家"
+  elements:
+    - "风"
+    - "术"
+  weapons:
+    - "扇"
+  coreTechniqueIds:
+    - "cult_sheng_illusion_sky_1"
+    - "id_art_sheng_fan_1"
+  tier: "圣地"
+-
+  id: "sheng_9"
+  name: "黄金狮族"
+  elements:
+    - "金"
+    - "力"
+  weapons:
+    - "拳"
+    - "爪"
+  coreTechniqueIds:
+    - "cult_sheng_gold_fist_1"
+    - "id_art_sheng_fist_1"
+  tier: "圣地"
+-
+  id: "sheng_10"
+  name: "神剑世家"
+  elements:
+    - "剑"
+    - "金"
+  weapons:
+    - "剑"
+  coreTechniqueIds:
+    - "cult_sheng_sword_sacred_1"
+    - "id_art_sheng_sword_2"
+  tier: "圣地"
+-
+  id: "sheng_11"
+  name: "苍族"
+  elements:
+    - "气"
+    - "风"
+  weapons:
+    - "矛"
+    - "枪"
+  coreTechniqueIds:
+    - "cult_sheng_wind_blade_1"
+    - "id_art_sheng_spear_1"
+  tier: "圣地"
+-
+  id: "sheng_12"
+  name: "凰族"
+  elements:
+    - "火"
+    - "生"
+  weapons:
+    - "双剑"
+  coreTechniqueIds:
+    - "cult_sheng_phoenix_reg_1"
+    - "id_art_xian_sword_2"
+  tier: "圣地"
+-
+  id: "sheng_13"
+  name: "龙凰世家"
+  elements:
+    - "混沌"
+    - "生"
+  weapons:
+    - "枪"
+  coreTechniqueIds:
+    - "cult_dao_dragon_god_1"
+    - "id_art_sheng_spear_1"
+  tier: "圣地"
+-
+  id: "sheng_14"
+  name: "玄冥世家"
+  elements:
+    - "冰"
+    - "阴"
+  weapons:
+    - "剑"
+    - "扇"
+  coreTechniqueIds:
+    - "cult_sheng_ice_yin_1"
+    - "id_art_sheng_palm_1"
+  tier: "圣地"
+-
+  id: "tian_0"
+  name: "星月世家"
+  elements:
+    - "星"
+    - "阴"
+  weapons:
+    - "扇"
+    - "剑"
+  coreTechniqueIds:
+    - "cult_xian_star_2"
+    - "id_art_xian_illusion_4"
+  tier: "天"
+-
+  id: "tian_1"
+  name: "苍狼族"
+  elements:
+    - "风"
+    - "力"
+  weapons:
+    - "爪"
+    - "刀"
+  coreTechniqueIds:
+    - "cult_xian_variant_lightning_1"
+    - "id_art_xian_claw_4"
+  tier: "天"
+-
+  id: "tian_2"
+  name: "玄龟族"
+  elements:
+    - "土"
+    - "水"
+  weapons:
+    - "盾"
+    - "锤"
+  coreTechniqueIds:
+    - "cult_xian_earth_3"
+    - "id_art_xian_shield_4"
+  tier: "天"
+-
+  id: "tian_3"
+  name: "赤霄世家"
+  elements:
+    - "火"
+    - "阳"
+  weapons:
+    - "刀"
+    - "剑"
+  coreTechniqueIds:
+    - "cult_xian_fire_3"
+    - "id_art_xian_blade_4"
+  tier: "天"
+-
+  id: "tian_4"
+  name: "白虎堂"
+  elements:
+    - "金"
+    - "杀"
+  weapons:
+    - "拳"
+    - "爪"
+  coreTechniqueIds:
+    - "cult_xian_metal_3"
+    - "id_art_xian_fist_4"
+  tier: "天"
+-
+  id: "tian_5"
+  name: "青冥世家"
+  elements:
+    - "风"
+    - "阴"
+  weapons:
+    - "剑"
+  coreTechniqueIds:
+    - "cult_immortal_xian_wind_1"
+    - "id_art_xian_sword_3"
+  tier: "天"
+-
+  id: "tian_6"
+  name: "玄剑山庄"
+  elements:
+    - "剑"
+    - "理"
+  weapons:
+    - "剑"
+  coreTechniqueIds:
+    - "cult_xian_sword_2"
+    - "id_art_xian_sword_5"
+  tier: "天"
+-
+  id: "tian_7"
+  name: "天机阁族"
+  elements:
+    - "运"
+    - "术"
+  weapons:
+    - "笔"
+  coreTechniqueIds:
+    - "cult_sheng_divine_insight_1"
+    - "id_art_xian_luck_3"
+  tier: "天"
+-
+  id: "tian_8"
+  name: "太虚族"
+  elements:
+    - "空"
+    - "幻"
+  weapons:
+    - "剑"
+  coreTechniqueIds:
+    - "cult_xian_space_2"
+    - "id_art_xian_illusion_4"
+  tier: "天"
+-
+  id: "tian_9"
+  name: "天河世家"
+  elements:
+    - "水"
+  weapons:
+    - "枪"
+  coreTechniqueIds:
+    - "cult_xian_water_3"
+    - "id_art_xian_spear_4"
+  tier: "天"
+-
+  id: "tian_10"
+  name: "玄火殿族"
+  elements:
+    - "火"
+  weapons:
+    - "刀"
+  coreTechniqueIds:
+    - "cult_xian_fire_4"
+    - "id_art_xian_blade_2"
+  tier: "天"
+-
+  id: "tian_11"
+  name: "风雷世家"
+  elements:
+    - "风"
+    - "雷"
+  weapons:
+    - "剑"
+  coreTechniqueIds:
+    - "cult_xian_thunder_3"
+    - "id_art_xian_sword_5"
+  tier: "天"
+-
+  id: "tian_12"
+  name: "青木堡"
+  elements:
+    - "木"
+  weapons:
+    - "棍"
+  coreTechniqueIds:
+    - "cult_xian_wood_3"
+    - "id_art_xian_staff_4"
+  tier: "天"
+-
+  id: "tian_13"
+  name: "金乌族"
+  elements:
+    - "火"
+    - "阳"
+  weapons:
+    - "刀"
+  coreTechniqueIds:
+    - "cult_xian_fire_3"
+    - "id_art_xian_blade_4"
+  tier: "天"
+-
+  id: "tian_14"
+  name: "血鸦族"
+  elements:
+    - "血"
+    - "暗"
+  weapons:
+    - "爪"
+  coreTechniqueIds:
+    - "cult_xian_blood_2"
+    - "id_art_xian_claw_4"
+  tier: "天"
+-
+  id: "tian_15"
+  name: "青霞世家"
+  elements:
+    - "风"
+  weapons:
+    - "扇"
+    - "剑"
+  coreTechniqueIds:
+    - "cult_xian_wind_3"
+    - "id_art_xian_fan_2"
+  tier: "天"
+-
+  id: "tian_16"
+  name: "紫霜世家"
+  elements:
+    - "冰"
+    - "阴"
+  weapons:
+    - "剑"
+  coreTechniqueIds:
+    - "cult_xian_ice_3"
+    - "id_art_xian_sword_5"
+  tier: "天"
+-
+  id: "tian_17"
+  name: "昆仑旧族"
+  elements:
+    - "土"
+    - "古"
+  weapons:
+    - "刀"
+    - "枪"
+  coreTechniqueIds:
+    - "cult_xian_earth_3"
+    - "id_art_xian_blade_4"
+  tier: "天"
+-
+  id: "tian_18"
+  name: "崆峒遗族"
+  elements:
+    - "气"
+    - "力"
+  weapons:
+    - "拳"
+  coreTechniqueIds:
+    - "cult_xian_body_1"
+    - "id_art_xian_fist_4"
+  tier: "天"
+-
+  id: "tian_19"
+  name: "天阙世家"
+  elements:
+    - "神"
+    - "阳"
+  weapons:
+    - "戟"
+    - "剑"
+  coreTechniqueIds:
+    - "cult_xian_light_3"
+    - "id_art_xian_sword_2"
+  tier: "天"
+-
+  id: "di_0"
+  name: "岩锤堡"
+  elements:
+    - "土"
+    - "力"
+  weapons:
+    - "锤"
+  coreTechniqueIds:
+    - "cult_spirit_ling_earth_1"
+    - "id_art_ling_hammer_1"
+  tier: "地"
+-
+  id: "di_1"
+  name: "石壁庄"
+  elements:
+    - "土"
+  weapons:
+    - "盾"
+    - "刀"
+  coreTechniqueIds:
+    - "cult_spirit_ling_earth_1"
+    - "id_art_ling_shield_2"
+  tier: "地"
+-
+  id: "di_2"
+  name: "厚土宗族"
+  elements:
+    - "土"
+  weapons:
+    - "棍"
+  coreTechniqueIds:
+    - "cult_spirit_ling_earth_1"
+    - "id_art_ling_staff_2"
+  tier: "地"
+-
+  id: "di_3"
+  name: "青田世家"
+  elements:
+    - "木"
+    - "土"
+  weapons:
+    - "杖"
+    - "剑"
+  coreTechniqueIds:
+    - "cult_spirit_ling_wood_1"
+    - "id_art_ling_sword_2"
+  tier: "地"
+-
+  id: "di_4"
+  name: "青蛇族"
+  elements:
+    - "毒"
+    - "木"
+  weapons:
+    - "鞭"
+    - "钩"
+  coreTechniqueIds:
+    - "cult_spirit_ling_wood_1"
+    - "id_art_ling_poison_2"
+  tier: "地"
+-
+  id: "di_5"
+  name: "玄石 village"
+  elements:
+    - "土"
+    - "金"
+  weapons:
+    - "锤"
+    - "拳"
+  coreTechniqueIds:
+    - "cult_spirit_ling_metal_1"
+    - "id_art_ling_fist_1"
+  tier: "地"
+-
+  id: "di_6"
+  name: "烈山族"
+  elements:
+    - "火"
+    - "土"
+  weapons:
+    - "斧"
+    - "刀"
+  coreTechniqueIds:
+    - "cult_spirit_ling_fire_1"
+    - "id_art_ling_blade_2"
+  tier: "地"
+-
+  id: "di_7"
+  name: "丹霞庄"
+  elements:
+    - "火"
+    - "阳"
+  weapons:
+    - "扇"
+    - "笔"
+  coreTechniqueIds:
+    - "cult_spirit_ling_fire_1"
+    - "id_art_ling_fan_2"
+  tier: "地"
+-
+  id: "di_8"
+  name: "寒月寨"
+  elements:
+    - "冰"
+    - "阴"
+  weapons:
+    - "剑"
+    - "扇"
+  coreTechniqueIds:
+    - "cult_spirit_ling_ice_1"
+    - "id_art_ling_sword_2"
+  tier: "地"
+-
+  id: "di_9"
+  name: "碧落世家"
+  elements:
+    - "木"
+    - "阴"
+  weapons:
+    - "剑"
+  coreTechniqueIds:
+    - "cult_spirit_ling_wood_1"
+    - "id_art_ling_sword_1"
+  tier: "地"
+-
+  id: "di_10"
+  name: "黄泉族"
+  elements:
+    - "暗"
+    - "死"
+  weapons:
+    - "钩"
+    - "爪"
+  coreTechniqueIds:
+    - "cult_spirit_ling_dark_1"
+    - "id_art_ling_hook_2"
+  tier: "地"
+-
+  id: "di_11"
+  name: "青莲庄"
+  elements:
+    - "水"
+    - "幻"
+  weapons:
+    - "扇"
+    - "琴"
+  coreTechniqueIds:
+    - "cult_spirit_ling_water_1"
+    - "id_art_ling_fan_2"
+  tier: "地"
+-
+  id: "di_12"
+  name: "青云寨"
+  elements:
+    - "风"
+    - "气"
+  weapons:
+    - "剑"
+    - "弓"
+  coreTechniqueIds:
+    - "cult_spirit_ling_wind_1"
+    - "id_art_ling_sword_2"
+  tier: "地"
+-
+  id: "di_13"
+  name: "望川族"
+  elements:
+    - "水"
+    - "魂"
+  weapons:
+    - "笔"
+    - "琴"
+  coreTechniqueIds:
+    - "cult_spirit_ling_water_1"
+    - "id_art_ling_sound_2"
+  tier: "地"
+-
+  id: "di_14"
+  name: "幽谷世家"
+  elements:
+    - "阴"
+    - "幻"
+  weapons:
+    - "爪"
+    - "钩"
+  coreTechniqueIds:
+    - "cult_spirit_ling_dark_1"
+    - "id_art_ling_claw_2"
+  tier: "地"
+-
+  id: "di_15"
+  name: "白猿山族"
+  elements:
+    - "力"
+    - "土"
+  weapons:
+    - "棍"
+    - "拳"
+  coreTechniqueIds:
+    - "cult_spirit_ling_earth_1"
+    - "id_art_ling_fist_1"
+  tier: "地"
+-
+  id: "di_16"
+  name: "丹鼎世家"
+  elements:
+    - "药"
+    - "火"
+  weapons:
+    - "炉"
+    - "笔"
+  coreTechniqueIds:
+    - "cult_spirit_ling_fire_1"
+    - "id_art_ling_fire_2"
+  tier: "地"
+-
+  id: "di_17"
+  name: "雷泽族"
+  elements:
+    - "雷"
+    - "水"
+  weapons:
+    - "戟"
+    - "锤"
+  coreTechniqueIds:
+    - "cult_spirit_ling_thunder_1"
+    - "id_art_ling_thunder_2"
+  tier: "地"
+-
+  id: "di_18"
+  name: "落星堡"
+  elements:
+    - "星"
+    - "土"
+  weapons:
+    - "枪"
+    - "弓"
+  coreTechniqueIds:
+    - "cult_spirit_ling_earth_1"
+    - "id_art_ling_spear_2"
+  tier: "地"
+-
+  id: "di_19"
+  name: "苍穹寨"
+  elements:
+    - "气"
+    - "风"
+  weapons:
+    - "剑"
+    - "扇"
+  coreTechniqueIds:
+    - "cult_spirit_ling_wind_1"
+    - "id_art_ling_sword_2"
+  tier: "地"
+-
+  id: "ren_0"
+  name: "柳巷小族"
+  elements:
+    - "水"
+    - "风"
+  weapons:
+    - "棍"
+  coreTechniqueIds:
+    - "cult_mortal_a_1"
+    - "id_art_fan_staff_11"
+  tier: "人"
+-
+  id: "ren_1"
+  name: "竹巷家族"
+  elements:
+    - "木"
+    - "风"
+  weapons:
+    - "剑"
+  coreTechniqueIds:
+    - "cult_mortal_fan_wood_1"
+    - "id_art_fan_sword_11"
+  tier: "人"
+-
+  id: "ren_2"
+  name: "渔火世家"
+  elements:
+    - "火"
+    - "水"
+  weapons:
+    - "枪"
+  coreTechniqueIds:
+    - "cult_mortal_fan_fire_1"
+    - "id_art_fan_spear_12"
+  tier: "人"
+-
+  id: "ren_3"
+  name: "药农村族"
+  elements:
+    - "药"
+    - "木"
+  weapons:
+    - "针"
+  coreTechniqueIds:
+    - "cult_mortal_fan_wood_1"
+    - "id_art_fan_poison_11"
+  tier: "人"
+-
+  id: "ren_4"
+  name: "铁匠铺族"
+  elements:
+    - "火"
+    - "金"
+  weapons:
+    - "锤"
+  coreTechniqueIds:
+    - "cult_mortal_fan_metal_1"
+    - "id_art_fan_hammer_1"
+  tier: "人"
+-
+  id: "ren_5"
+  name: "织坊世家"
+  elements:
+    - "金"
+    - "气"
+  weapons:
+    - "扇"
+  coreTechniqueIds:
+    - "cult_mortal_fan_metal_1"
+    - "id_art_fan_fan_2"
+  tier: "人"
+-
+  id: "ren_6"
+  name: "车匠家族"
+  elements:
+    - "力"
+    - "土"
+  weapons:
+    - "刀"
+  coreTechniqueIds:
+    - "cult_mortal_a_1"
+    - "id_art_fan_blade_11"
+  tier: "人"
+-
+  id: "ren_7"
+  name: "驿站世家"
+  elements:
+    - "气"
+    - "风"
+  weapons:
+    - "枪"
+  coreTechniqueIds:
+    - "cult_mortal_fan_wood_1"
+    - "id_art_fan_spear_11"
+  tier: "人"
+-
+  id: "ren_8"
+  name: "山村家族"
+  elements:
+    - "土"
+    - "力"
+  weapons:
+    - "棍"
+  coreTechniqueIds:
+    - "cult_mortal_a_1"
+    - "id_art_fan_staff_12"
+  tier: "人"
+-
+  id: "ren_9"
+  name: "河湾小族"
+  elements:
+    - "水"
+  weapons:
+    - "拳"
+  coreTechniqueIds:
+    - "cult_mortal_a_1"
+    - "id_art_fan_palm_11"
+  tier: "人"
+-
+  id: "ren_10"
+  name: "渔村族"
+  elements:
+    - "水"
+  weapons:
+    - "叉"
+  coreTechniqueIds:
+    - "cult_mortal_a_1"
+    - "id_art_fan_spear_12"
+  tier: "人"
+-
+  id: "ren_11"
+  name: "林间家族"
+  elements:
+    - "木"
+    - "风"
+  weapons:
+    - "弓"
+  coreTechniqueIds:
+    - "cult_mortal_fan_wood_1"
+    - "id_art_fan_bow_11"
+  tier: "人"
+-
+  id: "ren_12"
+  name: "云水世家"
+  elements:
+    - "水"
+    - "气"
+  weapons:
+    - "掌"
+  coreTechniqueIds:
+    - "cult_mortal_a_1"
+    - "id_art_fan_palm_11"
+  tier: "人"
+-
+  id: "ren_13"
+  name: "落雪家族"
+  elements:
+    - "冰"
+  weapons:
+    - "剑"
+  coreTechniqueIds:
+    - "cult_mortal_a_1"
+    - "id_art_fan_sword_11"
+  tier: "人"
+-
+  id: "ren_14"
+  name: "麦田世家"
+  elements:
+    - "土"
+    - "木"
+  weapons:
+    - "棍"
+  coreTechniqueIds:
+    - "cult_mortal_a_1"
+    - "id_art_fan_staff_11"
+  tier: "人"
+-
+  id: "ren_15"
+  name: "茶铺家族"
+  elements:
+    - "水"
+    - "幻"
+  weapons:
+    - "扇"
+  coreTechniqueIds:
+    - "cult_mortal_a_1"
+    - "id_art_fan_fan_2"
+  tier: "人"
+-
+  id: "ren_16"
+  name: "柴门族"
+  elements:
+    - "力"
+    - "土"
+  weapons:
+    - "拳"
+  coreTechniqueIds:
+    - "cult_mortal_a_1"
+    - "id_art_fan_fist_11"
+  tier: "人"
+-
+  id: "ren_17"
+  name: "杏林世家"
+  elements:
+    - "药"
+    - "木"
+  weapons:
+    - "针"
+  coreTechniqueIds:
+    - "cult_mortal_fan_wood_1"
+    - "id_art_fan_poison_11"
+  tier: "人"
+-
+  id: "ren_18"
+  name: "江舟世家"
+  elements:
+    - "水"
+    - "木"
+  weapons:
+    - "棍"
+  coreTechniqueIds:
+    - "cult_mortal_a_1"
+    - "id_art_fan_staff_12"
+  tier: "人"
+-
+  id: "ren_19"
+  name: "瓦巷家族"
+  elements:
+    - "土"
+    - "金"
+  weapons:
+    - "刀"
+  coreTechniqueIds:
+    - "cult_mortal_a_1"
+    - "id_art_fan_blade_11"
+  tier: "人"
+-
+  id: "lower_一品_A"
+  name: "下界一品世家A"
+  elements:
+    - "水"
+  weapons:
+    - "剑"
+  coreTechniqueIds:
+    - "cult_mortal_a_1"
+    - "id_art_fan_sword_12"
+  tier: "一品"
+-
+  id: "lower_一品_B"
+  name: "下界一品世家B"
+  elements:
+    - "火"
+  weapons:
+    - "刀"
+  coreTechniqueIds:
+    - "cult_mortal_fan_fire_1"
+    - "id_art_fan_blade_11"
+  tier: "一品"
+-
+  id: "lower_一品_C"
+  name: "下界一品世家C"
+  elements:
+    - "木"
+  weapons:
+    - "杖"
+  coreTechniqueIds:
+    - "cult_mortal_fan_wood_1"
+    - "id_art_fan_staff_11"
+  tier: "一品"
+-
+  id: "lower_二品_A"
+  name: "下界二品世家A"
+  elements:
+    - "水"
+  weapons:
+    - "剑"
+  coreTechniqueIds:
+    - "cult_mortal_a_1"
+    - "id_art_fan_sword_12"
+  tier: "二品"
+-
+  id: "lower_二品_B"
+  name: "下界二品世家B"
+  elements:
+    - "火"
+  weapons:
+    - "刀"
+  coreTechniqueIds:
+    - "cult_mortal_fan_fire_1"
+    - "id_art_fan_blade_12"
+  tier: "二品"
+-
+  id: "lower_二品_C"
+  name: "下界二品世家C"
+  elements:
+    - "木"
+  weapons:
+    - "杖"
+  coreTechniqueIds:
+    - "cult_mortal_fan_wood_1"
+    - "id_art_fan_staff_12"
+  tier: "二品"
+-
+  id: "lower_三品_A"
+  name: "下界三品世家A"
+  elements:
+    - "水"
+  weapons:
+    - "剑"
+  coreTechniqueIds:
+    - "cult_mortal_a_1"
+    - "id_art_fan_sword_11"
+  tier: "三品"
+-
+  id: "lower_三品_B"
+  name: "下界三品世家B"
+  elements:
+    - "火"
+  weapons:
+    - "刀"
+  coreTechniqueIds:
+    - "cult_mortal_fan_fire_1"
+    - "id_art_fan_blade_11"
+  tier: "三品"
+-
+  id: "lower_三品_C"
+  name: "下界三品世家C"
+  elements:
+    - "木"
+  weapons:
+    - "杖"
+  coreTechniqueIds:
+    - "cult_mortal_fan_wood_1"
+    - "id_art_fan_staff_11"
+  tier: "三品"
+-
+  id: "lower_四品_A"
+  name: "下界四品世家A"
+  elements:
+    - "水"
+  weapons:
+    - "剑"
+  coreTechniqueIds:
+    - "cult_mortal_a_1"
+    - "id_art_fan_sword_11"
+  tier: "四品"
+-
+  id: "lower_四品_B"
+  name: "下界四品世家B"
+  elements:
+    - "火"
+  weapons:
+    - "刀"
+  coreTechniqueIds:
+    - "cult_mortal_fan_fire_1"
+    - "id_art_fan_blade_12"
+  tier: "四品"
+-
+  id: "lower_四品_C"
+  name: "下界四品世家C"
+  elements:
+    - "木"
+  weapons:
+    - "杖"
+  coreTechniqueIds:
+    - "cult_mortal_fan_wood_1"
+    - "id_art_fan_staff_12"
+  tier: "四品"
+-
+  id: "lower_五品_A"
+  name: "下界五品世家A"
+  elements:
+    - "水"
+  weapons:
+    - "剑"
+  coreTechniqueIds:
+    - "cult_mortal_a_1"
+    - "id_art_fan_sword_12"
+  tier: "五品"
+-
+  id: "lower_五品_B"
+  name: "下界五品世家B"
+  elements:
+    - "火"
+  weapons:
+    - "刀"
+  coreTechniqueIds:
+    - "cult_mortal_fan_fire_1"
+    - "id_art_fan_blade_11"
+  tier: "五品"
+-
+  id: "lower_五品_C"
+  name: "下界五品世家C"
+  elements:
+    - "木"
+  weapons:
+    - "杖"
+  coreTechniqueIds:
+    - "cult_mortal_fan_wood_1"
+    - "id_art_fan_staff_12"
+  tier: "五品"
+-
+  id: "lower_六品_A"
+  name: "下界六品世家A"
+  elements:
+    - "水"
+  weapons:
+    - "剑"
+  coreTechniqueIds:
+    - "cult_mortal_a_1"
+    - "id_art_fan_sword_11"
+  tier: "六品"
+-
+  id: "lower_六品_B"
+  name: "下界六品世家B"
+  elements:
+    - "火"
+  weapons:
+    - "刀"
+  coreTechniqueIds:
+    - "cult_mortal_fan_fire_1"
+    - "id_art_fan_blade_11"
+  tier: "六品"
+-
+  id: "lower_六品_C"
+  name: "下界六品世家C"
+  elements:
+    - "木"
+  weapons:
+    - "杖"
+  coreTechniqueIds:
+    - "cult_mortal_fan_wood_1"
+    - "id_art_fan_staff_11"
+  tier: "六品"
+-
+  id: "lower_七品_A"
+  name: "下界七品世家A"
+  elements:
+    - "水"
+  weapons:
+    - "剑"
+  coreTechniqueIds:
+    - "cult_mortal_a_1"
+    - "id_art_fan_sword_12"
+  tier: "七品"
+-
+  id: "lower_七品_B"
+  name: "下界七品世家B"
+  elements:
+    - "火"
+  weapons:
+    - "刀"
+  coreTechniqueIds:
+    - "cult_mortal_fan_fire_1"
+    - "id_art_fan_blade_12"
+  tier: "七品"
+-
+  id: "lower_七品_C"
+  name: "下界七品世家C"
+  elements:
+    - "木"
+  weapons:
+    - "杖"
+  coreTechniqueIds:
+    - "cult_mortal_fan_wood_1"
+    - "id_art_fan_staff_12"
+  tier: "七品"
+-
+  id: "lower_八品_A"
+  name: "下界八品世家A"
+  elements:
+    - "水"
+  weapons:
+    - "剑"
+  coreTechniqueIds:
+    - "cult_mortal_a_1"
+    - "id_art_fan_sword_11"
+  tier: "八品"
+-
+  id: "lower_八品_B"
+  name: "下界八品世家B"
+  elements:
+    - "火"
+  weapons:
+    - "刀"
+  coreTechniqueIds:
+    - "cult_mortal_fan_fire_1"
+    - "id_art_fan_blade_11"
+  tier: "八品"
+-
+  id: "lower_八品_C"
+  name: "下界八品世家C"
+  elements:
+    - "木"
+  weapons:
+    - "杖"
+  coreTechniqueIds:
+    - "cult_mortal_fan_wood_1"
+    - "id_art_fan_staff_11"
+  tier: "八品"
+-
+  id: "lower_九品_A"
+  name: "下界九品世家A"
+  elements:
+    - "水"
+  weapons:
+    - "剑"
+  coreTechniqueIds:
+    - "cult_mortal_a_1"
+    - "id_art_fan_sword_12"
+  tier: "九品"
+-
+  id: "lower_九品_B"
+  name: "下界九品世家B"
+  elements:
+    - "火"
+  weapons:
+    - "刀"
+  coreTechniqueIds:
+    - "cult_mortal_fan_fire_1"
+    - "id_art_fan_blade_12"
+  tier: "九品"
+-
+  id: "lower_九品_C"
+  name: "下界九品世家C"
+  elements:
+    - "木"
+  weapons:
+    - "杖"
+  coreTechniqueIds:
+    - "cult_mortal_fan_wood_1"
+    - "id_art_fan_staff_12"
+  tier: "九品"
