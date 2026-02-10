@@ -61,6 +61,96 @@ class PlayerState {
     return 0;
   }
 
+  // Combat Stats
+  int get phyAtk {
+    double total = strength * 10.0;
+    for (final t in techniques) {
+      if (t.type == TechniqueType.martialArt) {
+        total += _calcTechniquePower(t, strength);
+      }
+    }
+    return total.round();
+  }
+
+  int get magAtk {
+    double total = intelligence * 10.0;
+    for (final t in techniques) {
+      if (t.type == TechniqueType.cultivation) {
+        total += _calcTechniquePower(t, intelligence);
+      }
+    }
+    return total.round();
+  }
+
+  int get hp {
+    // 气血：跟体质、力量、家境（资源）有关
+    double base = strength * 50.0 + familyScore * 10.0;
+    // Physique Bonus
+    if (physique.contains('霸体') || physique.contains('圣体') || physique.contains('力体')) {
+      base *= 1.5;
+    }
+    // Technique Bonus (Body refinements usually are martial arts)
+    for (final t in techniques) {
+       if (t.type == TechniqueType.martialArt) {
+         base += _calcTechniquePower(t, strength) * 5; 
+       }
+    }
+    return base.round();
+  }
+
+  int get mp {
+    // 神识：跟智力、魅力（精神力）、境界有关
+    double base = intelligence * 50.0 + charm * 10.0;
+    // Physique Bonus
+    if (physique.contains('道胎') || physique.contains('灵体') || physique.contains('药灵')) {
+      base *= 1.3;
+    } else if (physique.contains('绝灵')) {
+      base *= 0.5;
+    }
+    // Technique Bonus
+    for (final t in techniques) {
+       if (t.type == TechniqueType.cultivation) {
+         base += _calcTechniquePower(t, intelligence) * 2; 
+       }
+    }
+    return base.round();
+  }
+
+  double _calcTechniquePower(Technique t, int baseAttr) {
+    // 1. Grade Multiplier
+    double gradeMult = switch (t.grade) {
+      TechniqueGrade.fan => 1.0,
+      TechniqueGrade.ling => 1.5,
+      TechniqueGrade.xian => 2.5,
+      TechniqueGrade.sheng => 5.0,
+      TechniqueGrade.dao => 10.0,
+    };
+    
+    // 2. Rank Bonus (Multiplier on top)
+    double rankMult = switch (t.rank) {
+      OpportunityTier.sss => 2.0,
+      OpportunityTier.ss => 1.8,
+      OpportunityTier.s => 1.5,
+      OpportunityTier.a => 1.3,
+      OpportunityTier.b => 1.2,
+      OpportunityTier.c => 1.1,
+      OpportunityTier.d => 1.0,
+      OpportunityTier.e => 0.9,
+      OpportunityTier.f => 0.8,
+    };
+
+    // 3. Proficiency
+    double stageBonus = (t.stage.index + 1) * 0.5; // 0.5, 1.0, 1.5, 2.0
+
+    // 4. Root Match (Does talentLevelName contain any of technique elements?)
+    bool rootMatch = t.elements.any((e) => talentLevelName.contains(e));
+    // Special: '混沌' matches everything
+    if (talentLevelName.contains('混沌')) rootMatch = true;
+    double rootMult = rootMatch ? 1.5 : 1.0;
+    
+    return baseAttr * gradeMult * rankMult * stageBonus * rootMult;
+  }
+
   // 免疫特定死亡事件
   bool isProtectedFrom(LifeEventConfig event) {
     bool isDeath = event.effects['alive'] == false || event.effects['ending'] != null;

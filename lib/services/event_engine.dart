@@ -429,14 +429,33 @@ class EventEngine {
     state.physique = physique;
 
     final rootsLabel = isDual ? '$root1 / $root2' : root1;
-    state.talentLevelName = '$grade·$rootsLabel';
+    // grade variable was missing; derive from random roll using talent tiers
+    // We map physique/talent result to a letter grade for display and downstream logic
+    // Basic mapping aligned with OpportunityTier semantics
+    final talentGrade = (() {
+      if (physique.contains('霸体') || physique.contains('圣体') || physique.contains('混沌') || physique.contains('道胎')) {
+        return 'SSS';
+      }
+      if (physique.contains('灵体') || physique.contains('先天')) {
+        return 'S';
+      }
+      if (physique.contains('媚骨') || physique.contains('蛮荒') || physique.contains('妖') || physique.contains('变异')) {
+        return 'A';
+      }
+      if (physique.contains('绝灵')) {
+        return 'F';
+      }
+      return 'B';
+    })();
+
+    state.talentLevelName = '$talentGrade·$rootsLabel';
 
     state.lifeEvents.add(
       LifeEventEntry(
         id: '${event.id}_result',
         age: state.age,
-        title: '觉醒·$grade灵根',
-        description: '经检测，你的资质如下：\n【灵根】$grade·$rootsLabel\n【体质】$physique',
+        title: '觉醒·$talentGrade灵根',
+        description: '经检测，你的资质如下：\n【灵根】$talentGrade·$rootsLabel\n【体质】$physique',
       ),
     );
   }

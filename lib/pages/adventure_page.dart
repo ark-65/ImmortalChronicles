@@ -461,6 +461,14 @@ class _AdventurePageState extends State<AdventurePage> {
                           )
                           .toList(),
                     ),
+                  ],
+                ],
+              ),
+            ),
+          );
+
+    final ended = !state.alive || state.ending != null;
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('冒险'),

@@ -151,7 +151,7 @@ class EventRepository {
       mapIds: override.mapIds ?? template.mapIds,
       familyTiers: override.familyTiers ?? template.familyTiers,
       conditions: {...template.conditions, ...override.conditions},
-      prerequisites: [...template.prerequisites, ...override.prerequisites].toSet().toList(),
+      prerequisites: {...template.prerequisites, ...override.prerequisites}.toList(),
       effects: {...template.effects, ...override.effects},
       choices: override.choices.isEmpty ? template.choices : override.choices,
       weight: (override.toJson()['weight'] != null) ? override.weight : template.weight,
