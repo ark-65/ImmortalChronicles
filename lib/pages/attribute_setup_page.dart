@@ -18,34 +18,35 @@ final _refRepo = ReferenceRepository();
 
 FamilyTemplate _pickFamilyTemplate(int familyScore) {
   final families = _refRepo.families;
-  final score = (familyScore * 5).clamp(0, 100);
+  // Support both 0-20 scale (default) and 0-100+ (modded)
+  final score = familyScore > 20 ? familyScore.clamp(0, 100) : (familyScore * 5).clamp(0, 100);
   final rng = Random();
 
   List<FamilyTemplate> byTier(String tier) =>
       families.where((f) => f.tier == tier).toList();
 
   if (score == 100) {
-    final pool = rng.nextDouble() < 0.3 ? byTier('霸主') : byTier('圣地');
+    final pool = rng.nextDouble() < 0.3 ? byTier('霸主') : byTier('顶级');
     if (pool.isNotEmpty) return pool[rng.nextInt(pool.length)];
   }
   if (score >= 95) {
-    final pool = rng.nextDouble() < 0.2 ? byTier('霸主') : byTier('圣地');
+    final pool = rng.nextDouble() < 0.2 ? byTier('霸主') : byTier('顶级');
     if (pool.isNotEmpty) return pool[rng.nextInt(pool.length)];
   }
   if (score >= 90) {
-    final pool = byTier('圣地');
+    final pool = byTier('顶级');
     if (pool.isNotEmpty) return pool[rng.nextInt(pool.length)];
   }
   if (score >= 70) {
-    final pool = byTier('天');
+    final pool = byTier('仙族');
     if (pool.isNotEmpty) return pool[rng.nextInt(pool.length)];
   }
   if (score >= 50) {
-    final pool = byTier('地');
+    final pool = byTier('一品');
     if (pool.isNotEmpty) return pool[rng.nextInt(pool.length)];
   }
   if (score >= 30) {
-    final pool = byTier('人');
+    final pool = byTier('二品');
     if (pool.isNotEmpty) return pool[rng.nextInt(pool.length)];
   }
   final mundanePool = families
@@ -65,6 +66,7 @@ FamilyTemplate _pickFamilyTemplate(int familyScore) {
     tier: '九品',
   );
 }
+
 
 class AttributeSetupPage extends StatefulWidget {
   const AttributeSetupPage({super.key});
@@ -112,33 +114,28 @@ class _AttributeSetupPageState extends State<AttributeSetupPage> {
     };
     final fs = state.familyScore;
     final parentRoles = _pickParentRoles(familyScore: fs, luck: state.luck);
-    String familyTier;
+    
+    String flavorText;
     String parentRealm;
-    String clanSize;
+    
     if (fs >= 90) {
-      familyTier = '顶级仙族';
-      parentRealm = '真仙境长老';
-      clanSize = '坐拥数十座仙山，供奉护道者与执法堂';
+      flavorText = '家族坐拥数十座仙山，供奉护道者与执法堂，威震一方。';
+      parentRealm = '父亲修为深不可测，母亲亦是得道大能';
     } else if (fs >= 70) {
-      familyTier = '灵界修真世家';
+      flavorText = '族人逾千，设有功法阁与试炼场，在灵界颇具威望。';
       parentRealm = '合体期父亲与炼虚期母亲';
-      clanSize = '族人逾千，设有功法阁与试炼场';
     } else if (fs >= 50) {
-      familyTier = '灵界普通家族';
+      flavorText = '族人数百，偶有外门客卿坐镇，算是一方豪强。';
       parentRealm = '元婴期父母';
-      clanSize = '族人数百，偶有外门客卿坐镇';
     } else if (fs >= 30) {
-      familyTier = '人界富庶人家';
+      flavorText = '城中有产业与护院，但缺少修真底蕴，但在凡俗界已是富甲一方。';
       parentRealm = '练气高层的父母';
-      clanSize = '城中有产业与护院，但缺少修真底蕴';
     } else if (fs >= 10) {
-      familyTier = '人界普通家庭';
+      flavorText = '三代同堂，靠勤勉度日，日子平淡而温馨。';
       parentRealm = '凡人父母';
-      clanSize = '三代同堂，靠勤勉度日';
     } else {
-      familyTier = '人界贫寒之家';
+      flavorText = '小院简陋，亲族稀少，生活颇为拮据。';
       parentRealm = '凡人父母，体弱多病';
-      clanSize = '小院简陋，亲族稀少';
     }
 
     final luckDesc = state.luck >= 60
@@ -147,28 +144,23 @@ class _AttributeSetupPageState extends State<AttributeSetupPage> {
             ? '气运平平，需自求机缘'
             : '气运欠佳，需步步谨慎';
 
-    final talentHint =
-        '当前五维：力${state.strength}/智${state.intelligence}/魅${state.charm}/运${state.luck}/家${state.family}';
-
-    String? familyName;
+    String familyInfo = '';
     if (state.familyTemplateId != null) {
-      final tpl = _refRepo.families.firstWhere(
-        (f) => f.id == state.familyTemplateId,
-        orElse: () => _refRepo.families.isNotEmpty 
-            ? _refRepo.families.first 
-            : const FamilyTemplate(id: 'unknown', name: '未知', elements: [], weapons: [], coreTechniqueIds: [], tier: '九品'),
-      );
-      familyName = tpl.name;
+      try {
+        final tpl = _refRepo.families.firstWhere((f) => f.id == state.familyTemplateId);
+        familyInfo = '【家族】${tpl.name}（${tpl.tier}）\n';
+      } catch (_) {
+        familyInfo = '【家族】隐世家族（未知品阶）\n';
+      }
     }
 
-    final clanInfo = familyName != null
-        ? '家族传承：$familyName'
-        : '家族底蕴尚未显露';
-
     final desc =
-        '你降生在$regionName 的 $familyTier。家族疆域$clanSize，父母为$parentRealm，庇护你度过最初岁月。'
-        '父亲是${parentRoles.father}，母亲是${parentRoles.mother}。'
-        '出身决定了你的起跑线，但未来仍要靠自己积累。$luckDesc。$talentHint。$clanInfo。';
+        '【身世】你降生在$regionName。\n'
+        '$familyInfo'
+        '【背景】$flavorText\n'
+        '【双亲】${parentRoles.father}与${parentRoles.mother}。$parentRealm，庇护你度过最初岁月。\n'
+        '【天赋】$luckDesc。\n'
+        '【初始】力${state.strength}/智${state.intelligence}/魅${state.charm}/运${state.luck}/家${state.family}。';
 
     return LifeEventEntry(
       id: 'birth_intro',
@@ -214,8 +206,12 @@ class _AttributeSetupPageState extends State<AttributeSetupPage> {
   }
 
   // simple deterministic pick based on family to ensure reproducible
-  FamilyTemplate _pickFamilyTemplateForUi(int familyScore) =>
-      _pickFamilyTemplate(familyScore);
+  FamilyTemplate _pickFamilyTemplateForUi(int familyScore) {
+    debugPrint('[AttributeSetup] Picking family with raw score: $familyScore');
+    final t = _pickFamilyTemplate(familyScore);
+    debugPrint('[AttributeSetup] Chosen family: ${t.name} (${t.tier})');
+    return t;
+  }
 
   void _loadLast() async {
     final stored = await StorageService().load();

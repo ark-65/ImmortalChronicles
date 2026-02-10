@@ -10,6 +10,8 @@
   worlds: ["immortal"]
   minAge: 6
   effects: { age: 0 }
+  conditions:
+    unique: true
   choices:
     -
       id: "awaken_root"
@@ -32,6 +34,8 @@
   worlds: ["mortal"]
   minAge: 12
   effects: { age: 0 }
+  conditions:
+    unique: true
   choices:
     -
       id: "participate_test"

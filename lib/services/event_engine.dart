@@ -404,26 +404,29 @@ class EventEngine {
       do { root2 = pickRoot(); } while (root2 == root1);
     }
 
-    double roll = rng.nextDouble();
-    final luckFactor = (state.luck.clamp(0, 20)) / 20.0;
-    final pDao = 0.05 + 0.15 * luckFactor;
-    final pSheng = 0.15 + 0.20 * luckFactor;
-    final pLing = 0.40 + 0.20 * luckFactor;
+    // Physique Roll
+    // Basic probability: 90% Mortal, 8% Spirit, 1.5% Sacred, 0.5% Dao
+    // Luck modifies these.
+    double pPhysiqueDao = 0.005 + state.luck / 2000.0; // Max ~0.1
+    double pPhysiqueSacred = 0.015 + state.luck / 1000.0; // Max ~0.2
+    double pPhysiqueSpirit = 0.08 + state.luck / 500.0; // Max ~0.4
 
-    double thresholdDao = pDao;
-    double thresholdSheng = (thresholdDao + pSheng).clamp(0.0, 0.95);
-    double thresholdLing = (thresholdSheng + pLing).clamp(0.0, 0.99);
-
-    String grade = '凡';
-    if (roll < thresholdDao) {
-      grade = '道';
-    } else if (roll < thresholdSheng) {
-      grade = '圣';
-    } else if (roll < thresholdLing) {
-      grade = '灵';
+    String physique = '凡体';
+    final pRoll = rng.nextDouble();
+    if (pRoll < pPhysiqueDao) {
+      physique = ['荒古圣体', '先天道胎', '混沌体', '苍天霸体'][rng.nextInt(4)];
+    } else if (pRoll < (pPhysiqueDao + pPhysiqueSacred)) {
+      physique = ['太阴之体', '太阳之体', '五行灵体', '天妖体'][rng.nextInt(4)];
+    } else if (pRoll < (pPhysiqueDao + pPhysiqueSacred + pPhysiqueSpirit)) {
+      physique = ['绝灵之体', '媚骨', '蛮荒力体', '药灵体'][rng.nextInt(4)];
+    }
+    
+    // Family bonus
+    if (state.familyScore >= 90 && physique == '凡体' && rng.nextDouble() < 0.5) {
+      physique = '先天灵体';
     }
 
-    if (state.familyScore >= 90 && grade == '凡') grade = '灵';
+    state.physique = physique;
 
     final rootsLabel = isDual ? '$root1 / $root2' : root1;
     state.talentLevelName = '$grade·$rootsLabel';
@@ -432,8 +435,8 @@ class EventEngine {
       LifeEventEntry(
         id: '${event.id}_result',
         age: state.age,
-        title: '灵根结果·$grade·$rootsLabel',
-        description: '检测结果：$rootsLabel，品级 $grade。',
+        title: '觉醒·$grade灵根',
+        description: '经检测，你的资质如下：\n【灵根】$grade·$rootsLabel\n【体质】$physique',
       ),
     );
   }

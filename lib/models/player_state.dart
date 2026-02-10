@@ -23,6 +23,7 @@ class PlayerState {
   int breakthroughFailStreak;
   String realm; // 当前境界名称
   String talentLevelName; // 灵根描述
+  String physique; // 体质描述
   bool hasLiteracy;
   bool canCultivate;
   bool alive;
@@ -97,6 +98,7 @@ class PlayerState {
     required this.breakthroughFailStreak,
     required this.realm,
     required this.talentLevelName,
+    required this.physique,
     required this.hasLiteracy,
     required this.canCultivate,
     required this.alive,
@@ -140,6 +142,7 @@ class PlayerState {
       breakthroughFailStreak: 0,
       realm: '无',
       talentLevelName: '未知',
+      physique: '凡体',
       hasLiteracy: false,
       canCultivate: false,
       alive: true,
@@ -186,6 +189,7 @@ class PlayerState {
         'sectId': sectId,
         'currentMapId': currentMapId,
         'elementProfile': elementProfile,
+        'physique': physique,
       };
 
   factory PlayerState.fromJson(Map<String, dynamic> json) => PlayerState(
@@ -210,6 +214,7 @@ class PlayerState {
         breakthroughFailStreak: json['breakthroughFailStreak'] ?? 0,
         realm: json['realm'] ?? '无',
         talentLevelName: json['talentLevelName'] ?? '未知',
+        physique: json['physique'] ?? '凡体',
         hasLiteracy: json['hasLiteracy'] ?? false,
         canCultivate: json['canCultivate'] ?? true,
         alive: json['alive'] ?? true,

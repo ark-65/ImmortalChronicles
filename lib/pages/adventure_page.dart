@@ -264,6 +264,15 @@ class _AdventurePageState extends State<AdventurePage> {
   }
 
   void _selectEventOption(LifeEventConfig event) async {
+    if (event.choices.isNotEmpty) {
+      setState(() {
+        eventOptions = null;
+        pendingChoiceEvent = event;
+        lastEvent = event;
+      });
+      return;
+    }
+
     engine.applyEffects(
       state,
       event,
@@ -452,42 +461,27 @@ class _AdventurePageState extends State<AdventurePage> {
                           )
                           .toList(),
                     ),
-                    if (canBreakthrough)
-                      Padding(
-                        padding: const EdgeInsets.only(top: 4),
-                        child: ElevatedButton(
-                          onPressed: _tryBreakthrough,
-                          child: const Text('尝试突破（扣AP）'),
-                        ),
-                      ),
-                  ],
-                  if (pendingChoiceEvent == null && state.techniques.isNotEmpty && canBreakthrough)
-                    Padding(
-                      padding: const EdgeInsets.only(top: 12),
-                      child: ElevatedButton(
-                        onPressed: _tryBreakthrough,
-                        child: const Text('闭关突破（扣AP）'),
-                      ),
-                    ),
-                  if (pendingChoiceEvent == null && state.techniques.isNotEmpty && canCultivateNow)
-                    Padding(
-                      padding: const EdgeInsets.only(top: 8),
-                      child: OutlinedButton(
-                        onPressed: _doCultivate,
-                        child: Text('闭关修炼（扣AP，经验 +$expGainPerEvent）'),
-                      ),
-                    ),
-                ],
-              ),
-            ),
-          );
-
-    final ended = state.ending != null || !state.alive;
-
     return Scaffold(
       appBar: AppBar(
         title: const Text('冒险'),
         actions: [
+          IconButton(
+            tooltip: '详细属性',
+            onPressed: () {
+              showModalBottomSheet(
+                context: context,
+                isScrollControlled: true,
+                builder: (_) => FractionallySizedBox(
+                  heightFactor: 0.8,
+                  child: DetailSheet(
+                    state: state,
+                    onUpgradeTechnique: _upgradeTechnique,
+                  ),
+                ),
+              );
+            },
+            icon: const Icon(Icons.info_outline),
+          ),
           IconButton(
             onPressed: _showLog,
             icon: const Icon(Icons.article_outlined),
@@ -504,23 +498,12 @@ class _AdventurePageState extends State<AdventurePage> {
             const SizedBox(height: 8),
             attrs,
             const SizedBox(height: 12),
-            bodyCard,
+            Expanded(child: SingleChildScrollView(child: bodyCard)), // Wrapped in scroll view to avoid overflow
             if (autoSaving) const Text('保存中...'),
             if (state.ending != null)
               Padding(
                 padding: const EdgeInsets.only(top: 8),
                 child: Text('结局：${state.ending}'),
-              ),
-            if (!ended &&
-                pendingChoiceEvent == null &&
-                state.techniques.isNotEmpty &&
-                canBreakthrough)
-              Padding(
-                padding: const EdgeInsets.only(top: 12),
-                child: ElevatedButton(
-                  onPressed: _tryBreakthrough,
-                  child: const Text('闭关突破（扣AP）'),
-                ),
               ),
           ],
         ),
@@ -528,40 +511,43 @@ class _AdventurePageState extends State<AdventurePage> {
       bottomNavigationBar: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(12),
-          child: Row(
+          child: Column( // Use column for tighter layout if needed, or just Row
+            mainAxisSize: MainAxisSize.min,
             children: [
-              Expanded(
-                child: ElevatedButton(
-                  onPressed: ended || state.ap <= 0
-                      ? (ended ? _newLife : null)
-                      : (pendingChoiceEvent == null && eventOptions == null ? _advance : null),
-                  child: Text(ended ? '重开' : '事件'),
-                ),
-              ),
-              Expanded(
-                child: OutlinedButton(
-                  onPressed:
-                      ended ? _showLog : () => _advance(forceNextYear: true),
-                  child: Text(ended ? '查看日志' : '跳到下一岁'),
-                ),
-              ),
-              const SizedBox(width: 12),
-              IconButton(
-                tooltip: '详细属性',
-                onPressed: () {
-                  showModalBottomSheet(
-                    context: context,
-                    isScrollControlled: true,
-                    builder: (_) => FractionallySizedBox(
-                      heightFactor: 0.8,
-                      child: DetailSheet(
-                        state: state,
-                        onUpgradeTechnique: _upgradeTechnique,
+              Row(
+                children: [
+                  Expanded(
+                    child: ElevatedButton(
+                      onPressed: ended || state.ap <= 0
+                          ? (ended ? _newLife : null)
+                          : (pendingChoiceEvent == null && eventOptions == null ? _advance : null),
+                      child: Text(ended ? '重开' : '历练'),
+                    ),
+                  ),
+                  const SizedBox(width: 8),
+                  if (!ended) ...[
+                     Expanded(
+                      child: ElevatedButton( // Cultivate/Breakthrough Button
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: canBreakthrough ? Colors.amber.shade700 : (canCultivateNow && state.techniques.isNotEmpty ? Colors.blue.shade700 : Colors.grey),
+                          foregroundColor: Colors.white,
+                        ),
+                        onPressed: pendingChoiceEvent == null && state.techniques.isNotEmpty && canCultivateNow
+                            ? (canBreakthrough ? _tryBreakthrough : _doCultivate)
+                            : null,
+                        child: Text(canBreakthrough ? '突破' : '修炼'),
                       ),
                     ),
-                  );
-                },
-                icon: const Icon(Icons.info_outline),
+                    const SizedBox(width: 8),
+                  ],
+                  Expanded(
+                    child: OutlinedButton(
+                      onPressed:
+                          ended ? _showLog : () => _advance(forceNextYear: true),
+                      child: Text(ended ? '回顾' : '长一岁'),
+                    ),
+                  ),
+                ],
               ),
             ],
           ),
