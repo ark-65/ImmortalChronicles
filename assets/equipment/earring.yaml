@@ -1,0 +1,134 @@
+- id: "earring_fan_001"
+  name: "铜环耳饰"
+  slot: "earring"
+  grade: "fan"
+  rank: "c"
+  mainStats: { magDef: 6 }
+  subStats: { mp: 30 }
+  description: "普通铜环，略有灵性。"
+
+- id: "earring_fan_002"
+  name: "羽羽耳坠"
+  slot: "earring"
+  grade: "fan"
+  rank: "b"
+  mainStats: { spd: 2 }
+  subStats: { magAtk: 8 }
+  description: "羽饰轻盈，行动更快。"
+
+- id: "earring_fan_003"
+  name: "木灵耳坠"
+  slot: "earring"
+  grade: "fan"
+  rank: "a"
+  mainStats: { mp: 50 }
+  subStats: { magAtk: 12 }
+  description: "木灵庇佑，法力更顺。"
+
+- id: "earring_ling_001"
+  name: "灵光耳坠"
+  slot: "earring"
+  grade: "ling"
+  rank: "b"
+  mainStats: { magAtk: 16 }
+  subStats: { magDef: 10 }
+  description: "灵光闪烁，抵御幻术。"
+
+- id: "earring_ling_002"
+  name: "风语耳饰"
+  slot: "earring"
+  grade: "ling"
+  rank: "a"
+  mainStats: { spd: 4 }
+  subStats: { mp: 80 }
+  description: "可感风语，身法更快。"
+
+- id: "earring_ling_003"
+  name: "守心耳坠"
+  slot: "earring"
+  grade: "ling"
+  rank: "s"
+  mainStats: { magDef: 16 }
+  subStats: { magAtk: 18 }
+  description: "稳固心神，防惑防控。"
+
+- id: "earring_xian_001"
+  name: "流光耳饰"
+  slot: "earring"
+  grade: "xian"
+  rank: "a"
+  mainStats: { spd: 6 }
+  subStats: { magAtk: 28 }
+  description: "流光点缀，出手更快。"
+
+- id: "earring_xian_002"
+  name: "雷鸣耳坠"
+  slot: "earring"
+  grade: "xian"
+  rank: "s"
+  mainStats: { phyAtk: 34, magAtk: 22 }
+  subStats: { spd: 6 }
+  description: "雷意萦绕，攻速齐升。"
+
+- id: "earring_xian_003"
+  name: "冰心耳坠"
+  slot: "earring"
+  grade: "xian"
+  rank: "ss"
+  mainStats: { magDef: 26 }
+  subStats: { mp: 150 }
+  description: "冰心凝神，护住识海。"
+
+- id: "earring_sheng_001"
+  name: "圣歌耳饰"
+  slot: "earring"
+  grade: "sheng"
+  rank: "ss"
+  mainStats: { magAtk: 60 }
+  subStats: { mp: 200, magDef: 24 }
+  description: "圣歌回荡，提升法攻。"
+
+- id: "earring_sheng_002"
+  name: "战意耳坠"
+  slot: "earring"
+  grade: "sheng"
+  rank: "ss"
+  mainStats: { phyAtk: 70 }
+  subStats: { spd: 10 }
+  description: "战意盈耳，速度与攻势齐增。"
+
+- id: "earring_sheng_003"
+  name: "风皇耳饰"
+  slot: "earring"
+  grade: "sheng"
+  rank: "sss"
+  mainStats: { spd: 12 }
+  subStats: { phyAtk: 40, magAtk: 40 }
+  description: "风皇庇佑。"
+
+- id: "earring_dao_001"
+  name: "混沌耳坠"
+  slot: "earring"
+  grade: "dao"
+  rank: "sss"
+  mainStats: { magAtk: 90, phyAtk: 60 }
+  subStats: { spd: 12, mp: 220 }
+  description: "混沌之音，增攻增速。"
+
+- id: "earring_dao_002"
+  name: "太乙灵听"
+  slot: "earring"
+  grade: "dao"
+  rank: "sss"
+  mainStats: { magDef: 40, phyDef: 28 }
+  subStats: { hp: 180, mp: 200 }
+  description: "听闻太乙，心神稳固。"
+
+- id: "earring_dao_003"
+  name: "鸿蒙耳铃"
+  slot: "earring"
+  grade: "dao"
+  rank: "sss"
+  mainStats: { spd: 14 }
+  subStats: { magAtk: 70, phyAtk: 50 }
+  description: "鸿蒙钟铃，身法与攻速并进。"

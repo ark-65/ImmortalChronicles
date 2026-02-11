@@ -1,0 +1,274 @@
+- id: ren_heartland
+  name: 人域·中州王城
+  world: mortal
+  region: ren
+  tier: 人
+  description: 凡修出生默认落点，市集与武馆林立，繁华喧嚣之所。
+  neighbors:
+  - ling_greenridge
+  - ren_frontier_pass
+  - ren_east_sea
+  - ren_west_desert
+  - ren_south_swamp
+  - ren_north_tundra
+  pointsOfInterest:
+  - 王宫
+  - 百家武馆
+  - 万宝楼
+  - 听风茶馆
+  factions:
+  - yejia
+  - ren_sect_0
+  - ren_sect_1
+  - ren_20
+  - ren_21
+- id: ren_suburb_village
+  name: 人域·京郊小镇
+  world: mortal
+  region: ren
+  tier: 人
+  description: 京都郊外的宁静村落，是许多凡人武者的起点。
+  neighbors:
+  - ren_heartland
+  pointsOfInterest:
+  - 黄土地
+  - 村长家
+  factions:
+  - ren_22
+  - ren_sect_5
+- id: ren_imperial_academy
+  name: 人域·皇家武院
+  world: mortal
+  region: ren
+  tier: 一品
+  description: 皇室设立的最高武学殿堂，培养帝国精英。
+  neighbors:
+  - ren_heartland
+  pointsOfInterest:
+  - 演武场
+  - 藏经阁
+  factions:
+  - di_20
+  - di_sect_0
+- id: ren_east_sea
+  name: 人域·东海诸岛
+  world: mortal
+  region: ren
+  tier: 地
+  description: 烟波浩渺，群岛散落，是散修避世与海兽狩猎的绝佳之地。
+  neighbors:
+  - ren_heartland
+  pointsOfInterest:
+  - 龙王庙
+  - 珊瑚礁海
+  - 蓬莱仙阁(废墟)
+  factions:
+  - ren_0
+  - ren_1
+  - ren_23
+  - ren_24
+- id: ren_east_island_chain
+  name: 人域·东海群岛·内环
+  world: mortal
+  region: ren
+  tier: 二品
+  description: 靠近大陆的岛屿链，物产丰富，常有船队往来。
+  neighbors:
+  - ren_east_sea
+  pointsOfInterest:
+  - 落霞岛
+  - 黑市码头
+  factions:
+  - ren_25
+  - ren_sect_2
+- id: ren_hidden_reef
+  name: 人域·隐秘暗礁
+  world: mortal
+  region: ren
+  tier: 一品
+  description: 危险的暗礁区，隐藏着海盗巢穴或上古遗迹。
+  neighbors:
+  - ren_east_sea
+  pointsOfInterest:
+  - 幽灵船
+  - 避风港
+  factions:
+  - di_25
+  - di_sect_25
+- id: ren_west_desert
+  name: 人域·西漠古城
+  world: mortal
+  region: ren
+  tier: 地
+  description: 黄沙漫天，埋葬着古老的遗迹与神殿，极度干旱却蕴含火精。
+  neighbors:
+  - ren_heartland
+  pointsOfInterest:
+  - 鸣沙山
+  - 大雷音寺残坦
+  - 地下暗河
+  factions:
+  - ren_26
+  - ren_27
+- id: ren_desert_oasis
+  name: 人域·西漠绿洲
+  world: mortal
+  region: ren
+  tier: 二品
+  description: 沙漠中的生命之泉，商旅休息的必经之地。
+  neighbors:
+  - ren_west_desert
+  pointsOfInterest:
+  - 月牙泉
+  - 集市
+  factions:
+  - ren_30
+  - ren_sect_3
+- id: ren_ancient_ruin_depths
+  name: 人域·古城废墟深处
+  world: mortal
+  region: ren
+  tier: 一品
+  description: 被流沙掩埋的古都核心，充斥着未知的禁制。
+  neighbors:
+  - ren_west_desert
+  pointsOfInterest:
+  - 祭坛大殿
+  - 黄金甲士(守卫)
+  factions:
+  - di_30
+  - di_sect_30
+- id: ren_south_swamp
+  name: 人域·南疆大山
+  world: mortal
+  region: ren
+  tier: 地
+  description: 瘴气弥漫，古木参天，是巫蛊之术与火属性妖兽的栖息地。
+  neighbors:
+  - ren_heartland
+  pointsOfInterest:
+  - 蛊神庙
+  - 万毒窟
+  - 桃花源
+  factions:
+  - ren_31
+  - ren_32
+- id: ren_poison_mire
+  name: 人域·南疆毒沼
+  world: mortal
+  region: ren
+  tier: 一品
+  description: 剧毒雾气弥漫的沼泽，只有当地土著敢于深入。
+  neighbors:
+  - ren_south_swamp
+  pointsOfInterest:
+  - 毒王巢穴
+  - 腐坏古树
+  factions:
+  - di_35
+  - di_sect_35
+- id: ren_mystic_jungle
+  name: 人域·南疆密林
+  world: mortal
+  region: ren
+  tier: 二品
+  description: 遮天蔽日的原始丛林，盛产各种珍稀草药。
+  neighbors:
+  - ren_south_swamp
+  pointsOfInterest:
+  - 万蛇谷
+  - 巨人遗骸
+  factions:
+  - ren_33
+  - ren_sect_6
+- id: ren_north_tundra
+  name: 人域·北冥冰原
+  world: mortal
+  region: ren
+  tier: 地
+  description: 终年积雪，极寒彻骨，冰原之下蛰伏着上古冰系妖兽。
+  neighbors:
+  - ren_heartland
+  pointsOfInterest:
+  - 冰封王座
+  - 极光之巅
+  - 寒冰髓穴
+  factions:
+  - ren_45
+  - ren_46
+- id: ren_ice_crevasse
+  name: 人域·冰原大裂隙
+  world: mortal
+  region: ren
+  tier: 一品
+  description: 冰原上深不可测的裂缝，通往地底寒脉。
+  neighbors:
+  - ren_north_tundra
+  pointsOfInterest:
+  - 万年寒晶
+  - 沉睡的冰蚕
+  factions:
+  - di_45
+  - di_sect_45
+- id: ren_eternal_frost_peak
+  name: 人域·永恒霜峰
+  world: mortal
+  region: ren
+  tier: 二品
+  description: 冰原中最高的山峰，常年笼罩在暴风雪中。
+  neighbors:
+  - ren_north_tundra
+  pointsOfInterest:
+  - 傲雪红梅
+  - 霜巨人部落
+  factions:
+  - ren_47
+  - ren_sect_7
+- id: ren_frontier_pass
+  name: 人域·北荒关
+  world: mortal
+  region: ren
+  tier: 地
+  description: 边关重城，直面魔域裂缝，也是猎杀妖兽的磨炼之地。
+  neighbors:
+  - ren_heartland
+  - mo_abyss_gate
+  pointsOfInterest:
+  - 破军塞
+  - 血染城墙
+  - 悬赏榜单
+  factions:
+  - jijia
+  - ren_7
+  - ren_48
+  - ren_49
+- id: ren_iron_fortress
+  name: 人域·钢铁雄关
+  world: mortal
+  region: ren
+  tier: 一品
+  description: 北荒关的前哨站，城体由玄铁铸就，坚不可摧。
+  neighbors:
+  - ren_frontier_pass
+  pointsOfInterest:
+  - 巨型床弩
+  - 万人坑
+  factions:
+  - di_36
+  - di_sect_36
+- id: ren_demon_slay_valley
+  name: 人域·斩魔谷
+  world: mortal
+  region: ren
+  tier: 二品
+  description: 边境上的一处峡谷，堆满了魔物残骸。
+  neighbors:
+  - ren_frontier_pass
+  pointsOfInterest:
+  - 英魂碑
+  - 磨刀石
+  factions:
+  - ren_40
+  - ren_sect_25
+  - jijia
+  - ren_7

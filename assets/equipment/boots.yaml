@@ -1,0 +1,134 @@
+- id: "boots_fan_001"
+  name: "草编鞋"
+  slot: "boots"
+  grade: "fan"
+  rank: "c"
+  mainStats: { spd: 2 }
+  subStats: { phyDef: 6 }
+  description: "简易草鞋，轻便好走。"
+
+- id: "boots_fan_002"
+  name: "牛皮靴"
+  slot: "boots"
+  grade: "fan"
+  rank: "b"
+  mainStats: { spd: 3 }
+  subStats: { phyDef: 8 }
+  description: "结实耐用的皮靴。"
+
+- id: "boots_fan_003"
+  name: "轻便行军靴"
+  slot: "boots"
+  grade: "fan"
+  rank: "a"
+  mainStats: { spd: 4 }
+  subStats: { hp: 40 }
+  description: "适合长途赶路。"
+
+- id: "boots_ling_001"
+  name: "灵风履"
+  slot: "boots"
+  grade: "ling"
+  rank: "b"
+  mainStats: { spd: 6 }
+  subStats: { magDef: 6 }
+  description: "灵风护足，步若微风。"
+
+- id: "boots_ling_002"
+  name: "轻羽靴"
+  slot: "boots"
+  grade: "ling"
+  rank: "a"
+  mainStats: { spd: 7 }
+  subStats: { phyDef: 10 }
+  description: "羽片缝合，落地无声。"
+
+- id: "boots_ling_003"
+  name: "踏云靴"
+  slot: "boots"
+  grade: "ling"
+  rank: "s"
+  mainStats: { spd: 8 }
+  subStats: { hp: 80 }
+  description: "踏云而行，如履平地。"
+
+- id: "boots_xian_001"
+  name: "流光战靴"
+  slot: "boots"
+  grade: "xian"
+  rank: "a"
+  mainStats: { spd: 10 }
+  subStats: { phyDef: 16, hp: 100 }
+  description: "流光缠足，身形迅捷。"
+
+- id: "boots_xian_002"
+  name: "雷霆胫靴"
+  slot: "boots"
+  grade: "xian"
+  rank: "s"
+  mainStats: { spd: 12 }
+  subStats: { phyAtk: 20 }
+  description: "雷霆附加，步伐带电。"
+
+- id: "boots_xian_003"
+  name: "玄冰履"
+  slot: "boots"
+  grade: "xian"
+  rank: "ss"
+  mainStats: { spd: 10 }
+  subStats: { magDef: 18, hp: 120 }
+  description: "冰晶护足，亦能减缓火焰伤害。"
+
+- id: "boots_sheng_001"
+  name: "圣羽履"
+  slot: "boots"
+  grade: "sheng"
+  rank: "ss"
+  mainStats: { spd: 14 }
+  subStats: { phyDef: 24, magDef: 18 }
+  description: "圣羽加身，轻灵而坚韧。"
+
+- id: "boots_sheng_002"
+  name: "玄龟战靴"
+  slot: "boots"
+  grade: "sheng"
+  rank: "ss"
+  mainStats: { phyDef: 30 }
+  subStats: { spd: 8, hp: 160 }
+  description: "龟甲护胫，稳如磐石。"
+
+- id: "boots_sheng_003"
+  name: "风皇翔靴"
+  slot: "boots"
+  grade: "sheng"
+  rank: "sss"
+  mainStats: { spd: 16 }
+  subStats: { phyDef: 26, magDef: 22 }
+  description: "风皇之翼化靴，飞翔如箭。"
+
+- id: "boots_dao_001"
+  name: "混沌踏星靴"
+  slot: "boots"
+  grade: "dao"
+  rank: "sss"
+  mainStats: { spd: 20 }
+  subStats: { phyDef: 36, magDef: 28, hp: 200 }
+  description: "踏星而行，混沌护体。"
+
+- id: "boots_dao_002"
+  name: "太乙风行履"
+  slot: "boots"
+  grade: "dao"
+  rank: "sss"
+  mainStats: { spd: 22 }
+  subStats: { phyAtk: 40 }
+  description: "太乙神风加持，极致速度。"
+
+- id: "boots_dao_003"
+  name: "鸿蒙遁形靴"
+  slot: "boots"
+  grade: "dao"
+  rank: "sss"
+  mainStats: { spd: 18 }
+  subStats: { magDef: 34, phyDef: 34 }
+  description: "鸿蒙遁形，行迹难寻。"

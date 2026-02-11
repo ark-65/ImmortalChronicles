@@ -85,7 +85,13 @@ class _AttributeSetupPageState extends State<AttributeSetupPage> {
   bool _isInitialized = false;
   static const totalPoints = 30;
 
-  int get used => strength + intelligence + charm + luck + family;
+  int _costFor(int val) {
+    if (val <= 10) return val; // 1:1
+    if (val <= 20) return 10 + (val - 10) * 2; // 1.5x approx via int math
+    return 10 + 20 + (val - 20) * 3; // steeper after 20
+  }
+
+  int get used => _costFor(strength) + _costFor(intelligence) + _costFor(charm) + _costFor(luck) + _costFor(family);
   int get remain => totalPoints - used;
 
   @override

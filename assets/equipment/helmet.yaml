@@ -1,0 +1,134 @@
+- id: "helm_fan_001"
+  name: "牛皮盔"
+  slot: "helmet"
+  grade: "fan"
+  rank: "c"
+  mainStats: { phyDef: 10 }
+  subStats: { hp: 40 }
+  description: "粗制牛皮帽，略有防护。"
+
+- id: "helm_fan_002"
+  name: "竹纱兜帽"
+  slot: "helmet"
+  grade: "fan"
+  rank: "b"
+  mainStats: { magDef: 12 }
+  subStats: { spd: 2 }
+  description: "轻便兜帽，遮风挡尘。"
+
+- id: "helm_fan_003"
+  name: "铁面罩"
+  slot: "helmet"
+  grade: "fan"
+  rank: "b"
+  mainStats: { phyDef: 16 }
+  subStats: { hp: 60 }
+  description: "薄铁面具，增强正面防护。"
+
+- id: "helm_ling_001"
+  name: "灵纹护额"
+  slot: "helmet"
+  grade: "ling"
+  rank: "b"
+  mainStats: { magDef: 22 }
+  subStats: { mp: 60 }
+  description: "刻有灵纹，提升精神抗性。"
+
+- id: "helm_ling_002"
+  name: "青铜兽面盔"
+  slot: "helmet"
+  grade: "ling"
+  rank: "a"
+  mainStats: { phyDef: 28 }
+  subStats: { hp: 120 }
+  description: "兽面威严，带来额外护佑。"
+
+- id: "helm_ling_003"
+  name: "羽纱面具"
+  slot: "helmet"
+  grade: "ling"
+  rank: "a"
+  mainStats: { magDef: 30 }
+  subStats: { spd: 4 }
+  description: "轻盈如羽，身法更灵动。"
+
+- id: "helm_xian_001"
+  name: "紫电冠"
+  slot: "helmet"
+  grade: "xian"
+  rank: "a"
+  mainStats: { phyDef: 40, magDef: 20 }
+  subStats: { spd: 6 }
+  description: "雷霆护体，防御兼备。"
+
+- id: "helm_xian_002"
+  name: "琉璃宝冠"
+  slot: "helmet"
+  grade: "xian"
+  rank: "s"
+  mainStats: { magDef: 48 }
+  subStats: { mp: 140, hp: 80 }
+  description: "琉璃通明，精神守护。"
+
+- id: "helm_xian_003"
+  name: "镇魂盔"
+  slot: "helmet"
+  grade: "xian"
+  rank: "s"
+  mainStats: { magDef: 52, phyDef: 24 }
+  subStats: { mp: 100 }
+  description: "稳固心神，镇压邪祟。"
+
+- id: "helm_sheng_001"
+  name: "圣光头环"
+  slot: "helmet"
+  grade: "sheng"
+  rank: "ss"
+  mainStats: { magDef: 70, phyDef: 30 }
+  subStats: { mp: 180, hp: 150 }
+  description: "圣光守护，兼防物理与法术。"
+
+- id: "helm_sheng_002"
+  name: "玄龟战盔"
+  slot: "helmet"
+  grade: "sheng"
+  rank: "ss"
+  mainStats: { phyDef: 80 }
+  subStats: { hp: 220 }
+  description: "玄龟之甲铸成，坚不可摧。"
+
+- id: "helm_sheng_003"
+  name: "风皇羽冕"
+  slot: "helmet"
+  grade: "sheng"
+  rank: "sss"
+  mainStats: { magDef: 90, phyDef: 40 }
+  subStats: { spd: 12, mp: 200 }
+  description: "羽冕加身，身随风动。"
+
+- id: "helm_dao_001"
+  name: "混元道冠"
+  slot: "helmet"
+  grade: "dao"
+  rank: "sss"
+  mainStats: { magDef: 120, phyDef: 60 }
+  subStats: { mp: 260, hp: 240 }
+  description: "镇压大道气息，护身护神。"
+
+- id: "helm_dao_002"
+  name: "太虚天幕"
+  slot: "helmet"
+  grade: "dao"
+  rank: "sss"
+  mainStats: { phyDef: 110, magDef: 110 }
+  subStats: { spd: 16 }
+  description: "天幕笼罩，攻难破防。"
+
+- id: "helm_dao_003"
+  name: "鸿蒙神冠"
+  slot: "helmet"
+  grade: "dao"
+  rank: "sss"
+  mainStats: { magDef: 140, phyDef: 80 }
+  subStats: { mp: 320 }
+  description: "鸿蒙初辟之宝冠，护道者所佩。"

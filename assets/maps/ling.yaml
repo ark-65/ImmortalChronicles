@@ -1,0 +1,64 @@
+- id: ling_greenridge
+  name: 灵域·翠岭谷
+  world: mortal
+  region: ling
+  tier: 天
+  description: 灵气充沛的山谷，常设宗门外门考核与药田。
+  neighbors:
+  - ren_heartland
+  - ling_sky_bamboo
+  - xian_holy_peak
+  pointsOfInterest:
+  - 灵药圃
+  - 测灵石
+  - 落霞瀑布
+  factions:
+  - di_sect_0
+  - di_sect_1
+  - di_21
+  - di_22
+- id: ling_herb_mountain
+  name: 灵域·百草灵山
+  world: mortal
+  region: ling
+  tier: 一品
+  description: 灵气缭绕的药山，是各大家族争夺的药源地。
+  neighbors:
+  - ling_greenridge
+  pointsOfInterest:
+  - 千年草王
+  - 灵泉井
+  factions:
+  - di_27
+  - di_sect_27
+  - di_42
+  - di_sect_41
+- id: ling_spirit_spring
+  name: 灵域·灵犀泉
+  world: mortal
+  region: ling
+  tier: 二品
+  description: 洗练经脉、提升灵力感知的静谧泉水。
+  neighbors:
+  - ling_greenridge
+  pointsOfInterest:
+  - 洗灵台
+  - 泉眼禁阵
+  factions:
+  - ren_27
+  - ren_sect_27
+  - ren_41
+  - ren_sect_41
+- id: ling_sky_bamboo
+  name: 灵域·青竹天境
+  world: immortal
+  region: ling
+  tier: 天
+  description: 高阶弟子闭关处，传闻藏有飞升前置传送阵。
+  neighbors:
+  - ling_greenridge
+  - xian_holy_peak
+  pointsOfInterest:
+  - 问道台
+  - 飞升法阵
+  - 灵竹祖根

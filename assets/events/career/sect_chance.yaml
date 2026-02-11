@@ -1,0 +1,53 @@
+- id: "sect_elder_guidance"
+  title: "长老指点"
+  description: "长老路过，愿意指点你一招半式。"
+  worlds: ["mortal", "immortal"]
+  conditions: { chance: 0.22, chanceLuckBoost: 0.25 }
+  effects:
+    delta: { exp: 40, intelligence: 1 }
+    pendingEvents: ["sect_elder_guidance_round"]
+
+- id: "sect_secret_realm"
+  title: "宗门秘境开启"
+  description: "宗门秘境短暂开启，仅限外门以上弟子参与。"
+  worlds: ["mortal", "immortal"]
+  conditions: { chance: 0.18, chanceLuckBoost: 0.3 }
+  prerequisites: ["cultivation_started"]
+  effects: { pendingEvents: ["sect_secret_realm_trial"] }
+
+- id: "sect_elder_guidance_round"
+  title: "实战演练"
+  description: "长老让你现场演示所学。"
+  worlds: ["mortal", "immortal"]
+  effects:
+    delta: { exp: 60, charm: 1 }
+  choices:
+    - id: "humble"
+      label: "虚心请教"
+      effects: { delta: { exp: 20, intelligence: 1 } }
+    - id: "show_off"
+      label: "炫技表现"
+      effects: { delta: { exp: 40, charm: 1 }, chance: 0.5, chanceLuckBoost: 0.2 }
+
+- id: "sect_secret_realm_trial"
+  title: "秘境试炼"
+  description: "秘境灵气充沛，机缘与危险并存。"
+  worlds: ["mortal", "immortal"]
+  effects:
+    delta: { exp: 100, luck: 2 }
+    pendingEvents: ["sect_secret_realm_reward"]
+  choices:
+    - id: "deep"
+      label: "深入核心"
+      effects: { delta: { exp: 80 }, chance: 0.45, chanceLuckBoost: 0.25 }
+    - id: "safe"
+      label: "谨慎探索"
+      effects: { delta: { exp: 30 }, chance: 0.8, chanceLuckBoost: 0.1 }
+
+- id: "sect_secret_realm_reward"
+  title: "秘境收获"
+  description: "你带着成果回到宗门。"
+  worlds: ["mortal", "immortal"]
+  effects:
+    delta: { exp: 120, luck: 1 }
+    learnFamilyTechnique: true

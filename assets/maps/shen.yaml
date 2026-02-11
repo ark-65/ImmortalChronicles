@@ -1,0 +1,48 @@
+- id: shen_origin_palace
+  name: 神域·太初神宫
+  world: immortal
+  region: shen
+  tier: 神
+  description: 六界之巅，极道试炼与大道机缘的终点，亦可俯瞰下界。
+  neighbors:
+  - sheng_jade_lake
+  pointsOfInterest:
+  - 混沌原点
+  - 因果轮盘
+  - 太初之主王座
+  factions:
+  - overlord_sect_0
+  - sheng_sect_10
+  - sheng_22
+  - sheng_sect_29
+- id: shen_chaos_void
+  name: 神域·混沌虚空
+  world: immortal
+  region: shen
+  tier: 神
+  description: 宇宙诞生之初的碎片，充斥着最原始的混沌能量。
+  neighbors:
+  - shen_origin_palace
+  pointsOfInterest:
+  - 法则磨盘
+  - 混沌青莲(传闻)
+  factions:
+  - overlord_sect_0
+  - sheng_15
+  - sheng_sect_20
+- id: shen_unity_temple
+  name: 神域·归一神殿
+  world: immortal
+  region: shen
+  tier: 神
+  description: 六界法则殊途同归的交汇点，只有极少数人能进入。
+  neighbors:
+  - shen_origin_palace
+  pointsOfInterest:
+  - 真理之门
+  - 众神王座
+  factions:
+  - guzu
+  - shizu
+  - yejia
+  - jijia

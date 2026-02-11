@@ -13,6 +13,7 @@ class Technique {
   final TechniqueGrade grade;
   final OpportunityTier rank;
   final List<String> elements;
+  final List<String> tags; // e.g., defense_phys, defense_mag, speed
   final String description;
   ProficiencyStage stage;
   int exp;
@@ -25,6 +26,7 @@ class Technique {
     required this.grade,
     required this.rank,
     required this.elements,
+    this.tags = const [],
     this.description = '',
     required this.stage,
     required this.exp,
@@ -66,6 +68,7 @@ class Technique {
         'grade': grade.name,
         'rank': rank.name,
         'elements': elements,
+        'tags': tags,
         'description': description,
         'stage': stage.name,
         'exp': exp,
@@ -88,6 +91,7 @@ class Technique {
           orElse: () => OpportunityTier.c,
         ),
         elements: List<String>.from(json['elements'] ?? []),
+        tags: List<String>.from(json['tags'] ?? const []),
         description: json['description'] ?? '',
         stage: ProficiencyStage.values.firstWhere(
           (e) => e.name == json['stage'],

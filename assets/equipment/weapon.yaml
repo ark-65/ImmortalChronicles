@@ -1,0 +1,224 @@
+- id: "wp_fan_001"
+  name: "青铜木剑"
+  slot: "weapon"
+  grade: "fan"
+  rank: "c"
+  mainStats: { phyAtk: 25 }
+  subStats: { spd: 2 }
+  description: "入门练习用的木剑。"
+
+- id: "wp_fan_002"
+  name: "猎人短弓"
+  slot: "weapon"
+  grade: "fan"
+  rank: "b"
+  mainStats: { phyAtk: 30 }
+  subStats: { spd: 3 }
+  description: "轻便短弓，便于穿林射猎。"
+
+- id: "wp_fan_003"
+  name: "符纹木杖"
+  slot: "weapon"
+  grade: "fan"
+  rank: "b"
+  mainStats: { magAtk: 28 }
+  subStats: { mp: 40 }
+  description: "刻有简易符纹的木杖，增强灵力导引。"
+
+- id: "wp_fan_004"
+  name: "铁匠锤"
+  slot: "weapon"
+  grade: "fan"
+  rank: "b"
+  mainStats: { phyAtk: 35 }
+  subStats: { phyDef: 5 }
+  description: "沉重锤具，偶尔也能当武器。"
+
+- id: "wp_fan_005"
+  name: "踏雪短刀"
+  slot: "weapon"
+  grade: "fan"
+  rank: "a"
+  mainStats: { phyAtk: 40 }
+  subStats: { spd: 4 }
+  description: "锋利轻巧，行动如踏雪无痕。"
+
+- id: "wp_ling_001"
+  name: "灵风长弓"
+  slot: "weapon"
+  grade: "ling"
+  rank: "b"
+  mainStats: { phyAtk: 55 }
+  subStats: { spd: 6 }
+  description: "灵木与风羽制成，箭矢如风。"
+
+- id: "wp_ling_002"
+  name: "碧水法杖"
+  slot: "weapon"
+  grade: "ling"
+  rank: "a"
+  mainStats: { magAtk: 70 }
+  subStats: { mp: 80 }
+  description: "以灵泉玉髓雕刻，水灵亲和。"
+
+- id: "wp_ling_003"
+  name: "裂石巨斧"
+  slot: "weapon"
+  grade: "ling"
+  rank: "a"
+  mainStats: { phyAtk: 85 }
+  subStats: { phyDef: 10 }
+  description: "沉重大斧，劈山裂石。"
+
+- id: "wp_ling_004"
+  name: "雷纹短剑"
+  slot: "weapon"
+  grade: "ling"
+  rank: "s"
+  mainStats: { phyAtk: 75, magAtk: 30 }
+  subStats: { spd: 8 }
+  description: "剑身刻雷纹，出鞘带电。"
+
+- id: "wp_ling_005"
+  name: "牧云琴"
+  slot: "weapon"
+  grade: "ling"
+  rank: "s"
+  mainStats: { magAtk: 85 }
+  subStats: { magDef: 12, mp: 60 }
+  description: "琴音摄心，亦可为战。"
+
+- id: "wp_xian_001"
+  name: "流光飞剑"
+  slot: "weapon"
+  grade: "xian"
+  rank: "a"
+  mainStats: { phyAtk: 120 }
+  subStats: { spd: 12, magAtk: 40 }
+  description: "仙材所铸，御剑如流光。"
+
+- id: "wp_xian_002"
+  name: "玄冰权杖"
+  slot: "weapon"
+  grade: "xian"
+  rank: "s"
+  mainStats: { magAtk: 150 }
+  subStats: { mp: 150, magDef: 20 }
+  description: "封存极寒之意，法出冰封万物。"
+
+- id: "wp_xian_003"
+  name: "火凤战刃"
+  slot: "weapon"
+  grade: "xian"
+  rank: "s"
+  mainStats: { phyAtk: 160 }
+  subStats: { magAtk: 40, hp: 120 }
+  description: "烈焰缠绕，战意如凤。"
+
+- id: "wp_xian_004"
+  name: "雷霆神枪"
+  slot: "weapon"
+  grade: "xian"
+  rank: "ss"
+  mainStats: { phyAtk: 180 }
+  subStats: { spd: 14, magAtk: 50 }
+  description: "枪若霹雳，雷鸣震魂。"
+
+- id: "wp_xian_005"
+  name: "太清浮沉笔"
+  slot: "weapon"
+  grade: "xian"
+  rank: "ss"
+  mainStats: { magAtk: 170 }
+  subStats: { mp: 180, spd: 10 }
+  description: "一笔定乾坤，灵光浮沉。"
+
+- id: "wp_sheng_001"
+  name: "圣辉双刃"
+  slot: "weapon"
+  grade: "sheng"
+  rank: "ss"
+  mainStats: { phyAtk: 230, magAtk: 80 }
+  subStats: { hp: 200, spd: 16 }
+  description: "圣光庇佑，攻守兼备。"
+
+- id: "wp_sheng_002"
+  name: "紫霄雷琴"
+  slot: "weapon"
+  grade: "sheng"
+  rank: "ss"
+  mainStats: { magAtk: 260 }
+  subStats: { mp: 220, magDef: 40 }
+  description: "琴音化雷，摧枯拉朽。"
+
+- id: "wp_sheng_003"
+  name: "镇岳神锤"
+  slot: "weapon"
+  grade: "sheng"
+  rank: "sss"
+  mainStats: { phyAtk: 300 }
+  subStats: { phyDef: 50, hp: 260 }
+  description: "锤落如山岳崩塌。"
+
+- id: "wp_sheng_004"
+  name: "玄黄天戈"
+  slot: "weapon"
+  grade: "sheng"
+  rank: "sss"
+  mainStats: { phyAtk: 280, magAtk: 120 }
+  subStats: { spd: 18 }
+  description: "戈起玄黄气，镇压四方。"
+
+- id: "wp_sheng_005"
+  name: "鸿蒙策"
+  slot: "weapon"
+  grade: "sheng"
+  rank: "sss"
+  mainStats: { magAtk: 320 }
+  subStats: { mp: 260, spd: 14 }
+  description: "演化鸿蒙妙理。"
+
+- id: "wp_dao_001"
+  name: "开天神斧"
+  slot: "weapon"
+  grade: "dao"
+  rank: "sss"
+  mainStats: { phyAtk: 420 }
+  subStats: { phyDef: 80, hp: 400 }
+  description: "裂界开天，一斧分阴阳。"
+
+- id: "wp_dao_002"
+  name: "混元诛仙剑"
+  slot: "weapon"
+  grade: "dao"
+  rank: "sss"
+  mainStats: { phyAtk: 380, magAtk: 160 }
+  subStats: { spd: 24 }
+  description: "剑指诸天，诛仙弑神。"
+
+- id: "wp_dao_003"
+  name: "太虚寂灭笔"
+  slot: "weapon"
+  grade: "dao"
+  rank: "sss"
+  mainStats: { magAtk: 450 }
+  subStats: { mp: 350, magDef: 90 }
+  description: "一笔寂灭万象，藏太虚之道。"
+
+- id: "wp_dao_004"
+  name: "万象轮"
+  slot: "weapon"
+  grade: "dao"
+  rank: "sss"
+  mainStats: { phyAtk: 320, magAtk: 220 }
+  subStats: { hp: 320, spd: 22 }
+  description: "操纵万象，攻守合一。"
+
+- id: "wp_dao_005"
+  name: "混沌雷鼎"
+  slot: "weapon"
+  grade: "dao"
+  rank: "sss"
+  mainStats: { magAtk: 400, phyAtk: 200 }
+  subStats: { mp: 320, phyDef: 100 }
+  description: "混沌雷霆凝成的道器。"

@@ -24,42 +24,8 @@ class AssetService {
       return _cachedManifest!;
     } catch (e) {
       debugPrint('[AssetService] Failed to load AssetManifest.json: $e');
-      debugPrint('[AssetService] Using hardcoded fallback manifest.');
-      _cachedManifest = _hardcodedFallbackManifest();
-      return _cachedManifest!;
+      rethrow;
     }
-  }
-
-  Set<String> _hardcodedFallbackManifest() {
-    return {
-      'assets/events/age/age_0_3.yaml',
-      'assets/events/age/age_4_6.yaml',
-      'assets/events/age/age_7_12.yaml',
-      'assets/events/age/age_13_18.yaml',
-      'assets/events/age/age_mandatory.yaml',
-      'assets/events/daily/mortal_daily.yaml',
-      'assets/events/daily/immortal_daily.yaml',
-      'assets/events/daily/mortal_events.yaml',
-      'assets/events/daily/immortal_events.yaml',
-      'assets/events/common/infancy.yaml',
-      'assets/events/common/childhood.yaml',
-      'assets/events/common/youth.yaml',
-      'assets/events/career/sect_opportunity.yaml',
-      'assets/events/family/clan_opportunity.yaml',
-      'assets/events/family/commoner.yaml',
-      'assets/events/family/noble.yaml',
-      'assets/events/spatial/sect_grounds.yaml',
-      'assets/events/templates/basics.yaml',
-      'assets/families/families.yaml',
-      'assets/sects/sects.yaml',
-      'assets/weapons/weapons.yaml',
-      'assets/medicines/medicines.yaml',
-      'assets/techniques/cultivation.yaml',
-      'assets/maps/six_realms.yaml',
-      'assets/meta/stages.yaml',
-      'assets/meta/realms/immortal.yaml',
-      'assets/meta/elements.yaml',
-    };
   }
 
   /// Loads and parses a list of assets from a directory or matching a prefix.

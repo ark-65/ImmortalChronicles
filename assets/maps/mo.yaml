@@ -1,0 +1,179 @@
+- id: mo_abyss_gate
+  name: 魔域·深渊裂口
+  world: nether
+  region: mo
+  tier: 地
+  description: 魔气翻腾的通道，既是祸患也是历练者的捷径。
+  neighbors:
+  - ren_frontier_pass
+  - mo_ashen_city
+  - ming_underworld_river
+  pointsOfInterest:
+  - 万魔窟
+  - 煞气池
+  - 坠魔崖
+  factions:
+  - mo_ashen_city
+  - di_sect_10
+- id: mo_ashen_city
+  name: 魔域·灰都
+  world: nether
+  region: mo
+  tier: 天
+  description: 契约与情报的灰色城池，危险与机缘并存。
+  neighbors:
+  - mo_abyss_gate
+  - ming_ghost_city
+  pointsOfInterest:
+  - 罪恶角斗场
+  - 黑市拍卖行
+  - 魔神殿
+  factions:
+  - sheng_1
+  - di_10
+  - tian_24
+  - xian_sect_24
+- id: mo_shadow_valley
+  name: 魔域·幽影谷
+  world: nether
+  region: mo
+  tier: 天
+  description: 潜伏在阴影中的山谷，是刺客与魔影家族的摇篮。
+  neighbors:
+  - mo_ashen_city
+  pointsOfInterest:
+  - 影壁
+  - 杀生石
+  factions:
+  - tian_24
+  - xian_sect_35
+  - di_24
+  - di_sect_35
+- id: mo_dark_mine
+  name: 魔域·玄铁矿脉
+  world: nether
+  region: mo
+  tier: 一品
+  description: 魔气侵染的矿区，出产珍稀的魔化金属。
+  neighbors:
+  - mo_abyss_gate
+  pointsOfInterest:
+  - 矿洞深处
+  - 铁匠铺
+  factions:
+  - di_29
+  - di_sect_29
+  - ren_29
+  - ren_sect_29
+- id: mo_burning_hell
+  name: 魔域·无间炼狱
+  world: nether
+  region: mo
+  tier: 圣地
+  description: 岩浆横流，魔火滔天的绝死之地，唯有魔道大修方能生存。
+  neighbors:
+  - ming_ghost_city
+  pointsOfInterest:
+  - 红莲业火池
+  - 魔君行宫
+  factions:
+  - guzu
+  - sheng_2
+  - tian_20
+  - xian_sect_38
+- id: mo_blood_lake
+  name: 魔域·嗜血湖
+  world: nether
+  region: mo
+  tier: 天
+  description: 湖水呈暗红色，蕴含强大的血脉力量与煞气。
+  neighbors:
+  - mo_burning_hell
+  pointsOfInterest:
+  - 血祭坛
+  - 沉眠的血魔
+  factions:
+  - sheng_14
+  - xian_sect_38
+  - di_38
+  - di_sect_38
+- id: mo_demon_shrine
+  name: 魔域·古魔祭坛
+  world: nether
+  region: mo
+  tier: 一品
+  description: 供奉上古魔神的祭坛，常有魔修在此寻求突破。
+  neighbors:
+  - mo_shadow_valley
+  pointsOfInterest:
+  - 魔神雕像
+  - 献祭台
+  factions:
+  - di_46
+  - di_sect_46
+  - ren_44
+  - ren_sect_44
+- id: ming_underworld_river
+  name: 冥域·黄泉路
+  world: nether
+  region: mo
+  tier: 地
+  description: 阴气森森的古路，彼岸花开，亡魂不息。
+  neighbors:
+  - mo_abyss_gate
+  - ming_ghost_city
+  pointsOfInterest:
+  - 奈何桥
+  - 彼岸花海
+  - 三生石
+- id: ming_ghost_city
+  name: 冥域·丰都
+  world: nether
+  region: mo
+  tier: 天
+  description: 阴界核心，执掌枯荣死生，鬼王坐镇之所。
+  neighbors:
+  - ming_underworld_river
+  - mo_ashen_city
+  - mo_burning_hell
+  pointsOfInterest:
+  - 阎罗殿
+  - 判官楼
+  - 转生池
+  factions:
+  - shizu
+  - sheng_sect_15
+  - sheng_23
+  - sheng_sect_26
+- id: ming_soul_forest
+  name: 冥域·泣魂林
+  world: nether
+  region: mo
+  tier: 天
+  description: 树枝上挂满残魂的诡异森林，哭声彻夜不绝。
+  neighbors:
+  - ming_ghost_city
+  pointsOfInterest:
+  - 聚魂钟
+  - 无头骑士领地
+  factions:
+  - tian_42
+  - xian_sect_42
+  - di_42
+  - di_sect_42
+- id: ming_forgetfulness_bridge
+  name: 冥域·忘生桥
+  world: nether
+  region: mo
+  tier: 二品
+  description: 黄泉路上的支线，通往那些被世人遗忘的角落。
+  neighbors:
+  - ming_underworld_river
+  pointsOfInterest:
+  - 孟婆酒肆
+  - 望乡台
+  factions:
+  - ren_48
+  - ren_sect_48
+  - ren_49
+  - ren_sect_49

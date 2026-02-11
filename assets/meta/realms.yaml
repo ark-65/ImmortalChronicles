@@ -3,10 +3,12 @@ realms:
   -
     id: "无"
     lifespan: 60
+    statsBase: { hp: 1.00, mp: 1.00, phyAtk: 1.00, magAtk: 1.00, phyDef: 1.00, magDef: 1.00, spd: 1.00 }
     layers:
       -
         level: 1
         expRequired: 100
+        statStep: 0.02
       -
         level: 2
         expRequired: 115
@@ -37,10 +39,12 @@ realms:
   -
     id: "炼气"
     lifespan: 120
+    statsBase: { hp: 1.10, mp: 1.15, phyAtk: 1.10, magAtk: 1.15, phyDef: 1.05, magDef: 1.10, spd: 1.05 }
     layers:
       -
         level: 1
         expRequired: 200
+        statStep: 0.02
       -
         level: 2
         expRequired: 230
@@ -71,10 +75,12 @@ realms:
   -
     id: "筑基"
     lifespan: 250
+    statsBase: { hp: 1.25, mp: 1.30, phyAtk: 1.25, magAtk: 1.30, phyDef: 1.15, magDef: 1.20, spd: 1.10 }
     layers:
       -
         level: 1
         expRequired: 300
+        statStep: 0.02
       -
         level: 2
         expRequired: 345
@@ -105,10 +111,12 @@ realms:
   -
     id: "金丹"
     lifespan: 500
+    statsBase: { hp: 1.45, mp: 1.55, phyAtk: 1.45, magAtk: 1.55, phyDef: 1.30, magDef: 1.35, spd: 1.20 }
     layers:
       -
         level: 1
         expRequired: 400
+        statStep: 0.02
       -
         level: 2
         expRequired: 460
@@ -139,10 +147,12 @@ realms:
   -
     id: "元婴"
     lifespan: 1000
+    statsBase: { hp: 1.65, mp: 1.80, phyAtk: 1.65, magAtk: 1.80, phyDef: 1.45, magDef: 1.55, spd: 1.30 }
     layers:
       -
         level: 1
         expRequired: 500
+        statStep: 0.02
       -
         level: 2
         expRequired: 575
@@ -173,10 +183,12 @@ realms:
   -
     id: "化神"
     lifespan: 2000
+    statsBase: { hp: 1.90, mp: 2.10, phyAtk: 1.90, magAtk: 2.10, phyDef: 1.65, magDef: 1.80, spd: 1.45 }
     layers:
       -
         level: 1
         expRequired: 600
+        statStep: 0.02
       -
         level: 2
         expRequired: 690
@@ -207,10 +219,12 @@ realms:
   -
     id: "炼虚"
     lifespan: 5000
+    statsBase: { hp: 2.20, mp: 2.40, phyAtk: 2.20, magAtk: 2.40, phyDef: 1.85, magDef: 2.05, spd: 1.60 }
     layers:
       -
         level: 1
         expRequired: 700
+        statStep: 0.02
       -
         level: 2
         expRequired: 805
@@ -241,10 +255,12 @@ realms:
   -
     id: "合体"
     lifespan: 10000
+    statsBase: { hp: 2.55, mp: 2.80, phyAtk: 2.55, magAtk: 2.80, phyDef: 2.10, magDef: 2.35, spd: 1.80 }
     layers:
       -
         level: 1
         expRequired: 800
+        statStep: 0.02
       -
         level: 2
         expRequired: 920
@@ -275,10 +291,12 @@ realms:
   -
     id: "大乘"
     lifespan: 50000
+    statsBase: { hp: 3.00, mp: 3.30, phyAtk: 3.00, magAtk: 3.30, phyDef: 2.40, magDef: 2.70, spd: 2.00 }
     layers:
       -
         level: 1
         expRequired: 900
+        statStep: 0.02
       -
         level: 2
         expRequired: 1035
@@ -309,10 +327,12 @@ realms:
   -
     id: "人仙"
     lifespan: 100000
+    statsBase: { hp: 3.60, mp: 4.00, phyAtk: 3.60, magAtk: 4.00, phyDef: 2.75, magDef: 3.10, spd: 2.25 }
     layers:
       -
         level: 1
         expRequired: 1000
+        statStep: 0.02
       -
         level: 2
         expRequired: 1150
@@ -343,10 +363,12 @@ realms:
   -
     id: "地仙"
     lifespan: 150000
+    statsBase: { hp: 4.30, mp: 4.80, phyAtk: 4.30, magAtk: 4.80, phyDef: 3.15, magDef: 3.55, spd: 2.55 }
     layers:
       -
         level: 1
         expRequired: 1100
+        statStep: 0.02
       -
         level: 2
         expRequired: 1265
@@ -377,10 +399,12 @@ realms:
   -
     id: "天仙"
     lifespan: 200000
+    statsBase: { hp: 5.10, mp: 5.70, phyAtk: 5.10, magAtk: 5.70, phyDef: 3.60, magDef: 4.05, spd: 2.90 }
     layers:
       -
         level: 1
         expRequired: 1200
+        statStep: 0.02
       -
         level: 2
         expRequired: 1380
@@ -411,10 +435,12 @@ realms:
   -
     id: "金仙"
     lifespan: 500000
+    statsBase: { hp: 6.00, mp: 6.70, phyAtk: 6.00, magAtk: 6.70, phyDef: 4.10, magDef: 4.60, spd: 3.25 }
     layers:
       -
         level: 1
         expRequired: 1300
+        statStep: 0.02
       -
         level: 2
         expRequired: 1495
@@ -445,10 +471,12 @@ realms:
   -
     id: "太乙金仙"
     lifespan: 1000000
+    statsBase: { hp: 7.00, mp: 7.90, phyAtk: 7.00, magAtk: 7.90, phyDef: 4.65, magDef: 5.25, spd: 3.65 }
     layers:
       -
         level: 1
         expRequired: 1400
+        statStep: 0.02
       -
         level: 2
         expRequired: 1610
@@ -479,10 +507,12 @@ realms:
   -
     id: "大罗金仙"
     lifespan: 5000000
+    statsBase: { hp: 8.20, mp: 9.30, phyAtk: 8.20, magAtk: 9.30, phyDef: 5.25, magDef: 5.95, spd: 4.10 }
     layers:
       -
         level: 1
         expRequired: 1500
+        statStep: 0.02
       -
         level: 2
         expRequired: 1725
@@ -513,10 +543,12 @@ realms:
   -
     id: "混元大罗金仙"
     lifespan: 10000000
+    statsBase: { hp: 9.50, mp: 11.0, phyAtk: 9.50, magAtk: 11.0, phyDef: 5.95, magDef: 6.75, spd: 4.60 }
     layers:
       -
         level: 1
         expRequired: 1600
+        statStep: 0.02
       -
         level: 2
         expRequired: 1840
@@ -547,10 +579,12 @@ realms:
   -
     id: "圣人"
     lifespan: 99999999
+    statsBase: { hp: 11.0, mp: 13.0, phyAtk: 11.0, magAtk: 13.0, phyDef: 6.70, magDef: 7.60, spd: 5.15 }
     layers:
       -
         level: 1
         expRequired: 1700
+        statStep: 0.02
       -
         level: 2
         expRequired: 1955

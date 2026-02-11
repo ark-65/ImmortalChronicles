@@ -50,6 +50,21 @@ class DetailSheet extends StatelessWidget {
                   label: Text('神识 ${state.mp}'),
                   backgroundColor: Colors.blue.withValues(alpha: 0.1),
                 ),
+                Chip(
+                  avatar: const Icon(Icons.security, size: 16, color: Colors.teal),
+                  label: Text('物防 ${state.phyDef}'),
+                  backgroundColor: Colors.teal.withValues(alpha: 0.1),
+                ),
+                Chip(
+                  avatar: const Icon(Icons.shield_moon, size: 16, color: Colors.deepPurple),
+                  label: Text('神防 ${state.magDef}'),
+                  backgroundColor: Colors.deepPurple.withValues(alpha: 0.1),
+                ),
+                Chip(
+                  avatar: const Icon(Icons.speed, size: 16, color: Colors.green),
+                  label: Text('速度 ${state.spd}'),
+                  backgroundColor: Colors.green.withValues(alpha: 0.1),
+                ),
               ],
             ),
             const SizedBox(height: 12),

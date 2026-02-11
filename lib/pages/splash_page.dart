@@ -38,6 +38,22 @@ class _SplashPageState extends State<SplashPage> {
       // Load Event Data
       await EventRepository().ensureLoaded();
 
+      // Minimal completeness checks in debug/dev
+      assert(() {
+        final missing = <String>[];
+        if (EventRepository().tableClanChance().isEmpty) missing.add('clan_chance');
+        if (EventRepository().tableSectChance().isEmpty) missing.add('sect_chance');
+        if (EventRepository().table('sect_trials').isEmpty) missing.add('sect_trials');
+        if (EventRepository().table('sect_daily').isEmpty) missing.add('sect_daily');
+        if (ReferenceRepository().sects.isEmpty) missing.add('sects');
+        if (ReferenceRepository().techniques.isEmpty) missing.add('techniques');
+        if (ReferenceRepository().families.isEmpty) missing.add('families');
+        if (missing.isNotEmpty) {
+          throw StateError('缺少关键资源表: ${missing.join(', ')}');
+        }
+        return true;
+      }());
+
       setState(() {
         _status = '准备就绪';
         _progress = 1.0;

@@ -1,0 +1,1530 @@
+- id: pin6_sect_001
+  name: 六品宗门·1
+  elements:
+  - 火
+  - 土
+  specialties:
+  - 基础修行
+  - 门内试炼
+  weapons:
+  - 剑
+  - 拳
+  coreTechniqueIds: []
+  tier: 六品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 无
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 炼气
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 筑基
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 金丹
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 炼气
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 筑基
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 金丹
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: pin6_sect_002
+  name: 六品宗门·2
+  elements:
+  - 木
+  - 水
+  specialties:
+  - 基础修行
+  - 门内试炼
+  weapons:
+  - 剑
+  - 拳
+  coreTechniqueIds: []
+  tier: 六品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 无
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 炼气
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 筑基
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 金丹
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 炼气
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 筑基
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 金丹
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: pin6_sect_003
+  name: 六品宗门·3
+  elements:
+  - 火
+  - 土
+  specialties:
+  - 基础修行
+  - 门内试炼
+  weapons:
+  - 剑
+  - 拳
+  coreTechniqueIds: []
+  tier: 六品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 无
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 炼气
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 筑基
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 金丹
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 炼气
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 筑基
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 金丹
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: pin6_sect_004
+  name: 六品宗门·4
+  elements:
+  - 木
+  - 水
+  specialties:
+  - 基础修行
+  - 门内试炼
+  weapons:
+  - 剑
+  - 拳
+  coreTechniqueIds: []
+  tier: 六品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 无
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 炼气
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 筑基
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 金丹
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 炼气
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 筑基
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 金丹
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: pin6_sect_005
+  name: 六品宗门·5
+  elements:
+  - 火
+  - 土
+  specialties:
+  - 基础修行
+  - 门内试炼
+  weapons:
+  - 剑
+  - 拳
+  coreTechniqueIds: []
+  tier: 六品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 无
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 炼气
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 筑基
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 金丹
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 炼气
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 筑基
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 金丹
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: pin6_sect_006
+  name: 六品宗门·6
+  elements:
+  - 木
+  - 水
+  specialties:
+  - 基础修行
+  - 门内试炼
+  weapons:
+  - 剑
+  - 拳
+  coreTechniqueIds: []
+  tier: 六品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 无
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 炼气
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 筑基
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 金丹
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 炼气
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 筑基
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 金丹
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: pin6_sect_007
+  name: 六品宗门·7
+  elements:
+  - 火
+  - 土
+  specialties:
+  - 基础修行
+  - 门内试炼
+  weapons:
+  - 剑
+  - 拳
+  coreTechniqueIds: []
+  tier: 六品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 无
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 炼气
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 筑基
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 金丹
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 炼气
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 筑基
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 金丹
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: pin6_sect_008
+  name: 六品宗门·8
+  elements:
+  - 木
+  - 水
+  specialties:
+  - 基础修行
+  - 门内试炼
+  weapons:
+  - 剑
+  - 拳
+  coreTechniqueIds: []
+  tier: 六品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 无
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 炼气
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 筑基
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 金丹
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 炼气
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 筑基
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 金丹
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: pin6_sect_009
+  name: 六品宗门·9
+  elements:
+  - 火
+  - 土
+  specialties:
+  - 基础修行
+  - 门内试炼
+  weapons:
+  - 剑
+  - 拳
+  coreTechniqueIds: []
+  tier: 六品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 无
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 炼气
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 筑基
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 金丹
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 炼气
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 筑基
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 金丹
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: pin6_sect_010
+  name: 六品宗门·10
+  elements:
+  - 木
+  - 水
+  specialties:
+  - 基础修行
+  - 门内试炼
+  weapons:
+  - 剑
+  - 拳
+  coreTechniqueIds: []
+  tier: 六品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 无
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 炼气
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 筑基
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 金丹
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 炼气
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 筑基
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 金丹
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: pin6_sect_011
+  name: 六品宗门·11
+  elements:
+  - 火
+  - 土
+  specialties:
+  - 基础修行
+  - 门内试炼
+  weapons:
+  - 剑
+  - 拳
+  coreTechniqueIds: []
+  tier: 六品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 无
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 炼气
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 筑基
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 金丹
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 炼气
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 筑基
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 金丹
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: pin6_sect_012
+  name: 六品宗门·12
+  elements:
+  - 木
+  - 水
+  specialties:
+  - 基础修行
+  - 门内试炼
+  weapons:
+  - 剑
+  - 拳
+  coreTechniqueIds: []
+  tier: 六品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 无
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 炼气
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 筑基
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 金丹
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 炼气
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 筑基
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 金丹
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: pin6_sect_013
+  name: 六品宗门·13
+  elements:
+  - 火
+  - 土
+  specialties:
+  - 基础修行
+  - 门内试炼
+  weapons:
+  - 剑
+  - 拳
+  coreTechniqueIds: []
+  tier: 六品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 无
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 炼气
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 筑基
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 金丹
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 炼气
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 筑基
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 金丹
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: pin6_sect_014
+  name: 六品宗门·14
+  elements:
+  - 木
+  - 水
+  specialties:
+  - 基础修行
+  - 门内试炼
+  weapons:
+  - 剑
+  - 拳
+  coreTechniqueIds: []
+  tier: 六品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 无
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 炼气
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 筑基
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 金丹
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 炼气
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 筑基
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 金丹
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: pin6_sect_015
+  name: 六品宗门·15
+  elements:
+  - 火
+  - 土
+  specialties:
+  - 基础修行
+  - 门内试炼
+  weapons:
+  - 剑
+  - 拳
+  coreTechniqueIds: []
+  tier: 六品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 无
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 炼气
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 筑基
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 金丹
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 炼气
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 筑基
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 金丹
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: pin6_sect_016
+  name: 六品宗门·16
+  elements:
+  - 木
+  - 水
+  specialties:
+  - 基础修行
+  - 门内试炼
+  weapons:
+  - 剑
+  - 拳
+  coreTechniqueIds: []
+  tier: 六品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 无
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 炼气
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 筑基
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 金丹
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 炼气
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 筑基
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 金丹
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: pin6_sect_017
+  name: 六品宗门·17
+  elements:
+  - 火
+  - 土
+  specialties:
+  - 基础修行
+  - 门内试炼
+  weapons:
+  - 剑
+  - 拳
+  coreTechniqueIds: []
+  tier: 六品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 无
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 炼气
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 筑基
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 金丹
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 炼气
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 筑基
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 金丹
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: pin6_sect_018
+  name: 六品宗门·18
+  elements:
+  - 木
+  - 水
+  specialties:
+  - 基础修行
+  - 门内试炼
+  weapons:
+  - 剑
+  - 拳
+  coreTechniqueIds: []
+  tier: 六品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 无
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 炼气
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 筑基
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 金丹
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 炼气
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 筑基
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 金丹
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: pin6_sect_019
+  name: 六品宗门·19
+  elements:
+  - 火
+  - 土
+  specialties:
+  - 基础修行
+  - 门内试炼
+  weapons:
+  - 剑
+  - 拳
+  coreTechniqueIds: []
+  tier: 六品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 无
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 炼气
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 筑基
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 金丹
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 炼气
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 筑基
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 金丹
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: pin6_sect_020
+  name: 六品宗门·20
+  elements:
+  - 木
+  - 水
+  specialties:
+  - 基础修行
+  - 门内试炼
+  weapons:
+  - 剑
+  - 拳
+  coreTechniqueIds: []
+  tier: 六品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 无
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 炼气
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 筑基
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 金丹
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 炼气
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 筑基
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 金丹
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: pin6_sect_021
+  name: 六品宗门·21
+  elements:
+  - 火
+  - 土
+  specialties:
+  - 基础修行
+  - 门内试炼
+  weapons:
+  - 剑
+  - 拳
+  coreTechniqueIds: []
+  tier: 六品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 无
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 炼气
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 筑基
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 金丹
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 炼气
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 筑基
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 金丹
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: pin6_sect_022
+  name: 六品宗门·22
+  elements:
+  - 木
+  - 水
+  specialties:
+  - 基础修行
+  - 门内试炼
+  weapons:
+  - 剑
+  - 拳
+  coreTechniqueIds: []
+  tier: 六品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 无
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 炼气
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 筑基
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 金丹
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 炼气
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 筑基
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 金丹
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: pin6_sect_023
+  name: 六品宗门·23
+  elements:
+  - 火
+  - 土
+  specialties:
+  - 基础修行
+  - 门内试炼
+  weapons:
+  - 剑
+  - 拳
+  coreTechniqueIds: []
+  tier: 六品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 无
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 炼气
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 筑基
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 金丹
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 炼气
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 筑基
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 金丹
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: pin6_sect_024
+  name: 六品宗门·24
+  elements:
+  - 木
+  - 水
+  specialties:
+  - 基础修行
+  - 门内试炼
+  weapons:
+  - 剑
+  - 拳
+  coreTechniqueIds: []
+  tier: 六品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 无
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 炼气
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 筑基
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 金丹
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 炼气
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 筑基
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 金丹
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: pin6_sect_025
+  name: 六品宗门·25
+  elements:
+  - 火
+  - 土
+  specialties:
+  - 基础修行
+  - 门内试炼
+  weapons:
+  - 剑
+  - 拳
+  coreTechniqueIds: []
+  tier: 六品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 无
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 炼气
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 筑基
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 金丹
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 炼气
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 筑基
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 金丹
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: pin6_sect_026
+  name: 六品宗门·26
+  elements:
+  - 木
+  - 水
+  specialties:
+  - 基础修行
+  - 门内试炼
+  weapons:
+  - 剑
+  - 拳
+  coreTechniqueIds: []
+  tier: 六品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 无
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 炼气
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 筑基
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 金丹
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 炼气
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 筑基
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 金丹
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: pin6_sect_027
+  name: 六品宗门·27
+  elements:
+  - 火
+  - 土
+  specialties:
+  - 基础修行
+  - 门内试炼
+  weapons:
+  - 剑
+  - 拳
+  coreTechniqueIds: []
+  tier: 六品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 无
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 炼气
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 筑基
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 金丹
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 炼气
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 筑基
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 金丹
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: pin6_sect_028
+  name: 六品宗门·28
+  elements:
+  - 木
+  - 水
+  specialties:
+  - 基础修行
+  - 门内试炼
+  weapons:
+  - 剑
+  - 拳
+  coreTechniqueIds: []
+  tier: 六品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 无
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 炼气
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 筑基
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 金丹
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 炼气
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 筑基
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 金丹
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: pin6_sect_029
+  name: 六品宗门·29
+  elements:
+  - 火
+  - 土
+  specialties:
+  - 基础修行
+  - 门内试炼
+  weapons:
+  - 剑
+  - 拳
+  coreTechniqueIds: []
+  tier: 六品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 无
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 炼气
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 筑基
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 金丹
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 炼气
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 筑基
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 金丹
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: pin6_sect_030
+  name: 六品宗门·30
+  elements:
+  - 木
+  - 水
+  specialties:
+  - 基础修行
+  - 门内试炼
+  weapons:
+  - 剑
+  - 拳
+  coreTechniqueIds: []
+  tier: 六品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 无
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 炼气
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 筑基
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 金丹
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 炼气
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 筑基
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 金丹
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite

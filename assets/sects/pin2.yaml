@@ -1,0 +1,2671 @@
+- id: ren_sect_0
+  name: 柳巷武馆
+  elements:
+  - 水
+  - 风
+  specialties:
+  - 柳叶棍
+  - 巷战技巧
+  weapons:
+  - 棍
+  - 拳
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_staff_11
+  tier: 二品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_1
+  name: 竹海武馆
+  elements:
+  - 木
+  - 风
+  specialties:
+  - 竹影剑
+  - 踏叶步
+  weapons:
+  - 剑
+  - 扇
+  coreTechniqueIds:
+  - cult_mortal_fan_wood_1
+  - id_art_fan_sword_11
+  tier: 二品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_2
+  name: 渔火武堂
+  elements:
+  - 火
+  - 水
+  specialties:
+  - 渔火劲
+  - 分水刺
+  weapons:
+  - 叉
+  - 拳
+  coreTechniqueIds:
+  - cult_mortal_fan_fire_1
+  - id_art_fan_fist_11
+  tier: 二品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_3
+  name: 铁匠武馆
+  elements:
+  - 火
+  - 金
+  specialties:
+  - 百炼成钢
+  - 重锤一击
+  weapons:
+  - 锤
+  - 刀
+  coreTechniqueIds:
+  - cult_mortal_fan_metal_1
+  - id_art_fan_blade_11
+  tier: 二品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_4
+  name: 织坊拳社
+  elements:
+  - 金
+  - 气
+  specialties:
+  - 缠丝拳
+  - 寸劲灵动
+  weapons:
+  - 拳
+  coreTechniqueIds:
+  - cult_mortal_fan_metal_1
+  - id_art_fan_fist_12
+  tier: 二品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_5
+  name: 车匠镖局
+  elements:
+  - 力
+  - 土
+  specialties:
+  - 推车功
+  - 长途奔波
+  weapons:
+  - 镖
+  - 刀
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_blade_11
+  tier: 二品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_6
+  name: 驿站武堂
+  elements:
+  - 气
+  - 风
+  specialties:
+  - 神行捷报
+  - 快马长枪
+  weapons:
+  - 枪
+  - 剑
+  coreTechniqueIds:
+  - cult_mortal_fan_wood_1
+  - id_art_fan_spear_11
+  tier: 二品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_7
+  name: 山村习武堂
+  elements:
+  - 土
+  - 力
+  specialties:
+  - 山村民力
+  - 野性搏击
+  weapons:
+  - 棍
+  - 拳
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_fist_11
+  tier: 二品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_8
+  name: 河湾武舍
+  elements:
+  - 水
+  specialties:
+  - 河漫步
+  - 柔水掌
+  weapons:
+  - 掌
+  - 剑
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_palm_11
+  tier: 二品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_9
+  name: 渔村武馆
+  elements:
+  - 水
+  specialties:
+  - 捕鱼叉
+  - 踏浪劲
+  weapons:
+  - 叉
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_spear_12
+  tier: 二品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_10
+  name: 林间武馆
+  elements:
+  - 木
+  - 风
+  specialties:
+  - 森林狩猎
+  - 百步穿杨
+  weapons:
+  - 弓
+  - 弩
+  coreTechniqueIds:
+  - cult_mortal_fan_wood_1
+  - id_art_fan_bow_11
+  tier: 二品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_11
+  name: 云水武社
+  elements:
+  - 水
+  - 气
+  specialties:
+  - 云水游
+  - 柔云拳
+  weapons:
+  - 拳
+  - 剑
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_fist_12
+  tier: 二品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_12
+  name: 麦田武馆
+  elements:
+  - 土
+  - 木
+  specialties:
+  - 麦浪劲
+  - 田园功
+  weapons:
+  - 棍
+  - 镰
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_staff_11
+  tier: 二品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_13
+  name: 茶铺武馆
+  elements:
+  - 水
+  - 幻
+  specialties:
+  - 茶韵悠长
+  - 幻影迷踪
+  weapons:
+  - 扇
+  - 掌
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_palm_12
+  tier: 二品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_14
+  name: 柴门拳馆
+  elements:
+  - 力
+  - 土
+  specialties:
+  - 柴门劲
+  - 劈柴手
+  weapons:
+  - 拳
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_fist_11
+  tier: 二品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_15
+  name: 杏林医馆
+  elements:
+  - 药
+  - 水
+  specialties:
+  - 金针过穴
+  - 回春术
+  weapons:
+  - 针
+  coreTechniqueIds:
+  - cult_mortal_fan_wood_1
+  - id_art_fan_poison_11
+  tier: 二品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_16
+  name: 江舟武馆
+  elements:
+  - 水
+  - 木
+  specialties:
+  - 江舟游
+  - 分水刺
+  weapons:
+  - 叉
+  - 棍
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_staff_11
+  tier: 二品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_17
+  name: 瓦巷武馆
+  elements:
+  - 土
+  - 金
+  specialties:
+  - 瓦石劲
+  - 街头斗争
+  weapons:
+  - 刀
+  - 拳
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_blade_11
+  tier: 二品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_18
+  name: 落雪武馆
+  elements:
+  - 冰
+  specialties:
+  - 飞雪剑
+  - 寒意凛然
+  weapons:
+  - 剑
+  coreTechniqueIds:
+  - cult_spirit_ling_ice_1
+  - id_art_fan_sword_11
+  tier: 二品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_19
+  name: 青石拳社
+  elements:
+  - 土
+  - 力
+  specialties:
+  - 青石拳
+  - 稳扎稳打
+  weapons:
+  - 拳
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_fist_12
+  tier: 二品
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_20
+  name: 黑虎武馆
+  elements:
+  - 力
+  - 阴
+  specialties:
+  - 黑虎掏心
+  - 横练功夫
+  weapons:
+  - 拳
+  - 爪
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_fist_11
+  tier: 二品
+  parentId: di_sect_20
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_21
+  name: 顺风镖局
+  elements:
+  - 风
+  - 气
+  specialties:
+  - 顺风而行
+  - 飞檐走壁
+  weapons:
+  - 镖
+  - 短剑
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_blade_11
+  tier: 二品
+  parentId: di_sect_21
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_22
+  name: 铁血武馆
+  elements:
+  - 力
+  - 血
+  specialties:
+  - 铁血丹心
+  - 刚猛无俦
+  weapons:
+  - 拳
+  - 刀
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_fist_12
+  tier: 二品
+  parentId: di_sect_22
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_23
+  name: 寒风武馆
+  elements:
+  - 冰
+  - 风
+  specialties:
+  - 凛冬已至
+  - 风驰电掣
+  weapons:
+  - 剑
+  - 扇
+  coreTechniqueIds:
+  - cult_spirit_ling_ice_1
+  - id_art_fan_sword_11
+  tier: 二品
+  parentId: di_sect_23
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_24
+  name: 疾风剑舍
+  elements:
+  - 风
+  - 金
+  specialties:
+  - 快剑无影
+  - 疾影随行
+  weapons:
+  - 剑
+  - 刺
+  coreTechniqueIds:
+  - cult_spirit_ling_wind_1
+  - id_art_fan_sword_12
+  tier: 二品
+  parentId: di_sect_24
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_25
+  name: 阴山拳社
+  elements:
+  - 阴
+  - 煞
+  specialties:
+  - 阴冥劲
+  - 碎骨掌
+  weapons:
+  - 拳
+  - 钩
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_fist_11
+  tier: 二品
+  parentId: di_sect_25
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_26
+  name: 天影武堂
+  elements:
+  - 暗
+  - 空
+  specialties:
+  - 天影幻化
+  - 潜影袭杀
+  weapons:
+  - 刺
+  - 钩
+  coreTechniqueIds:
+  - cult_spirit_ling_dark_1
+  - id_art_fan_poison_11
+  tier: 二品
+  parentId: di_sect_26
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_27
+  name: 济世堂
+  elements:
+  - 药
+  - 水
+  specialties:
+  - 悬壶济世
+  - 妙手偶得
+  weapons:
+  - 针
+  - 鼎
+  coreTechniqueIds:
+  - cult_mortal_fan_wood_1
+  - id_art_fan_poison_11
+  tier: 二品
+  parentId: di_sect_27
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_28
+  name: 星罗武馆
+  elements:
+  - 星
+  - 术
+  specialties:
+  - 星罗棋布
+  - 推天算地
+  weapons:
+  - 棋盘
+  - 剑
+  coreTechniqueIds:
+  - cult_spirit_ling_water_1
+  - id_art_fan_sword_11
+  tier: 二品
+  parentId: di_sect_28
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_29
+  name: 金石社
+  elements:
+  - 金
+  - 土
+  specialties:
+  - 金坚石硬
+  - 不动如山
+  weapons:
+  - 锤
+  - 盾
+  coreTechniqueIds:
+  - cult_spirit_ling_metal_1
+  - id_art_fan_staff_11
+  tier: 二品
+  parentId: di_sect_29
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_30
+  name: 幻月阁
+  elements:
+  - 幻
+  - 水
+  specialties:
+  - 水中捞月
+  - 梦幻虚影
+  weapons:
+  - 扇
+  - 琴
+  coreTechniqueIds:
+  - cult_spirit_ling_water_1
+  - id_art_fan_illusion_11
+  tier: 二品
+  parentId: di_sect_30
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_31
+  name: 青松武馆
+  elements:
+  - 木
+  - 风
+  specialties:
+  - 青松劲
+  - 疾风步
+  weapons:
+  - 剑
+  - 棍
+  coreTechniqueIds:
+  - cult_mortal_fan_wood_1
+  - id_art_fan_staff_11
+  tier: 二品
+  parentId: di_sect_31
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_32
+  name: 霜叶社
+  elements:
+  - 冰
+  - 木
+  specialties:
+  - 霜叶红于二月花
+  - 寒气入体
+  weapons:
+  - 剑
+  - 扇
+  coreTechniqueIds:
+  - cult_spirit_ling_ice_1
+  - id_art_fan_sword_11
+  tier: 二品
+  parentId: di_sect_32
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_33
+  name: 烈火武馆
+  elements:
+  - 火
+  - 阳
+  specialties:
+  - 烈火燎原
+  - 刚阳之气
+  weapons:
+  - 刀
+  - 拳
+  coreTechniqueIds:
+  - cult_mortal_fan_fire_1
+  - id_art_fan_blade_11
+  tier: 二品
+  parentId: di_sect_34
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_34
+  name: 土元拳馆
+  elements:
+  - 土
+  - 力
+  specialties:
+  - 土元厚劲
+  - 崩山击
+  weapons:
+  - 拳
+  - 盾
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_fist_12
+  tier: 二品
+  parentId: di_sect_39
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_35
+  name: 暗影派
+  elements:
+  - 暗
+  - 阴
+  specialties:
+  - 影子戏
+  - 潜行暗杀
+  weapons:
+  - 刺
+  - 钩
+  coreTechniqueIds:
+  - cult_spirit_ling_dark_1
+  - id_art_fan_poison_11
+  tier: 二品
+  parentId: di_sect_35
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_36
+  name: 力士堂
+  elements:
+  - 力
+  - 土
+  specialties:
+  - 力士扛鼎
+  - 铜皮铁骨
+  weapons:
+  - 锤
+  - 柱
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_fist_11
+  tier: 二品
+  parentId: di_sect_36
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_37
+  name: 阵图社
+  elements:
+  - 术
+  - 灵
+  specialties:
+  - 基础阵法图
+  - 灵气感应
+  weapons:
+  - 笔
+  - 盘
+  coreTechniqueIds:
+  - cult_spirit_ling_water_1
+  - id_art_fan_staff_11
+  tier: 二品
+  parentId: di_sect_37
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_38
+  name: 血刀武馆
+  elements:
+  - 血
+  - 火
+  specialties:
+  - 血气方刚
+  - 狂暴快刀
+  weapons:
+  - 刀
+  - 镰
+  coreTechniqueIds:
+  - cult_mortal_fan_fire_1
+  - id_art_fan_blade_11
+  tier: 二品
+  parentId: di_sect_38
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_39
+  name: 象力馆
+  elements:
+  - 力
+  - 兽
+  specialties:
+  - 小象步
+  - 蛮力一击
+  weapons:
+  - 拳
+  - 棍
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_fist_12
+  tier: 二品
+  parentId: di_sect_39
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_40
+  name: 夜星阁
+  elements:
+  - 星
+  - 暗
+  specialties:
+  - 夜观星象
+  - 星影重重
+  weapons:
+  - 扇
+  - 刺
+  coreTechniqueIds:
+  - cult_spirit_ling_water_1
+  - id_art_fan_sword_11
+  tier: 二品
+  parentId: di_sect_40
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_41
+  name: 百草社
+  elements:
+  - 生
+  - 药
+  specialties:
+  - 百草识真
+  - 简单炼药
+  weapons:
+  - 药锄
+  - 针
+  coreTechniqueIds:
+  - cult_spirit_ling_wood_1
+  - id_art_fan_poison_11
+  tier: 二品
+  parentId: di_sect_41
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_42
+  name: 驯兽馆
+  elements:
+  - 兽
+  - 力
+  specialties:
+  - 驯犬术
+  - 猛虎下山
+  weapons:
+  - 鞭
+  - 哨
+  coreTechniqueIds:
+  - cult_spirit_ling_wood_1
+  - id_art_fan_staff_11
+  tier: 二品
+  parentId: di_sect_42
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_43
+  name: 微风武馆
+  elements:
+  - 风
+  - 气
+  specialties:
+  - 拂柳劲
+  - 随风动
+  weapons:
+  - 扇
+  - 剑
+  coreTechniqueIds:
+  - cult_spirit_ling_wind_1
+  - id_art_fan_sword_12
+  tier: 二品
+  parentId: di_sect_43
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_44
+  name: 地热武堂
+  elements:
+  - 火
+  - 土
+  specialties:
+  - 地热喷发
+  - 焦土劲
+  weapons:
+  - 刀
+  - 拳
+  coreTechniqueIds:
+  - cult_mortal_fan_fire_1
+  - id_art_fan_blade_11
+  tier: 二品
+  parentId: di_sect_44
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_45
+  name: 寒霜门
+  elements:
+  - 冰
+  - 冷
+  specialties:
+  - 寒霜满面
+  - 凝水成冰
+  weapons:
+  - 剑
+  - 锥
+  coreTechniqueIds:
+  - cult_spirit_ling_ice_1
+  - id_art_fan_sword_11
+  tier: 二品
+  parentId: di_sect_45
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_46
+  name: 通灵社
+  elements:
+  - 魂
+  - 灵
+  specialties:
+  - 通灵仪式
+  - 唤魂术
+  weapons:
+  - 盘
+  - 笔
+  coreTechniqueIds:
+  - cult_spirit_ling_dark_1
+  - id_art_fan_poison_11
+  tier: 二品
+  parentId: di_sect_46
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_47
+  name: 蛟龙馆
+  elements:
+  - 力
+  - 水
+  specialties:
+  - 蛟龙入海
+  - 破浪击
+  weapons:
+  - 棍
+  - 叉
+  coreTechniqueIds:
+  - cult_spirit_ling_water_1
+  - id_art_fan_staff_12
+  tier: 二品
+  parentId: di_sect_47
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_48
+  name: 冥河拳舍
+  elements:
+  - 阴
+  - 水
+  specialties:
+  - 冥河死水
+  - 浮尸掌
+  weapons:
+  - 拳
+  - 刺
+  coreTechniqueIds:
+  - cult_spirit_ling_ice_1
+  - id_art_fan_fist_11
+  tier: 二品
+  parentId: di_sect_48
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: ren_sect_49
+  name: 卜天阁
+  elements:
+  - 运
+  - 术
+  specialties:
+  - 抽签算卦
+  - 铁口直断
+  weapons:
+  - 幡
+  - 卦
+  coreTechniqueIds:
+  - cult_spirit_ling_water_1
+  - id_art_fan_staff_11
+  tier: 二品
+  parentId: di_sect_49
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 元婴
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 化神
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 炼虚
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 合体
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 化神
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 炼虚
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 合体
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite

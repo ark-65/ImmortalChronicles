@@ -1,0 +1,134 @@
+- id: "necklace_fan_001"
+  name: "兽牙项链"
+  slot: "necklace"
+  grade: "fan"
+  rank: "c"
+  mainStats: { phyAtk: 12 }
+  subStats: { spd: 1 }
+  description: "由兽牙串成，略增勇武。"
+
+- id: "necklace_fan_002"
+  name: "木灵坠"
+  slot: "necklace"
+  grade: "fan"
+  rank: "b"
+  mainStats: { mp: 60 }
+  subStats: { magAtk: 10 }
+  description: "木灵护心，提升灵力。"
+
+- id: "necklace_fan_003"
+  name: "简易符坠"
+  slot: "necklace"
+  grade: "fan"
+  rank: "a"
+  mainStats: { magDef: 10 }
+  subStats: { hp: 60 }
+  description: "符纸封入玉坠，略抗术法。"
+
+- id: "necklace_ling_001"
+  name: "灵泉挂坠"
+  slot: "necklace"
+  grade: "ling"
+  rank: "b"
+  mainStats: { mp: 100 }
+  subStats: { magAtk: 16 }
+  description: "蕴含灵泉之气。"
+
+- id: "necklace_ling_002"
+  name: "风铃项链"
+  slot: "necklace"
+  grade: "ling"
+  rank: "a"
+  mainStats: { spd: 4 }
+  subStats: { phyAtk: 18 }
+  description: "清脆风铃，行动如风。"
+
+- id: "necklace_ling_003"
+  name: "护心玉"
+  slot: "necklace"
+  grade: "ling"
+  rank: "s"
+  mainStats: { magDef: 18, phyDef: 10 }
+  subStats: { hp: 120 }
+  description: "护心化煞，增防增血。"
+
+- id: "necklace_xian_001"
+  name: "流光坠"
+  slot: "necklace"
+  grade: "xian"
+  rank: "a"
+  mainStats: { magAtk: 42 }
+  subStats: { mp: 160, spd: 4 }
+  description: "流光化形，法术更顺。"
+
+- id: "necklace_xian_002"
+  name: "雷心链"
+  slot: "necklace"
+  grade: "xian"
+  rank: "s"
+  mainStats: { phyAtk: 50, magAtk: 30 }
+  subStats: { spd: 6 }
+  description: "雷灵灌注，攻速齐增。"
+
+- id: "necklace_xian_003"
+  name: "玄冰护心链"
+  slot: "necklace"
+  grade: "xian"
+  rank: "ss"
+  mainStats: { magDef: 28 }
+  subStats: { hp: 180 }
+  description: "冰华凝聚，护住心脉。"
+
+- id: "necklace_sheng_001"
+  name: "圣辉锁"
+  slot: "necklace"
+  grade: "sheng"
+  rank: "ss"
+  mainStats: { magAtk: 70 }
+  subStats: { mp: 220, magDef: 24 }
+  description: "圣光凝链，强力法攻。"
+
+- id: "necklace_sheng_002"
+  name: "战神链"
+  slot: "necklace"
+  grade: "sheng"
+  rank: "ss"
+  mainStats: { phyAtk: 90 }
+  subStats: { spd: 10, phyDef: 22 }
+  description: "战意昂扬，提升物攻与速度。"
+
+- id: "necklace_sheng_003"
+  name: "风皇坠"
+  slot: "necklace"
+  grade: "sheng"
+  rank: "sss"
+  mainStats: { spd: 12 }
+  subStats: { phyAtk: 50, magAtk: 40 }
+  description: "风皇之力庇佑。"
+
+- id: "necklace_dao_001"
+  name: "混沌心链"
+  slot: "necklace"
+  grade: "dao"
+  rank: "sss"
+  mainStats: { magAtk: 120, phyAtk: 80 }
+  subStats: { mp: 260, spd: 12 }
+  description: "混沌心意凝成的项链。"
+
+- id: "necklace_dao_002"
+  name: "太乙神链"
+  slot: "necklace"
+  grade: "dao"
+  rank: "sss"
+  mainStats: { magDef: 46, phyDef: 34 }
+  subStats: { hp: 220, mp: 220 }
+  description: "太乙神纹护体。"
+
+- id: "necklace_dao_003"
+  name: "鸿蒙之锁"
+  slot: "necklace"
+  grade: "dao"
+  rank: "sss"
+  mainStats: { spd: 14 }
+  subStats: { phyAtk: 70, magAtk: 60 }
+  description: "鸿蒙气息凝聚，加速攻法。"

@@ -176,6 +176,14 @@ class EventEngine {
       }
     }
 
+    // Sect tier condition (杂役/外门/内门/亲传等)
+    if (e.conditions['sectTier'] != null) {
+      final requiredTier = e.conditions['sectTier'];
+      if (state.sectTier != requiredTier) {
+        return false;
+      }
+    }
+
     // Prerequisite checks
     for (final pre in e.prerequisites) {
       if (!_checkPrerequisite(state, pre)) return false;
@@ -546,6 +554,7 @@ class EventEngine {
     }
 
     if (mergedEffects['sectId'] != null) state.sectId = mergedEffects['sectId'];
+    if (mergedEffects['sectTier'] != null) state.sectTier = mergedEffects['sectTier'];
     if (mergedEffects['nextYear'] == true) state.nextYear();
 
     if (event.id == 'age_6_root_test' || 

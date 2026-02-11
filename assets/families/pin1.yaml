@@ -1,0 +1,654 @@
+- id: di_0
+  name: 岩锤堡
+  elements:
+  - 土
+  - 力
+  weapons:
+  - 锤
+  coreTechniqueIds:
+  - cult_spirit_ling_earth_1
+  - id_art_ling_hammer_1
+  tier: 一品
+- id: di_1
+  name: 石壁庄
+  elements:
+  - 土
+  weapons:
+  - 盾
+  - 刀
+  coreTechniqueIds:
+  - cult_spirit_ling_earth_1
+  - id_art_ling_shield_2
+  tier: 一品
+- id: di_2
+  name: 厚土宗族
+  elements:
+  - 土
+  weapons:
+  - 棍
+  coreTechniqueIds:
+  - cult_spirit_ling_earth_1
+  - id_art_ling_staff_2
+  tier: 一品
+- id: di_3
+  name: 青田世家
+  elements:
+  - 木
+  - 土
+  weapons:
+  - 杖
+  - 剑
+  coreTechniqueIds:
+  - cult_spirit_ling_wood_1
+  - id_art_ling_sword_2
+  tier: 一品
+- id: di_4
+  name: 青蛇族
+  elements:
+  - 毒
+  - 木
+  weapons:
+  - 鞭
+  - 钩
+  coreTechniqueIds:
+  - cult_spirit_ling_wood_1
+  - id_art_ling_poison_2
+  tier: 一品
+- id: di_5
+  name: 玄石 village
+  elements:
+  - 土
+  - 金
+  weapons:
+  - 锤
+  - 拳
+  coreTechniqueIds:
+  - cult_spirit_ling_metal_1
+  - id_art_ling_fist_1
+  tier: 一品
+- id: di_6
+  name: 烈山族
+  elements:
+  - 火
+  - 土
+  weapons:
+  - 斧
+  - 刀
+  coreTechniqueIds:
+  - cult_spirit_ling_fire_1
+  - id_art_ling_blade_2
+  tier: 一品
+- id: di_7
+  name: 丹霞庄
+  elements:
+  - 火
+  - 阳
+  weapons:
+  - 扇
+  - 笔
+  coreTechniqueIds:
+  - cult_spirit_ling_fire_1
+  - id_art_ling_fan_2
+  tier: 一品
+- id: di_8
+  name: 寒月寨
+  elements:
+  - 冰
+  - 阴
+  weapons:
+  - 剑
+  - 扇
+  coreTechniqueIds:
+  - cult_spirit_ling_ice_1
+  - id_art_ling_sword_2
+  tier: 一品
+- id: di_9
+  name: 碧落世家
+  elements:
+  - 木
+  - 阴
+  weapons:
+  - 剑
+  coreTechniqueIds:
+  - cult_spirit_ling_wood_1
+  - id_art_ling_sword_1
+  tier: 一品
+- id: di_10
+  name: 黄泉族
+  elements:
+  - 暗
+  - 死
+  weapons:
+  - 钩
+  - 爪
+  coreTechniqueIds:
+  - cult_spirit_ling_dark_1
+  - id_art_ling_hook_2
+  tier: 一品
+- id: di_11
+  name: 青莲庄
+  elements:
+  - 水
+  - 幻
+  weapons:
+  - 扇
+  - 琴
+  coreTechniqueIds:
+  - cult_spirit_ling_water_1
+  - id_art_ling_fan_2
+  tier: 一品
+- id: di_12
+  name: 青云寨
+  elements:
+  - 风
+  - 气
+  weapons:
+  - 剑
+  - 弓
+  coreTechniqueIds:
+  - cult_spirit_ling_wind_1
+  - id_art_ling_sword_2
+  tier: 一品
+- id: di_13
+  name: 望川族
+  elements:
+  - 水
+  - 魂
+  weapons:
+  - 笔
+  - 琴
+  coreTechniqueIds:
+  - cult_spirit_ling_water_1
+  - id_art_ling_sound_2
+  tier: 一品
+- id: di_14
+  name: 幽谷世家
+  elements:
+  - 阴
+  - 幻
+  weapons:
+  - 爪
+  - 钩
+  coreTechniqueIds:
+  - cult_spirit_ling_dark_1
+  - id_art_ling_claw_2
+  tier: 一品
+- id: di_15
+  name: 白猿山族
+  elements:
+  - 力
+  - 土
+  weapons:
+  - 棍
+  - 拳
+  coreTechniqueIds:
+  - cult_spirit_ling_earth_1
+  - id_art_ling_fist_1
+  tier: 一品
+- id: di_16
+  name: 丹鼎世家
+  elements:
+  - 药
+  - 火
+  weapons:
+  - 炉
+  - 笔
+  coreTechniqueIds:
+  - cult_spirit_ling_fire_1
+  - id_art_ling_fire_2
+  tier: 一品
+- id: di_17
+  name: 雷泽族
+  elements:
+  - 雷
+  - 水
+  weapons:
+  - 戟
+  - 锤
+  coreTechniqueIds:
+  - cult_spirit_ling_thunder_1
+  - id_art_ling_thunder_2
+  tier: 一品
+- id: di_18
+  name: 落星堡
+  elements:
+  - 星
+  - 土
+  weapons:
+  - 枪
+  - 弓
+  coreTechniqueIds:
+  - cult_spirit_ling_earth_1
+  - id_art_ling_spear_2
+  tier: 一品
+- id: di_19
+  name: 苍穹寨
+  elements:
+  - 气
+  - 风
+  weapons:
+  - 剑
+  - 扇
+  coreTechniqueIds:
+  - cult_spirit_ling_wind_1
+  - id_art_ling_sword_2
+  tier: 一品
+- id: di_20
+  name: 金焱支脉
+  elements:
+  - 金
+  - 火
+  weapons:
+  - 刀
+  - 剑
+  coreTechniqueIds:
+  - cult_spirit_ling_fire_1
+  - id_art_ling_blade_2
+  tier: 一品
+  parentId: tian_20
+- id: di_21
+  name: 灵森支脉
+  elements:
+  - 木
+  - 生
+  weapons:
+  - 杖
+  - 针
+  coreTechniqueIds:
+  - cult_spirit_ling_wood_1
+  - id_art_ling_staff_2
+  tier: 一品
+  parentId: tian_21
+- id: di_22
+  name: 雷音分家
+  elements:
+  - 雷
+  - 金
+  weapons:
+  - 戟
+  - 锤
+  coreTechniqueIds:
+  - cult_spirit_ling_thunder_1
+  - id_art_ling_hammer_1
+  tier: 一品
+  parentId: tian_22
+- id: di_23
+  name: 星愿分家
+  elements:
+  - 星
+  - 幻
+  weapons:
+  - 笔
+  - 扇
+  coreTechniqueIds:
+  - cult_spirit_ling_water_1
+  - id_art_ling_sound_2
+  tier: 一品
+  parentId: tian_23
+- id: di_24
+  name: 绝影支系
+  elements:
+  - 暗
+  - 影
+  weapons:
+  - 刺
+  - 钩
+  coreTechniqueIds:
+  - cult_spirit_ling_dark_1
+  - id_art_ling_claw_2
+  tier: 一品
+  parentId: tian_24
+- id: di_25
+  name: 天风分院
+  elements:
+  - 风
+  - 气
+  weapons:
+  - 扇
+  - 剑
+  coreTechniqueIds:
+  - cult_spirit_ling_wind_1
+  - id_art_ling_fan_2
+  tier: 一品
+  parentId: tian_25
+- id: di_26
+  name: 寒霜别院
+  elements:
+  - 冰
+  - 水
+  weapons:
+  - 剑
+  - 刺
+  coreTechniqueIds:
+  - cult_spirit_ling_ice_1
+  - id_art_ling_sword_2
+  tier: 一品
+  parentId: tian_26
+- id: di_27
+  name: 力王分支
+  elements:
+  - 力
+  - 土
+  weapons:
+  - 锤
+  - 拳
+  coreTechniqueIds:
+  - cult_spirit_ling_earth_1
+  - id_art_ling_fist_1
+  tier: 一品
+  parentId: tian_27
+- id: di_28
+  name: 青药分部
+  elements:
+  - 药
+  - 木
+  weapons:
+  - 针
+  - 鼎
+  coreTechniqueIds:
+  - cult_spirit_ling_wood_1
+  - id_art_ling_nature_2
+  tier: 一品
+  parentId: tian_28
+- id: di_29
+  name: 虚空弃族
+  elements:
+  - 空
+  - 幻
+  weapons:
+  - 扇
+  - 刺
+  coreTechniqueIds:
+  - cult_spirit_ling_water_1
+  - id_art_ling_fan_2
+  tier: 一品
+  parentId: tian_29
+- id: di_30
+  name: 天阳后裔
+  elements:
+  - 阳
+  - 光
+  weapons:
+  - 剑
+  - 轮
+  coreTechniqueIds:
+  - cult_spirit_ling_fire_1
+  - id_art_ling_sword_1
+  tier: 一品
+  parentId: tian_30
+- id: di_31
+  name: 地晶矿脉族
+  elements:
+  - 土
+  - 金
+  weapons:
+  - 斧
+  - 锤
+  coreTechniqueIds:
+  - cult_spirit_ling_earth_1
+  - id_art_ling_hammer_1
+  tier: 一品
+  parentId: tian_31
+- id: di_32
+  name: 龙凰潜脉
+  elements:
+  - 混沌
+  - 力
+  weapons:
+  - 枪
+  - 棍
+  coreTechniqueIds:
+  - cult_spirit_ling_water_1
+  - id_art_ling_spear_2
+  tier: 一品
+  parentId: tian_32
+- id: di_33
+  name: 天阵凡族
+  elements:
+  - 术
+  - 灵
+  weapons:
+  - 笔
+  - 盘
+  coreTechniqueIds:
+  - cult_spirit_ling_water_1
+  - id_art_ling_sound_2
+  tier: 一品
+  parentId: tian_41
+- id: di_34
+  name: 黑虎遗脉
+  elements:
+  - 力
+  - 阴
+  weapons:
+  - 爪
+  - 链
+  coreTechniqueIds:
+  - cult_spirit_ling_dark_1
+  - id_art_ling_claw_2
+  tier: 一品
+  parentId: tian_4
+- id: di_35
+  name: 青冥遗族
+  elements:
+  - 风
+  - 阴
+  weapons:
+  - 剑
+  - 扇
+  coreTechniqueIds:
+  - cult_spirit_ling_wind_1
+  - id_art_ling_sword_2
+  tier: 一品
+  parentId: tian_5
+- id: di_36
+  name: 玄剑各支
+  elements:
+  - 剑
+  - 金
+  weapons:
+  - 剑
+  coreTechniqueIds:
+  - cult_spirit_ling_metal_1
+  - id_art_ling_sword_1
+  tier: 一品
+  parentId: tian_6
+- id: di_37
+  name: 天机散脉
+  elements:
+  - 运
+  - 术
+  weapons:
+  - 笔
+  - 签
+  coreTechniqueIds:
+  - cult_spirit_ling_water_1
+  - id_art_ling_sound_2
+  tier: 一品
+  parentId: tian_7
+- id: di_38
+  name: 太虚支流
+  elements:
+  - 空
+  - 幻
+  weapons:
+  - 扇
+  - 剑
+  coreTechniqueIds:
+  - cult_spirit_ling_water_1
+  - id_art_ling_fan_2
+  tier: 一品
+  parentId: tian_8
+- id: di_39
+  name: 天河支系
+  elements:
+  - 水
+  - 气
+  weapons:
+  - 枪
+  - 剑
+  coreTechniqueIds:
+  - cult_spirit_ling_water_1
+  - id_art_ling_spear_2
+  tier: 一品
+  parentId: tian_9
+- id: di_40
+  name: 玄火分教
+  elements:
+  - 火
+  - 阳
+  weapons:
+  - 刀
+  - 剑
+  coreTechniqueIds:
+  - cult_spirit_ling_fire_1
+  - id_art_ling_blade_2
+  tier: 一品
+  parentId: tian_10
+- id: di_41
+  name: 风雷镖局
+  elements:
+  - 风
+  - 雷
+  weapons:
+  - 剑
+  - 镖
+  coreTechniqueIds:
+  - cult_spirit_ling_thunder_1
+  - id_art_ling_sword_2
+  tier: 一品
+  parentId: tian_11
+- id: di_42
+  name: 青木药庄
+  elements:
+  - 木
+  - 生
+  weapons:
+  - 棍
+  - 针
+  coreTechniqueIds:
+  - cult_spirit_ling_wood_1
+  - id_art_ling_staff_2
+  tier: 一品
+  parentId: tian_12
+- id: di_43
+  name: 金乌余脉
+  elements:
+  - 火
+  - 光
+  weapons:
+  - 刀
+  - 弓
+  coreTechniqueIds:
+  - cult_spirit_ling_fire_1
+  - id_art_ling_blade_2
+  tier: 一品
+  parentId: tian_13
+- id: di_44
+  name: 血鸦散脉
+  elements:
+  - 血
+  - 暗
+  weapons:
+  - 爪
+  - 刺
+  coreTechniqueIds:
+  - cult_spirit_ling_dark_1
+  - id_art_ling_claw_2
+  tier: 一品
+  parentId: tian_14
+- id: di_45
+  name: 青霞山庄分舵
+  elements:
+  - 风
+  - 云
+  weapons:
+  - 扇
+  - 剑
+  coreTechniqueIds:
+  - cult_spirit_ling_wind_1
+  - id_art_ling_fan_2
+  tier: 一品
+  parentId: tian_15
+- id: di_46
+  name: 紫霜镖局
+  elements:
+  - 冰
+  - 阴
+  weapons:
+  - 剑
+  - 矛
+  coreTechniqueIds:
+  - cult_spirit_ling_ice_1
+  - id_art_ling_sword_2
+  tier: 一品
+  parentId: tian_16
+- id: di_47
+  name: 昆仑猎人族
+  elements:
+  - 土
+  - 力
+  weapons:
+  - 刀
+  - 斧
+  coreTechniqueIds:
+  - cult_spirit_ling_earth_1
+  - id_art_ling_blade_2
+  tier: 一品
+  parentId: tian_17
+- id: di_48
+  name: 崆峒拳社
+  elements:
+  - 力
+  - 气
+  weapons:
+  - 拳
+  - 棍
+  coreTechniqueIds:
+  - cult_spirit_ling_earth_1
+  - id_art_ling_fist_1
+  tier: 一品
+  parentId: tian_18
+- id: di_49
+  name: 天阙护卫脉
+  elements:
+  - 神
+  - 阳
+  weapons:
+  - 戟
+  - 盾
+  coreTechniqueIds:
+  - cult_spirit_ling_fire_1
+  - id_art_ling_spear_2
+  tier: 一品
+  parentId: tian_19
+- id: di_family_a
+  name: 下界一品世家A
+  elements:
+  - 水
+  weapons:
+  - 剑
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_sword_12
+  tier: 一品
+- id: di_family_b
+  name: 下界一品世家B
+  elements:
+  - 火
+  weapons:
+  - 刀
+  coreTechniqueIds:
+  - cult_mortal_fan_fire_1
+  - id_art_fan_blade_11
+  tier: 一品
+- id: di_family_c
+  name: 下界一品世家C
+  elements:
+  - 木
+  weapons:
+  - 杖
+  coreTechniqueIds:
+  - cult_mortal_fan_wood_1
+  - id_art_fan_staff_11
+  tier: 一品

@@ -1,0 +1,78 @@
+- id: guzu
+  name: 古族
+  elements:
+  - 火
+  - 阳
+  - 金
+  weapons:
+  - 枪
+  - 刀
+  coreTechniqueIds:
+  - cult_fire_sss_1
+  - id_art_sheng_spear_1
+  - art_palm_sss_1
+  tier: 霸主
+  vassalIds:
+  - sheng_2
+  - sheng_12
+  - sheng_15
+  - sheng_22
+- id: shizu
+  name: 石族
+  elements:
+  - 土
+  - 雷
+  - 金
+  weapons:
+  - 斧
+  - 锤
+  coreTechniqueIds:
+  - cult_thunder_sss_1
+  - art_dao_fist_truth_1
+  - id_art_sheng_hammer_1
+  tier: 霸主
+  vassalIds:
+  - sheng_1
+  - sheng_9
+  - sheng_11
+  - sheng_16
+  - sheng_21
+- id: yejia
+  name: 叶族
+  elements:
+  - 木
+  - 风
+  - 水
+  weapons:
+  - 剑
+  - 弓弩
+  coreTechniqueIds:
+  - cult_wood_sss_1
+  - art_sword_sss_1
+  - art_dao_bow_destiny_1
+  tier: 霸主
+  vassalIds:
+  - sheng_0
+  - sheng_3
+  - sheng_8
+  - sheng_17
+  - sheng_20
+- id: jijia
+  name: 姬家
+  elements:
+  - 金
+  weapons:
+  - 剑
+  - 枪
+  coreTechniqueIds:
+  - cult_gold_sss_1
+  - art_sword_sss_2
+  - id_art_sheng_spear_1
+  tier: 霸主
+  vassalIds:
+  - sheng_4
+  - sheng_10
+  - sheng_18
+  - sheng_19
+  - sheng_23
+  - sheng_24
