@@ -1,23 +1,268 @@
--
-  id: "mortal_daily_cultivate"
-  title: "日常修炼"
-  description: "你在凡界静心打坐，巩固根基。"
-  worlds:
-    - "mortal"
-  regions: null
-  minAge: 13
-  maxAge: null
-  conditions:
-    chance: 0.6
-    chanceLuckBoost: 0.05
-  prerequisites:
-    - "cultivation_started"
-    - "root_awakened"
-  effects:
-    age: 0
-    delta:
-      exp: 15
-      intelligence: 1
-  choices:
+# --- 凡界日常事件 (Mortal Daily Life) ---
+# 适用于 18 岁及以上的凡界成年生活，按家境分层
 
-  weight: 1
+# ==========================================
+# 1. 凡界世家/权贵 (Noble / Wealthy)
+# ==========================================
+
+-
+  id: "mortal_noble_estate"
+  title: "打理家业"
+  description: "身为家族核心成员，你需要处理家族的田产与商铺。"
+  worlds: ["mortal"]
+  familyTiers: ["一品", "二品", "三品", "四品", "天", "地"]
+  minAge: 16
+  effects: { age: 0 }
+  choices:
+    -
+      id: "expand_business"
+      label: "扩张生意"
+      effects:
+        delta: { intelligence: 2, family: 2 }
+        log: "你敏锐地察觉到商机，开设了新的分号，家族财源广进。"
+    -
+      id: "train_guards"
+      label: "操练护卫"
+      effects:
+        delta: { strength: 2, family: 1 }
+        log: "你亲自指点家丁武艺，不仅强化了家族守备，也以此震慑了宵小。"
+    -
+      id: "host_banquet"
+      label: "举办宴席"
+      effects:
+        delta: { charm: 3, family: 1 }
+        log: "你广邀城中名流，宴席上觥筹交错，进一步巩固了家族的人脉网络。"
+    -
+      id: "embezzle"
+      label: "中饱私囊"
+      effects:
+        delta: { family: -2, luck: 2 }
+        log: "你悄悄从账面上挪用了一笔银子去买了自己喜欢的古玩，好在没被发现。"
+  weight: 200
+
+-
+  id: "mortal_noble_politics"
+  title: "官场酬酢"
+  description: "家族在朝中有人，你也免不了要参与一些官场应酬。"
+  worlds: ["mortal"]
+  familyTiers: ["一品", "二品", "三品", "四品"]
+  minAge: 18
+  effects: { age: 0 }
+  choices:
+    -
+      id: "visit_official"
+      label: "拜访上官"
+      effects:
+        delta: { intelligence: 2, charm: 1 }
+        log: "你备下厚礼拜访了当地父母官，一番交谈后，对方对你赞赏有加。"
+    -
+      id: "handle_case"
+      label: "协助断案"
+      effects:
+        delta: { intelligence: 3, exp: 10 }
+        log: "你凭借过人的才智，帮县令破解了一桩悬案，声名鹊起。"
+    -
+      id: "avoid_politics"
+      label: "称病不出"
+      effects:
+        delta: { luck: 1, intelligence: 1 }
+        log: "你看出了这场宴会背后的派系之争，明智地选择了回避。"
+  weight: 150
+
+-
+  id: "mortal_noble_leisure"
+  title: "闲情雅致"
+  description: "偷得浮生半日闲，富贵人家的生活总是充满了情调。"
+  worlds: ["mortal"]
+  familyTiers: ["一品", "二品", "三品", "四品", "天", "地"]
+  minAge: 16
+  effects: { age: 0 }
+  choices:
+    -
+      id: "collect_antiques"
+      label: "鉴赏古玩"
+      effects:
+        delta: { intelligence: 2, luck: 1 }
+        log: "你淘到了一件前朝古玉，虽然不含灵气，但把玩起来温润静心。"
+    -
+      id: "go_hunting"
+      label: "郊外游猎"
+      effects:
+        delta: { strength: 2, charm: 1 }
+        log: "你策马奔腾，射获了一头梅花鹿，晚上一顿全鹿宴好不快活。"
+    -
+      id: "listen_music"
+      label: "抚琴听曲"
+      effects:
+        delta: { charm: 3 }
+        log: "琴声悠扬，你觉得心灵得到了净化，气质更加出尘。"
+  weight: 150
+
+# ==========================================
+# 2. 凡界贫苦/普通 (Poor / Commoner)
+# ==========================================
+
+-
+  id: "mortal_poor_labor"
+  title: "辛勤劳作"
+  description: "为了生计，你必须每日辛勤劳作，不敢有丝毫懈怠。"
+  worlds: ["mortal"]
+  familyTiers: ["五品", "六品", "七品", "八品", "九品", "人"]
+  minAge: 16
+  effects: { age: 0 }
+  choices:
+    -
+      id: "farm_work"
+      label: "耕田种地"
+      effects:
+        delta: { strength: 2, family: 1 }
+        log: "你挥汗如雨，看着庄稼长势喜人，心里踏实了不少。"
+    -
+      id: "odd_jobs"
+      label: "进城打工"
+      effects:
+        delta: { strength: 1, intelligence: 1 }
+        log: "你在码头抗包/酒楼跑堂，虽然累，但见识了不少人和事。"
+    -
+      id: "mountain_goods"
+      label: "进山采货"
+      effects:
+        delta: { strength: 1, luck: 1, exp: 5 }
+        log: "你在深山里转了一天，采到了一些山珍，希望能卖个好价钱。"
+    -
+      id: "slack_off"
+      label: "偷懒歇息"
+      effects:
+        delta: { strength: -1, family: -1 }
+        log: "你在树荫下睡了一觉，虽然舒服，但这今天的工钱是没了。"
+  weight: 200
+
+-
+  id: "mortal_poor_struggle"
+  title: "生活不易"
+  description: "生活中总有各种意外，考验着你的生存智慧。"
+  worlds: ["mortal"]
+  familyTiers: ["五品", "六品", "七品", "八品", "九品", "人"]
+  minAge: 16
+  effects: { age: 0 }
+  choices:
+    -
+      id: "bargain_market"
+      label: "精打细算"
+      effects:
+        delta: { intelligence: 2, family: 1 }
+        log: "为了几文钱，你在菜市口和摊贩磨了半天嘴皮子，终于省下了一顿早饭钱。"
+    -
+      id: "fix_house"
+      label: "修补房屋"
+      effects:
+        delta: { strength: 2 }
+        log: "屋顶漏雨了，你爬上爬下修补，虽然手磨破了皮，但今晚能睡个安稳觉了。"
+    -
+      id: "borrow_money"
+      label: "借钱周转"
+      effects:
+        delta: { charm: 1, family: -1 }
+        log: "你厚着脸皮向亲戚借了点钱应，受尽了白眼，暗暗发誓要出人头地。"
+  weight: 150
+
+-
+  id: "mortal_poor_small_joy"
+  title: "苦中作乐"
+  description: "日子虽苦，但总有一些小确幸。"
+  worlds: ["mortal"]
+  familyTiers: ["五品", "六品", "七品", "八品", "九品", "人"]
+  minAge: 16
+  effects: { age: 0 }
+  choices:
+    -
+      id: "drink_cheap"
+      label: "村头小酌"
+      effects:
+        delta: { charm: 1, strength: 1 }
+        log: "打了二两劣酒，切了半斤猪头肉，你觉得给个神仙也不换。"
+    -
+      id: "village_gossip"
+      label: "闲聊八卦"
+      effects:
+        delta: { intelligence: 1 }
+        log: "在村口大树下听张家长李家短，你听得津津有味，暂时忘却了烦恼。"
+    -
+      id: "play_with_kids"
+      label: "逗弄孩童"
+      effects:
+        delta: { charm: 2, family: 1 }
+        log: "你给自家的娃做了个木哨子，听着那清脆的哨声，你觉得一切辛苦都值了。"
+  weight: 150
+
+# ==========================================
+# 3. 修真者隐藏剧情 (Hidden Cultivator in Mortal World)
+# ==========================================
+
+-
+  id: "mortal_cultivate_secret"
+  title: "红尘炼心"
+  description: "身在凡尘，你的修真之心从未冷却。夜深人静时，便是你的修行时刻。"
+  worlds: ["mortal"]
+  conditions:
+    needsCultivation: true
+  minAge: 16
+  effects: { age: 0 }
+  choices:
+    -
+      id: "night_meditate"
+      label: "月下吐纳"
+      effects:
+        delta: { exp: 20, intelligence: 1 }
+        log: "趁着家人熟睡，你对着月亮吞吐精华，感觉修为又精进了一丝。"
+    -
+      id: "body_refine"
+      label: "以武入道"
+      effects:
+        delta: { strength: 2, exp: 15 }
+        log: "你将灵力运至四肢百骸，打了一套拳法，凡俗的武学在你手中化腐朽为神奇。"
+    -
+      id: "help_secretly"
+      label: "暗施援手"
+      effects:
+        delta: { charm: 2, exp: 10, luck: 1 }
+        log: "你悄悄用灵力治好了邻居大婶的老寒腿，没人知道是你做的，但你心境通达。"
+    -
+      id: "search_relic"
+      label: "寻访古迹"
+      effects:
+        delta: { luck: 2, exp: 30 }
+        log: "你翻阅古籍，去荒山野岭寻找传说中的仙人遗迹，虽然一无所获，但开阔了眼界。"
+  weight: 100
+
+# ==========================================
+# 4. 通用保底 (Universal Fallback)
+# ==========================================
+
+-
+  id: "mortal_daily_routine"
+  title: "凡界日常"
+  description: "日子一天天过去，生活既平淡又真实。"
+  worlds: ["mortal"]
+  minAge: 16
+  effects: { age: 0 }
+  choices:
+    -
+      id: "work_hard"
+      label: "努力工作"
+      effects:
+        delta: { strength: 1, family: 1 }
+        log: "你度过了充实的一年，为家里多挣了一些口粮/银两。"
+    -
+      id: "rest_relax"
+      label: "休养生息"
+      effects:
+        delta: { strength: 1, intelligence: 1 }
+        log: "你放慢了脚步，多读了几本书/多睡了几个安稳觉，精神饱满。"
+    -
+      id: "social_visit"
+      label: "走亲访友"
+      effects:
+        delta: { charm: 2 }
+        log: "你提着礼品去看了看亲戚朋友，联络了感情。"
+  weight: 50

@@ -11,3 +11,4 @@ export 'medicine.dart';
 export 'weapon_type.dart';
 export 'growth_stage.dart';
 export 'element_category.dart';
+export 'equipment.dart';

@@ -279,6 +279,7 @@
   grade: "dao"
   rank: "sss"
   elements: ["金", "土", "肉"]
+  tags: ["defense_phys", "defense_mag"]
   description: "绝对防御领域，万法不侵，诸神退避。"
   expRequired: 2800
 -

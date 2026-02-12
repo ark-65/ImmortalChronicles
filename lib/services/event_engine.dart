@@ -1,4 +1,5 @@
 import 'dart:math';
+import 'package:flutter/foundation.dart';
 
 import '../models/models.dart';
 import '../data/event_repository.dart';
@@ -40,17 +41,31 @@ class EventEngine {
       }
     }
 
-    // 2. Early priority events (like root test)
-    if ((state.talentLevelName == '未知' || state.talentLevelName == '凡体') &&
+    // 2. Early priority events (Mandatory Root/Sect Tests)
+    // Immortal Realm: Age 6 Root Awakening
+    if (state.world == World.immortal &&
         state.age >= 6 &&
-        state.age <= 12 &&
-        !state.lifeEvents.any((e) => e.id == 'age_6_root_test')) {
-      final rootEvent = repo.byId('age_6_root_test');
+        (state.talentLevelName == '未知' || state.talentLevelName == '凡体') &&
+        !state.lifeEvents.any((e) => e.id == 'age_6_root_immortal')) {
+      final rootEvent = repo.byId('age_6_root_immortal');
       if (rootEvent != null) return [rootEvent];
     }
 
+    // Mortal Realm: Age 12 Sect Recruitment
+    if (state.world == World.mortal &&
+        state.age >= 12 &&
+        (state.talentLevelName == '未知' || state.talentLevelName == '凡体') &&
+        !state.lifeEvents.any((e) => e.id == 'age_12_sect_mortal')) {
+      final sectEvent = repo.byId('age_12_sect_mortal');
+      if (sectEvent != null) return [sectEvent];
+    }
+
+
     // 3. Normal pool selection
     final pool = _getTablePool(state);
+    debugPrint('[EventEngine] Age: ${state.age}, World: ${state.world}, Tier: ${_currentFamilyTemplate(state)?.tier}');
+    debugPrint('[EventEngine] Pool size pre-filter: ${pool.length}');
+
     final seen = <String>{};
     final candidates = pool.where((e) {
       if (seen.contains(e.id)) return false;
@@ -84,7 +99,22 @@ class EventEngine {
       }
     }
 
+    // 4. AP Check: If out of AP and no pending, return Next Year trigger instead of nothing
+    if (state.ap <= 0 && state.pendingEvents.isEmpty) {
+      return [nextYearFallback(state)];
+    }
+
     return results.isNotEmpty ? results : [fallback(state)];
+  }
+
+  LifeEventConfig nextYearFallback(PlayerState state) {
+    return LifeEventConfig(
+      id: 'tick_next_year',
+      title: '进入下一岁',
+      description: '岁月流转，跨入新的一年。',
+      worlds: [state.world],
+      effects: const {'nextYear': true},
+    );
   }
 
   List<LifeEventConfig> _getTablePool(PlayerState state) {
@@ -121,8 +151,35 @@ class EventEngine {
       return false;
     }
     if (e.familyTiers != null) {
-      final familyTemplate = _currentFamilyTemplate(state);
-      if (familyTemplate == null || !e.familyTiers!.contains(familyTemplate.tier)) {
+      var tier = _currentFamilyTemplate(state)?.tier;
+      // Robustness: If no family template (e.g. data error or poor start), map to lowest tier
+      if (tier == null) {
+        if (state.world == World.mortal) {
+          tier = '人'; // Matches 'Poor' events
+        } else {
+          tier = '灵界普通家族'; // Matches 'Rogue/Minor' events
+        }
+      }
+      
+      // Special handling: Map '九品' through '五品' to generic 'Poor' if needed, 
+      // but currently the event files list all specific tiers.
+      
+      // Tier Coercion for World Mismatch (e.g. Immortal World but Mortal Tier due to data fallback)
+      if (state.world == World.immortal && 
+          ['一品', '二品', '三品', '四品', '五品', '六品', '七品', '八品', '九品', '人'].contains(tier)) {
+        tier = '灵界普通家族';
+      }
+
+      if (!e.familyTiers!.contains(tier)) {
+        // debugPrint('[EventEngine] Filtered ${e.id} due to tier mismatch. Player: $tier, Event needs: ${e.familyTiers}');
+        return false;
+      }
+    }
+
+    // Sect tier condition (杂役/外门/内门/亲传等)
+    if (e.conditions['sectTier'] != null) {
+      final requiredTier = e.conditions['sectTier'];
+      if (state.sectTier != requiredTier) {
         return false;
       }
     }
@@ -157,6 +214,11 @@ class EventEngine {
       if (rng.nextDouble() > p.clamp(0.0, 1.0)) return false;
     }
 
+    // Protection check: Filter out death events if user is protected
+    if (state.isProtectedFrom(e)) {
+      return false;
+    }
+
     return true;
   }
 
@@ -180,6 +242,17 @@ class EventEngine {
   }
 
   LifeEventConfig fallback(PlayerState state) {
+    // 1. Toddler Fallback (Age 0-3): Should NOT advance age automatically
+    if (state.age <= 3) {
+      return LifeEventConfig(
+        id: 'toddler_fallback',
+        title: '牙牙学语',
+        description: '你还太小，除了玩耍和睡觉，什么也做不了。',
+        worlds: [state.world],
+        effects: const {'age': 0, 'exp': 1}, // No age increase
+      );
+    }
+
     final byKey = repo.byId('${state.world.name}_fallback');
     if (byKey != null) {
       if (_meetsConditions(state, byKey)) return byKey;
@@ -200,6 +273,7 @@ class EventEngine {
 
   FamilyTemplate? _currentFamilyTemplate(PlayerState state) {
     if (state.familyTemplateId == null) return null;
+    if (refRepo.families.isEmpty) return null;
     return refRepo.families.firstWhere((f) => f.id == state.familyTemplateId,
         orElse: () => refRepo.families.first);
   }
@@ -338,36 +412,58 @@ class EventEngine {
       do { root2 = pickRoot(); } while (root2 == root1);
     }
 
-    double roll = rng.nextDouble();
-    final luckFactor = (state.luck.clamp(0, 20)) / 20.0;
-    final pDao = 0.05 + 0.15 * luckFactor;
-    final pSheng = 0.15 + 0.20 * luckFactor;
-    final pLing = 0.40 + 0.20 * luckFactor;
+    // Physique Roll
+    // Basic probability: 90% Mortal, 8% Spirit, 1.5% Sacred, 0.5% Dao
+    // Luck modifies these.
+    double pPhysiqueDao = 0.005 + state.luck / 2000.0; // Max ~0.1
+    double pPhysiqueSacred = 0.015 + state.luck / 1000.0; // Max ~0.2
+    double pPhysiqueSpirit = 0.08 + state.luck / 500.0; // Max ~0.4
 
-    double thresholdDao = pDao;
-    double thresholdSheng = (thresholdDao + pSheng).clamp(0.0, 0.95);
-    double thresholdLing = (thresholdSheng + pLing).clamp(0.0, 0.99);
-
-    String grade = '凡';
-    if (roll < thresholdDao) {
-      grade = '道';
-    } else if (roll < thresholdSheng) {
-      grade = '圣';
-    } else if (roll < thresholdLing) {
-      grade = '灵';
+    String physique = '凡体';
+    final pRoll = rng.nextDouble();
+    if (pRoll < pPhysiqueDao) {
+      physique = ['荒古圣体', '先天道胎', '混沌体', '苍天霸体'][rng.nextInt(4)];
+    } else if (pRoll < (pPhysiqueDao + pPhysiqueSacred)) {
+      physique = ['太阴之体', '太阳之体', '五行灵体', '天妖体'][rng.nextInt(4)];
+    } else if (pRoll < (pPhysiqueDao + pPhysiqueSacred + pPhysiqueSpirit)) {
+      physique = ['绝灵之体', '媚骨', '蛮荒力体', '药灵体'][rng.nextInt(4)];
+    }
+    
+    // Family bonus
+    if (state.familyScore >= 90 && physique == '凡体' && rng.nextDouble() < 0.5) {
+      physique = '先天灵体';
     }
 
-    if (state.familyScore >= 90 && grade == '凡') grade = '灵';
+    state.physique = physique;
 
     final rootsLabel = isDual ? '$root1 / $root2' : root1;
-    state.talentLevelName = '$grade·$rootsLabel';
+    // grade variable was missing; derive from random roll using talent tiers
+    // We map physique/talent result to a letter grade for display and downstream logic
+    // Basic mapping aligned with OpportunityTier semantics
+    final talentGrade = (() {
+      if (physique.contains('霸体') || physique.contains('圣体') || physique.contains('混沌') || physique.contains('道胎')) {
+        return 'SSS';
+      }
+      if (physique.contains('灵体') || physique.contains('先天')) {
+        return 'S';
+      }
+      if (physique.contains('媚骨') || physique.contains('蛮荒') || physique.contains('妖') || physique.contains('变异')) {
+        return 'A';
+      }
+      if (physique.contains('绝灵')) {
+        return 'F';
+      }
+      return 'B';
+    })();
+
+    state.talentLevelName = '$talentGrade·$rootsLabel';
 
     state.lifeEvents.add(
       LifeEventEntry(
         id: '${event.id}_result',
         age: state.age,
-        title: '灵根结果·$grade·$rootsLabel',
-        description: '检测结果：$rootsLabel，品级 $grade。',
+        title: '觉醒·$talentGrade灵根',
+        description: '经检测，你的资质如下：\n【灵根】$talentGrade·$rootsLabel\n【体质】$physique',
       ),
     );
   }
@@ -387,7 +483,13 @@ class EventEngine {
       (extraEffects['delta'] as Map).forEach((k, v) => mergedDelta[k] = (mergedDelta[k] ?? 0) + (v as num));
     }
 
-    state.age += mergedEffects['age'] is num ? (mergedEffects['age'] as num).round() : 0;
+    // Force age to NOT update unless it's the explicit 'Next Year' event
+    // This addresses user request to remove "auto-aging" from random events
+    if (event.id == 'tick_next_year') {
+      state.age += mergedEffects['age'] is num ? (mergedEffects['age'] as num).round() : 0;
+    } else {
+      // standard events do NOT increase age
+    }
     if (mergedEffects['unlockLiteracy'] == true) state.hasLiteracy = true;
     if (mergedEffects['talentLevelName'] != null) state.talentLevelName = mergedEffects['talentLevelName'];
     if (mergedEffects['realm'] != null) {
@@ -404,6 +506,16 @@ class EventEngine {
     if (mergedEffects['canCultivate'] != null) state.canCultivate = mergedEffects['canCultivate'] == true;
     if (mergedEffects['pendingEvents'] is List) state.pendingEvents.addAll((mergedEffects['pendingEvents'] as List).cast<String>());
     
+    // Support for duration-based Decision Rounds
+    if (event.duration != null && event.duration! > 0) {
+      // For each year of duration, push a round event to pending
+      // Assuming a convention where [id]_round is the event used for manual decisions
+      final roundId = '${event.id}_round';
+      for (int i = 0; i < event.duration!; i++) {
+        state.pendingEvents.add(roundId);
+      }
+    }
+
     if (consumeAp) state.ap = max(0, state.ap - 1);
 
     final delta = Map<String, num>.from(mergedDelta);
@@ -427,17 +539,46 @@ class EventEngine {
     }
 
     if (mergedEffects['ending'] != null) {
-      state.ending = mergedEffects['ending'];
-      state.alive = mergedEffects['alive'] != false;
+      // Final guard: check if protected during effect application
+      if (state.isProtectedFrom(event)) {
+        state.lifeEvents.add(LifeEventEntry(
+          id: 'protection_triggered',
+          age: state.age,
+          title: '因果护体',
+          description: '一股神秘的力量（家境/气运）护住了你，化解了致命危机。',
+        ));
+      } else {
+        state.ending = mergedEffects['ending'];
+        state.alive = mergedEffects['alive'] != false;
+      }
     }
 
     if (mergedEffects['sectId'] != null) state.sectId = mergedEffects['sectId'];
+    if (mergedEffects['sectTier'] != null) state.sectTier = mergedEffects['sectTier'];
+    if (mergedEffects['nextYear'] == true) state.nextYear();
 
-    if (event.id == 'age_6_root_test') _rollRoot(state, event);
+    if (event.id == 'age_6_root_test' || 
+        event.id == 'age_6_root_immortal' || 
+        event.id == 'age_12_sect_mortal') {
+      _rollRoot(state, event);
+      
+      // Special branching for Mortal Age 12 Sect Test
+      if (event.id == 'age_12_sect_mortal') {
+         // Determine success based on talent
+         // Assuming '凡体' and '废品' (if exists) are failures for Sects
+         if (state.talentLevelName == '凡体' || state.talentLevelName.contains('废')) {
+           state.pendingEvents.add('age_12_sect_fail');
+           state.canCultivate = false; // Ensure it stays closed
+         } else {
+           state.pendingEvents.add('age_12_sect_success');
+           // Success event will handle enabling cultivation
+         }
+      }
+    }
 
     // Technique drop
     final canLearnTech = state.age >= 6 || state.techniques.isNotEmpty || state.realm != '无';
-    if (canLearnTech) {
+    if (canLearnTech && refRepo.techniques.isNotEmpty) {
       final tierBonus = _tierBonus(_currentFamilyTemplate(state)?.tier) + _tierBonus(_currentSect(state)?.tier);
       if (rng.nextDouble() < (0.05 + state.luck / 500 + tierBonus)) {
         final tplTech = _pickTechniqueWithTier(tierBonus);
@@ -473,10 +614,14 @@ class EventEngine {
   }
 
   double gradeMultiplier(String grade) {
-    if (grade.startsWith('道')) return 1.4;
-    if (grade.startsWith('圣')) return 1.2;
-    if (grade.startsWith('灵')) return 1.0;
-    if (grade.startsWith('凡')) return 0.8;
+    if (grade.contains('混沌')) return 10.0;
+    if (grade.contains('先天道体')) return 5.0;
+    if (grade.contains('道')) return 3.0;
+    if (grade.contains('圣')) return 2.0;
+    if (grade.contains('天')) return 1.5;
+    if (grade.contains('灵')) return 1.0;
+    if (grade.contains('杂')) return 0.5;
+    if (grade.contains('废')) return 0.2;
     return 0.6;
   }
 

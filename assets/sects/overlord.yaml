@@ -1,0 +1,314 @@
+- id: overlord_sect_0
+  name: 天道殿
+  elements:
+  - 混沌
+  - 阳
+  - 雷
+  specialties:
+  - 大道悟法
+  - 混元功法
+  weapons:
+  - 剑
+  - 戟
+  coreTechniqueIds:
+  - cult_chaos_sss_1
+  - cult_fire_sss_1
+  - cult_thunder_sss_1
+  - art_palm_sss_1
+  - art_fist_sss_2
+  - art_eye_sss_1
+  tier: 霸主
+  vassalIds:
+  - sheng_sect_0
+  - sheng_sect_10
+  - sheng_sect_21
+  - sheng_sect_27
+  - sheng_10
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 大乘
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 人仙
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 地仙
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 天仙
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 人仙
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 地仙
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 天仙
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: overlord_sect_1
+  name: 鸿蒙神宗
+  elements:
+  - 混沌
+  - 阴
+  - 冰
+  specialties:
+  - 大道悟法
+  - 混元功法
+  weapons:
+  - 剑
+  - 戟
+  coreTechniqueIds:
+  - cult_chaos_sss_1
+  - cult_ice_sss_1
+  - cult_wood_sss_1
+  - art_sword_sss_1
+  - art_eye_sss_1
+  - art_leg_sss_1
+  tier: 霸主
+  vassalIds:
+  - sheng_sect_1
+  - sheng_sect_12
+  - sheng_sect_23
+  - sheng_sect_25
+  - sheng_12
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 大乘
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 人仙
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 地仙
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 天仙
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 人仙
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 地仙
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 天仙
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: overlord_sect_2
+  name: 混元道宫
+  elements:
+  - 混沌
+  - 阳
+  - 金
+  specialties:
+  - 大道悟法
+  - 混元功法
+  weapons:
+  - 剑
+  - 戟
+  coreTechniqueIds:
+  - cult_chaos_sss_1
+  - cult_gold_sss_1
+  - cult_fire_sss_1
+  - art_palm_sss_1
+  - art_sword_sss_2
+  - art_fist_sss_1
+  tier: 霸主
+  vassalIds:
+  - sheng_sect_2
+  - sheng_sect_13
+  - sheng_sect_20
+  - sheng_sect_26
+  - sheng_2
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 大乘
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 人仙
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 地仙
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 天仙
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 人仙
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 地仙
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 天仙
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: overlord_sect_3
+  name: 太上神庭
+  elements:
+  - 混沌
+  - 雷
+  - 金
+  specialties:
+  - 大道悟法
+  - 混元功法
+  weapons:
+  - 剑
+  - 戟
+  coreTechniqueIds:
+  - cult_chaos_sss_1
+  - cult_thunder_sss_1
+  - cult_gold_sss_1
+  - art_fist_sss_2
+  - art_eye_sss_1
+  - art_sword_sss_2
+  tier: 霸主
+  vassalIds:
+  - sheng_sect_3
+  - sheng_sect_14
+  - sheng_sect_24
+  - sheng_sect_28
+  - sheng_11
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 大乘
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 人仙
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 地仙
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 天仙
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 人仙
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 地仙
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 天仙
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite
+- id: overlord_sect_4
+  name: 永恒圣殿
+  elements:
+  - 混沌
+  - 阳
+  - 火
+  specialties:
+  - 大道悟法
+  - 混元功法
+  weapons:
+  - 剑
+  - 戟
+  coreTechniqueIds:
+  - cult_chaos_sss_1
+  - cult_fire_sss_1
+  - cult_gold_sss_1
+  - art_palm_sss_1
+  - art_fist_sss_1
+  - art_sword_sss_1
+  tier: 霸主
+  tiers:
+  - id: servant
+    name: 杂役弟子
+    perks:
+      expMult: 0.9
+    minRealm: 大乘
+  - id: outer
+    name: 外门弟子
+    perks:
+      expMult: 1.05
+    minRealm: 人仙
+  - id: inner
+    name: 内门弟子
+    perks:
+      expMult: 1.15
+    minRealm: 地仙
+  - id: legacy
+    name: 亲传弟子
+    perks:
+      expMult: 1.3
+      lootBonus: 0.1
+    minRealm: 天仙
+  upgradeRules:
+  - from: servant
+    to: outer
+    requiresRealm: 人仙
+    requiresContribution: 60
+    trialEvent: sect_entry_exam
+  - from: outer
+    to: inner
+    requiresRealm: 地仙
+    requiresContribution: 140
+    trialEvent: sect_promotion_outer_to_inner
+  - from: inner
+    to: legacy
+    requiresRealm: 天仙
+    requiresContribution: 260
+    trialEvent: sect_promotion_inner_to_elite

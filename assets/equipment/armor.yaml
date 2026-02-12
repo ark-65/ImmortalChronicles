@@ -1,0 +1,134 @@
+- id: "armor_fan_001"
+  name: "棉布衣"
+  slot: "armor"
+  grade: "fan"
+  rank: "c"
+  mainStats: { phyDef: 12 }
+  subStats: { hp: 60 }
+  description: "普普通通的棉布衣。"
+
+- id: "armor_fan_002"
+  name: "皮甲"
+  slot: "armor"
+  grade: "fan"
+  rank: "b"
+  mainStats: { phyDef: 18 }
+  subStats: { spd: 2, hp: 80 }
+  description: "轻便皮甲，提供基础防护。"
+
+- id: "armor_fan_003"
+  name: "符纹护甲"
+  slot: "armor"
+  grade: "fan"
+  rank: "a"
+  mainStats: { phyDef: 22, magDef: 10 }
+  subStats: { hp: 100 }
+  description: "刻有初级符纹，略具灵力守护。"
+
+- id: "armor_ling_001"
+  name: "灵木护心甲"
+  slot: "armor"
+  grade: "ling"
+  rank: "b"
+  mainStats: { phyDef: 32 }
+  subStats: { hp: 140 }
+  description: "灵木制成，坚韧轻巧。"
+
+- id: "armor_ling_002"
+  name: "云纹软甲"
+  slot: "armor"
+  grade: "ling"
+  rank: "a"
+  mainStats: { phyDef: 36, magDef: 16 }
+  subStats: { spd: 4 }
+  description: "如云般轻柔，却暗藏护体灵气。"
+
+- id: "armor_ling_003"
+  name: "藤甲"
+  slot: "armor"
+  grade: "ling"
+  rank: "s"
+  mainStats: { phyDef: 42 }
+  subStats: { hp: 200, phyDef: 5 }
+  description: "灵藤编织，韧性极佳。"
+
+- id: "armor_xian_001"
+  name: "紫金战甲"
+  slot: "armor"
+  grade: "xian"
+  rank: "a"
+  mainStats: { phyDef: 60, magDef: 24 }
+  subStats: { hp: 260 }
+  description: "紫金铸造，防御上乘。"
+
+- id: "armor_xian_002"
+  name: "玄冰战甲"
+  slot: "armor"
+  grade: "xian"
+  rank: "s"
+  mainStats: { phyDef: 64, magDef: 36 }
+  subStats: { magDef: 10, hp: 240 }
+  description: "寒气护体，物法双防。"
+
+- id: "armor_xian_003"
+  name: "流光织衣"
+  slot: "armor"
+  grade: "xian"
+  rank: "ss"
+  mainStats: { phyDef: 56, magDef: 50 }
+  subStats: { spd: 8 }
+  description: "织入流光，轻盈且抗法。"
+
+- id: "armor_sheng_001"
+  name: "圣徽铠"
+  slot: "armor"
+  grade: "sheng"
+  rank: "ss"
+  mainStats: { phyDef: 85, magDef: 55 }
+  subStats: { hp: 360 }
+  description: "圣徽加持，防御强悍。"
+
+- id: "armor_sheng_002"
+  name: "龟背圣甲"
+  slot: "armor"
+  grade: "sheng"
+  rank: "ss"
+  mainStats: { phyDef: 95 }
+  subStats: { phyDef: 15, hp: 400 }
+  description: "以玄龟甲炼制，重而难破。"
+
+- id: "armor_sheng_003"
+  name: "轻羽圣衣"
+  slot: "armor"
+  grade: "sheng"
+  rank: "sss"
+  mainStats: { phyDef: 78, magDef: 72 }
+  subStats: { spd: 12 }
+  description: "羽衣护身，行动无碍。"
+
+- id: "armor_dao_001"
+  name: "混沌道甲"
+  slot: "armor"
+  grade: "dao"
+  rank: "sss"
+  mainStats: { phyDef: 130, magDef: 80 }
+  subStats: { hp: 520 }
+  description: "混沌气息凝成的道甲。"
+
+- id: "armor_dao_002"
+  name: "太清玄衣"
+  slot: "armor"
+  grade: "dao"
+  rank: "sss"
+  mainStats: { phyDef: 120, magDef: 110 }
+  subStats: { spd: 16, hp: 400 }
+  description: "玄衣在身，攻防兼备且不失轻盈。"
+
+- id: "armor_dao_003"
+  name: "鸿蒙圣袍"
+  slot: "armor"
+  grade: "dao"
+  rank: "sss"
+  mainStats: { magDef: 140, phyDef: 100 }
+  subStats: { mp: 300, hp: 420 }
+  description: "鸿蒙初开之气凝成的长袍。"

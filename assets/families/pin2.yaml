@@ -1,0 +1,636 @@
+- id: ren_0
+  name: 柳巷小族
+  elements:
+  - 水
+  - 风
+  weapons:
+  - 棍
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_staff_11
+  tier: 二品
+- id: ren_1
+  name: 竹巷家族
+  elements:
+  - 木
+  - 风
+  weapons:
+  - 剑
+  coreTechniqueIds:
+  - cult_mortal_fan_wood_1
+  - id_art_fan_sword_11
+  tier: 二品
+- id: ren_2
+  name: 渔火世家
+  elements:
+  - 火
+  - 水
+  weapons:
+  - 枪
+  coreTechniqueIds:
+  - cult_mortal_fan_fire_1
+  - id_art_fan_spear_12
+  tier: 二品
+- id: ren_3
+  name: 药农村族
+  elements:
+  - 药
+  - 木
+  weapons:
+  - 针
+  coreTechniqueIds:
+  - cult_mortal_fan_wood_1
+  - id_art_fan_poison_11
+  tier: 二品
+- id: ren_4
+  name: 铁匠铺族
+  elements:
+  - 火
+  - 金
+  weapons:
+  - 锤
+  coreTechniqueIds:
+  - cult_mortal_fan_metal_1
+  - id_art_fan_hammer_1
+  tier: 二品
+- id: ren_5
+  name: 织坊世家
+  elements:
+  - 金
+  - 气
+  weapons:
+  - 扇
+  coreTechniqueIds:
+  - cult_mortal_fan_metal_1
+  - id_art_fan_fan_2
+  tier: 二品
+- id: ren_6
+  name: 车匠家族
+  elements:
+  - 力
+  - 土
+  weapons:
+  - 刀
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_blade_11
+  tier: 二品
+- id: ren_7
+  name: 驿站世家
+  elements:
+  - 气
+  - 风
+  weapons:
+  - 枪
+  coreTechniqueIds:
+  - cult_mortal_fan_wood_1
+  - id_art_fan_spear_11
+  tier: 二品
+- id: ren_8
+  name: 山村家族
+  elements:
+  - 土
+  - 力
+  weapons:
+  - 棍
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_staff_12
+  tier: 二品
+- id: ren_9
+  name: 河湾小族
+  elements:
+  - 水
+  weapons:
+  - 拳
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_palm_11
+  tier: 二品
+- id: ren_10
+  name: 渔村族
+  elements:
+  - 水
+  weapons:
+  - 叉
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_spear_12
+  tier: 二品
+- id: ren_11
+  name: 林间家族
+  elements:
+  - 木
+  - 风
+  weapons:
+  - 弓
+  coreTechniqueIds:
+  - cult_mortal_fan_wood_1
+  - id_art_fan_bow_11
+  tier: 二品
+- id: ren_12
+  name: 云水世家
+  elements:
+  - 水
+  - 气
+  weapons:
+  - 掌
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_palm_11
+  tier: 二品
+- id: ren_13
+  name: 落雪家族
+  elements:
+  - 冰
+  weapons:
+  - 剑
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_sword_11
+  tier: 二品
+- id: ren_14
+  name: 麦田世家
+  elements:
+  - 土
+  - 木
+  weapons:
+  - 棍
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_staff_11
+  tier: 二品
+- id: ren_15
+  name: 茶铺家族
+  elements:
+  - 水
+  - 幻
+  weapons:
+  - 扇
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_fan_2
+  tier: 二品
+- id: ren_16
+  name: 柴门族
+  elements:
+  - 力
+  - 土
+  weapons:
+  - 拳
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_fist_11
+  tier: 二品
+- id: ren_17
+  name: 杏林世家
+  elements:
+  - 药
+  - 木
+  weapons:
+  - 针
+  coreTechniqueIds:
+  - cult_mortal_fan_wood_1
+  - id_art_fan_poison_11
+  tier: 二品
+- id: ren_18
+  name: 江舟世家
+  elements:
+  - 水
+  - 木
+  weapons:
+  - 棍
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_staff_12
+  tier: 二品
+- id: ren_19
+  name: 瓦巷家族
+  elements:
+  - 土
+  - 金
+  weapons:
+  - 刀
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_blade_11
+  tier: 二品
+- id: ren_family_a
+  name: 下界二品世家A
+  elements:
+  - 水
+  weapons:
+  - 剑
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_sword_12
+  tier: 二品
+- id: ren_family_b
+  name: 下界二品世家B
+  elements:
+  - 火
+  weapons:
+  - 刀
+  coreTechniqueIds:
+  - cult_mortal_fan_fire_1
+  - id_art_fan_blade_12
+  tier: 二品
+- id: ren_family_c
+  name: 下界二品世家C
+  elements:
+  - 木
+  weapons:
+  - 杖
+  coreTechniqueIds:
+  - cult_mortal_fan_wood_1
+  - id_art_fan_staff_12
+  tier: 二品
+- id: ren_20
+  name: 金焱镖局
+  elements:
+  - 金
+  - 火
+  weapons:
+  - 刀
+  - 镖
+  coreTechniqueIds:
+  - cult_mortal_fan_fire_1
+  - id_art_fan_blade_11
+  tier: 二品
+  parentId: di_20
+- id: ren_21
+  name: 灵森药铺
+  elements:
+  - 木
+  - 生
+  weapons:
+  - 杖
+  - 针
+  coreTechniqueIds:
+  - cult_mortal_fan_wood_1
+  - id_art_fan_poison_11
+  tier: 二品
+  parentId: di_21
+- id: ren_22
+  name: 雷音武馆
+  elements:
+  - 雷
+  - 金
+  weapons:
+  - 锤
+  - 戟
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_fist_11
+  tier: 二品
+  parentId: di_22
+- id: ren_23
+  name: 星愿社
+  elements:
+  - 星
+  - 幻
+  weapons:
+  - 笔
+  - 扇
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_fan_2
+  tier: 二品
+  parentId: di_23
+- id: ren_24
+  name: 绝影堂
+  elements:
+  - 暗
+  - 影
+  weapons:
+  - 刺
+  - 钩
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_poison_11
+  tier: 二品
+  parentId: di_24
+- id: ren_25
+  name: 听风镖局
+  elements:
+  - 风
+  - 气
+  weapons:
+  - 扇
+  - 剑
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_blade_11
+  tier: 二品
+  parentId: di_25
+- id: ren_26
+  name: 寒霜馆
+  elements:
+  - 冰
+  - 水
+  weapons:
+  - 剑
+  - 刺
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_sword_11
+  tier: 二品
+  parentId: di_26
+- id: ren_27
+  name: 力士馆
+  elements:
+  - 力
+  - 土
+  weapons:
+  - 锤
+  - 拳
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_fist_11
+  tier: 二品
+  parentId: di_27
+- id: ren_28
+  name: 药草堂
+  elements:
+  - 药
+  - 木
+  weapons:
+  - 针
+  - 锄
+  coreTechniqueIds:
+  - cult_mortal_fan_wood_1
+  - id_art_fan_poison_11
+  tier: 二品
+  parentId: di_28
+- id: ren_29
+  name: 虚空社
+  elements:
+  - 空
+  - 幻
+  weapons:
+  - 扇
+  - 笔
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_fan_2
+  tier: 二品
+  parentId: di_29
+- id: ren_30
+  name: 烈阳武舍
+  elements:
+  - 火
+  - 阳
+  weapons:
+  - 刀
+  - 拳
+  coreTechniqueIds:
+  - cult_mortal_fan_fire_1
+  - id_art_fan_blade_11
+  tier: 二品
+  parentId: di_30
+- id: ren_31
+  name: 地晶矿帮
+  elements:
+  - 土
+  - 金
+  weapons:
+  - 锤
+  - 斧
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_hammer_1
+  tier: 二品
+  parentId: di_31
+- id: ren_32
+  name: 潜龙馆
+  elements:
+  - 力
+  - 水
+  weapons:
+  - 棍
+  - 拳
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_staff_12
+  tier: 二品
+  parentId: di_32
+- id: ren_33
+  name: 天阵学社
+  elements:
+  - 术
+  - 灵
+  weapons:
+  - 笔
+  - 盘
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_staff_11
+  tier: 二品
+  parentId: di_33
+- id: ren_34
+  name: 黑虎分馆
+  elements:
+  - 力
+  - 阴
+  weapons:
+  - 爪
+  - 拳
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_fist_11
+  tier: 二品
+  parentId: di_34
+- id: ren_35
+  name: 青冥散户
+  elements:
+  - 风
+  - 阴
+  weapons:
+  - 扇
+  - 剑
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_blade_11
+  tier: 二品
+  parentId: di_35
+- id: ren_36
+  name: 玄剑余支
+  elements:
+  - 剑
+  - 金
+  weapons:
+  - 剑
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_sword_11
+  tier: 二品
+  parentId: di_36
+- id: ren_37
+  name: 天机测绘帮
+  elements:
+  - 术
+  - 运
+  weapons:
+  - 笔
+  - 幡
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_staff_11
+  tier: 二品
+  parentId: di_37
+- id: ren_38
+  name: 太虚支会
+  elements:
+  - 空
+  - 幻
+  weapons:
+  - 扇
+  - 刺
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_fan_2
+  tier: 二品
+  parentId: di_38
+- id: ren_39
+  name: 天河水帮
+  elements:
+  - 水
+  - 气
+  weapons:
+  - 棍
+  - 叉
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_staff_12
+  tier: 二品
+  parentId: di_39
+- id: ren_40
+  name: 玄火外门 clan
+  elements:
+  - 火
+  - 阳
+  weapons:
+  - 刀
+  - 剑
+  coreTechniqueIds:
+  - cult_mortal_fan_fire_1
+  - id_art_fan_blade_11
+  tier: 二品
+  parentId: di_40
+- id: ren_41
+  name: 风雷驿站
+  elements:
+  - 风
+  - 雷
+  weapons:
+  - 镖
+  - 剑
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_blade_11
+  tier: 二品
+  parentId: di_41
+- id: ren_42
+  name: 青木园
+  elements:
+  - 木
+  - 生
+  weapons:
+  - 杖
+  - 锄
+  coreTechniqueIds:
+  - cult_mortal_fan_wood_1
+  - id_art_fan_staff_11
+  tier: 二品
+  parentId: di_42
+- id: ren_43
+  name: 金乌武院
+  elements:
+  - 火
+  - 光
+  weapons:
+  - 刀
+  - 弓
+  coreTechniqueIds:
+  - cult_mortal_fan_fire_1
+  - id_art_fan_blade_12
+  tier: 二品
+  parentId: di_43
+- id: ren_44
+  name: 血鸦帮
+  elements:
+  - 血
+  - 暗
+  weapons:
+  - 刺
+  - 钩
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_poison_11
+  tier: 二品
+  parentId: di_44
+- id: ren_45
+  name: 青霞镖分局
+  elements:
+  - 风
+  - 云
+  weapons:
+  - 扇
+  - 剑
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_fan_2
+  tier: 二品
+  parentId: di_45
+- id: ren_46
+  name: 紫霜武社
+  elements:
+  - 冰
+  - 阴
+  weapons:
+  - 矛
+  - 剑
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_spear_11
+  tier: 二品
+  parentId: di_46
+- id: ren_47
+  name: 昆仑猎人队
+  elements:
+  - 力
+  - 土
+  weapons:
+  - 刀
+  - 弓
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_blade_11
+  tier: 二品
+  parentId: di_47
+- id: ren_48
+  name: 崆峒武场
+  elements:
+  - 力
+  - 气
+  weapons:
+  - 拳
+  - 棍
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_fist_11
+  tier: 二品
+  parentId: di_48
+- id: ren_49
+  name: 天阙杂务脉
+  elements:
+  - 神
+  - 阳
+  weapons:
+  - 戟
+  - 盾
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_spear_11
+  tier: 二品
+  parentId: di_49

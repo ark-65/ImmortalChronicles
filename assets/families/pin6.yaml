@@ -1,0 +1,30 @@
+- id: liu_family_a
+  name: 下界六品世家A
+  elements:
+  - 水
+  weapons:
+  - 剑
+  coreTechniqueIds:
+  - cult_mortal_a_1
+  - id_art_fan_sword_11
+  tier: 六品
+- id: liu_family_b
+  name: 下界六品世家B
+  elements:
+  - 火
+  weapons:
+  - 刀
+  coreTechniqueIds:
+  - cult_mortal_fan_fire_1
+  - id_art_fan_blade_11
+  tier: 六品
+- id: liu_family_c
+  name: 下界六品世家C
+  elements:
+  - 木
+  weapons:
+  - 杖
+  coreTechniqueIds:
+  - cult_mortal_fan_wood_1
+  - id_art_fan_staff_11
+  tier: 六品

@@ -1,0 +1,134 @@
+- id: "pants_fan_001"
+  name: "粗布裤"
+  slot: "pants"
+  grade: "fan"
+  rank: "c"
+  mainStats: { phyDef: 8 }
+  subStats: { spd: 1 }
+  description: "耐磨的粗布裤子。"
+
+- id: "pants_fan_002"
+  name: "皮护腿"
+  slot: "pants"
+  grade: "fan"
+  rank: "b"
+  mainStats: { phyDef: 12 }
+  subStats: { hp: 40 }
+  description: "简易皮护腿，增加下肢防护。"
+
+- id: "pants_fan_003"
+  name: "轻便行军裤"
+  slot: "pants"
+  grade: "fan"
+  rank: "a"
+  mainStats: { phyDef: 15 }
+  subStats: { spd: 2 }
+  description: "便于长途行军。"
+
+- id: "pants_ling_001"
+  name: "云纹裤"
+  slot: "pants"
+  grade: "ling"
+  rank: "b"
+  mainStats: { phyDef: 20 }
+  subStats: { spd: 3 }
+  description: "云纹环绕，行走如风。"
+
+- id: "pants_ling_002"
+  name: "灵丝护腿"
+  slot: "pants"
+  grade: "ling"
+  rank: "a"
+  mainStats: { phyDef: 24, magDef: 8 }
+  subStats: { hp: 80 }
+  description: "灵丝编织，柔韧而防护。"
+
+- id: "pants_ling_003"
+  name: "轻羽行裤"
+  slot: "pants"
+  grade: "ling"
+  rank: "s"
+  mainStats: { phyDef: 22 }
+  subStats: { spd: 5 }
+  description: "羽片加身，下盘轻灵。"
+
+- id: "pants_xian_001"
+  name: "紫金护腿"
+  slot: "pants"
+  grade: "xian"
+  rank: "a"
+  mainStats: { phyDef: 34, magDef: 12 }
+  subStats: { hp: 120 }
+  description: "紫金打造，下盘稳固。"
+
+- id: "pants_xian_002"
+  name: "流光束裤"
+  slot: "pants"
+  grade: "xian"
+  rank: "s"
+  mainStats: { phyDef: 30, magDef: 18 }
+  subStats: { spd: 7 }
+  description: "流光束带，行动更快。"
+
+- id: "pants_xian_003"
+  name: "玄冰护腿"
+  slot: "pants"
+  grade: "xian"
+  rank: "ss"
+  mainStats: { phyDef: 36, magDef: 26 }
+  subStats: { hp: 160 }
+  description: "玄冰寒气加固双腿。"
+
+- id: "pants_sheng_001"
+  name: "圣盾胫甲"
+  slot: "pants"
+  grade: "sheng"
+  rank: "ss"
+  mainStats: { phyDef: 55, magDef: 28 }
+  subStats: { hp: 240 }
+  description: "圣光护住下盘，行走如稳山。"
+
+- id: "pants_sheng_002"
+  name: "风皇行履"
+  slot: "pants"
+  grade: "sheng"
+  rank: "sss"
+  mainStats: { phyDef: 48, magDef: 36 }
+  subStats: { spd: 10 }
+  description: "风皇之力加持，步伐迅捷。"
+
+- id: "pants_sheng_003"
+  name: "龟息护腿"
+  slot: "pants"
+  grade: "sheng"
+  rank: "ss"
+  mainStats: { phyDef: 60 }
+  subStats: { hp: 260 }
+  description: "借玄龟之息，防御强横。"
+
+- id: "pants_dao_001"
+  name: "混沌行裤"
+  slot: "pants"
+  grade: "dao"
+  rank: "sss"
+  mainStats: { phyDef: 80, magDef: 45 }
+  subStats: { spd: 14, hp: 320 }
+  description: "混沌气流盘旋，护腿同步加速。"
+
+- id: "pants_dao_002"
+  name: "太乙束胫"
+  slot: "pants"
+  grade: "dao"
+  rank: "sss"
+  mainStats: { phyDef: 86, magDef: 50 }
+  subStats: { hp: 340 }
+  description: "太乙神金束缚，防护与灵动兼具。"
+
+- id: "pants_dao_003"
+  name: "鸿蒙下裳"
+  slot: "pants"
+  grade: "dao"
+  rank: "sss"
+  mainStats: { phyDef: 90, magDef: 60 }
+  subStats: { mp: 200, spd: 12 }
+  description: "鸿蒙气息萦绕，下盘沉稳而灵动。"

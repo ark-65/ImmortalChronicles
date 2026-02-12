@@ -1,0 +1,87 @@
+# --- 强制修真事件 (Mandatory Cultivation Events) ---
+
+# ==========================================
+# 1. 仙界：6岁觉醒 (Immortal Age 6 Awakening)
+# ==========================================
+-
+  id: "age_6_root_immortal"
+  title: "仙根初醒"
+  description: "你年满六岁。按照仙界惯例，家族/宗门长辈为你举行了灵根觉醒仪式。"
+  worlds: ["immortal"]
+  minAge: 6
+  effects: { age: 0 }
+  conditions:
+    unique: true
+  choices:
+    -
+      id: "awaken_root"
+      label: "接受洗礼"
+      effects:
+        delta: { exp: 50, strength: 2, intelligence: 2 }
+        canCultivate: true # 开启修真 UI
+        realm: "炼气" # 初始境界
+        resetRealmExp: true
+        log: "随着灵光入体，你感觉天地完全不同了。那虚无缥缈的灵气，此刻变得触手可及。"
+  weight: 1000 # High weight, but driven by Priority Logic
+
+# ==========================================
+# 2. 凡界：12岁宗门收徒 (Mortal Age 12 Sect Recruitment)
+# ==========================================
+-
+  id: "age_12_sect_mortal"
+  title: "仙门大选"
+  description: "你年满十二。传说中的修仙宗门「青云宗」每隔十年会来凡俗界招收弟子，今年恰好路过此地。"
+  worlds: ["mortal"]
+  minAge: 12
+  effects: { age: 0 }
+  conditions:
+    unique: true
+  choices:
+    -
+      id: "participate_test"
+      label: "上前排队"
+      effects:
+        log: "你在广场上排了整整一天的队，终于轮到你在那颗巨大的「测灵石」前把手放上去。"
+  weight: 1000
+
+# ------------------------------------------
+# 2.1 凡界：测试失败 (Success/Fail determined by code)
+# ------------------------------------------
+-
+  id: "age_12_sect_fail"
+  title: "仙途无缘"
+  description: "测灵石毫无反应，甚至有些冰凉。"
+  worlds: ["mortal"]
+  minAge: 12
+  effects: { age: 0 }
+  choices:
+    -
+      id: "return_home"
+      label: "黯然回家"
+      effects:
+        delta: { intelligence: 2, charm: -1 }
+        log: "负责测试的仙师冷漠地挥了挥手：「凡体，下一个。」你只能在周围人惋惜的目光中离开。"
+  weight: 0 # Triggered by code
+
+# ------------------------------------------
+# 2.2 凡界：测试成功 (Success)
+# ------------------------------------------
+-
+  id: "age_12_sect_success"
+  title: "仙门弟子"
+  description: "测灵石爆发出一阵光芒！虽然强弱不定，但确实照亮了你的脸庞。"
+  worlds: ["mortal"]
+  minAge: 12
+  effects: { age: 0 }
+  choices:
+    -
+      id: "join_sect"
+      label: "拜入宗门"
+      effects:
+        delta: { exp: 60, family: 10 }
+        canCultivate: true
+        realm: "炼气"
+        resetRealmExp: true
+        sectId: "青云宗" # 暂时硬编码，后续可优化为最近宗门
+        log: "仙师微微颔首，递给你一块身份令牌：「从此，你便是我宗弟子。」你回望了一眼凡尘的家，踏上了云舟。"
+  weight: 0 # Triggered by code

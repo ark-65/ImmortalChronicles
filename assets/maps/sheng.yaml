@@ -1,0 +1,104 @@
+- id: sheng_jade_lake
+  name: 圣域·瑶池圣境
+  world: immortal
+  region: sheng
+  tier: 圣地
+  description: 圣级势力聚落，丹道、器道、体修圣地并立。
+  neighbors:
+  - xian_holy_peak
+  - sheng_ancient_battlefield
+  - shen_origin_palace
+  pointsOfInterest:
+  - 蟠桃园
+  - 淬剑池
+  - 天地熔炉
+  factions:
+  - overlord_sect_1
+  - sheng_sect_2
+  - sheng_17
+  - sheng_sect_20
+  - tian_21
+  - tian_28
+- id: sheng_golden_desert
+  name: 圣域·流金大漠
+  world: immortal
+  region: sheng
+  tier: 圣地
+  description: 金属性法则具象化的沙漠，沙粒皆为庚金。
+  neighbors:
+  - sheng_jade_lake
+  pointsOfInterest:
+  - 金字塔遗迹
+  - 极道神兵冢
+  factions:
+  - sheng_16
+  - sheng_sect_21
+  - tian_36
+  - tian_49
+- id: sheng_astral_observatory
+  name: 圣域·摘星楼
+  world: immortal
+  region: sheng
+  tier: 圣地
+  description: 极高处的祭坛，可感应诸天星辰的运行力场。
+  neighbors:
+  - sheng_jade_lake
+  pointsOfInterest:
+  - 观曜镜
+  - 星辰王座
+  factions:
+  - sheng_24
+  - sheng_sect_23
+  - tian_41
+  - tian_23
+- id: sheng_ancient_battlefield
+  name: 圣域·荒古禁地
+  world: immortal
+  region: sheng
+  tier: 圣地
+  description: 上古诸神陨落之地，诅咒与至宝共存，凶险万分。
+  neighbors:
+  - sheng_jade_lake
+  pointsOfInterest:
+  - 神尸冢
+  - 九龙拉棺(传闻)
+  - 太古泉眼
+  factions:
+  - overlord_sect_2
+  - sheng_sect_18
+  - sheng_21
+  - sheng_sect_22
+  - tian_32
+  - xian_sect_47
+- id: sheng_mystic_canyon
+  name: 圣域·玄奥大峡谷
+  world: immortal
+  region: sheng
+  tier: 圣地
+  description: 铭刻着天地初始符文的峡谷，可悟极道法则。
+  neighbors:
+  - sheng_ancient_battlefield
+  pointsOfInterest:
+  - 符文壁画
+  - 悟道台
+  factions:
+  - sheng_19
+  - sheng_sect_24
+  - tian_46
+  - tian_47
+- id: sheng_silver_mountain
+  name: 圣域·沉银冰川
+  world: immortal
+  region: sheng
+  tier: 圣地
+  description: 冰封万载的银色世界，法则冰冷肃杀。
+  neighbors:
+  - sheng_ancient_battlefield
+  pointsOfInterest:
+  - 冰之哀伤(遗迹)
+  - 远古冰龙穴
+  factions:
+  - sheng_14
+  - sheng_sect_25
+  - tian_40
+  - tian_45

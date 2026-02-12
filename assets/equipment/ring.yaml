@@ -1,0 +1,134 @@
+- id: "ring_fan_001"
+  name: "青铜戒"
+  slot: "ring"
+  grade: "fan"
+  rank: "c"
+  mainStats: { mp: 40 }
+  subStats: { magDef: 4 }
+  description: "普通戒指，略有灵性。"
+
+- id: "ring_fan_002"
+  name: "木灵戒"
+  slot: "ring"
+  grade: "fan"
+  rank: "b"
+  mainStats: { mp: 60 }
+  subStats: { magAtk: 8 }
+  description: "木灵温润，稍增灵力。"
+
+- id: "ring_fan_003"
+  name: "猎人指环"
+  slot: "ring"
+  grade: "fan"
+  rank: "a"
+  mainStats: { phyAtk: 12 }
+  subStats: { spd: 2 }
+  description: "猎人常用，提升命中与速度。"
+
+- id: "ring_ling_001"
+  name: "灵玉戒"
+  slot: "ring"
+  grade: "ling"
+  rank: "b"
+  mainStats: { mp: 100 }
+  subStats: { magAtk: 15 }
+  description: "灵玉内蕴灵气。"
+
+- id: "ring_ling_002"
+  name: "风行指环"
+  slot: "ring"
+  grade: "ling"
+  rank: "a"
+  mainStats: { spd: 4 }
+  subStats: { phyAtk: 18 }
+  description: "佩戴后行动如风。"
+
+- id: "ring_ling_003"
+  name: "守心戒"
+  slot: "ring"
+  grade: "ling"
+  rank: "s"
+  mainStats: { magDef: 16 }
+  subStats: { mp: 120 }
+  description: "稳固心神，抵御惑乱。"
+
+- id: "ring_xian_001"
+  name: "紫纹灵戒"
+  slot: "ring"
+  grade: "xian"
+  rank: "a"
+  mainStats: { magAtk: 40 }
+  subStats: { mp: 180, spd: 4 }
+  description: "紫纹加持，法力更顺畅。"
+
+- id: "ring_xian_002"
+  name: "流光指环"
+  slot: "ring"
+  grade: "xian"
+  rank: "s"
+  mainStats: { spd: 8 }
+  subStats: { phyAtk: 32 }
+  description: "流光环绕，手法迅疾。"
+
+- id: "ring_xian_003"
+  name: "玄冰戒"
+  slot: "ring"
+  grade: "xian"
+  rank: "ss"
+  mainStats: { magAtk: 52 }
+  subStats: { magDef: 22 }
+  description: "寒意凝聚，提升冰属性掌控。"
+
+- id: "ring_sheng_001"
+  name: "圣辉戒"
+  slot: "ring"
+  grade: "sheng"
+  rank: "ss"
+  mainStats: { magAtk: 70, magDef: 26 }
+  subStats: { mp: 220 }
+  description: "圣光在指间流转。"
+
+- id: "ring_sheng_002"
+  name: "战神指环"
+  slot: "ring"
+  grade: "sheng"
+  rank: "ss"
+  mainStats: { phyAtk: 80 }
+  subStats: { spd: 10, phyDef: 20 }
+  description: "战意凝成的指环。"
+
+- id: "ring_sheng_003"
+  name: "风皇戒"
+  slot: "ring"
+  grade: "sheng"
+  rank: "sss"
+  mainStats: { spd: 12 }
+  subStats: { magAtk: 60, phyAtk: 40 }
+  description: "风皇之戒，速度与双攻兼具。"
+
+- id: "ring_dao_001"
+  name: "混沌戒"
+  slot: "ring"
+  grade: "dao"
+  rank: "sss"
+  mainStats: { magAtk: 110, phyAtk: 70 }
+  subStats: { mp: 260, spd: 12 }
+  description: "混沌之力凝聚，攻击与速度俱增。"
+
+- id: "ring_dao_002"
+  name: "太乙神戒"
+  slot: "ring"
+  grade: "dao"
+  rank: "sss"
+  mainStats: { magDef: 60, phyDef: 40 }
+  subStats: { hp: 240, mp: 240 }
+  description: "太乙神纹，攻守平衡。"
+
+- id: "ring_dao_003"
+  name: "鸿蒙道戒"
+  slot: "ring"
+  grade: "dao"
+  rank: "sss"
+  mainStats: { spd: 14 }
+  subStats: { magAtk: 90, phyAtk: 60 }
+  description: "道韵缠绕，身法凌厉。"

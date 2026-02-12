@@ -26,6 +26,48 @@ class DetailSheet extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 12),
+            Text('战斗属性', style: Theme.of(context).textTheme.titleMedium),
+            Wrap(
+              spacing: 8,
+              children: [
+                Chip(
+                  avatar: const Icon(Icons.flash_on, size: 16, color: Colors.orange),
+                  label: Text('物攻 ${state.phyAtk}'),
+                  backgroundColor: Colors.orange.withValues(alpha: 0.1),
+                ),
+                 Chip(
+                  avatar: const Icon(Icons.psychology, size: 16, color: Colors.indigo),
+                  label: Text('神魂 ${state.magAtk}'),
+                  backgroundColor: Colors.indigo.withValues(alpha: 0.1),
+                ),
+                 Chip(
+                  avatar: const Icon(Icons.favorite, size: 16, color: Colors.red),
+                  label: Text('气血 ${state.hp}'),
+                  backgroundColor: Colors.red.withValues(alpha: 0.1),
+                ),
+                 Chip(
+                  avatar: const Icon(Icons.waves, size: 16, color: Colors.blue),
+                  label: Text('神识 ${state.mp}'),
+                  backgroundColor: Colors.blue.withValues(alpha: 0.1),
+                ),
+                Chip(
+                  avatar: const Icon(Icons.security, size: 16, color: Colors.teal),
+                  label: Text('物防 ${state.phyDef}'),
+                  backgroundColor: Colors.teal.withValues(alpha: 0.1),
+                ),
+                Chip(
+                  avatar: const Icon(Icons.shield_moon, size: 16, color: Colors.deepPurple),
+                  label: Text('神防 ${state.magDef}'),
+                  backgroundColor: Colors.deepPurple.withValues(alpha: 0.1),
+                ),
+                Chip(
+                  avatar: const Icon(Icons.speed, size: 16, color: Colors.green),
+                  label: Text('速度 ${state.spd}'),
+                  backgroundColor: Colors.green.withValues(alpha: 0.1),
+                ),
+              ],
+            ),
+            const SizedBox(height: 12),
             Text('功法与熟练度', style: Theme.of(context).textTheme.titleMedium),
             ...state.techniques.map((t) => ListTile(
                   dense: true,

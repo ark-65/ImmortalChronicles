@@ -47,6 +47,7 @@ class LifeEventConfig {
   final Map<String, dynamic> effects;
   final List<LifeEventChoice> choices;
   final int weight;
+  final int? duration; // 持续年数/轮次
 
   const LifeEventConfig({
     this.templateId,
@@ -64,6 +65,7 @@ class LifeEventConfig {
     this.effects = const {},
     this.choices = const [],
     this.weight = 1,
+    this.duration,
   });
 
   factory LifeEventConfig.fromJson(Map<String, dynamic> json) {
@@ -118,6 +120,7 @@ class LifeEventConfig {
       effects: Map<String, dynamic>.from(json['effects'] ?? const {}),
       choices: parseChoices(json['choices']),
       weight: (json['weight'] as num?)?.toInt() ?? 1,
+      duration: (json['duration'] as num?)?.toInt(),
     );
   }
 
@@ -137,6 +140,7 @@ class LifeEventConfig {
         'effects': effects,
         'choices': choices.map((c) => c.toJson()).toList(),
         'weight': weight,
+        'duration': duration,
       };
 
   LifeEventConfig copyWith({
@@ -155,6 +159,7 @@ class LifeEventConfig {
     Map<String, dynamic>? effects,
     List<LifeEventChoice>? choices,
     int? weight,
+    int? duration,
   }) {
     return LifeEventConfig(
       templateId: templateId ?? this.templateId,
@@ -172,6 +177,7 @@ class LifeEventConfig {
       effects: effects ?? this.effects,
       choices: choices ?? this.choices,
       weight: weight ?? this.weight,
+      duration: duration ?? this.duration,
     );
   }
 }

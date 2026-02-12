@@ -1,0 +1,98 @@
+- id: "sect_entry_exam"
+  title: "入宗考核"
+  description: "宗门举办入门考核，决定你能否成为外门弟子。"
+  worlds: ["mortal", "immortal"]
+  minAge: 10
+  conditions: { chance: 0.6, chanceLuckBoost: 0.2 }
+  effects:
+    pendingEvents: ["sect_entry_result"]
+  choices:
+    - id: "martial"
+      label: "武试"
+      effects: { delta: { strength: 1, exp: 20 }, chance: 0.65, chanceLuckBoost: 0.15 }
+    - id: "spirit"
+      label: "灵试"
+      effects: { delta: { intelligence: 1, exp: 20 }, chance: 0.6, chanceLuckBoost: 0.2 }
+
+- id: "sect_entry_result"
+  title: "考核结果"
+  description: "考核结束，长老宣布结果。"
+  worlds: ["mortal", "immortal"]
+  effects:
+    delta: { exp: 40 }
+  choices:
+    - id: "pass"
+      label: "通过"
+      effects: { sectTier: "outer", pendingEvents: ["sect_outer_orientation"] }
+    - id: "fail"
+      label: "落榜为杂役"
+      effects: { sectTier: "servant", pendingEvents: ["sect_servant_tasks"] }
+
+- id: "sect_outer_orientation"
+  title: "外门报到"
+  description: "你成为外门弟子，领取身份令牌与任务册。"
+  worlds: ["mortal", "immortal"]
+  effects:
+    delta: { exp: 30 }
+    pendingEvents: ["sect_outer_daily"]
+
+- id: "sect_servant_tasks"
+  title: "杂役分配"
+  description: "你被分配到杂役堂，做杂务换取口粮。"
+  worlds: ["mortal", "immortal"]
+  effects:
+    delta: { exp: 10 }
+    pendingEvents: ["sect_servant_daily"]
+
+- id: "sect_promotion_outer_to_inner"
+  title: "外门晋升内门试炼"
+  description: "外门大比选拔内门弟子。"
+  worlds: ["mortal", "immortal"]
+  conditions: { chance: 0.35, chanceLuckBoost: 0.25 }
+  prerequisites: ["cultivation_started"]
+  effects: { pendingEvents: ["sect_promotion_outer_result"] }
+
+- id: "sect_promotion_outer_result"
+  title: "晋升结果"
+  description: "长老根据表现决定是否晋升。"
+  worlds: ["mortal", "immortal"]
+  choices:
+    - id: "promote"
+      label: "晋升内门"
+      effects: { sectTier: "inner", delta: { exp: 80, luck: 1 } }
+    - id: "fail"
+      label: "落选，回外门积累"
+      effects: { delta: { exp: 30 } }
+
+- id: "sect_promotion_inner_to_elite"
+  title: "内门晋升亲传选拔"
+  description: "宗门举办亲传选拔，内门精英争夺名额。"
+  worlds: ["mortal", "immortal"]
+  conditions: { chance: 0.25, chanceLuckBoost: 0.2 }
+  effects: { pendingEvents: ["sect_promotion_inner_result"] }
+
+- id: "sect_promotion_inner_result"
+  title: "亲传名额"
+  description: "亲传名额有限，长老衡量天赋与贡献。"
+  worlds: ["mortal", "immortal"]
+  choices:
+    - id: "promote"
+      label: "成为亲传"
+      effects: { sectTier: "legacy", delta: { exp: 120, luck: 2, charm: 1 } }
+    - id: "fail"
+      label: "继续历练"
+      effects: { delta: { exp: 40 } }
+
+- id: "sect_demotion_check"
+  title: "年度考核"
+  description: "年度考核中，表现不佳者可能被降级。"
+  worlds: ["mortal", "immortal"]
+  conditions: { chance: 0.2 }
+  effects:
+    delta: { exp: 20 }
+  choices:
+    - id: "keep"
+      label: "维持当前等级"
+    - id: "demote"
+      label: "降为外门"
+      effects: { sectTier: "outer", delta: { exp: -20 } }

@@ -1,0 +1,134 @@
+- id: "belt_fan_001"
+  name: "粗布腰带"
+  slot: "belt"
+  grade: "fan"
+  rank: "c"
+  mainStats: { hp: 60 }
+  subStats: { phyDef: 6 }
+  description: "简单束腰，略有防护。"
+
+- id: "belt_fan_002"
+  name: "皮革束带"
+  slot: "belt"
+  grade: "fan"
+  rank: "b"
+  mainStats: { hp: 80 }
+  subStats: { spd: 1 }
+  description: "耐用皮带，适合外出行走。"
+
+- id: "belt_fan_003"
+  name: "符纹腰封"
+  slot: "belt"
+  grade: "fan"
+  rank: "a"
+  mainStats: { hp: 100 }
+  subStats: { magDef: 6 }
+  description: "刻符护身，略增法抗。"
+
+- id: "belt_ling_001"
+  name: "灵藤腰带"
+  slot: "belt"
+  grade: "ling"
+  rank: "b"
+  mainStats: { hp: 140 }
+  subStats: { phyDef: 10 }
+  description: "灵藤缠绕，结实耐用。"
+
+- id: "belt_ling_002"
+  name: "轻羽腰带"
+  slot: "belt"
+  grade: "ling"
+  rank: "a"
+  mainStats: { hp: 150 }
+  subStats: { spd: 3 }
+  description: "羽毛装饰，行走轻快。"
+
+- id: "belt_ling_003"
+  name: "流云腰封"
+  slot: "belt"
+  grade: "ling"
+  rank: "s"
+  mainStats: { hp: 180 }
+  subStats: { magDef: 12 }
+  description: "流云符纹，护住气海。"
+
+- id: "belt_xian_001"
+  name: "紫金束腰"
+  slot: "belt"
+  grade: "xian"
+  rank: "a"
+  mainStats: { hp: 240 }
+  subStats: { phyDef: 18 }
+  description: "紫金打造，稳固气息。"
+
+- id: "belt_xian_002"
+  name: "玄冰玉带"
+  slot: "belt"
+  grade: "xian"
+  rank: "s"
+  mainStats: { hp: 260 }
+  subStats: { magDef: 22 }
+  description: "寒气护体，亦可凝神。"
+
+- id: "belt_xian_003"
+  name: "雷霆战带"
+  slot: "belt"
+  grade: "xian"
+  rank: "ss"
+  mainStats: { hp: 280 }
+  subStats: { spd: 6 }
+  description: "雷霆加身，行动如电。"
+
+- id: "belt_sheng_001"
+  name: "圣徽腰封"
+  slot: "belt"
+  grade: "sheng"
+  rank: "ss"
+  mainStats: { hp: 360 }
+  subStats: { phyDef: 28, magDef: 18 }
+  description: "圣徽守护，护住丹田。"
+
+- id: "belt_sheng_002"
+  name: "玄龟护腰"
+  slot: "belt"
+  grade: "sheng"
+  rank: "ss"
+  mainStats: { hp: 400 }
+  subStats: { phyDef: 32 }
+  description: "龟甲加持，防御卓越。"
+
+- id: "belt_sheng_003"
+  name: "风皇腰带"
+  slot: "belt"
+  grade: "sheng"
+  rank: "sss"
+  mainStats: { hp: 380 }
+  subStats: { spd: 10 }
+  description: "风皇之力缠绕，移动敏捷。"
+
+- id: "belt_dao_001"
+  name: "混沌神带"
+  slot: "belt"
+  grade: "dao"
+  rank: "sss"
+  mainStats: { hp: 520 }
+  subStats: { phyDef: 40, magDef: 30 }
+  description: "混沌气息稳固丹田。"
+
+- id: "belt_dao_002"
+  name: "太乙灵带"
+  slot: "belt"
+  grade: "dao"
+  rank: "sss"
+  mainStats: { hp: 540 }
+  subStats: { spd: 12 }
+  description: "太乙灵纹，行气如潮。"
+
+- id: "belt_dao_003"
+  name: "鸿蒙玄带"
+  slot: "belt"
+  grade: "dao"
+  rank: "sss"
+  mainStats: { hp: 560 }
+  subStats: { phyDef: 44, magDef: 34 }
+  description: "鸿蒙之气护持，攻守皆稳。"

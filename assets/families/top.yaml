@@ -1,0 +1,300 @@
+- id: sheng_0
+  name: 药族
+  elements:
+  - 药
+  - 木
+  weapons:
+  - 针
+  - 炉
+  coreTechniqueIds:
+  - cult_sheng_alchemy_dan_1
+  - id_art_sheng_nature_2
+  tier: 顶级
+- id: sheng_1
+  name: 妖族
+  elements:
+  - 神
+  - 力
+  weapons:
+  - 爪
+  - 戟
+  coreTechniqueIds:
+  - cult_sheng_ancient_beast_1
+  - id_art_sheng_claw_2
+  tier: 顶级
+- id: sheng_2
+  name: 萧家
+  elements:
+  - 火
+  - 阳
+  weapons:
+  - 尺
+  - 刀
+  coreTechniqueIds:
+  - cult_sheng_heavenly_fire_1
+  - id_art_sheng_blade_2
+  tier: 顶级
+- id: sheng_3
+  name: 云岚世家
+  elements:
+  - 风
+  - 云
+  weapons:
+  - 剑
+  coreTechniqueIds:
+  - cult_sheng_wind_blade_1
+  - id_art_sheng_sword_1
+  tier: 顶级
+- id: sheng_4
+  name: 紫府世家
+  elements:
+  - 金
+  weapons:
+  - 剑
+  coreTechniqueIds:
+  - cult_sheng_sword_master_1
+  - id_art_sheng_sword_2
+  tier: 顶级
+- id: sheng_5
+  name: 金龙族
+  elements:
+  - 力
+  - 水
+  weapons:
+  - 戟
+  - 爪
+  coreTechniqueIds:
+  - cult_sheng_dragon_core_1
+  - id_art_sheng_spear_1
+  tier: 顶级
+- id: sheng_6
+  name: 仙凰族
+  elements:
+  - 生
+  - 火
+  weapons:
+  - 琴
+  coreTechniqueIds:
+  - cult_sheng_phoenix_reg_1
+  - id_art_sheng_sound_1
+  tier: 顶级
+- id: sheng_7
+  name: 北冥世家
+  elements:
+  - 水
+  - 阴
+  weapons:
+  - 剑
+  coreTechniqueIds:
+  - cult_sheng_ice_yin_1
+  - id_art_sheng_sword_2
+  tier: 顶级
+- id: sheng_8
+  name: 南宫世家
+  elements:
+  - 风
+  - 术
+  weapons:
+  - 扇
+  coreTechniqueIds:
+  - cult_sheng_illusion_sky_1
+  - id_art_sheng_fan_1
+  tier: 顶级
+- id: sheng_9
+  name: 黄金狮族
+  elements:
+  - 金
+  - 力
+  weapons:
+  - 拳
+  - 爪
+  coreTechniqueIds:
+  - cult_sheng_gold_fist_1
+  - id_art_sheng_fist_1
+  tier: 顶级
+- id: sheng_10
+  name: 神剑世家
+  elements:
+  - 剑
+  - 金
+  weapons:
+  - 剑
+  coreTechniqueIds:
+  - cult_sheng_sword_sacred_1
+  - id_art_sheng_sword_2
+  tier: 顶级
+- id: sheng_11
+  name: 苍族
+  elements:
+  - 气
+  - 风
+  weapons:
+  - 矛
+  - 枪
+  coreTechniqueIds:
+  - cult_sheng_wind_blade_1
+  - id_art_sheng_spear_1
+  tier: 顶级
+- id: sheng_12
+  name: 凰族
+  elements:
+  - 火
+  - 生
+  weapons:
+  - 双剑
+  coreTechniqueIds:
+  - cult_sheng_phoenix_reg_1
+  - id_art_xian_sword_2
+  tier: 顶级
+- id: sheng_13
+  name: 龙凰世家
+  elements:
+  - 混沌
+  - 生
+  weapons:
+  - 枪
+  coreTechniqueIds:
+  - cult_dao_dragon_god_1
+  - id_art_sheng_spear_1
+  tier: 顶级
+- id: sheng_14
+  name: 玄冥世家
+  elements:
+  - 冰
+  - 阴
+  weapons:
+  - 剑
+  - 扇
+  coreTechniqueIds:
+  - cult_sheng_ice_yin_1
+  - id_art_sheng_palm_1
+  tier: 顶级
+- id: sheng_15
+  name: 雷神族
+  elements:
+  - 雷
+  - 阳
+  weapons:
+  - 锤
+  - 戟
+  coreTechniqueIds:
+  - cult_sheng_thunder_law_1
+  - id_art_sheng_hammer_1
+  tier: 顶级
+  parentId: guzu
+- id: sheng_16
+  name: 黄金战族
+  elements:
+  - 金
+  - 力
+  weapons:
+  - 斧
+  - 矛
+  coreTechniqueIds:
+  - cult_sheng_gold_fist_1
+  - id_art_sheng_axe_2
+  tier: 顶级
+  parentId: shizu
+- id: sheng_17
+  name: 灵木世家
+  elements:
+  - 木
+  - 生
+  weapons:
+  - 杖
+  - 针
+  coreTechniqueIds:
+  - cult_sheng_wood_life_1
+  - id_art_sheng_nature_2
+  tier: 顶级
+  parentId: yejia
+- id: sheng_18
+  name: 天剑族
+  elements:
+  - 金
+  - 光
+  weapons:
+  - 剑
+  coreTechniqueIds:
+  - cult_sheng_sword_sacred_1
+  - id_art_sheng_sword_2
+  tier: 顶级
+  parentId: jijia
+- id: sheng_19
+  name: 玄空世家
+  elements:
+  - 空
+  - 幻
+  weapons:
+  - 扇
+  - 刺
+  coreTechniqueIds:
+  - cult_sheng_space_crack_1
+  - id_art_sheng_space_1
+  tier: 顶级
+  parentId: jijia
+- id: sheng_20
+  name: 风灵族
+  elements:
+  - 风
+  - 气
+  weapons:
+  - 弓
+  - 扇
+  coreTechniqueIds:
+  - cult_immortal_xian_wind_1
+  - id_art_sheng_bow_1
+  tier: 顶级
+  parentId: yejia
+- id: sheng_21
+  name: 地母族
+  elements:
+  - 土
+  - 生
+  weapons:
+  - 杖
+  - 鼎
+  coreTechniqueIds:
+  - cult_sheng_body_iron_1
+  - id_art_sheng_shield_2
+  tier: 顶级
+  parentId: shizu
+- id: sheng_22
+  name: 太阳神族
+  elements:
+  - 阳
+  - 光
+  weapons:
+  - 剑
+  - 轮
+  coreTechniqueIds:
+  - cult_saint_sheng_light_1
+  - id_art_sheng_light_1
+  tier: 顶级
+  parentId: guzu
+- id: sheng_23
+  name: 幽冥族
+  elements:
+  - 暗
+  - 阴
+  weapons:
+  - 钩
+  - 索
+  coreTechniqueIds:
+  - cult_sheng_soul_night_1
+  - id_art_sheng_dark_1
+  tier: 顶级
+  parentId: jijia
+- id: sheng_24
+  name: 星辰世家
+  elements:
+  - 星
+  - 灵
+  weapons:
+  - 笔
+  - 剑
+  coreTechniqueIds:
+  - cult_sheng_star_path_1
+  - id_art_sheng_star_1
+  tier: 顶级
+  parentId: jijia

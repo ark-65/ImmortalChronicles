@@ -1,43 +1,181 @@
+# --- 仙界日常事件 (Immortal Daily Life) ---
+# 适用于 16 岁及以上的仙界修真生活
+
+# ==========================================
+# 1. 宗门/家族弟子 (Sect/Family Member)
+# ==========================================
+
+-
+  id: "immortal_sect_duty"
+  title: "宗门任务"
+  description: "享受了宗门的庇护和资源，自然要为宗门出力，这是每个弟子的义务。"
+  worlds: ["immortal"]
+  familyTiers: ["霸主", "圣地", "顶级", "仙族", "灵界修真世家"]
+  minAge: 16
+  effects: { age: 0 }
+  choices:
+    -
+      id: "guard_gate"
+      label: "看守山门"
+      effects:
+        delta: { strength: 1, exp: 20 }
+        log: "虽然枯燥，但你借机结识了不少来往的同道，还打发了几个闹事的散修。"
+    -
+      id: "tend_herbs"
+      label: "照料灵田"
+      effects:
+        delta: { intelligence: 2, exp: 30 }
+        log: "你细心照料灵药，对草木之理有了更深的感悟，顺便偷吃了一颗灵果。"
+    -
+      id: "slay_beast"
+      label: "清理妖兽"
+      effects:
+        delta: { strength: 3, exp: 50, luck: 1 }
+        log: "你奉命清理宗门周边的低阶妖兽，经过一番厮杀，战斗技巧越发娴熟。"
+    -
+      id: "copy_scrolls"
+      label: "抄录典籍"
+      effects:
+        delta: { intelligence: 3, exp: 25 }
+        log: "在藏经阁抄书是个苦差事，但你博览群书，意外发现了几处前人的修炼心得。"
+  weight: 200
+
+-
+  id: "immortal_sect_social"
+  title: "同门交际"
+  description: "修真财侣法地，‘侣’不仅指道侣，也指志同道合的道友。"
+  worlds: ["immortal"]
+  familyTiers: ["霸主", "圣地", "顶级", "仙族", "灵界修真世家"]
+  minAge: 16
+  effects: { age: 0 }
+  choices:
+    -
+      id: "dao_discussion"
+      label: "坐而论道"
+      effects:
+        delta: { intelligence: 2, exp: 30 }
+        log: "你与几位师兄师姐煮茶论道，互相印证所学，解开了不少修炼上的疑惑。"
+    -
+      id: "exchange_market"
+      label: "弟子小会"
+      effects:
+        delta: { charm: 2, luck: 1 }
+        log: "你参加了弟子间自发组织的交换会，用几张符箓换来了一块不错的中品灵石。"
+    -
+      id: "help_junior"
+      label: "指点师弟"
+      effects:
+        delta: { charm: 3, family: 1 }
+        log: "你随手指点了一位刚入门的小师弟，收货了他崇拜的眼神和一份小礼物。"
+    -
+      id: "rivalry"
+      label: "比斗切磋"
+      effects:
+        delta: { strength: 2, exp: 40 }
+        log: "你与看不顺眼的对头在演武场打了一架，虽然鼻青脸肿，但心中恶气尽出。"
+  weight: 180
+
+# ==========================================
+# 2. 散修/边缘家族 (Rogue / Minor Family)
+# ==========================================
+
+-
+  id: "immortal_rogue_survival"
+  title: "散修生涯"
+  description: "没有大宗门做靠山，每一块灵石都要靠自己去争、去抢。"
+  worlds: ["immortal"]
+  familyTiers: ["灵界普通家族", "无"] # 假设有 '无' 或者低阶
+  minAge: 16
+  effects: { age: 0 }
+  choices:
+    -
+      id: "risk_hunt"
+      label: "险地猎妖"
+      effects:
+        delta: { strength: 3, exp: 60, alive: true }
+        log: "你深入蛮荒之地，九死一生才斩杀了一头筑基妖兽，换来了半年的修炼资源。"
+    -
+      id: "black_market"
+      label: "混迹黑市"
+      effects:
+        delta: { intelligence: 2, luck: 1, exp: 20 }
+        log: "你在黑市里倒买倒卖，虽然要时刻提防黑吃黑，但确实比正经做任务来钱快。"
+    -
+      id: "bodyguard"
+      label: "受雇护送"
+      effects:
+        delta: { strength: 2, exp: 40 }
+        log: "你接了个护送商队的活，一路斩杀劫匪，赚的是卖命钱。"
+    -
+      id: "scavenge_ruins"
+      label: "拾荒捡漏"
+      effects:
+        delta: { luck: 2, intelligence: 1 }
+        log: "你在古战场外围拾荒，希望能捡到残破的法器碎片，运气好还能用来换酒喝。"
+  weight: 200
+
+# ==========================================
+# 3. 通用修炼活动 (Universal Cultivation)
+# ==========================================
+
 -
   id: "immortal_daily_cultivate"
-  title: "仙界吐纳"
-  description: "仙气汇聚，你调息运转，法力更稳。"
-  worlds:
-    - "immortal"
-  regions: null
-  minAge: 13
-  maxAge: null
-  conditions:
-    chance: 0.7
-    chanceLuckBoost: 0.05
-  prerequisites:
-    - "cultivation_started"
-    - "root_awakened"
-  effects:
-    age: 0
-    delta:
-      exp: 15
-      intelligence: 1
+  title: "闭关潜修"
+  description: "大道争锋，不进则退。修炼是每个修真者永恒的主题。"
+  worlds: ["immortal"]
+  minAge: 16
+  effects: { age: 0 }
   choices:
-
-  weight: 1
+    -
+      id: "meditate_deep"
+      label: "深度闭关"
+      effects:
+        delta: { exp: 50 }
+        log: "你开启洞府禁制，两耳不闻窗外事，一心只修圣贤道。修为稳步增长。"
+    -
+      id: "refine_pill"
+      label: "开炉炼丹"
+      effects:
+        delta: { intelligence: 2, exp: 30 }
+        log: "你尝试炼制了一炉丹药，虽然成丹率不高，但不仅增长了修为，还省了买药钱。"
+    -
+      id: "forge_artifact"
+      label: "祭炼法宝"
+      effects:
+        delta: { strength: 2, exp: 30 }
+        log: "你用精血温养本命法宝，感觉与它心意相通，威力大增。"
+    -
+      id: "study_spell"
+      label: "研习术法"
+      effects:
+        delta: { intelligence: 3, exp: 20 }
+        log: "你钻研了一门新的五行法术，反复练习直到能瞬发为止。"
+  weight: 150
 
 -
   id: "immortal_explore_random"
-  title: "仙界游历"
-  description: "你踏出洞府，决定在仙界各处行走。"
+  title: "云游四方"
+  description: "读万卷书，行万里路。修真者也要入世体验红尘，寻找机缘。"
   worlds: ["immortal"]
-  minAge: 13
-  prerequisites: ["cultivation_started", "root_awakened"]
+  minAge: 16
   effects: { age: 0 }
   choices:
-    - id: "mountain_hunt"
-      label: "入山猎妖"
-      effects: { delta: { strength: 1, exp: 25 }, log: "你斩杀低阶妖兽。" }
-    - id: "market"
-      label: "逛仙坊市"
-      effects: { delta: { charm: 1, exp: 12 }, log: "你见识了稀罕法宝。" }
-    - id: "secret_forest"
-      label: "探幽灵林"
-      effects: { delta: { luck: 1, intelligence: 1, exp: 18 }, log: "你采得灵药。" }
-  weight: 2
+    -
+      id: "visit_mortal"
+      label: "游历凡间"
+      effects:
+        delta: { charm: 2, intelligence: 1 }
+        log: "你隐匿修为去凡间游玩了一遭，看着生老病死，心境有所提升。"
+    -
+      id: "ancient_ruin"
+      label: "探寻古迹"
+      effects:
+        delta: { luck: 1, exp: 40 }
+        log: "你按照藏宝图找到了一个荒废的洞府，虽然里面空空如也，但墙上的壁画让你有所领悟。"
+    -
+      id: "meet_friend"
+      label: "访友叙旧"
+      effects:
+        delta: { charm: 2, exp: 10 }
+        log: "你御剑千里去拜访老友，把酒言欢，原来他也突破了瓶颈。"
+  weight: 150

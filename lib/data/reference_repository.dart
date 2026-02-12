@@ -16,10 +16,13 @@ class ReferenceRepository {
   List<MapZone> maps = const [];
   List<Medicine> medicines = const [];
   List<Technique> techniques = const [];
+  List<Equipment> equipments = const [];
   List<GrowthStage> stages = const [];
   List<ElementCategory> elementCategories = const [];
   Map<String, List<int>> realmLayers = const {};
   Map<String, int> realmLifespan = const {};
+  Map<String, Map<String, double>> realmStatBase = const {};
+  Map<String, double> realmStatStep = const {};
 
   Future<void> ensureLoaded() async {
     if (_loaded) return;
@@ -30,6 +33,7 @@ class ReferenceRepository {
       maps = await _loadCategory('assets/maps/', (e) => MapZone.fromJson(e), maps);
       medicines = await _loadCategory('assets/medicines/', (e) => Medicine.fromJson(e), medicines);
       techniques = await _loadCategory('assets/techniques/', (e) => Technique.fromJson(e), techniques);
+      equipments = await _loadCategory('assets/equipment/', (e) => Equipment.fromJson(e), equipments);
       
       await _loadMetaRealms();
       await _loadMetaStages();
@@ -44,26 +48,31 @@ class ReferenceRepository {
   }
 
   FamilyTemplate? familyById(String? id) =>
-      families.firstWhere((f) => f.id == id, orElse: () => families.first);
+      families.isEmpty ? null : families.firstWhere((f) => f.id == id, orElse: () => families.first);
       
-  SectTemplate? sectById(String? id) => sects.firstWhere(
-        (s) => s.id == id,
-        orElse: () => sects.isNotEmpty ? sects.first : throw StateError('No sects loaded'),
-      );
+  SectTemplate? sectById(String? id) =>
+      sects.isEmpty ? null : sects.firstWhere((s) => s.id == id, orElse: () => sects.first);
 
   Technique? techniqueById(String? id) =>
       techniques.firstWhere((t) => t.id == id, orElse: () => techniques.first);
 
-  MapZone? mapById(String? id) => maps.firstWhere(
-        (m) => m.id == id,
-        orElse: () => maps.isNotEmpty ? maps.first : throw StateError('No maps loaded'),
-      );
+  MapZone? mapById(String? id) =>
+      maps.isEmpty ? null : maps.firstWhere((m) => m.id == id, orElse: () => maps.first);
 
   MapZone defaultMapFor(World world) {
     final list = maps.where((m) => m.world == world).toList();
     if (list.isNotEmpty) return list.first;
     if (maps.isNotEmpty) return maps.first;
-    throw StateError('No maps loaded for world $world');
+    
+    // Emergency Fallback
+    return MapZone(
+      id: 'fallback_map',
+      name: '边缘荒地',
+      world: world,
+      region: Region.ren,
+      tier: '人',
+      description: '游离于六界之外的未知区域（数据加载失败保护）。',
+    );
   }
 
   GrowthStage currentStage(int age) {
@@ -90,6 +99,8 @@ class ReferenceRepository {
 
     final layers = <String, List<int>>{};
     final lifespans = <String, int>{};
+    final statBase = <String, Map<String, double>>{};
+    final statStep = <String, double>{};
 
     for (final path in targets) {
       try {
@@ -110,6 +121,8 @@ class ReferenceRepository {
           if (parsed == null) continue;
           layers[parsed.$1] = parsed.$2;
           lifespans[parsed.$1] = parsed.$3;
+          statBase[parsed.$1] = parsed.$4;
+          statStep[parsed.$1] = parsed.$5;
         }
       } catch (e) {
         debugPrint('[ReferenceRepository] parse $path failed: $e');
@@ -118,6 +131,8 @@ class ReferenceRepository {
 
     if (layers.isNotEmpty) realmLayers = layers;
     if (lifespans.isNotEmpty) realmLifespan = lifespans;
+    if (statBase.isNotEmpty) realmStatBase = statBase;
+    if (statStep.isNotEmpty) realmStatStep = statStep;
   }
 
   Future<void> _loadMetaStages() async {
@@ -142,19 +157,29 @@ class ReferenceRepository {
     }
   }
 
-  (String, List<int>, int)? _parseRealmEntry(dynamic raw) {
+  (String, List<int>, int, Map<String, double>, double)? _parseRealmEntry(dynamic raw) {
     if (raw is! Map) return null;
     final m = Map<String, dynamic>.from(raw);
     final id = m['id']?.toString() ?? '';
     if (id.isEmpty) return null;
     
     final lifespan = (m['lifespan'] as num?)?.toInt() ?? 60;
+    final base = <String, double>{};
+    if (m['statsBase'] is Map) {
+      (m['statsBase'] as Map).forEach((k, v) {
+        base[k.toString()] = (v as num).toDouble();
+      });
+    }
+    double step = 0.0;
     final ls = <int>[];
     for (final layer in (m['layers'] as List? ?? const [])) {
       if (layer is Map && layer['expRequired'] != null) {
         ls.add((layer['expRequired'] as num).toInt());
+        if (layer['statStep'] != null && step == 0.0) {
+          step = (layer['statStep'] as num).toDouble();
+        }
       }
     }
-    return (id, ls, lifespan);
+    return (id, ls, lifespan, base, step);
   }
 }

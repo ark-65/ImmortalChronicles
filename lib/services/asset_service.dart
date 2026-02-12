@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/services.dart';
+import 'package:flutter/foundation.dart';
 import 'package:yaml/yaml.dart';
 
 /// A centralized service for managing game assets, supporting lazy loading
@@ -16,12 +17,14 @@ class AssetService {
     if (_cachedManifest != null) return _cachedManifest!;
     
     try {
+      // Try legacy JSON manifest
       final manifestContent = await rootBundle.loadString('AssetManifest.json');
       final Map<String, dynamic> manifestMap = json.decode(manifestContent);
       _cachedManifest = manifestMap.keys.toSet();
       return _cachedManifest!;
     } catch (e) {
-      return {};
+      debugPrint('[AssetService] Failed to load AssetManifest.json: $e');
+      rethrow;
     }
   }
 
@@ -29,6 +32,10 @@ class AssetService {
   Future<List<Map<String, dynamic>>> loadDirectory(String prefix) async {
     final manifest = await getManifest();
     final files = manifest.where((path) => path.startsWith(prefix)).toList();
+    debugPrint('[AssetService] loadDirectory("$prefix") found ${files.length} files.');
+    if (files.isEmpty) {
+       debugPrint('[AssetService] Available keys snippet: ${manifest.take(10).join(', ')}');
+    }
     
     final results = <Map<String, dynamic>>[];
     for (final path in files) {

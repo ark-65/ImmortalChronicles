@@ -1,0 +1,339 @@
+# --- 13-18岁：青春躁动 (Adolescence) ---
+
+# ==========================================
+# 1. 仙界/修真世家 (Immortal / Cultivator)
+# ==========================================
+
+-
+  id: "age_13_debut_immortal"
+  title: "初试锋芒"
+  description: "你修行有成，家族/宗门决定让你参与一些实战任务。"
+  worlds: ["immortal"]
+  familyTiers: ["霸主", "圣地", "顶级", "仙族", "灵界修真世家", "灵界普通家族"]
+  minAge: 13
+  maxAge: 18
+  effects: { age: 0 }
+  choices:
+    -
+      id: "sect_tournament"
+      label: "宗门大比"
+      effects:
+        delta: { strength: 3, exp: 100 }
+        log: "你在擂台上连胜三场，虽最后惜败于师兄，但你的坚韧赢得了众人的喝彩。"
+    -
+      id: "explore_secret"
+      label: "秘境试炼"
+      effects:
+        delta: { luck: 2, exp: 120 }
+        log: "这处小秘境凶险异常，你凭借机智躲过了妖兽，还在深处寻得一株灵药。"
+    -
+      id: "organize_affairs"
+      label: "协助庶务"
+      effects:
+        delta: { intelligence: 3, family: 2 }
+        log: "你没有选择打打杀杀，而是帮长老整理卷宗/管理灵田，长老夸你心细如发。"
+    -
+      id: "romance_start"
+      label: "情窦初开"
+      effects:
+        delta: { charm: 5, exp: 50, strength: -1 }
+        log: "你与隔壁峰的师姐/师兄在花树下偶遇，四目相对，道心竟起了一丝涟漪。"
+  weight: 200
+
+-
+  id: "age_13_forbidden_immortal"
+  title: "禁地诱惑"
+  description: "传闻后山禁地每逢月圆之夜会有异响，好奇心驱使着你。"
+  worlds: ["immortal"]
+  familyTiers: ["霸主", "圣地", "顶级", "仙族", "灵界修真世家"]
+  minAge: 13
+  maxAge: 18
+  effects: { age: 0 }
+  choices:
+    -
+      id: "sneak_in"
+      label: "潜入一探"
+      effects:
+        delta: { luck: -2, exp: 200 }
+        log: "你确实看到了一部残缺的魔功，但也因此沾染了一丝煞气，心性难定。"
+    -
+      id: "report_it"
+      label: "上报宗门"
+      effects:
+        delta: { family: 3, exp: 50 }
+        log: "你克制住了诱惑，上报了异常。宗门查出了潜伏的魔修，记了你一大功。"
+    -
+      id: "stay_away"
+      label: "远离是非"
+      effects:
+        delta: { intelligence: 2 }
+        log: "你知道好动奇心害死猫，专心在洞府修炼，当晚不仅没出事，还要突破了。"
+  weight: 180
+
+-
+  id: "age_13_demon_immortal"
+  title: "魔修踪迹"
+  description: "外出历练时，你发现了一个鬼鬼祟祟的身影，似乎是人人喊打的魔修。"
+  worlds: ["immortal"]
+  familyTiers: ["霸主", "圣地", "顶级", "仙族", "灵界修真世家"]
+  minAge: 13
+  maxAge: 18
+  effects: { age: 0 }
+  choices:
+    -
+      id: "attack_demon"
+      label: "拔剑除魔"
+      effects:
+        delta: { strength: 4, exp: 150, luck: 1 }
+        log: "经过一番苦战，你斩杀了这个魔修低手，缴获了他的储物袋（虽然全是垃圾）。"
+    -
+      id: "track_demon"
+      label: "暗中跟踪"
+      effects:
+        delta: { intelligence: 3, exp: 100 }
+        log: "你顺藤摸瓜，发现了魔修的一个据点，传讯回宗门后，将其一网打尽。"
+    -
+      id: "run_away_demon"
+      label: "转身就把"
+      effects:
+        delta: { luck: 2 }
+        log: "你自知实力低微，没有逞强。后来听说那里死了好几个冒进的弟子，你暗自庆幸。"
+  weight: 180
+
+# ==========================================
+# 2. 凡界世家 (Noble / Wealthy)
+# ==========================================
+
+-
+  id: "age_13_grow_noble"
+  title: "家族期望"
+  description: "你已长成翩翩少年/亭亭玉立，家族对你的期望也越来越重。"
+  worlds: ["mortal"]
+  familyTiers: ["一品", "二品", "三品", "四品", "天", "地"]
+  minAge: 13
+  maxAge: 18
+  effects: { age: 0 }
+  choices:
+    -
+      id: "visit_capital"
+      label: "游学京城"
+      effects:
+        delta: { intelligence: 3, charm: 2 }
+        log: "你看遍了京城的繁华，结交了各地的才俊，眼界大开。"
+    -
+      id: "business_trip"
+      label: "打理商铺"
+      effects:
+        delta: { intelligence: 3, family: 2 }
+        log: "你接手了家族的一间亏损铺子，通过雷厉风行的手段，竟让其起死回生。"
+    -
+      id: "martial_world"
+      label: "闯荡江湖"
+      effects:
+        delta: { strength: 3, exp: 30 }
+        log: "你带着家丁护卫去江湖上转了一圈，惩恶扬善（虽然多半是拿钱砸的），留下了侠名。"
+    -
+      id: "marriage_talk"
+      label: "议亲"
+      effects:
+        delta: { family: 5, charm: 1 }
+        log: "媒人踏破了门槛，为你说的亲事都是门当户对。你虽感厌烦，但也知道这是责任。"
+  weight: 150
+
+-
+  id: "age_13_gambling_noble"
+  title: "纨绔诱惑"
+  description: "几个狐朋狗友邀你去城里最大的销金窟见见世面。"
+  worlds: ["mortal"]
+  familyTiers: ["一品", "二品", "三品", "四品"]
+  minAge: 13
+  maxAge: 18
+  effects: { age: 0 }
+  choices:
+    -
+      id: "gamble"
+      label: "豪掷千金"
+      effects:
+        delta: { family: -2, luck: -2, charm: 2 }
+        log: "你输了一大笔钱，被父亲吊起来打了一顿，但也因此结识了三教九流。"
+    -
+      id: "drink"
+      label: "听曲饮酒"
+      effects:
+        delta: { charm: 3, intelligence: 1 }
+        log: "你只谈风月，不沾赌毒。青楼花魁视你为知己，为你弹奏了一曲《广陵散》。"
+    -
+      id: "refuse"
+      label: "严词拒绝"
+      effects:
+        delta: { family: 1, strength: 1 }
+        log: "你是个洁身自好的君子，拒绝同流合污。虽然朋友少了，但名声好了。"
+  weight: 130
+
+-
+  id: "age_13_politics_noble"
+  title: "朝堂风云"
+  description: "家族卷入了一场政治风波，你的选择可能影响家族的兴衰。"
+  worlds: ["mortal"]
+  familyTiers: ["一品", "二品", "三品", "四品"]
+  minAge: 13
+  maxAge: 18
+  effects: { age: 0 }
+  choices:
+    -
+      id: "support_reform"
+      label: "支持新政"
+      effects:
+        delta: { intelligence: 3, family: -2 }
+        log: "你虽然得罪了保守派长辈，但你的远见在若干年后被证明是正确的。"
+    -
+      id: "marry_power"
+      label: "政治联姻"
+      effects:
+        delta: { family: 5, charm: -2 }
+        log: "为了家族，你娶/嫁给了一个你不爱的高官子女。家族转危为安，但你并不快乐。"
+    -
+      id: "hide_strength"
+      label: "韬光养晦"
+      effects:
+        delta: { intelligence: 2, odds: 1 }
+        log: "你建议家族暂时隐退，搬回祖籍。虽然权势减弱，但成功避开了即将到来的抄家大祸。"
+  weight: 130
+
+# ==========================================
+# 3. 凡界贫苦 (Poor / Commoner)
+# ==========================================
+
+-
+  id: "age_13_struggle_poor"
+  title: "生活重压"
+  description: "你不再是孩子了，生活的重担实打实地压在了你的肩上。"
+  worlds: ["mortal"]
+  familyTiers: ["五品", "六品", "七品", "八品", "九品", "人"]
+  minAge: 13
+  maxAge: 18
+  effects: { age: 0 }
+  choices:
+    -
+      id: "hunting"
+      label: "深山打猎"
+      effects:
+        delta: { strength: 3, exp: 20 }
+        log: "你独自进山，与野猪搏斗，带着一身伤痕和猎物回来，成了家里的顶梁柱。"
+    -
+      id: "soldier"
+      label: "投军"
+      effects:
+        delta: { strength: 4, exp: 30, family: -1 }
+        log: "你为了那一两银子的军饷报了名，军营虽苦，但至少管饱，还能学杀人技。"
+    -
+      id: "servant"
+      label: "入府为奴"
+      effects:
+        delta: { family: 3, strength: 1 }
+        log: "为了给家里还债，你卖身进了大户人家。虽然当下人低声下气，但好歹让家里缓了口气。"
+    -
+      id: "gamble_rock"
+      label: "赌石/采矿"
+      effects:
+        delta: { luck: -2, strength: 1 }
+        log: "你试图在矿山里碰运气，结果不仅一无所获，还差点被塌方埋在里面。"
+  weight: 150
+
+-
+  id: "age_13_bandit_poor"
+  title: "山贼来袭"
+  description: "世道不太平，一伙山贼冲进了村子烧杀抢掠。"
+  worlds: ["mortal"]
+  familyTiers: ["五品", "六品", "七品", "八品", "九品", "人"]
+  minAge: 13
+  maxAge: 18
+  effects: { age: 0 }
+  choices:
+    -
+      id: "fight_bandit"
+      label: "拼死反抗"
+      effects:
+        delta: { strength: 3, exp: 40, alive: true }
+        log: "你拿起身边的粪叉/柴刀，红着眼和山贼拼命。虽然受了重伤，但你杀了一个垫背的。"
+    -
+      id: "run_bandit"
+      label: "带家人跑"
+      effects:
+        delta: { speed: 3, family: 1 }
+        log: "你背起生病的老娘，拉着弟弟妹妹钻进了深山老林，躲过了一劫。"
+    -
+      id: "hide_bandit"
+      label: "地窖躲藏"
+      effects:
+        delta: { luck: 2 }
+        log: "你极其憋屈地躲在地窖里，听着外面的惨叫声，发誓若有来生定要成为强者。"
+  weight: 130
+
+-
+  id: "age_13_plague_poor"
+  title: "瘟疫横行"
+  description: "瘟疫席卷了十里八乡，到处都是死人。"
+  worlds: ["mortal"]
+  familyTiers: ["五品", "六品", "七品", "八品", "九品", "人"]
+  minAge: 13
+  maxAge: 18
+  effects: { age: 0 }
+  choices:
+    -
+      id: "help_doctor"
+      label: "协助郎中"
+      effects:
+        delta: { intelligence: 2, exp: 10, charm: 2 }
+        log: "你不怕死地给游方郎中打下手，虽然没救活多少人，但你学会了一些草药知识。"
+    -
+      id: "isolate"
+      label: "独自隔离"
+      effects:
+        delta: { intelligence: 1, luck: 1 }
+        log: "你凭直觉在这个乱世中选择了独善其身，虽然冷血，但你活了下来。"
+    -
+      id: "scavenge"
+      label: "死人财"
+      effects:
+        delta: { family: -2, exp: 20, luck: -1 }
+        log: "你在死人堆里翻找财物。虽然发了笔小财，但每晚都会做噩梦。"
+  weight: 130
+
+# ==========================================
+# 4. 关键转折：仙缘 (Immortal Fate) - Rare
+# ==========================================
+
+-
+  id: "age_13_immortal_fate"
+  title: "仙缘降临"
+  description: "这是一个可能改变你一生的机会。"
+  worlds: ["mortal"] # 仅限凡界触发
+  conditions:
+    needsCultivation: false # 必须是还没修炼的
+  minAge: 13
+  maxAge: 18
+  effects: { age: 0 }
+  choices:
+    -
+      id: "meet_rogue"
+      label: "遇见散修"
+      effects:
+        delta: { exp: 50, intelligence: 1 }
+        log: "一个重伤的修真者倒在你面前。你救了他，他临走前留给你一本残破的《引气决》。"
+        unlockLiteracy: true # 强行识字
+        canCultivate: true # 开启修炼
+    -
+      id: "find_cave"
+      label: "跌落山崖"
+      effects:
+        delta: { exp: 80, strength: 2 }
+        log: "你采药时不慎跌落，却掉进了一个古修洞府。里面虽然没有神兵，但有一池洗髓灵液。"
+        canCultivate: true
+    -
+      id: "missed"
+      label: "擦肩而过"
+      effects:
+        delta: { luck: -1 }
+        log: "你看见天边有流星划过（其实是剑仙斗法），你许了个愿，然后回家睡觉了。你错过了一场大机缘。"
+  weight: 30 # 权重较低，作为稀有事件

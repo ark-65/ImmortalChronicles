@@ -1,0 +1,53 @@
+- id: "sect_servant_daily"
+  title: "杂役杂务"
+  description: "你在杂役堂挑水劈柴，换取些许资源。"
+  worlds: ["mortal", "immortal"]
+  effects:
+    delta: { exp: 15, strength: 1 }
+  conditions: { chance: 0.9 }
+
+- id: "sect_outer_daily"
+  title: "外门巡山"
+  description: "外门弟子巡山除草，偶遇灵兽。"
+  worlds: ["mortal", "immortal"]
+  effects:
+    delta: { exp: 30, strength: 1 }
+  conditions: { chance: 0.8 }
+  choices:
+    - id: "fight"
+      label: "驱赶灵兽"
+      effects: { delta: { exp: 20 }, chance: 0.6, chanceLuckBoost: 0.15 }
+    - id: "avoid"
+      label: "绕路而行"
+      effects: { delta: { exp: 10 } }
+
+- id: "sect_inner_daily"
+  title: "内门试剑台"
+  description: "内门弟子切磋，对境界提升大有裨益。"
+  worlds: ["mortal", "immortal"]
+  effects:
+    delta: { exp: 50, intelligence: 1 }
+  conditions: { chance: 0.7 }
+
+- id: "sect_elite_daily"
+  title: "亲传闭关"
+  description: "亲传弟子闭关悟道，长老不时指点。"
+  worlds: ["mortal", "immortal"]
+  effects:
+    delta: { exp: 80, luck: 1, charm: 1 }
+  conditions: { chance: 0.6 }
+
+- id: "sect_contribution_task"
+  title: "宗门任务"
+  description: "完成宗门任务可获取贡献，影响晋升。"
+  worlds: ["mortal", "immortal"]
+  effects:
+    delta: { exp: 60, luck: 1 }
+  conditions: { chance: 0.5, chanceLuckBoost: 0.15 }
+  choices:
+    - id: "risk"
+      label: "接高难度"
+      effects: { delta: { exp: 50 }, chance: 0.45, chanceLuckBoost: 0.2 }
+    - id: "safe"
+      label: "接基础任务"
+      effects: { delta: { exp: 20 }, chance: 0.8 }

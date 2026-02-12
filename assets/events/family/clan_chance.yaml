@@ -1,0 +1,77 @@
+- id: "clan_elder_ruins"
+  title: "长老发现上古遗迹"
+  description: "族中长老发现一处上古遗迹，是否随行探索？"
+  worlds: ["mortal", "immortal"]
+  minAge: 10
+  conditions: { unique: true, chance: 0.18, chanceLuckBoost: 0.4 }
+  effects: { pendingEvents: ["clan_elder_ruins_round"] }
+  choices:
+    - id: "follow"
+      label: "随行探索"
+      effects: { delta: { luck: 1 }, pendingEvents: ["clan_elder_ruins_reward"] }
+    - id: "decline"
+      label: "婉拒，继续修行"
+      effects: { delta: { exp: 15 } }
+
+- id: "clan_tournament"
+  title: "族中比武大会"
+  description: "家族比武开赛，获胜可赢得资源与声望。"
+  worlds: ["mortal", "immortal"]
+  minAge: 12
+  conditions: { chance: 0.25, chanceLuckBoost: 0.3 }
+  choices:
+    - id: "join"
+      label: "报名参赛"
+      effects: { pendingEvents: ["clan_tournament_round"] }
+    - id: "observe"
+      label: "观战学习"
+      effects: { delta: { exp: 20, charm: 1 } }
+
+- id: "clan_resource_tilt"
+  title: "资源倾斜"
+  description: "族长决定重点培养年轻一代，你是否入选？"
+  worlds: ["mortal", "immortal"]
+  minAge: 8
+  conditions: { chance: 0.2, chanceLuckBoost: 0.2 }
+  effects: { delta: { family: 2, exp: 30 }, pendingEvents: ["clan_resource_followup"] }
+
+- id: "clan_elder_ruins_round"
+  title: "遗迹探险"
+  description: "遗迹中机关重重，是否深入？"
+  worlds: ["mortal", "immortal"]
+  choices:
+    - id: "deep"
+      label: "深入探索"
+      effects: { delta: { exp: 50, luck: 1 }, chance: 0.6, chanceLuckBoost: 0.2, followup: "clan_elder_ruins_reward" }
+    - id: "retreat"
+      label: "安全撤离"
+      effects: { delta: { exp: 10 } }
+
+- id: "clan_elder_ruins_reward"
+  title: "遗迹收获"
+  description: "你从遗迹中带回了资源。"
+  worlds: ["mortal", "immortal"]
+  effects:
+    delta: { exp: 80, luck: 2, family: 1 }
+    learnFamilyTechnique: true
+
+- id: "clan_tournament_round"
+  title: "家族比武"
+  description: "你与族人擂台较量，结果如何？"
+  worlds: ["mortal", "immortal"]
+  effects:
+    delta: { exp: 60, strength: 2, charm: 1 }
+  choices:
+    - id: "all_out"
+      label: "全力出击"
+      effects: { delta: { exp: 40 }, chance: 0.55, chanceLuckBoost: 0.25 }
+    - id: "steady"
+      label: "稳扎稳打"
+      effects: { delta: { exp: 20 }, chance: 0.75, chanceLuckBoost: 0.15 }
+
+- id: "clan_resource_followup"
+  title: "资源扶持"
+  description: "家族赠与你一份修炼资源。"
+  worlds: ["mortal", "immortal"]
+  effects:
+    delta: { exp: 50, family: 2, luck: 1 }

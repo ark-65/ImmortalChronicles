@@ -1,0 +1,133 @@
+- id: xian_holy_peak
+  name: 仙域·凌霄天峰
+  world: immortal
+  region: xian
+  tier: 天
+  description: 飞升落点，可眺九天，仙域各圣地的迎新入口。
+  neighbors:
+  - ling_greenridge
+  - ling_sky_bamboo
+  - sheng_jade_lake
+  - xian_trial_forest
+  - xian_star_sea
+  pointsOfInterest:
+  - 迎仙台
+  - 通天碑
+  - 仙舟港
+  factions:
+  - overlord_sect_4
+  - sheng_sect_0
+  - tian_20
+  - xian_sect_20
+- id: xian_sword_peak
+  name: 仙域·万剑峰
+  world: immortal
+  region: xian
+  tier: 天
+  description: 插满无数名剑的山峰，剑意冲天。
+  neighbors:
+  - xian_holy_peak
+  pointsOfInterest:
+  - 大庚剑阵
+  - 剑碑
+  factions:
+  - sheng_18
+  - xian_sect_20
+  - di_36
+  - di_sect_24
+- id: xian_spirit_orchard
+  name: 仙域·蟠桃灵园
+  world: immortal
+  region: xian
+  tier: 一品
+  description: 培育仙果与灵根的园林，是仙域各方的资源命脉。
+  neighbors:
+  - xian_trial_forest
+  pointsOfInterest:
+  - 御林军营
+  - 聚灵法阵
+  factions:
+  - di_41
+  - di_sect_41
+  - ren_42
+  - ren_sect_42
+- id: xian_trial_forest
+  name: 仙域·试炼古林
+  world: immortal
+  region: xian
+  tier: 地
+  description: 仙兽与遗迹密布的新晋试炼地，常开宗门考核。
+  neighbors:
+  - xian_holy_peak
+  pointsOfInterest:
+  - 荒古遗迹
+  - 麒麟洞
+  - 悟道茶树
+- id: xian_star_sea
+  name: 仙域·乱星海
+  world: immortal
+  region: xian
+  tier: 天
+  description: 星辰碎片云集的海域，蕴含时空奥秘与星斗精华。
+  neighbors:
+  - xian_holy_peak
+  pointsOfInterest:
+  - 破碎陨星
+  - 时空裂缝
+  - 虚无之巢
+  factions:
+  - overlord_sect_3
+  - sheng_sect_3
+  - tian_23
+  - xian_sect_23
+  - di_23
+  - di_sect_23
+  - ren_28
+- id: xian_thunder_peak
+  name: 仙域·九霄雷峰
+  world: immortal
+  region: xian
+  tier: 天
+  description: 终年落雷不断的山峰，是雷系修仙者的圣地。
+  neighbors:
+  - xian_holy_peak
+  pointsOfInterest:
+  - 引雷针
+  - 雷霆池
+  factions:
+  - tian_22
+  - xian_sect_22
+  - di_22
+  - di_sect_26
+- id: xian_cloud_palace
+  name: 仙域·浮空云宫
+  world: immortal
+  region: xian
+  tier: 天
+  description: 建立在万米高空的仙家宫廷，奢华且灵气极稠。
+  neighbors:
+  - xian_holy_peak
+  pointsOfInterest:
+  - 云顶天宫
+  - 观星台
+  factions:
+  - tian_25
+  - xian_sect_25
+  - di_26
+  - di_sect_43
+- id: xian_alchemy_valley
+  name: 仙域·灵丹谷
+  world: immortal
+  region: xian
+  tier: 一品
+  description: 专门为上界宗门提供丹药的幽深山谷。
+  neighbors:
+  - xian_trial_forest
+  pointsOfInterest:
+  - 万丹炉
+  - 采药亭
+  factions:
+  - tian_28
+  - xian_sect_28
+  - di_28
+  - di_sect_27

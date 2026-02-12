@@ -34,4 +34,4 @@ flutter test             # 运行现有组件测试
 
 ## 版权与授权
 - 本项目基于 Apache License 2.0 发布，详情见 `LICENSE`。
-- 使用、修改或再分发时需注明原作者 “ark-65” 并附上仓库地址：https://github.com/ark-65/ImmortalChronicles（详见 `NOTICE`）。
+- 使用、修改或再分发时需注明原作者 “ark-65” 并附上仓库地址：https://github.com/ark-65/immortal_chronicles（详见 `NOTICE`）。
